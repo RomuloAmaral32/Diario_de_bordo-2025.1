@@ -13,10 +13,10 @@
 
 #### Desenvolvedores:
 
-* Nancy Freitas - (coloque o link do github)
+* Nancy Freitas - ([coloque o link do github](https://github.com/nancyfreitas))
 * Ana Carolina Junqueira - (coloque o link do github)
 * Antony Kleverton - (coloque o link do github)
-* Vinícius Oliveira - (coloque o link do github)
+* Vinícius Oliveira - ([coloque o link do github](https://github.com/Vini-lm))
 
 
 #### Scrum Master:
