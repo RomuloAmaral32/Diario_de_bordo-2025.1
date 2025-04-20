@@ -1,3 +1,9 @@
+:root{
+    --gradient: linear-gradient(
+        45deg, rgba(113, 152, 201, 1), rgba(196, 231, 235, 1)
+    );
+}
+
 body {
     font: 500 1.6rem Inter;
 }
@@ -12,13 +18,7 @@ body {
     box-sizing: border-box;
 }
 
-:root{
-    --gradient: linear-gradient(
-        to right,
-        rgba(113, 152, 201/ 1),
-        rgba(196, 231, 235/ 1)
-    )
-}
+
 
 #title-text {
     box-sizing: border-box;
@@ -31,7 +31,7 @@ body {
 }
 
 #title-text h1{
-    font-weight: ;
+    font-weight: 800;
     padding-bottom: 10px;
     border-bottom: 4px solid red;
     border-image: var(--gradient) 1;
@@ -39,4 +39,10 @@ body {
 
 #cards-container{
     border: 2px solid red;
+    margin-left: 2rem;
+    width: 13rem;
+}
+
+#app {
+    display: flex;
 }
