@@ -44,7 +44,14 @@ body {
 }
 
 #cards-container .cards{
-    
+    position: relative;
+    width: 370px;
+    height: 240px;
+    border: 1px solid green;
+}
+
+#cards-container .cards .card-image{
+    width: 3rem;
 }
 
 #app {
