@@ -43,6 +43,10 @@ body {
     width: 13rem;
 }
 
+#cards-container .cards{
+    
+}
+
 #app {
     display: flex;
 }
