@@ -1,0 +1,28 @@
+body{
+
+    font-family: 'Shantell Sans',sans-serif;
+    font-family: 'Open Sans',sans-serif;
+
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.view_post_container h1{
+    font-weight: bold;
+    padding-left: 80px;
+}
+
+.view_post_container img.main_image{
+    width: 50%;
+    height: 50%;
+    padding-left: 80px;
+}
+.view_post_container p
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: center;
+    width: 80%;
+    
+    
+}
+
