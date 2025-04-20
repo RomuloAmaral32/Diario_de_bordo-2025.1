@@ -5,3 +5,38 @@ body {
 #box-pesquisa .recent-posts .post a{
     font: 500 1.6rem Shantell Sans;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient: linear-gradient(
+        to right,
+        rgba(113, 152, 201/ 1),
+        rgba(196, 231, 235/ 1)
+    )
+}
+
+#title-text {
+    box-sizing: border-box;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width: 15rem;
+    font-size: 12px;
+}
+
+#title-text h1{
+    font-weight: ;
+    padding-bottom: 10px;
+    border-bottom: 4px solid red;
+    border-image: var(--gradient) 1;
+}
+
+#cards-container{
+    border: 2px solid red;
+}
