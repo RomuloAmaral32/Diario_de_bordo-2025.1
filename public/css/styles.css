@@ -71,7 +71,45 @@ body h2{
 }
 .login_page_container input.email_input{
 
+    background-image: url(/public/assets/email_icon.png);
+    background-position: 10px center;
+    background-size: 24px 14px;
+    background-repeat: no-repeat;
+
+    padding-left: 40px;
 }
 .login_page_container input.pass_input{
     
+    background-image: url(/public/assets/lock_icon.png);
+    background-position: 10px center;
+    background-size: 19px 20px;
+    background-repeat: no-repeat;
+
+    padding-left: 40px;   
+}
+
+.login_page_container img.close_button{
+    
+    width: 30px;
+    height: 28px;
+    
+    
+    position: absolute;
+    top: 7%;
+    left: 96%;
+    transform: translate(-90%,-90%);
+}
+
+.pass_manager{
+    position: relative;
+    width:  100%;
+}
+
+.login_page_container img.eye_icon{
+    position: absolute;
+    top: 55%;
+    left: 96%;
+    transform: translate(-55%,-96%);
+    width: 22px;
+    height: 15px;
 }
