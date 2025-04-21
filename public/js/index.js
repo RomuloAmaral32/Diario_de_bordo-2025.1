@@ -16,6 +16,8 @@ document.getElementById('verMais').addEventListener('click', function () {
 
 //-----------------------------------------------------------------------
 
+//-----------------------------Carrossel---------------------------------
+
 const carrossel = document.querySelector('.carrossel');
 const imagens = document.querySelectorAll('.carrossel .imagem');
 const indicadoresContainer = document.querySelector('.indicadores');
@@ -102,3 +104,5 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', () => {
   atualizarConfiguracaoCarrossel();
 });
+
+//-----------------------------------------------------------------
