@@ -138,7 +138,7 @@ body {
 #barra-lateral h3{
     font-size: 18px;
     font-weight: 700;
-    margin: 5px 5px;
+    margin: 5px 10px;
 }
 
  .search-box{
@@ -149,8 +149,8 @@ body {
     border-radius: 15px;
     padding: 5px;
     background-color: rgba(83, 186, 88, 0.09);
-    margin-left: 5px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 14px;
 }
 
 /* .search-box::after{
@@ -192,7 +192,7 @@ body {
 .recent-posts h4{
     font-size: 13px;
     font-weight: 700;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 20px;
 }
   
