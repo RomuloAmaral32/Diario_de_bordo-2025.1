@@ -47,8 +47,8 @@ body {
 #cards-container .cards{
     position: relative;
     /* border: 1px solid green;  */
-    width: 205px;
-    height: 240px;
+    width: 185px;
+    height: 220px;
     overflow: hidden;
     border-radius: 9%;
     margin-bottom: 20px;
@@ -179,8 +179,13 @@ body {
     color: black;
 }
 
-.text-left{
-    
+.data-left{
+    color: rgba(113, 152, 201, 1)
+}
+
+.recent-posts h4{
+    font-size: 13px;
+    font-weight: 700;
 }
   
 .post {
