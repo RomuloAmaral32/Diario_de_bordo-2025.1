@@ -126,10 +126,13 @@ body {
 }
 
 #barra-lateral{
-    border: 1px solid red;
+    border: 1px solid rgba(196, 231, 235, 1);
+    border-radius: 15px;
     margin-left: 1rem;
     padding: 10px 0px;
     width: 13rem;
+    box-sizing: border-box;
+    height: 480px;
 }
 
 #barra-lateral h3{
