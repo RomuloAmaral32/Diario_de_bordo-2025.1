@@ -82,3 +82,172 @@ body{
     border-radius: 0px;
     background: linear-gradient(to right,rgba(113, 152, 201, 1),rgba(196, 231, 235, 1));
 }
+
+.view_post_container div.search_container{
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    
+    
+    position: absolute;
+    top: 130px;
+    right: 300px;
+
+    border: 2px solid rgba(113, 152, 201, 1);
+    border-radius: 16px;
+
+}
+.view_post_container div.top_search{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    margin-top: 20px;
+   
+}
+.view_post_container label.pesquisar{
+    
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    font-weight: bold;
+}
+
+.view_post_container div.search_box
+{
+    border: 2px solid rgba(113, 152, 201, 1);  
+    border-radius: 16px;
+    margin-left: 15px;
+    margin-right: 35px;
+    height: 40px;
+        
+
+}
+.view_post_container input.text_input{
+
+    width: 100%;
+    height: 100%;
+    border: none;
+   
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding-right: 40px;
+
+    background-color: rgba(83, 186, 88, 0.09);
+}
+
+.view_post_container img.lupa_img{
+
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+
+}
+.view_post_container div.post_down
+{
+    margin-top: 15px;
+    width: 100%;
+    height: 70%;
+
+    background-color: white;
+
+}
+
+.view_post_container label.down_tittle{
+    
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.view_post_container img.img1{
+    margin-top: 30px;
+    margin-left: 10px;
+
+    width: 80px;
+    height: 80px;
+}
+.view_post_container label.post_tittle
+{
+    color: rgba(113, 152, 201, 1);
+    font-size: 13px;
+    position: absolute;
+    top: 44%;
+    right: 36%;
+    
+}
+.view_post_container p.p2{
+
+    position:absolute;
+    top: 45%;
+    margin-left: 25px;    
+    font-size: 12px;
+    width: 130px;
+}
+.view_post_container img.img2
+{
+    margin-top: 12px;
+    margin-left: 10px;
+
+    width: 80px;
+    height: 80px;
+    border: 0px;
+    border-radius: 16px;
+}
+.view_post_container label.post_tittle2
+{
+    color: rgba(113, 152, 201, 1);
+    font-size: 13px;
+    position: absolute;
+    top: 60%;
+    margin-left: 19px;
+    
+}
+
+.view_post_container p.p3{
+
+    position:absolute;
+    top: 61%;
+    margin-left: 29px;    
+    font-size: 12px;
+    width: 134px;
+}
+
+.view_post_container img.img3
+{
+    margin-top: 12px;
+    margin-left: 10px;
+
+    width: 80px;
+    height: 80px;
+    border: 0px;
+    border-radius: 16px;
+}
+.view_post_container p.pular_linha{
+    margin: 0;
+    padding: 0;
+}
+.view_post_container label.post_tittle3
+{
+    color: rgba(113, 152, 201, 1);
+    font-size: 13px;
+    position: absolute;
+    top: 76%;
+    margin-left: 19px;
+    
+}
+.view_post_container p.p4{
+
+    position:absolute;
+    top: 77%;
+    margin-left: 29px;    
+    font-size: 12px;
+    width: 134px;
+}
+.view_post_container input::placeholder{
+    font-family: 'Open Sans',sans-serif;
+}
