@@ -38,7 +38,7 @@ body {
 }
 
 #cards-container{
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
     margin-left: 2rem;
     width: 13rem;
     padding-bottom: 20px;
@@ -46,43 +46,38 @@ body {
 
 #cards-container .cards{
     position: relative;
-    border: 1px solid green; 
+    /* border: 1px solid green;  */
     width: 205px;
-    height: 280px;
+    height: 240px;
     overflow: hidden;
     border-radius: 9%;
     margin-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
 }
 
-/* .data-card{
+
+.parte-baixo {
     display: flex;
+    justify-content: space-between;
     position: absolute;
-
-} */
-
-
-.parte-baixo{
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        top: 70%;
-        margin-left: 20px;
-        margin-right: 20px;
-        align-items: flex-end;
-        box-sizing: border-box;
-}
+    bottom: 20px;
+    margin-right: 20px;
+    left: 20px;
+    z-index: 2;
+    align-items: flex-end;
+  }
 
 #cards-container .cards .parte-baixo figcaption {
     font-size: 1rem;
-    font-weight: 600;
-    width: 95%;
     color: white;
-    justify-content:;
+    font-weight: 600;
+    width: 60%;
+    color: white;
 }
 
 #cards-container .cards .parte-baixo button{
-    width: 2rem;
-    height: 2rem;
+    width: 30px;
+    height: 30px;
     background: white;
     border: 0;
     border-radius: 50%;
@@ -95,19 +90,49 @@ body {
     justify-content: center;
 }
 
- #cards-container .cards .data-card{
-    
-} 
+.data-card {
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
 
 #cards-container .cards .card-image{
-    position: absolute;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    background: linear-gradient(rgba(0, 0, 0, 1) ) rgba(255, 255, 255, 0);
+}
+
+.cards::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
 }
 
 #app {
-    
+    display: flex;
+}
+
+#box-pesquisa{
+    border: 1px solid red;
+    margin-left: 1rem;
+    padding-top: 10px;
+    width: 13rem;
+}
+
+#box-pesquisa h3{
+    font-size: 18px;
+    font-weight: 600;
 }
