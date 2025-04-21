@@ -16,35 +16,37 @@
     /*border: solid 2px blue;*/
     height: 46.1vh;
     background-color: #f1f1f1;
-    h1{
+}
+
+.boxIntroducao h1{
         padding-top: 30px;
         font-size: 36px;
         font-family: "Shantell Sans";
         font-weight: bolder;
         color: #019308;
         text-align: center;
-    }
+}
 
-    .textoIntroducao{
-        padding-top: 10px;
-        /*border: solid 2px yellow;*/
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 30px;
-        max-width: 176vw;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        p{
-            /*border:solid 2px#019308;*/
-            width: 55.7vw;
-            height: 16.8vh;
-            font-size: 28px;
-            font-family: "Open Sans";
-            font-weight: 200;
-            word-spacing: 5px;
-        }
-    }
+.boxIntroducao .textoIntroducao{
+    padding-top: 10px;
+    /*border: solid 2px yellow;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    max-width: 176vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.boxIntroducao .textoIntroducao p{
+        /*border:solid 2px#019308;*/
+        width: 55.7vw;
+        height: 16.8vh;
+        font-size: 28px;
+        font-family: "Open Sans";
+        font-weight: 200;
+        word-spacing: 5px;
 }
 
 /*----------------- Visualização dos Posts --------------------*/
@@ -58,13 +60,14 @@ para comentar comigo*/
     min-height: 100vh;
     background-color: #f1f1f1;
     padding-bottom: 30pxs;
-    h2{
-        padding-bottom: 10px;
-        font-size: 32px;
-        font-weight: bolder;
-        font-family: "Shantell Sans";
-        padding-left: 155px;
-    }
+}
+
+.boxPosts h2{
+    padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Shantell Sans";
+    padding-left: 155px;
 }
 
 .post_grid, .posts_grid_escondido{
@@ -84,39 +87,44 @@ para comentar comigo*/
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     margin-bottom: 16px;
     overflow: hidden;
-    img{
+}
+
+.card img{
         width: 100%;
         height: auto;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         object-fit: cover;
-    }
-    h3{
-        font-family: "Open Sans";
-        font-size: 26;
-        font-weight: bold;
-        text-align: center;
-    }
-    .descricao{
+}
+
+.card h3{
+    font-family: "Open Sans";
+    font-size: 26;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card .descricao{
         font-family: "Shantell Sans";
         font-size: 16;
         padding: 16px;
         flex-grow: 1;
-    }
-
-    .autor{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-family: "Shantell Sans";
-        font-weight: bold;
-        padding-left: 16px;
-        font-size: 16;
-        margin-top: auto;
-    }
-    .nome{
-        font-weight: lighter;
-    }
 }
+
+.card .autor{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Shantell Sans";
+    font-weight: bold;
+    padding-left: 16px;
+    font-size: 16;
+    margin-top: auto;
+}
+
+.card .nome{
+    font-weight: lighter;
+}
+
 
 .posts_grid_escondido{
     display: none;
@@ -151,14 +159,15 @@ section.boxPosts.expanded .posts_grid_escondido{
     /*border: solid 2px pink;*/
     height: 100vh;
     background-color: #f1f1f1;
-    h2{
-        padding-top: 100px;
-        padding-bottom: 20px;
-        font-size: 32px;
-        font-weight: bolder;
-        font-family: "Shantell Sans";
-        padding-left: 155px;
-    }
+}
+
+.boxCarrossel h4{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Shantell Sans";
+    padding-left: 155px;
 }
 
 .bloco{
@@ -171,7 +180,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 .carrossel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100%/3) - 12px);
+    grid-auto-columns: calc((100%-32px) /3);
     gap: 16px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -187,12 +196,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 .imagem{
     cursor: pointer;
-    width: 10.2vw;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    object-fit: cover;
 }
 
 .setaEsquerda, .setaDireita{
@@ -309,6 +316,47 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 }
 
+@media  screen and (max-width: 834px) {
+    .boxIntroducao h1{
+        font-size: 50px;
+    }
+
+    .boxIntroducao .textoIntroducao p{
+        font-size: 35px;
+    }
+    .boxIntroducao img{
+        width: 400px;
+        height: auto;
+    }
+
+    .boxIntroducao{
+        height: 70vh;
+    }
+
+    .boxPosts{
+        padding-top: 0;
+    }
+
+    .boxPosts h2{
+        font-size: 40px;
+        padding-left: 275px;
+    }
+
+    .post_grid, .posts_grid_escondido{
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 700px;
+    }
+}
+
+.boxCarrossel h4{
+    font-size: 40px;
+    padding-left: 270px;
+}
+
+.boxCarrossel img{
+    width: 45vw;
+}
+
 @media screen and (max-width: 780px) {
 
     .boxIntroducao .textoIntroducao {
@@ -376,4 +424,51 @@ section.boxPosts.expanded .posts_grid_escondido{
         }
 }
 
+@media screen and (max-width: 428px){
+
+    .boxIntroducao h1{
+        font-size: 55px;
+    }
+
+    .boxIntroducao .textoIntroducao p{
+        font-size: 40px;
+        text-align: center;
+    }
+    .boxIntroducao img{
+        width: 300px;
+        height: auto;
+    }
+
+    .boxIntroducao{
+        height: 170vh;
+    }
+
+    .boxPosts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxPosts h2{
+        font-size: 50px;
+        padding: 0;
+
+    }
+
+    .boxCarrossel img{
+        width: 290px;
+        height: auto;
+    }
+    .boxCarrossel{
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+    .boxCarrossel h4{
+        padding: 0;
+        font-size: 50px;
+    }
+}
 /*------------------------------------------------------------*/
