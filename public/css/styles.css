@@ -125,14 +125,55 @@ body {
     display: flex;
 }
 
-#box-pesquisa{
+#barra-lateral{
     border: 1px solid red;
     margin-left: 1rem;
-    padding-top: 10px;
+    padding: 10px 0px;
     width: 13rem;
 }
 
-#box-pesquisa h3{
+#barra-lateral h3{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+ .search-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgba(196, 231, 235, 1);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(83, 186, 88, 0.09);
+}
+
+/* .search-box::after{
+    content: '';
+    background-image: var(--gradient) 1;
+    border-radius: 5px;
+
+} */
+
+.search-box input{
+    padding: 8px;
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: 100%;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgba(177, 179, 182, 0);
+    font-size: 2px;
+}
+
+.search-box img{
+ margin-top: 2px;
+ margin-right: 4px;
 }
