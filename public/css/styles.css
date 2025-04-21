@@ -8,8 +8,8 @@ body {
     font: 500 1.6rem Inter;
 }
 
-#box-pesquisa .recent-posts .post a{
-    font: 500 1.6rem Shantell Sans;
+#barra-lateral .recent-posts .post a{
+    font: 500 0.8rem Shantell Sans;
 }
 
 * {
@@ -173,7 +173,30 @@ body {
     font-size: 2px;
 }
 
-.search-box img{
- margin-top: 2px;
- margin-right: 4px;
+.recent-posts a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
 }
+
+.text-left{
+    
+}
+  
+.post {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 5px;
+    font-size: 12px;
+}
+
+  
+  .post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
