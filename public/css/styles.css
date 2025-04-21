@@ -55,8 +55,9 @@ isso funcionar. Então se alguém tiver uma ideia mais simples de fazer essa par
 para comentar comigo*/
 .boxPosts{
     /*border: solid 2px red;*/
-    height: 200.1vh;
+    min-height: 100vh;
     background-color: #f1f1f1;
+    padding-bottom: 30pxs;
     h2{
         padding-bottom: 10px;
         font-size: 32px;
@@ -147,7 +148,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 /*----------------- Carrossel -----------------------*/
 .boxCarrossel{
-    border: solid 2px pink;
+    /*border: solid 2px pink;*/
     height: 100vh;
     background-color: #f1f1f1;
     h2{
@@ -238,3 +239,146 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 
 /*---------------------------------------------------*/
+
+/* Responsividade para telas menores que 1043px */
+@media screen and (max-width: 1043px) {
+
+    /* Ajustando a introdução */
+    .boxIntroducao .textoIntroducao {
+        flex-direction: column; /* Deixa os textos empilhados em vez de lado a lado */
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Ajuste de tamanho e alinhamento do título */
+    .boxIntroducao h1 {
+        font-size: 30px; 
+    }
+
+    .boxIntroducao .textoIntroducao p {
+        padding-top: 20px;
+        font-size: 22px;
+        width: 80vw; /* Ajuste a largura */
+        height: auto;
+    }
+
+    /* Ajustes nos posts */
+    .boxPosts {
+        padding-top: 150px;
+    }
+
+    .post_grid, .posts_grid_escondido {
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 posts por linha */
+        gap: 15px;
+        max-width: 900px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    #verMais {
+        width: 80%; /* Ajuste de largura */
+        font-size: 20px;
+        padding: 2vh 4vw;
+    }
+
+    /* Ajustando o carrossel */
+    .boxCarrossel {
+        height: auto;
+    }
+
+    .carrossel {
+        grid-auto-columns: calc(100% / 2 - 16px); /* Exibe 2 imagens por linha */
+    }
+
+    .imagem {
+        width: 45vw;
+        height: auto;
+    }
+
+    .setaEsquerda, .setaDireita {
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .indicadores {
+        gap: 5px;
+    }
+
+    .bolinha {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Responsividade para telas menores que 600px */
+@media screen and (max-width: 780px) {
+
+    /* Ajustando a introdução para telas menores */
+    .boxIntroducao .textoIntroducao {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .boxIntroducao h1 {
+        font-size: 24px;
+    }
+
+    .boxIntroducao .textoIntroducao p {
+        font-size: 18px;
+        width: 90vw; /* Ajuste a largura */
+        height: auto;
+    }
+
+    /* Ajustando a visualização dos posts */
+    .boxPosts {
+        padding-top: 100px;
+    }
+
+    .post_grid, .posts_grid_escondido {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        max-width: 85vw;
+    }
+
+    .card {
+        margin-bottom: 8px;
+    }
+
+    #verMais {
+        width: 50%;
+        font-size: 18px;
+        padding: 2vh 5vw;
+    }
+        .carrossel {
+          grid-auto-columns: 100%;
+          justify-content: center;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      
+        .imagem {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      
+        .setaEsquerda,
+        .setaDireita {
+          height: 40px;
+          width: 40px;
+          font-size: 20px;
+          text-align: center;
+          line-height: 40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      
+        .bolinha {
+          width: 10px;
+          height: 10px;
+        }
+}

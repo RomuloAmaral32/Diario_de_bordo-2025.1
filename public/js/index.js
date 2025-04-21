@@ -1,75 +1,86 @@
+const carrossel = document.querySelector('.carrossel');
+const imagens = document.querySelectorAll('.carrossel .imagem');
+const indicadoresContainer = document.querySelector('.indicadores');
+const setaEsquerda = document.querySelector('.setaEsquerda');
+const setaDireita = document.querySelector('.setaDireita');
 
-// --------------------- BOTÃO "VER MAIS" -------------------------------------
-
-/* A ideia aqui é que ao clicar no botão, os exemplos de posts escondidos vão aparecer e 
-o section da visualização dos posts vai crescer para suportar a nova quantidade de posts.
-Pensei em fazer dessa forma por enquanto já que ainda não estamos mexendo com banco de dados 
-ainda.
-*/
-document.getElementById('verMais').addEventListener('click', function() {
-    var sectionPost = document.querySelector('.boxPosts');
-    var postEscondido = document.querySelector('.posts_grid_escondido');
-    
-    if (postEscondido.style.display === 'none' || postEscondido.style.display === '') {
-        postEscondido.style.display = 'grid';
-        
-        sectionPost.style.height = 'auto';
-    }
-});
-
-// -------------------------------------------------------------------------------
-
-// --------------------------- CARROSSEL -----------------------------------------
-
-const carrossel = document.querySelector(".carrossel");
-const esquerda = document.getElementById("esquerda"); // botão seta esquerda
-const direita = document.getElementById("direita");   // botão seta direita
-const bolinhas = document.querySelectorAll(".bolinha");
-
-const primeiraImagem = carrossel.querySelector(".imagem").offsetWidth;
-let isDragging = false;
-
-const tamanhoSlide = 3;
-const totalImagens = carrossel.querySelectorAll(".imagem").length;
-const totalPaginas = Math.ceil(totalImagens / tamanhoSlide);
+let imagensPorPagina = 3;
+let totalPaginas = 0;
 let paginaAtual = 0;
 
-function atualizarIndicadores() {
-    bolinhas.forEach((bolinha, index) => {
-        bolinha.classList.toggle("ativa", index === paginaAtual);
-    });
+function atualizarConfiguracaoCarrossel() {
+  const larguraCarrossel = carrossel.offsetWidth;
+  const larguraImagem = imagens[0].offsetWidth + 16; // imagem + gap
+  imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
+  totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
+
+  criarIndicadores();
+  atualizarIndicadores();
+  ativarSetas();
 }
 
-
-esquerda.addEventListener("click", () => {
-    if (paginaAtual > 0) {
-        paginaAtual--;
-        carrossel.scrollBy({
-            left: -carrossel.offsetWidth,
-            behavior: "smooth"
-        });
-        atualizarIndicadores();
-    }
-});
-
-direita.addEventListener("click", () => {
-    if (paginaAtual < totalPaginas - 1) {
-        paginaAtual++;
-        carrossel.scrollBy({
-            left: carrossel.offsetWidth,
-            behavior: "smooth"
-        });
-        atualizarIndicadores();
-    }
-});
-
-bolinhas.forEach((bolinha, index) => {
-    bolinha.addEventListener("click", () => {
-        paginaAtual = index;
-        carrossel.scrollTo({
-            left: index * carrossel.offsetWidth,
-            behavior: "smooth"
-        });
-        atualizarIndicadores();
+function criarIndicadores() {
+  indicadoresContainer.innerHTML = '';
+  for (let i = 0; i < totalPaginas; i++) {
+    const bolinha = document.createElement('div');
+    bolinha.classList.add('bolinha');
+    if (i === 0) bolinha.classList.add('ativa');
+    bolinha.addEventListener('click', () => {
+      paginaAtual = i;
+      carrossel.scrollLeft = carrossel.offsetWidth * i;
+      atualizarIndicadores();
     });
+    indicadoresContainer.appendChild(bolinha);
+  }
+}
+
+function atualizarIndicadores() {
+  const bolinhas = document.querySelectorAll('.bolinha');
+  bolinhas.forEach((b, i) => {
+    if (i === paginaAtual) {
+      b.classList.add('ativa');
+    } else {
+      b.classList.remove('ativa');
+    }
+  });
+}
+
+function ativarSetas() {
+  if (paginaAtual === 0) {
+    setaEsquerda.style.display = 'none';
+  } else {
+    setaEsquerda.style.display = 'block';
+  }
+
+  if (paginaAtual === totalPaginas - 1) {
+    setaDireita.style.display = 'none';
+  } else {
+    setaDireita.style.display = 'block';
+  }
+}
+
+setaEsquerda.addEventListener('click', () => {
+  if (paginaAtual > 0) {
+    paginaAtual--;
+    carrossel.scrollLeft -= carrossel.offsetWidth;
+    atualizarIndicadores();
+    ativarSetas();
+  }
+});
+
+setaDireita.addEventListener('click', () => {
+  if (paginaAtual < totalPaginas - 1) {
+    paginaAtual++;
+    carrossel.scrollLeft += carrossel.offsetWidth;
+    atualizarIndicadores();
+    ativarSetas();
+  }
+});
+
+window.addEventListener('resize', () => {
+  atualizarConfiguracaoCarrossel();
+});
+
+window.addEventListener('load', () => {
+  atualizarConfiguracaoCarrossel();
 });
