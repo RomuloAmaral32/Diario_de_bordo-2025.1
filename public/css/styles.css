@@ -127,7 +127,7 @@ body {
 }
 
 #barra-lateral{
-    border: 1px solid rgba(196, 231, 235, 1);
+    border: 1px solid rgba(113, 152, 201, 1);
     border-radius: 0.93rem;
     margin-left: 0.4rem;
     padding: 0.62rem 0px;
@@ -218,6 +218,11 @@ body {
 }
 
 @media (min-width:700px){
+
+    body{
+        margin-left: 50px;
+    }
+
     #title-text h1{
         max-width: 100vw;
         margin-left: 130px;
@@ -276,10 +281,30 @@ body {
     #barra-lateral{
         margin-left: 400px;
         width: 350px;
-        height: 600px;
+        height: 550px;
     }
 
-    #barra-lateral{
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
         
     }
 
