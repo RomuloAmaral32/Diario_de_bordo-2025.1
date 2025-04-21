@@ -1,3 +1,21 @@
+//------------------------- Botão "Ver Mais" -----------------------
+
+document.getElementById('verMais').addEventListener('click', function () {
+  const sectionPost = document.querySelector('.boxPosts');
+  const postEscondido = document.querySelector('.posts_grid_escondido');
+
+  if (postEscondido.style.display === 'none' || postEscondido.style.display === '') {
+      postEscondido.style.display = 'grid';
+      sectionPost.style.height = 'auto';
+      this.textContent = "Ver menos";
+  } else {
+      postEscondido.style.display = 'none';
+      this.textContent = "Ver mais";
+  }
+});
+
+//-----------------------------------------------------------------------
+
 const carrossel = document.querySelector('.carrossel');
 const imagens = document.querySelectorAll('.carrossel .imagem');
 const indicadoresContainer = document.querySelector('.indicadores');
@@ -10,7 +28,7 @@ let paginaAtual = 0;
 
 function atualizarConfiguracaoCarrossel() {
   const larguraCarrossel = carrossel.offsetWidth;
-  const larguraImagem = imagens[0].offsetWidth + 16; // imagem + gap
+  const larguraImagem = imagens[0].offsetWidth + 16;
   imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
   totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
 
