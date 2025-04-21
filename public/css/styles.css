@@ -240,17 +240,15 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 /*---------------------------------------------------*/
 
-/* Responsividade para telas menores que 1043px */
+/*-----------------Responsividade -----------------------*/
 @media screen and (max-width: 1043px) {
 
-    /* Ajustando a introdução */
     .boxIntroducao .textoIntroducao {
-        flex-direction: column; /* Deixa os textos empilhados em vez de lado a lado */
+        flex-direction: column;
         align-items: center;
         gap: 15px;
     }
 
-    /* Ajuste de tamanho e alinhamento do título */
     .boxIntroducao h1 {
         font-size: 30px; 
     }
@@ -258,17 +256,16 @@ section.boxPosts.expanded .posts_grid_escondido{
     .boxIntroducao .textoIntroducao p {
         padding-top: 20px;
         font-size: 22px;
-        width: 80vw; /* Ajuste a largura */
+        width: 80vw;
         height: auto;
     }
 
-    /* Ajustes nos posts */
     .boxPosts {
         padding-top: 150px;
     }
 
     .post_grid, .posts_grid_escondido {
-        grid-template-columns: repeat(2, 1fr); /* Exibe 2 posts por linha */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
         max-width: 900px;
     }
@@ -278,18 +275,17 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     #verMais {
-        width: 80%; /* Ajuste de largura */
+        width: 80%;
         font-size: 20px;
         padding: 2vh 4vw;
     }
 
-    /* Ajustando o carrossel */
     .boxCarrossel {
         height: auto;
     }
 
     .carrossel {
-        grid-auto-columns: calc(100% / 2 - 16px); /* Exibe 2 imagens por linha */
+        grid-auto-columns: calc(100% / 2 - 16px);
     }
 
     .imagem {
@@ -313,10 +309,8 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 }
 
-/* Responsividade para telas menores que 600px */
 @media screen and (max-width: 780px) {
 
-    /* Ajustando a introdução para telas menores */
     .boxIntroducao .textoIntroducao {
         flex-direction: column;
         align-items: center;
@@ -329,11 +323,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxIntroducao .textoIntroducao p {
         font-size: 18px;
-        width: 90vw; /* Ajuste a largura */
+        width: 90vw;
         height: auto;
     }
 
-    /* Ajustando a visualização dos posts */
     .boxPosts {
         padding-top: 100px;
     }
@@ -382,3 +375,5 @@ section.boxPosts.expanded .posts_grid_escondido{
           height: 10px;
         }
 }
+
+/*------------------------------------------------------------*/
