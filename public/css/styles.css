@@ -236,7 +236,7 @@ body {
 
 
 
-@media (min-width:700px){
+@media (min-width:1020px){
 
     body{
         margin-left: 50px;
@@ -336,7 +336,7 @@ body {
 
 }
 
-@media(max-width:320px){
+@media(max-width:690px){
     body{
         margin-left: 0px;
     }
@@ -344,63 +344,64 @@ body {
     #title-text h1{
         max-width: 100vw;
         margin-left: 0px;
-        width: 300px;
+        justify-content:last baseline;
+        width: 250px;
         border-bottom: 0.2rem solid red;
     }
 
     #app{
-        max-width: 100vw;
         display: grid;
-        grid-template-columns: 500px 500px;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "cards cards barra-pesquisa";
+        max-width: 100vw;
     }
 
     #cards-container{
-        display: flex;
-        width: 800px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 155px;
+        margin-left: 30px;
         gap: 20px;
     }
 
     #cards-container .cards{
         position: relative;
-        /* border: 1px solid green;  */
-        width: 11.5rem;
-        height: 13.7rem;
+        /* border: 1px solid green;   */
         overflow: hidden;
         border-radius: 9%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 13px;
         background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
     }
 
+    #cards-container .cards .parte-baixo{
+        width: 150px;
+        box-sizing: border-box;
+    }
+
     #cards-container .cards .parte-baixo a {
-        font-size: 1.4rem;
+        width: 60px;
+        font-size: 1.0rem;
+        margin-right: 4px;
     }
 
     #cards-container .cards .parte-baixo .button {
-        width: 2.9rem;
-        height: 2.9rem;
+        width:1.7rem;
+        height: 1.7rem;
+        box-sizing: border-box;
+        
     }
 
     #cards-container .cards .parte-baixo .button img {
-        width: 1rem;
+        width: 0.7rem;
     }
 
     #cards-container .cards .data-card{
-        margin-left: 20px;
+        margin-left: 0px;
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
     }
 
     #barra-lateral{
-        margin-left: 400px;
-        width: 350px;
+        margin-left: 30px;
+        width: 250px;
         height: 550px;
+        margin-bottom: 30px;
     }
 
     #barra-lateral h3{
@@ -428,8 +429,219 @@ body {
     }
 
     #cards-container .cards{
-        width: 340px;
-        height: 390px;
+        width: 180px;
+        height: 230px;
     }
 
+}
+@media(min-width:854px){
+    body{
+        margin-left: 0px;
+    }
+
+    #title-text h1{
+        max-width: 100vw;
+        margin-left: 105px;
+        justify-content:last baseline;
+        width: 250px;
+        border-bottom: 0.2rem solid red;
+    }
+
+    #app{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cards cards barra-pesquisa";
+    }
+
+    #cards-container{
+        display: flex;
+        width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 135px;
+        gap: 20px;
+    }
+
+    #cards-container .cards{
+        position: relative;
+        /* border: 1px solid green;   */
+        overflow: hidden;
+        border-radius: 9%;
+        margin-bottom: 13px;
+        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    }
+
+    #cards-container .cards .parte-baixo{
+        width: 150px;
+        box-sizing: border-box;
+    }
+
+    #cards-container .cards .parte-baixo a {
+        width: 60px;
+        font-size: 1.0rem;
+        margin-right: 4px;
+    }
+
+    #cards-container .cards .parte-baixo .button {
+        width:1.7rem;
+        height: 1.7rem;
+        box-sizing: border-box;
+        
+    }
+
+    #cards-container .cards .parte-baixo .button img {
+        width: 0.7rem;
+    }
+
+    #cards-container .cards .data-card{
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #barra-lateral{
+        margin-left: 100px;
+        width: 350px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
+        
+    }
+
+    #cards-container .cards{
+        width: 210px;
+        height: 260px;
+    }
+}
+
+@media(min-width:767px){
+    body{
+        margin-left: 0px;
+    }
+
+    #title-text h1{
+        max-width: 100vw;
+        margin-left: 12px;
+        justify-content:last baseline;
+        width: 250px;
+        border-bottom: 0.2rem solid red;
+    }
+
+    #app{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 450px 550px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cards cards barra-pesquisa";
+    }
+
+    #cards-container{
+        display: flex;
+        width: 550px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    #cards-container .cards{
+        position: relative;
+        /* border: 1px solid green;   */
+        overflow: hidden;
+        border-radius: 9%;
+        margin-bottom: 13px;
+        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    }
+
+    #cards-container .cards .parte-baixo{
+        width: 150px;
+        box-sizing: border-box;
+    }
+
+    #cards-container .cards .parte-baixo a {
+        width: 60px;
+        font-size: 1.0rem;
+        margin-right: 4px;
+    }
+
+    #cards-container .cards .parte-baixo .button {
+        width:1.7rem;
+        height: 1.7rem;
+        box-sizing: border-box;
+        
+    }
+
+    #cards-container .cards .parte-baixo .button img {
+        width: 0.7rem;
+    }
+
+    #cards-container .cards .data-card{
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #barra-lateral{
+        margin-left: 0px;
+        width: 300px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
+        
+    }
+
+    #cards-container .cards{
+        width: 180px;
+        height: 230px;
+    }
 }
