@@ -8,6 +8,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    background-color: #f1f1f1;
 }
 /*-------------------------------------------------*/
 
@@ -50,16 +51,14 @@
 }
 
 /*----------------- Visualização dos Posts --------------------*/
-/*Tive bastante dificuldade de fazer essa parte por conta dos posts escondidos.
-Quando eu clicava no botão, os posts escondidos pareciam distorcidos, então tive que criar
-uma pequena "gambiarra", fazendo o máximo para não infrigir as boas práticas do css, para
-isso funcionar. Então se alguém tiver uma ideia mais simples de fazer essa parte, sinta-se livre
-para comentar comigo*/
+
 .boxPosts{
     /*border: solid 2px red;*/
-    min-height: 100vh;
+    height: 220vh;
     background-color: #f1f1f1;
-    padding-bottom: 30pxs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .boxPosts h2{
@@ -75,6 +74,7 @@ para comentar comigo*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    padding-bottom: 40px;
     max-width: 1200px;
     margin: 0 auto;
     grid-auto-rows: auto;
@@ -137,12 +137,11 @@ section.boxPosts.expanded .posts_grid_escondido{
 #verMais{
     width: 19vw;
     height: 8.4vh;
-    padding: 2vh 3vw;
     font-size: 24px;
     font-family: "Shantell Sans";
     font-weight: bold;
     background-color: #eec24a;
-    box-shadow: 0 4px 8px (0,0,0,1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border: none;
     border-radius: 36px;
     cursor: pointer;
@@ -157,17 +156,17 @@ section.boxPosts.expanded .posts_grid_escondido{
 /*----------------- Carrossel -----------------------*/
 .boxCarrossel{
     /*border: solid 2px pink;*/
-    height: 100vh;
+    height: 115vh;
     background-color: #f1f1f1;
 }
 
 .boxCarrossel h4{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 20px;
     font-size: 32px;
     font-weight: bolder;
     font-family: "Shantell Sans";
-    padding-left: 155px;
+    padding-left: 145px;
 }
 
 .bloco{
@@ -193,10 +192,11 @@ section.boxPosts.expanded .posts_grid_escondido{
 .carrossel.dragging .imagem{
     cursor: grab;
     user-select: none;
+
 }
-.imagem{
+.boxCarrossel .imagem{
     cursor: pointer;
-    width: 100%;
+    width: 700px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;

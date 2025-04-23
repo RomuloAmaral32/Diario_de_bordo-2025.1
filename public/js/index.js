@@ -1,4 +1,9 @@
 //------------------------- Botão "Ver Mais" -----------------------
+/* A ideia aqui é que ao clicar no botão, os exemplos de posts escondidos vão aparecer e 
+o section da visualização dos posts vai crescer para suportar a nova quantidade de posts.
+Pensei em fazer dessa forma por enquanto já que ainda não estamos mexendo com banco de dados 
+ainda.
+*/
 
 document.getElementById('verMais').addEventListener('click', function () {
   const sectionPost = document.querySelector('.boxPosts');
@@ -17,6 +22,10 @@ document.getElementById('verMais').addEventListener('click', function () {
 //-----------------------------------------------------------------------
 
 //-----------------------------Carrossel---------------------------------
+/*Para passar para as próximas imagens, o usuário deve ou clicar nas setas ou clicar em uma
+das bolinhas logo abaixo do carrossel. Tentei implementar a função de arrastar com o mouse,
+mas estava dando diversos problemas
+*/
 
 const carrossel = document.querySelector('.carrossel');
 const imagens = document.querySelectorAll('.carrossel .imagem');
@@ -105,4 +114,4 @@ window.addEventListener('load', () => {
   atualizarConfiguracaoCarrossel();
 });
 
-//-----------------------------------------------------------------
+//----------------------------------------------------------------- 
