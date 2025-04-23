@@ -1,0 +1,96 @@
+/* Parte do Footer */
+
+.diariodebordo-footer {
+    min-height: 100px;
+    background: linear-gradient(to right, #354C6A 1%, #7387A2 100%);
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 0.5rem 2rem;
+    margin-top: auto; /* Funciona se o corpo da página for flex */
+    
+}
+
+.div-icones-redes-footer{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.div-footer-textopadrao{ /*texto padrao. como sao iguais mative separado assim*/
+  
+    display: flex;
+    flex-direction: column;
+    justify-content:table;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'open sans', sans-serif;
+    font-size: 12px;
+    line-height: 0.8rem;
+    width: 25%;
+    min-width: 200px;
+}
+    
+.titulo-footer{
+    color: #FFFFFF;
+    font-family: 'open sans', sans-serif;
+    font-weight: regular;
+}
+
+.icones-redesocial{
+    width: 16px;
+    height: 16px;
+    border-radius: 25%;
+    background-color: transparent;
+    display: flex;
+    justify-content:flex-end
+
+}
+
+.logo-escuro-footer{
+    width: 90px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    
+}
+
+.div-footer-logo-escuro img{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;   
+}
+
+/* parte feita para a aplicação da responsividade no footer */
+@media (max-width: 768px) {
+    .diariodebordo-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div-footer-textopadrao {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .valores-footer {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-footer-textopadrao {
+        min-width: 100%;
+    }
+}
