@@ -236,105 +236,7 @@ body {
 
 
 
-@media (min-width:1020px){
 
-    body{
-        margin-left: 50px;
-    }
-
-    #title-text h1{
-        max-width: 100vw;
-        margin-left: 130px;
-        width: 350px;
-        border-bottom: 0.2rem solid red;
-    }
-
-    #app{
-        max-width: 100vw;
-        display: grid;
-        grid-template-columns: 500px 500px;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "cards cards barra-pesquisa";
-    }
-
-    #cards-container{
-        display: flex;
-        width: 800px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 155px;
-        gap: 20px;
-    }
-
-    #cards-container .cards{
-        position: relative;
-        /* border: 1px solid green;  */
-        width: 11.5rem;
-        height: 13.7rem;
-        overflow: hidden;
-        border-radius: 9%;
-        margin-bottom: 1.25rem;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
-    }
-
-    #cards-container .cards .parte-baixo a {
-        font-size: 1.4rem;
-    }
-
-    #cards-container .cards .parte-baixo .button {
-        width: 2.9rem;
-        height: 2.9rem;
-    }
-
-    #cards-container .cards .parte-baixo .button img {
-        width: 1rem;
-    }
-
-    #cards-container .cards .data-card{
-        margin-left: 20px;
-        margin-top: 10px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    #barra-lateral{
-        margin-left: 400px;
-        width: 350px;
-        height: 550px;
-    }
-
-    #barra-lateral h3{
-        font-size: 20px;
-    }
-
-    #barra-lateral h4{
-        font-size: 16px;
-    }
-
-    #barra-lateral .post img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #barra-lateral .post .text-left{
-        margin-left: 10px;
-        font-size: 14px;
-        width: 200px;
-    }
-
-    #barra-lateral .post .text-left a{
-        font-size: 15px;
-        
-    }
-
-    #cards-container .cards{
-        width: 340px;
-        height: 390px;
-    }
-
-
-}
 
 @media(max-width:690px){
     body{
@@ -434,9 +336,117 @@ body {
     }
 
 }
+
+
+@media(min-width:767px){
+    body{
+        margin-left: 10px;
+    }
+
+    #title-text h1{
+        max-width: 100vw;
+        margin-left: 12px;
+        justify-content:last baseline;
+        width: 250px;
+        border-bottom: 0.2rem solid red;
+    }
+
+    #app{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 450px 550px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cards cards barra-pesquisa";
+    }
+
+    #cards-container{
+        display: flex;
+        width: 550px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    #cards-container .cards{
+        position: relative;
+        /* border: 1px solid green;   */
+        overflow: hidden;
+        border-radius: 9%;
+        margin-bottom: 13px;
+        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    }
+
+    #cards-container .cards .parte-baixo{
+        width: 150px;
+        box-sizing: border-box;
+    }
+
+    #cards-container .cards .parte-baixo a {
+        width: 60px;
+        font-size: 1.0rem;
+        margin-right: 4px;
+    }
+
+    #cards-container .cards .parte-baixo .button {
+        width:1.7rem;
+        height: 1.7rem;
+        box-sizing: border-box;
+        
+    }
+
+    #cards-container .cards .parte-baixo .button img {
+        width: 0.7rem;
+    }
+
+    #cards-container .cards .data-card{
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #barra-lateral{
+        margin-left: 0px;
+        width: 300px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
+        
+    }
+
+    #cards-container .cards{
+        width: 180px;
+        height: 230px;
+    }
+}
+
 @media(min-width:854px){
     body{
-        margin-left: 0px;
+        margin-left: -50px;
     }
 
     #title-text h1{
@@ -540,23 +550,23 @@ body {
     }
 }
 
-@media(min-width:767px){
+@media (min-width:1025px){
+
     body{
-        margin-left: 0px;
+        margin-left: 70px;
     }
 
     #title-text h1{
         max-width: 100vw;
-        margin-left: 12px;
-        justify-content:last baseline;
-        width: 250px;
+        margin-left: 130px;
+        width: 350px;
         border-bottom: 0.2rem solid red;
     }
 
     #app{
         max-width: 100vw;
         display: grid;
-        grid-template-columns: 450px 550px;
+        grid-template-columns: 500px 500px;
         grid-template-rows: 1fr;
         grid-template-areas:
         "cards cards barra-pesquisa";
@@ -564,56 +574,53 @@ body {
 
     #cards-container{
         display: flex;
-        width: 550px;
+        width: 800px;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 40px;
+        margin-left: 155px;
         gap: 20px;
     }
 
     #cards-container .cards{
         position: relative;
-        /* border: 1px solid green;   */
+        /* border: 1px solid green;  */
+        width: 11.5rem;
+        height: 13.7rem;
         overflow: hidden;
         border-radius: 9%;
-        margin-bottom: 13px;
+        margin-bottom: 1.25rem;
         background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
     }
 
-    #cards-container .cards .parte-baixo{
-        width: 150px;
-        box-sizing: border-box;
+    #cards-container .cards .parte-baixo {
+        width:290px;
     }
 
     #cards-container .cards .parte-baixo a {
-        width: 60px;
-        font-size: 1.0rem;
-        margin-right: 4px;
+        font-size: 1.4rem;
+        width: 150px;
     }
 
     #cards-container .cards .parte-baixo .button {
-        width:1.7rem;
-        height: 1.7rem;
-        box-sizing: border-box;
-        
+        width: 2.9rem;
+        height: 2.9rem;
     }
 
     #cards-container .cards .parte-baixo .button img {
-        width: 0.7rem;
+        width: 1rem;
     }
 
     #cards-container .cards .data-card{
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
     }
 
     #barra-lateral{
-        margin-left: 0px;
-        width: 300px;
+        margin-left: 400px;
+        width: 350px;
         height: 550px;
-        margin-bottom: 30px;
     }
 
     #barra-lateral h3{
@@ -641,7 +648,206 @@ body {
     }
 
     #cards-container .cards{
-        width: 180px;
-        height: 230px;
+        width: 340px;
+        height: 390px;
     }
+
+}
+
+@media (min-width:1279px){
+
+    body{
+        margin-left: 0px;
+    }
+
+    #title-text h1{
+        max-width: 100vw;
+        margin-left: 83px;
+        width: 350px;
+        border-bottom: 0.2rem solid red;
+    }
+
+    #app{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cards cards barra-pesquisa";
+    }
+
+    #cards-container{
+        display: flex;
+        width: 800px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 105px;
+        gap: 20px;
+    }
+
+    #cards-container .cards{
+        position: relative;
+        /* border: 1px solid green;  */
+        width: 11.5rem;
+        height: 13.7rem;
+        overflow: hidden;
+        border-radius: 9%;
+        margin-bottom: 1.25rem;
+        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    }
+
+    #cards-container .cards .parte-baixo a {
+        font-size: 1.4rem;
+    }
+
+    #cards-container .cards .parte-baixo .button {
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+
+    #cards-container .cards .parte-baixo .button img {
+        width: 1rem;
+    }
+
+    #cards-container .cards .data-card{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #barra-lateral{
+        margin-left: 400px;
+        width: 350px;
+        height: 550px;
+    }
+
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
+        
+    }
+
+    #cards-container .cards{
+        width: 340px;
+        height: 390px;
+    }
+
+}
+
+@media (min-width:1281px){
+
+    body{
+        margin-left: 90px;
+    }
+
+    #title-text h1{
+        max-width: 100vw;
+        margin-left: 112px;
+        width: 350px;
+        border-bottom: 0.2rem solid red;
+    }
+
+    #app{
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cards cards barra-pesquisa";
+    }
+
+    #cards-container{
+        display: flex;
+        width: 800px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 135px;
+        gap: 20px;
+    }
+
+    #cards-container .cards{
+        position: relative;
+        /* border: 1px solid green;  */
+        width: 11.5rem;
+        height: 13.7rem;
+        overflow: hidden;
+        border-radius: 9%;
+        margin-bottom: 1.25rem;
+        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    }
+
+    #cards-container .cards .parte-baixo a {
+        font-size: 1.4rem;
+    }
+
+    #cards-container .cards .parte-baixo .button {
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+
+    #cards-container .cards .parte-baixo .button img {
+        width: 1rem;
+    }
+
+    #cards-container .cards .data-card{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #barra-lateral{
+        margin-left: 400px;
+        width: 350px;
+        height: 550px;
+    }
+
+    #barra-lateral h3{
+        font-size: 20px;
+    }
+
+    #barra-lateral h4{
+        font-size: 16px;
+    }
+
+    #barra-lateral .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #barra-lateral .post .text-left{
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    #barra-lateral .post .text-left a{
+        font-size: 15px;
+        
+    }
+
+    #cards-container .cards{
+        width: 340px;
+        height: 390px;
+    }
+
 }
