@@ -1,4 +1,14 @@
+
 /* Parte do Footer */
+
+* { /* Reset de estilos para todos os elementos */
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
 
 .diariodebordo-footer {
     min-height: 100px;
@@ -34,9 +44,9 @@
     color: #FFFFFF;
     font-family: 'open sans', sans-serif;
     font-size: 12px;
-    line-height: 0.8rem;
+    line-height: 1rem;
     width: 25%;
-    min-width: 200px;
+    min-width: 320px;
 }
     
 .titulo-footer{
@@ -51,7 +61,7 @@
     border-radius: 25%;
     background-color: transparent;
     display: flex;
-    justify-content:flex-end
+    justify-content:flex-end;
 
 }
 
@@ -81,7 +91,7 @@
 
     .div-footer-textopadrao {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .valores-footer {
