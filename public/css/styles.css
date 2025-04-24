@@ -54,14 +54,14 @@
 
 .boxPosts{
     /*border: solid 2px red;*/
-    height: 220vh;
+    height: 200vh;
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.boxPosts h2{
+h2{
     padding-bottom: 10px;
     font-size: 32px;
     font-weight: bolder;
@@ -160,15 +160,6 @@ section.boxPosts.expanded .posts_grid_escondido{
     background-color: #f1f1f1;
 }
 
-.boxCarrossel h4{
-    padding-top: 80px;
-    padding-bottom: 20px;
-    font-size: 32px;
-    font-weight: bolder;
-    font-family: "Shantell Sans";
-    padding-left: 145px;
-}
-
 .bloco{
     padding-left: 16px;
     max-width: 1500px;
@@ -179,8 +170,8 @@ section.boxPosts.expanded .posts_grid_escondido{
 .carrossel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100%-32px) /3);
-    gap: 16px;
+    grid-auto-columns: calc((100% - 32px) / 3);
+    gap: 260px;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -196,12 +187,17 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 .boxCarrossel .imagem{
     cursor: pointer;
-    width: 700px;
+    width: 100%;
     height: auto;
+    max-width: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
 
+.boxCarrossel h2{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
 .setaEsquerda, .setaDireita{
     position: absolute;
     height: 50px;
@@ -279,12 +275,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .card {
         margin-bottom: 10px;
-    }
-
-    #verMais {
-        width: 80%;
-        font-size: 20px;
-        padding: 2vh 4vw;
     }
 
     .boxCarrossel {
