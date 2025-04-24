@@ -2,6 +2,15 @@
 
 /*Parte da navbar*/
 
+* { /* Reset de estilos para todos os elementos */
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
 .diariodebordo-header{
     min-height: 60px;
     display: flex;
