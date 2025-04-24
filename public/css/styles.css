@@ -1,0 +1,67 @@
+
+/*Parte da navbar*/
+
+.diariodebordo-header{
+    min-height: 60px;
+    display: flex;
+    /*padding: 10px;*/
+    /*position: fixed; mantem fixo mesmo depois da rolagem*/
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0.3rem;
+    background: linear-gradient(to right, #C4E7EB 10%, #739ACA 100%);
+    align-items: center; 
+    width: 100%; 
+}
+
+.logo-navbar{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+}
+
+.botoes-navbar{
+    border-width: thin;
+    background-color: #EEC556;
+    display: flex;
+    text-decoration: none !important;
+    border-radius: 32px;
+    border-color: #C4E7EB !important;
+    border: 1px solid;
+    bottom: 8px;
+    padding: 0.3rem 0.5rem; 
+    white-space: nowrap;
+    min-width: max-content;
+}
+
+
+.div-botoes{    /*coloquei div como container dos 3 botoes*/
+    
+    /*background-color: transparent;*/
+    display: flex;
+    /*flex-direction: row;*/
+   /* justify-content: space-between;*/
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.botoes-navbar-a{
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-family: 'open sans', sans-serif;
+    font-size: 12px;
+    font-weight: regular; 
+}
+
+.botoes-navbar-a:hover{
+    color: #000000 !important;
+    font-family: 'open sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+
