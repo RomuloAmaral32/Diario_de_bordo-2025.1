@@ -116,6 +116,7 @@ body{
     margin-right: 35px;
     height: 40px;
     position: relative;
+    background-color: rgba(83, 186, 88, 0.09);
         
 
 }
@@ -128,15 +129,16 @@ body{
     border-radius: 16px;
     box-sizing: border-box;
     padding-right: 40px;
+    background-color: transparent;
 
-    background-color: rgba(83, 186, 88, 0.09);
+    
 }
 
 .view_post_container img.lupa_img{
 
     width: 20px;
     height: 20px;
-    background-color: rgba(83, 186, 88, 0.09);
+    background-color: transparent;
 
 
 }
