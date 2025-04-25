@@ -168,10 +168,11 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 
 .carrossel{
-    display: grid;
+    padding-left: 30px;
+    display: flex;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% - 32px) / 3);
-    gap: 260px;
+    gap: 50px;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -244,7 +245,13 @@ section.boxPosts.expanded .posts_grid_escondido{
 /*---------------------------------------------------*/
 
 /*-----------------Responsividade -----------------------*/
-@media screen and (max-width: 1043px) {
+
+@media screen and (max-width: 1200px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 1100px;
+    }
+}
+@media screen and (max-width: 1100px) {
 
     .boxIntroducao .textoIntroducao {
         flex-direction: column;
@@ -253,12 +260,12 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao h1 {
-        font-size: 30px; 
+        font-size: 35px; 
     }
 
     .boxIntroducao .textoIntroducao p {
         padding-top: 20px;
-        font-size: 22px;
+        font-size: 28px;
         width: 80vw;
         height: auto;
     }
@@ -304,50 +311,88 @@ section.boxPosts.expanded .posts_grid_escondido{
         width: 12px;
         height: 12px;
     }
+
+    .posts_grid_escondido{
+        display: none;
+    }
+    
 }
 
-@media  screen and (max-width: 834px) {
+@media screen and (max-width: 914px){
+
+    .boxIntroducao{
+        height: 60vh;
+    }
+    .boxIntroducao h1{
+        font-size: 40px;
+    }
+
+    .boxIntroducao .textoIntroducao p{
+        font-size: 26px;
+    }
+    .post_grid, .posts_grid_escondido{
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 850px;
+    }
+}
+
+@media  screen and (max-width: 856px) {
+    .boxIntroducao{
+        height: 140vh;
+    }
+
     .boxIntroducao h1{
         font-size: 50px;
     }
 
     .boxIntroducao .textoIntroducao p{
         font-size: 35px;
+        text-align: center;
     }
     .boxIntroducao img{
         width: 400px;
         height: auto;
     }
 
-    .boxIntroducao{
-        height: 70vh;
-    }
-
     .boxPosts{
         padding-top: 0;
+        align-items: center;
     }
 
-    .boxPosts h2{
+    h2{
         font-size: 40px;
-        padding-left: 275px;
+        padding-left: 0;
     }
 
     .post_grid, .posts_grid_escondido{
         grid-template-columns: repeat(2, 1fr); 
         max-width: 700px;
     }
-}
 
-.boxCarrossel h4{
-    font-size: 40px;
-    padding-left: 270px;
-}
+    .posts_grid_escondido{
+        display: none;
+    }
+    
+    .boxCarrossel{
+        align-items: center;
+        padding-left: 0;
+    }
 
-.boxCarrossel img{
-    width: 45vw;
+    .boxCarrossel h2{
+        font-size: 40px;
+    }
+
+    .boxCarrossel img{
+        width: 45vw;
+    }
+
 }
 
 @media screen and (max-width: 780px) {
+
+    .boxIntroducao{
+        height: 115vh;
+    }
 
     .boxIntroducao .textoIntroducao {
         flex-direction: column;
@@ -356,11 +401,11 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao h1 {
-        font-size: 24px;
+        font-size: 50px;
     }
 
     .boxIntroducao .textoIntroducao p {
-        font-size: 18px;
+        font-size: 36px;
         width: 90vw;
         height: auto;
     }
@@ -381,7 +426,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     #verMais {
         width: 50%;
-        font-size: 18px;
+        font-size: 25px;
         padding: 2vh 5vw;
     }
         .carrossel {
@@ -393,7 +438,7 @@ section.boxPosts.expanded .posts_grid_escondido{
       
         .imagem {
           width: 100%;
-          max-width: 300px;
+          max-width: 400px;
           margin: 0 auto;
         }
       
@@ -414,10 +459,20 @@ section.boxPosts.expanded .posts_grid_escondido{
         }
 }
 
+@media screen and (max-width: 540px) {
+    .boxIntroducao h1{
+        font-size: 48px;
+    }
+
+    .boxIntroducao{
+        height: 130vh;
+    }
+}
+
 @media screen and (max-width: 428px){
 
     .boxIntroducao h1{
-        font-size: 55px;
+        font-size: 48px;
     }
 
     .boxIntroducao .textoIntroducao p{
@@ -446,7 +501,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxCarrossel img{
-        width: 290px;
+        width: 340px;
         height: auto;
     }
     .boxCarrossel{
@@ -456,9 +511,10 @@ section.boxPosts.expanded .posts_grid_escondido{
         align-items: center;
         height: 90vh;
     }
-    .boxCarrossel h4{
+    .boxCarrossel h2{
         padding: 0;
         font-size: 50px;
     }
+
 }
 /*------------------------------------------------------------*/

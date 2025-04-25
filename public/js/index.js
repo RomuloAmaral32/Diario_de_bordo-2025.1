@@ -5,7 +5,7 @@ Pensei em fazer dessa forma por enquanto já que ainda não estamos mexendo com 
 ainda.
 */
 
-document.getElementById('verMais').addEventListener('click', function () {
+/*document.getElementById('verMais').addEventListener('click', function () {
   const sectionPost = document.querySelector('.boxPosts');
   const postEscondido = document.querySelector('.posts_grid_escondido');
 
@@ -17,7 +17,7 @@ document.getElementById('verMais').addEventListener('click', function () {
       postEscondido.style.display = 'none';
       this.textContent = "Ver mais";
   }
-});
+});*/
 
 //-----------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ das bolinhas logo abaixo do carrossel. Tentei implementar a função de arrastar
 mas estava dando diversos problemas
 */
 
-const carrossel = document.querySelector('.carrossel');
+/*const carrossel = document.querySelector('.carrossel');
 const imagens = document.querySelectorAll('.carrossel .imagem');
 const indicadoresContainer = document.querySelector('.indicadores');
 const setaEsquerda = document.querySelector('.setaEsquerda');
@@ -39,7 +39,7 @@ let paginaAtual = 0;
 
 function atualizarConfiguracaoCarrossel() {
   const larguraCarrossel = carrossel.offsetWidth;
-  const larguraImagem = imagens[0].offsetWidth + 16;
+  const larguraImagem = imagens[0].offsetWidth;
   imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
   totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
 
@@ -114,4 +114,4 @@ window.addEventListener('load', () => {
   atualizarConfiguracaoCarrossel();
 });
 
-//----------------------------------------------------------------- 
+//----------------------------------------------------------------- */
