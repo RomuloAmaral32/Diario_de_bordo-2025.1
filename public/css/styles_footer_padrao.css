@@ -46,7 +46,10 @@
     font-size: 12px;
     line-height: 1rem;
     width: 25%;
-    min-width: 320px;
+    gap : 0.7rem;
+    /*padding-top: 1rem;*/
+    margin-top: 1rem;
+    /*min-width: 320px;*/
 }
     
 .titulo-footer{
@@ -99,8 +102,8 @@
     }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     .div-footer-textopadrao {
         min-width: 100%;
     }
-}
+}*/
