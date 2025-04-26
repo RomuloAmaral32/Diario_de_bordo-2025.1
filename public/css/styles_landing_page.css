@@ -174,7 +174,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 .carrossel{
     padding-left: 30px;
     display: flex;
-    justify-content: center;
     gap: 45px;
     overflow: hidden;
     scroll-behavior: smooth;

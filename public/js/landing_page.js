@@ -97,6 +97,7 @@ function moverParaDireita() {
   console.log(totalPaginas)
   if (paginaAtual >= totalPaginas) {
     paginaAtual = 0;
+    carrossel.scrollLeft = 0;
   } 
   const novaPosicao = paginaAtual * imagens[0].offsetWidth * imagensPorPagina;
   carrossel.scrollTo({ left: novaPosicao, behavior: 'smooth' });
