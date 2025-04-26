@@ -8,7 +8,8 @@ body{
     font-family: 'Shantell Sans',sans-serif;
     font-weight: 400;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    display: flex;
 }
 
 
@@ -168,6 +169,14 @@ body h2{
 }
 
 @media (max-width: 768px) {
+
+    body{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
     .login_page_container{
         width: 50%;
         height: auto;
