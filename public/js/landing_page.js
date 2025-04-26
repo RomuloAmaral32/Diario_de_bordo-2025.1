@@ -27,7 +27,7 @@ das bolinhas logo abaixo do carrossel. Tentei implementar a função de arrastar
 mas estava dando diversos problemas
 */
 
-/*const carrossel = document.querySelector('.carrossel');
+const carrossel = document.querySelector('.carrossel');
 const imagens = document.querySelectorAll('.carrossel .imagem');
 const indicadoresContainer = document.querySelector('.indicadores');
 const setaEsquerda = document.querySelector('.setaEsquerda');
@@ -37,17 +37,22 @@ let imagensPorPagina = 3;
 let totalPaginas = 0;
 let paginaAtual = 0;
 
+// Atualiza as configurações do carrossel
 function atualizarConfiguracaoCarrossel() {
   const larguraCarrossel = carrossel.offsetWidth;
   const larguraImagem = imagens[0].offsetWidth;
+  
+  //Calculo quantas imagens cabem na tela
   imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
-  totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
 
+  //Calculo do número total das páginas
+  totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
+  
   criarIndicadores();
   atualizarIndicadores();
-  ativarSetas();
 }
 
+// Cria os indicadores de navegação
 function criarIndicadores() {
   indicadoresContainer.innerHTML = '';
   for (let i = 0; i < totalPaginas; i++) {
@@ -63,6 +68,7 @@ function criarIndicadores() {
   }
 }
 
+// Atualiza aparência dos indicadores
 function atualizarIndicadores() {
   const bolinhas = document.querySelectorAll('.bolinha');
   bolinhas.forEach((b, i) => {
@@ -74,44 +80,39 @@ function atualizarIndicadores() {
   });
 }
 
-function ativarSetas() {
-  if (paginaAtual === 0) {
-    setaEsquerda.style.display = 'none';
-  } else {
-    setaEsquerda.style.display = 'block';
-  }
-
-  if (paginaAtual === totalPaginas - 1) {
-    setaDireita.style.display = 'none';
-  } else {
-    setaDireita.style.display = 'block';
-  }
+// Função para a esquerda
+function moverParaEsquerda() {
+  paginaAtual--;
+  if (paginaAtual < 0) {
+    paginaAtual = totalPaginas - 1;
+  } 
+  const novaPosicao = paginaAtual * imagens[0].offsetWidth * imagensPorPagina;
+  carrossel.scrollTo({ left: novaPosicao, behavior: 'smooth' });
+  atualizarIndicadores();
 }
 
-setaEsquerda.addEventListener('click', () => {
-  if (paginaAtual > 0) {
-    paginaAtual--;
-    carrossel.scrollLeft -= carrossel.offsetWidth;
-    atualizarIndicadores();
-    ativarSetas();
-  }
-});
+// Função para a direita
+function moverParaDireita() {
+  paginaAtual++;
+  console.log(totalPaginas)
+  if (paginaAtual >= totalPaginas) {
+    paginaAtual = 0;
+  } 
+  const novaPosicao = paginaAtual * imagens[0].offsetWidth * imagensPorPagina;
+  carrossel.scrollTo({ left: novaPosicao, behavior: 'smooth' });
 
-setaDireita.addEventListener('click', () => {
-  if (paginaAtual < totalPaginas - 1) {
-    paginaAtual++;
-    carrossel.scrollLeft += carrossel.offsetWidth;
-    atualizarIndicadores();
-    ativarSetas();
-  }
-});
+  atualizarIndicadores();
+}
 
-window.addEventListener('resize', () => {
-  atualizarConfiguracaoCarrossel();
-});
+setaEsquerda.addEventListener('click', moverParaEsquerda);
+setaDireita.addEventListener('click', moverParaDireita);
 
-window.addEventListener('load', () => {
-  atualizarConfiguracaoCarrossel();
-});
+// Atualiza as configurações ao redimensionar a tela
+window.addEventListener('resize', atualizarConfiguracaoCarrossel);
 
-//----------------------------------------------------------------- */
+// Atualiza as configurações ao carregar a página
+window.addEventListener('load', atualizarConfiguracaoCarrossel);
+
+
+
+//-----------------------------------------------------------------
