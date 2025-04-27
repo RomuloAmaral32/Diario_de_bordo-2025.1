@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
-/*Body*/
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  align-items:center;
+  justify-content:center;
+  display: flex;  
+  flex-direction: column;
 }
