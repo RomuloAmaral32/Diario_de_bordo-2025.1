@@ -19,25 +19,26 @@ body {
 }
 
 #box-background .real-box{
-    border: 1px solid red;
     border-radius: 2rem;
     padding: 20px;
     padding-top: 15px;
     padding-bottom: 50px;
     width: 400px;
     height: 300px;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(249, 249, 249, 0.4) )
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(249, 249, 249, 0.4) );
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.3);
 }
 
 #exit{
     text-align: end;
     border: 1px solid red;
     height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 #exit img{
     width: 1.3rem;
+    height: 1.2rem;
 }
 
 
@@ -55,7 +56,7 @@ body {
 
 .dashboard .logo img{
     border: 1px solid red;
-    width: 50px;
+    width: 60px;
 }
 
 #button-container{
