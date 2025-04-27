@@ -82,6 +82,11 @@ body {
     text-decoration: none;
     height: 80px;
     box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+    transition: 0.2;
+}
+
+#button-container .button:hover{
+    background: linear-gradient(rgb(97, 148, 184), rgb(57, 90, 131));
 }
 
 .button h3{
