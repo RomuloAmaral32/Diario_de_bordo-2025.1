@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Postagens</title>
     <link rel="stylesheet" href="../../public/css/style_post_list_admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../../../public/js/post_list_admin.js"></script>
+    
 
         <!-- Link para as fontes do Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,23 +17,56 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-
-
-
 <body>
-   <header>
-    <a>TESTE</a>
+  <main>
+    <!--<a>TESTE</a>-->
       <div class = "tabeladepostagem-header">
         <div class="header-logo">
             <img src="../../../public/assets/logo_navbar.png" alt="Logo Diario de Bordo" class="header-logo">
-         <h1>Tabela de Postagens</h1>
-        
-         <div class="botoes-nova-publicacao">
-            <a href="URL" class="botoes-navbar-a"><div>Nova Publicação</div></a>
-        </div>
+         <h1>Tabela de Postagens</h1> <!-- Titulo da tlea-->
+      </div>
+      <div class="btn-nova-publicacao" onclick="modalNewPost(newPost)"> <!-- Botão para Nova Publicação (falta ver como inclui a logo junto dele)-->
+          <p>Nova</p> 
+          <i class="bi bi-plus-circle"></i> 
+          <!--<a href="URL" class="btn-navbar-a"><div>Nova Publicação</div></a>  nome do botao-->
+      </div>
+      <div class="container-postagem">
+        <table>
+          <thead>
+            <div class="container-search">
+              <div id="div-pesquisar"> <!-- Div para o campo de pesquisa-->
+                <input type="text" id="search-input" placeholder="Pesquisar"> <!-- Campo para pesquisar-->
+                <i class="bi bi-search"></i> <!-- Icone de adcionar nova postagem--> <!-- Botão de pesquisa-->
+              </div>
+            </div>
+            <tr style="border-bottom: 3px solid #F0D003;">
+              
+              <th class="id">ID</th>
+              <th class="titulo-post">Título da Postagem</th>
+              <th class="data-post">Autor da Postagem</th>
+              <th class="data-post">Data da Criação</th>
+              <th class="acoes-post">Ações</th>    
+         </thead>
+          <tbody> 
+            <tr> 
+             
+              <td>1</td>
+              <td>Ibitipoca</td>
+              <td>Ana Freitas</td>
+              <td>23/04/2025</td>
+              <td>
+                <div class="acoes">
+                  <div class="visualizar">
+                    <i class="bi bi-eye"></i> 
+                  </div>
+                  <div class="editar"> 
+                    <i class="bi bi-pencil"></i> 
+                  </div>
+                  <div class="excluir"> 
+                    <i class="bi bi-trash"></i> 
+                  </div>
+    </header>
 
-   </header>
-
+  </main>
 </body>
-
 </html>
