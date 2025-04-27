@@ -13,8 +13,7 @@ body{
     width: 100%;
     height: 100px;
     background: linear-gradient(to right, rgba(113, 152, 201, 1) ,rgba(154, 191, 218, 1) ,rgba(196, 231, 235, 1) );
-    position: relative;
-    
+    position: relative;   
 }
 .logo
 { 
@@ -98,6 +97,7 @@ body{
     border-radius: 16px;
 }
 .coluna{
+   
 
     
 }
@@ -127,4 +127,17 @@ body{
 .manage_icon_edit
 {
     width: 50%;
+}
+.icon:hover{
+    
+    transform: scale(1.1);
+
+
+}
+.manage_icon:hover{
+    transform:scale(1.1);
+}
+.manage_icon_edit:hover{
+    
+    transform: scale(1.1);
 }
