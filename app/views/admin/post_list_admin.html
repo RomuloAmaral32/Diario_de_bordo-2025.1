@@ -20,20 +20,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-      <div class = "tabeladepostagem-header">
-        <div class="header">
-          <img src="../../../public/assets/logo_navbar.png" alt="Logo Diario de Bordo" class="header">
-          <h1>Tabela de Postagens</h1> <!-- Titulo da tlea-->
-          <div class="btn-nova-publicacao" onclick="modalNewPost(newPost)"> <!-- Botão para Nova Publicação (falta ver como inclui a logo junto dele)-->
-          <p>Nova</p> 
-          <span class="material-symbols-outlined">add_circle</span>
-          <!--<a href="URL" class="btn-navbar-a"><div>Nova Publicação</div></a>  nome do botao-->
+
+  <header class="cabecalho-post">
+        <div class="logo">
+          <img src="../../../public/assets/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
         </div>
+
+        <div class="titulo-post">
+          <h1>Tabela de Postagens</h1>
         </div>
-      </div>
-     
-      <div class="container-postagem">
+    
+        <div class="div-btn">
+          
+            <a href="URL" class="btn-nova-post" style="text-decoration: none !important;"><div class="btn-nova" style="color: #17191c;">Nova</div></a>
+            <span class="material-symbols-outlined">add_circle</span>
+           
+        </div>
+  </header> 
+
+   
+
+        <div class="container-postagem">
         <table>
           <thead>
             <div class="container-search">
@@ -68,7 +75,7 @@
                   <div class="excluir"> 
                     <span class="material-symbols-outlined">delete</span>
                   </div>
-    </header>
+   
 
   </main>
 </body>

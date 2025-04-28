@@ -5,15 +5,61 @@
   box-sizing: border-box;
 }
 
-.header {
-  background-color: #1a4c7f;
-  padding: 20px;
+.cabecalho-post{
+  min-height: 60px;
+  display: flex;
   text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #C4E7EB 10%, #739ACA 100%);
+  align-items: center; 
+  width: 100%; 
+}
+
+.titulo-post{
+  font-size: 14px;
+  color: #17191c;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 0.5rem;
 }
 
 
-.tabeladepostagem-header{
+.logo{
+  display: flex;
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.div-btn{
+  border-width: thin;
+  background-color: #EEC556;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 10%;
+  border-radius: 32px;
+  border-color: #c4d6eb !important;
+  border: 2px solid;
+  padding: 0.3rem 0.5rem; 
+  min-width: max-content;
+  gap: 1rem;
+  font-size: 14px;
   
-  font-size: 2em;
+}
+
+.div-btn:hover{
+  background-color: #a7cfe6;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000000 !important;
+  font-family: 'open sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  
+ 
 
 }
