@@ -59,7 +59,149 @@
   font-family: 'open sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
+}
+
+.container-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.3rem 0.5rem;    
+  margin-top: 15px;
+  margin-right: 2rem;
+  gap: 1rem;
+  font-size: 14px;
+ 
+}
+/*
+.btn-pesquisar{
+  border-width: thin;
+  background-color: #EEC556;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  width: 20% !important;
+  border-radius: 32px;
+  border-color: #c4d6eb !important;
+  border: 2px solid;
+  padding: 0.3rem 0.5rem; 
+  gap: 5rem;
+  font-size: 14px;
+  
+}*/
+
+#btn-pesquisar {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Alinha o container à direita */
+  position: relative;
+  background:#8fbaec;
+  border: 2px solid #c4d6eb !important;
+  border-radius: 16px;
+  cursor: pointer;
+  max-width: 200px; /* Ajuste conforme necessário */
+}
+
+#txtBusca {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  outline: none;
+  color: #333;
+  flex-grow: 1;
+}
+
+#btn-pesquisar .material-symbols-outlined {
+  position: absolute;
+  right: 8px;
+  color: #686868;
+}
+
+#btn-pesquisar:hover {
+  background: #787777;
+  border-radius: 20px;
+}
+
+#txtBusca::placeholder {
+  color: #686868;
+}
+
+.container-postagem{
+  display: flex;
+  flex-direction: column;
+  background-color: #739ACA;
+  width: 100%;
+  padding: 4rem;
   
  
+  border-radius: 16px;
+  text-align: center;
+  justify-content: center;
+  
+  
+}
 
+#linha-tabela{
+  height: 50px;
+}
+
+.icones-acoes{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+
+}
+
+.icones{
+  background-color: white; 
+  border-radius: 40%; 
+  border: 2px solid #49b410; 
+  cursor: pointer; 
+  display: flex; 
+  padding: 2px 5px; 
+}
+
+.container-paginacao{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+}
+
+.seta{
+  color: #F0A503;
+}
+
+.btn-paginacao{
+  border-radius: 40%;
+  padding: 2px 7px;
+  border: none;
+  
+}
+
+.btn-paginacao:hover{
+  background-color: #F0A503
+}
+
+
+@media (max-width: 768px) {
+  .cabecalho-post{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-search{
+    width: 100%;
+    transform: translate(0%, 0);
+    margin-right: 0;
+  }
+  .div-btn{
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
 }
