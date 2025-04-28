@@ -160,7 +160,7 @@ button {
 
 @media screen and (max-width: 912px) {
     .sidebar{
-        height: 40vh;
+        height: 80vh;
         width: 15vw;
     }
 
@@ -175,13 +175,20 @@ button {
 
     .sidebar.fechada{
         width: 6vw;
+        height: 8.5vh;
+        overflow: hidden;
+    }
+
+    #menu{
+        margin-top: -10px;
     }
 }
+
 
 @media screen and (max-width: 854px) {
     .sidebar.fechada{
         width: 7.3vw;
-        height: 4.6vh;
+        height: 9vh;
         overflow: hidden;
     }
     #menu{
@@ -196,7 +203,7 @@ button {
 
     .sidebar{
         width: 20vw;
-        height: 40vh;
+        height: 70vh;
     }
 
     .sidebar .conteudo .itens {
@@ -216,7 +223,11 @@ button {
 
     .sidebar.fechada{
         width: 8vw;
-        height: 6vh;
+        height: 8vh;
+    }
+
+    .sidebar{
+        height: 70vh;
     }
 }
 
