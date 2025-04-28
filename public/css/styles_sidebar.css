@@ -1,3 +1,5 @@
+/*---------------- Sidebar --------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
@@ -20,6 +22,11 @@
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
+    transition: width 0.3s;
+}
+
+.sidebar.fechada {
+    width: 5vw;
 }
 
 button {
@@ -57,8 +64,13 @@ button {
 
 .sidebar .conteudo .descricao {
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
+    transition: opacity 0.3s;
+}
+
+.sidebar.fechada .descricao {
+    opacity: 0;
 }
 
 .sidebar .conteudo .itens {
@@ -103,3 +115,17 @@ button {
     background-color: #acd5dd;
     border-radius: 8px;
 }
+
+#logout .descricao {
+    opacity: 1;
+}
+
+.sidebar.fechada #logout .descricao {
+    display: none;
+}
+
+/*---------------------------------------------------------*/
+
+/*---------------- Responsividade -------------------------*/
+
+/*---------------------------------------------------------*/
