@@ -22,10 +22,11 @@
 .boxIntroducao h1{
         padding-top: 30px;
         font-size: 36px;
-        font-family: "Shantell Sans";
+        font-family: "Open Sans";
         font-weight: bolder;
-        color: #019308;
+        color: #0062dc;
         text-align: center;
+        text-shadow: 3px 1px 2px lightgray;
 }
 
 .boxIntroducao .textoIntroducao{
@@ -45,7 +46,7 @@
         width: 55.7vw;
         height: 16.8vh;
         font-size: 28px;
-        font-family: "Open Sans";
+        font-family: "Shantell Sans";
         font-weight: 200;
         word-spacing: 5px;
 }
@@ -189,11 +190,11 @@ section.boxPosts.expanded .posts_grid_escondido{
     user-select: none;
 
 }
-.boxCarrossel .imagem{
+
+.boxCarrossel .bloco .carrossel img{
     cursor: pointer;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    width: 29vw;
+    height: 50vh;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -341,7 +342,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .carrossel {
         flex-wrap: nowwrap;
-        justify-content: center;
         gap: 23 px;
         padding-left: 0;
     }

@@ -40,7 +40,8 @@ let paginaAtual = 0;
 // Atualiza as configurações do carrossel
 function atualizarConfiguracaoCarrossel() {
   const larguraCarrossel = carrossel.offsetWidth;
-  const larguraImagem = imagens[0].offsetWidth;
+  const larguraImagem = imagens[0].getBoundingClientRect().width;
+
   
   //Calculo quantas imagens cabem na tela
   imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
@@ -85,25 +86,23 @@ function moverParaEsquerda() {
   paginaAtual--;
   if (paginaAtual < 0) {
     paginaAtual = totalPaginas - 1;
-  } 
-  const novaPosicao = paginaAtual * imagens[0].offsetWidth * imagensPorPagina;
+  }
+  const novaPosicao = Math.min(paginaAtual * carrossel.offsetWidth, carrossel.scrollWidth - carrossel.offsetWidth);
   carrossel.scrollTo({ left: novaPosicao, behavior: 'smooth' });
   atualizarIndicadores();
 }
 
-// Função para a direita
+//função para a direita
 function moverParaDireita() {
   paginaAtual++;
-  console.log(totalPaginas)
   if (paginaAtual >= totalPaginas) {
     paginaAtual = 0;
-    carrossel.scrollLeft = 0;
-  } 
-  const novaPosicao = paginaAtual * imagens[0].offsetWidth * imagensPorPagina;
+  }
+  const novaPosicao = Math.min(paginaAtual * carrossel.offsetWidth, carrossel.scrollWidth - carrossel.offsetWidth);
   carrossel.scrollTo({ left: novaPosicao, behavior: 'smooth' });
-
   atualizarIndicadores();
 }
+
 
 setaEsquerda.addEventListener('click', moverParaEsquerda);
 setaDireita.addEventListener('click', moverParaDireita);
