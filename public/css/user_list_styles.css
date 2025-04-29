@@ -4,6 +4,92 @@ body{
     background-color: rgba(241, 241, 241, 1);
 }
 
+.new_box{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+   position: absolute;
+   top: 30px;
+   right: 25px;
+}
+.button_new{
+    width: 250px;
+    height: 45px;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shantell Sans", cursive;
+    background-color: rgba(238, 194, 74, 0.93);
+    border: 1px;
+    border-radius: 16px;
+    font-size: 16px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
+}
+.plus_icon
+{
+    padding-left: 5px;
+}
+.search_button_container{
+    
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
+    position: absolute;
+    top: 150px;
+    right: 400px;
+
+
+}
+.search_button{
+    display: flex;
+    align-items: center;
+    flex: row;
+    justify-content: ceneter;
+
+    width: 250px;
+    height: 40px;
+    background-color: rgba(196, 231, 235, 0.5);
+    border: 1px solid rgba(113, 152, 201, 1);
+    border-radius: 16px;
+    position: relative;
+    font-family: "Shantell Sans", cursive;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.10);
+}
+.lupa_icon
+{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.input_search
+{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: "Shantell Sans", cursive;
+    font-size: 14px;
+    color: black;
+    
+    
+}
+.input_search::placeholder{
+    padding-left: 10px;
+    color: black;
+}
+
+
 .top_tittle{
     
     display: flex;
