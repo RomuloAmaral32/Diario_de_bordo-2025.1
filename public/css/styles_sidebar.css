@@ -145,16 +145,28 @@ button {
 
 @media screen and (max-width: 1024px) {
     .sidebar .icone{
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
     }
 
     .sidebar .conteudo .descricao{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .sidebar.fechada{
         width: 6vw;
+    }
+}
+
+@media screen and (max-width: 1204px) {
+    .sidebar{
+        width: 30vh;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .sidebar.fechada{
+        width: 6.4vw;
     }
 }
 
@@ -184,6 +196,11 @@ button {
     }
 }
 
+@media screen and (max-width: 860px) {
+    .sidebar.fechada{
+        width: 7vw;
+    }
+}
 
 @media screen and (max-width: 854px) {
     .sidebar.fechada{
@@ -223,11 +240,44 @@ button {
 
     .sidebar.fechada{
         width: 8vw;
-        height: 8vh;
+        height: 8.8vh;
     }
 
     .sidebar{
         height: 70vh;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .sidebar.fechada{
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 731px) {
+    .sidebar.fechada{
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .sidebar.fechada{
+        width: 9vw;
+    }
+    .sidebar{
+        width: 28vh;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .sidebar.fechada{
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sidebar.fechada{
+        width: 11vw;
     }
 }
 
@@ -265,10 +315,39 @@ button {
     }
 }
 
+@media screen and (max-width: 523px) {
+    .sidebar.fechada{
+        width: 12vw;
+        height: 9vh;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .sidebar .icone{
+        width: 15px;
+        height: 15px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 12px
+    }
+
+    .sidebar.fechada{
+        width: 11vw;
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width: 467px){
+    .sidebar.fechada{
+        width: 12vw;
+    }
+}
+
 @media screen and (max-width: 431px) {
     .sidebar.fechada{
         width: 13vw;
-        height: 6vh;
+        height: 8vh;
         overflow: hidden;
     }
     #menu{
@@ -282,7 +361,7 @@ button {
 
     .sidebar{
         width: 30vw;
-        height: 40vh;
+        height: 50vh;
     }
 
     .sidebar .conteudo .itens {
@@ -297,7 +376,7 @@ button {
 @media screen and (max-width: 412px) {
     .sidebar.fechada{
         width: 13vw;
-        height: 6vh;
+        height: 8vh;
         overflow: hidden;
     }
     #menu{
@@ -311,7 +390,7 @@ button {
 
     .sidebar{
         width: 30vw;
-        height: 40vh;
+        height: 50vh;
     }
 
     .sidebar .conteudo .itens {
@@ -330,6 +409,10 @@ button {
 @media screen and (max-width: 391px) {
     .sidebar{
         width: 33vw;
+    }
+
+    .sidebar.fechada{
+        width: 14vw;
     }
 }
 
@@ -357,7 +440,7 @@ button {
 
     .sidebar.fechada{
         width: 15vw;
-        height: 7vh;
+        height: 8.4vh;
     }
 
     .sidebar{
@@ -388,7 +471,7 @@ button {
 
     .sidebar{
         width: 35vw;
-        height: 40vh;
+        height: 60vh;
     }
 
     .sidebar .conteudo .itens {
@@ -401,6 +484,23 @@ button {
 
     #logout .descricao{
         padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 311px) {
+    .sidebar{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 268px) {
+    .sidebar .icone{
+        width: 13px;
+        height: 13px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 9px;
     }
 }
 /*---------------------------------------------------------*/
