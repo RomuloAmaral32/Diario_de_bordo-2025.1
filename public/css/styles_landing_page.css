@@ -167,15 +167,15 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 .bloco{
     padding-left: 16px;
+    padding-right: 16px;
     max-width: 1500px;
     width: 100%;
     position: relative;
 }
 
 .carrossel{
-    padding-left: 15px;
     display: flex;
-    gap: 45px;
+    gap: 50px;
     overflow: hidden;
     scroll-behavior: smooth;
     
@@ -210,7 +210,9 @@ section.boxPosts.expanded .posts_grid_escondido{
     background-color: #fff;
     font-size: 25px;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 50px;
     border-radius: 50%;
     cursor: pointer;
@@ -250,13 +252,23 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 /*-----------------Responsividade -----------------------*/
 
+@media screen and (max-width:1248px){
+    .boxIntroducao{
+        height: 60vh;
+    }
+
+    .boxPosts{
+        height: 240vh;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .post_grid{
         max-width: 1100px;
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1130px) {
 
     .boxIntroducao .textoIntroducao {
         flex-direction: column;
@@ -277,9 +289,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxPosts {
         padding-top: 150px;
+        height: 380vh;
     }
 
-    .post_grid{
+    .post_grid, .posts_grid_escondido{
         grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
         max-width: 900px;
@@ -290,16 +303,16 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxCarrossel {
-        height: auto;
+        height: 90vh;
     }
 
     .carrossel {
         grid-auto-columns: calc(100% / 2 - 16px);
     }
 
-    .imagem {
-        width: 45vw;
-        height: auto;
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 28vw;
+        height: 50vh;
     }
 
     .setaEsquerda, .setaDireita {
@@ -317,6 +330,9 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 12px;
     }
     
+    .bloco{
+        gap: 40px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -333,28 +349,42 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 430vh;
+        height: 390vh;
     }
 
     .post_grid, .posts_grid_escondido{
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .carrossel {
-        flex-wrap: nowwrap;
-        gap: 23 px;
-        padding-left: 0;
+        max-width: 960px;
     }
 
     .boxCarrossel{
-        height: 110vh;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 27vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1004px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 900px;
     }
 }
 
 @media screen and (max-width: 914px){
 
     .boxIntroducao{
-        height: 30vh;
+        height: 60vh;
     }
     .boxIntroducao h1{
         font-size: 40px;
@@ -369,7 +399,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 180vh;
+        height: 350vh;
     }
 
     #verMais{
@@ -382,6 +412,12 @@ section.boxPosts.expanded .posts_grid_escondido{
 @media screen and (max-width: 913px){
     .boxCarrossel{
         height: 85vh;
+    }
+}
+
+@media (max-width: 865px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 820px;
     }
 }
 
@@ -403,7 +439,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .post_grid, .posts_grid_escondido{
-        max-width: 810px;
+        max-width: 790px;
     }
 
     .boxPosts h2{
@@ -416,11 +452,6 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 80vh;
     }
 
-    .boxCarrossel .bloco{
-        padding: 0;
-        justify-content: center;
-    }
-
     .boxCarrossel h2{
         padding: 30px;
         font-size: 40px;
@@ -430,9 +461,13 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .carrossel {
         flex-wrap: nowwrap;
-        justify-content: center;
         gap: 23 px;
         padding-left: 0;
+    }
+    
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 43vw;
+        height: 50vh;
     }
 
     #verMais{
@@ -457,7 +492,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao .textoIntroducao img{
-        width: 50vw;
+        width: 40vw;
     }
 
     .post_grid, .posts_grid_escondido{
@@ -466,7 +501,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 200vh;
+        height: 350vh;
     }
     .boxPosts h2{
         padding-left: 30px;
@@ -478,11 +513,6 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 80vh;
     }
 
-    .boxCarrossel .bloco{
-        padding: 0;
-        justify-content: center;
-    }
-
     .boxCarrossel h2{
         padding: 30px;
         font-size: 40px;
@@ -492,8 +522,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .carrossel {
         flex-wrap: nowwrap;
-        justify-content: center;
-        gap: 23 px;
+        gap: 40px;
         padding-left: 0;
     }
 
@@ -505,9 +534,15 @@ section.boxPosts.expanded .posts_grid_escondido{
     
 }
 
+@media screen and (max-width: 854px) {
+    .boxIntroducao{
+        height: 120vh;
+    }
+}
+
 @media screen and (max-width: 769px) {
     .boxIntroducao{
-        height: 65vh;
+        height: 100vh;
     }
 
     .boxIntroducao h1{
@@ -531,23 +566,18 @@ section.boxPosts.expanded .posts_grid_escondido{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 210vh;
+        height: 350vh;
     }
     .boxPosts h2{
         font-size: 40px;
     }
 
     .boxCarrossel{
-        padding-top: 90px;
+        padding-top: 60px;
         height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .boxCarrossel .bloco{
-        padding: 0;
-        justify-content: center;
     }
 
     .boxCarrossel h2{
@@ -557,19 +587,88 @@ section.boxPosts.expanded .posts_grid_escondido{
         
     }
 
-    .carrossel {
-        flex-wrap: nowwrap;
-        justify-content: center;
-        gap: 23 px;
-        padding-left: 0;
-    }
-
     #verMais{
         width: 28vw;
         height: 6vh;
         font-size: 23px;
     }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
+    }
     
+}
+
+@media (max-width: 755px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 710px;
+    }
+}
+
+@media (max-width: 732px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 690px;
+    }
+}
+
+@media (max-width: 711px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 670px;
+    }
+}
+
+@media (max-width: 695px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 660px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 630px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 600px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 35vh;
+    }
+
+    .boxPosts{
+        height: 320vh;
+    }
+}
+
+@media screen and (max-width: 613px) {
+     .post_grid, .posts_grid_escondido{
+        max-width: 570px;
+     }
+}
+
+@media screen and (max-width: 578px) {
+    .post_grid, .posts_grid_escondido{
+       max-width: 540px;
+    }
+}
+
+@media screen and (max-width:557px){
+    .post_grid, .posts_grid_escondido{
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .boxPosts{
+        height: 300vh;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -585,7 +684,7 @@ section.boxPosts.expanded .posts_grid_escondido{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 670vh;
+        height: 730vh;
     }
     
     .boxPosts h2{
@@ -611,6 +710,55 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 6vh;
         font-size: 20px;
     }
+
+    .bloco{
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    
+    .carrossel{
+        scroll-snap-type: x mandatory;
+        scroll-padding: center;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        width: 90vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+
+}
+
+@media screen and (max-width: 515px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 470px;
+    }
+}
+
+@media screen and (max-width:482px) {
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 88vw;
+        height: 55vh;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .post_grid, .posts_grid_escondido{
+       max-width: 430px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+}
+
+@media screen and (max-width: 440px) {
+    .post_grid, .posts_grid_escondido{
+       max-width: 390px;
+    }
 }
 
 @media screen and (max-width: 431px){
@@ -629,7 +777,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao{
-        height: 115vh;
+        height: 135vh;
     }
 
     .boxPosts{
@@ -640,7 +788,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .post_grid, .posts_grid_escondido{
-        max-width: 400px;
+        max-width: 390px;
     }
 
     .boxPosts h2{
@@ -649,24 +797,13 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     }
 
-    .boxCarrossel img{
-        width: 340px;
-        height: auto;
-    }
     .boxCarrossel{
-        padding-top: 90px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 60vh;
+        padding-top: 80px;
+        height: 70vh;
     }
     .boxCarrossel h2{
         padding: 0;
         font-size: 38px;
-    }
-
-    .boxCarrossel .bloco{
-        padding: 0;
     }
 
     #verMais{
@@ -675,11 +812,19 @@ section.boxPosts.expanded .posts_grid_escondido{
         font-size: 19px;
     }
 
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
+    }
+
 }
 
 @media screen and (max-width: 415px) {
+
+    .post_grid, .posts_grid_escondido{
+        max-width: 370px;
+    }
     .boxIntroducao{
-        height: 110vh;
+        height: 130vh;
     }
 
     .boxIntroducao h1{
@@ -698,12 +843,8 @@ section.boxPosts.expanded .posts_grid_escondido{
         font-size: 35px;
     }
 
-    .post_grid{
-        height: auto;
-    }
-
     .boxCarrossel{
-        height: 58vh;
+        height: 85vh;
     }
 
     .boxCarrossel h2{
@@ -711,8 +852,9 @@ section.boxPosts.expanded .posts_grid_escondido{
         padding: 10px;
     }
 
-    .boxCarrossel .bloco{
-        padding: 0;
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
+        object-fit: cover;
     }
 }
 
@@ -722,7 +864,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .post_grid, .posts_grid_escondido{
-        max-width: 380px;
+        max-width: 360px;
     }
 }
 
@@ -752,16 +894,12 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxCarrossel{
-        height: 58vh;
+        height: 85vh;
     }
 
-    .boxCarrossel h2{
-        font-size: 32px;
-        padding: 10px;
-    }
-
-    .boxCarrossel .bloco{
-        padding: 0;
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 87vw;
+        height: 40vh;
     }
 }
 
@@ -789,11 +927,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .post_grid, .posts_grid_escondido{
         max-width: 340px;
-        height: auto;
     }
 
     .boxPosts{
-        height: 580vh;
+        height: 600vh;
     }
 
     #verMais{
@@ -809,11 +946,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxCarrossel{
         padding-top: 20px;
-        height: 68vh;   
-    }
-
-    .boxCarrossel .bloco{
-        padding: 0;
+        height: 75vh;
     }
 }
 
@@ -828,10 +961,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxIntroducao .textoIntroducao p{
         font-size: 25px;
-    }
-
-    .boxPosts{
-        height: auto;
     }
 
     .boxPosts h2{
@@ -854,7 +983,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxCarrossel{
-        height: 65vh;
+        height: 75vh;
     }
 
     .boxCarrossel h2{
@@ -866,6 +995,12 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 8vh;
         font-size: 14px;
     }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 85vw;
+        height: 40vh;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 344px) {
@@ -873,6 +1008,111 @@ section.boxPosts.expanded .posts_grid_escondido{
         width: 28vw;
         height: 5vh;
         font-size: 14px;
+    }
+
+    .boxIntroducao{
+        height: 105vh;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 280px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 84vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 292px) {
+    .post_grid, .posts_grid_escondido{
+        max-width: 250px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        width: 80vw;
+        height: 35vh;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 264px) {
+    .boxIntroducao{
+        height: 120vh;
+    }
+
+    .boxIntroducao h1{
+        padding-left: 10px;
+    }
+
+    .boxIntroducao .textoIntroducao img{
+        padding-left: 25px;
+    }
+
+    .post_grid, .posts_grid_escondido{
+        padding-left: 10px;
+        max-width: 210px;
+    }
+
+    .boxPosts .post_grid .card .descricao{
+        font-size: 13px;
+    }
+
+    .boxPosts .post_grid .card .autor{
+        font-size: 14px;
+    }
+
+    .boxPosts .post_grid .card h3{
+        font-size: 20px;
+    }
+
+    .boxPosts .posts_grid_escondido .card .descricao{
+        font-size: 13px;
+    }
+
+    .boxPosts .posts_grid_escondido .card .autor{
+        font-size: 14px;
+    }
+
+    .boxPosts .posts_grid_escondido .card h3{
+        font-size: 20px;
+    }
+
+    #verMais{
+        font-size: 10px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        padding-left: 1px;
+        width: 81vw;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 232px) {
+    .boxIntroducao{
+        height: 140vh;
+    }
+}
+
+@media screen and (max-width: 176px) {
+    .boxIntroducao{
+        height: 155vh;
+    }
+}
+
+@media screen and (max-width: 145px) {
+    .boxIntroducao{
+        height: 175vh;
+    }
+}
+
+@media screen and (max-width: 129px) {
+    .boxIntroducao{
+        height: 195vh;
     }
 }
 /*------------------------------------------------------------*/
