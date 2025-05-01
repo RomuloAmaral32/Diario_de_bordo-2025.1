@@ -81,7 +81,6 @@ function atualizarIndicadores() {
   });
 }
 
-// Função para a esquerda
 function moverParaEsquerda() {
   paginaAtual--;
   if (paginaAtual < 0) {
@@ -92,7 +91,6 @@ function moverParaEsquerda() {
   atualizarIndicadores();
 }
 
-//função para a direita
 function moverParaDireita() {
   paginaAtual++;
   if (paginaAtual >= totalPaginas) {
@@ -107,10 +105,8 @@ function moverParaDireita() {
 setaEsquerda.addEventListener('click', moverParaEsquerda);
 setaDireita.addEventListener('click', moverParaDireita);
 
-// Atualiza as configurações ao redimensionar a tela
 window.addEventListener('resize', atualizarConfiguracaoCarrossel);
 
-// Atualiza as configurações ao carregar a página
 window.addEventListener('load', atualizarConfiguracaoCarrossel);
 
 
