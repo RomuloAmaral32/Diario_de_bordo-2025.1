@@ -1,21 +1,23 @@
-body{
+body {
     padding: 0;
     margin: 0;
     background-color: rgba(241, 241, 241, 1);
+    gap: 10px;
 }
 
-.new_box{
+.new_box {
     width: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-   position: absolute;
-   top: 30px;
-   right: 25px;
+    position: absolute;
+    top: 30px;
+    right: 25px;
 }
-.button_new{
+
+.button_new {
     width: 250px;
     height: 45px;
     display: flex;
@@ -29,31 +31,33 @@ body{
     font-size: 16px;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
 }
-.plus_icon
-{
+
+.plus_icon {
     padding-left: 5px;
 }
-.search_button_container{
-    
-    width: 300px;
-    height: 40px;
+
+.search_button_container {
+
+    width: 15%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
-    
-    position: absolute;
-    top: 150px;
-    right: 400px;
+
+    position: relative;
+
+    left: 65%;
+    margin-top: 4%;
 
 
 }
-.search_button{
+
+.search_button {
     display: flex;
     align-items: center;
     flex: row;
-    justify-content: ceneter;
+    justify-content: center;
 
     width: 250px;
     height: 40px;
@@ -64,16 +68,15 @@ body{
     font-family: "Shantell Sans", cursive;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.10);
 }
-.lupa_icon
-{
+
+.lupa_icon {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    
 }
-.input_search
-{
+
+.input_search {
     width: 100%;
     background: transparent;
     outline: none;
@@ -81,34 +84,37 @@ body{
     font-family: "Shantell Sans", cursive;
     font-size: 14px;
     color: black;
-    
-    
+
+
 }
-.input_search::placeholder{
+
+.input_search::placeholder {
     padding-left: 10px;
     color: black;
 }
+.input_search:focus::placeholder{
+    opacity: 0;
+}
 
-
-.top_tittle{
-    
+.top_tittle {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to right, rgba(113, 152, 201, 1) ,rgba(154, 191, 218, 1) ,rgba(196, 231, 235, 1) );
-    position: relative;   
+    height: auto;
+    background: linear-gradient(to right, rgba(113, 152, 201, 1), rgba(154, 191, 218, 1), rgba(196, 231, 235, 1));
+    position: relative;
 }
-.logo
-{ 
+
+.logo {
     width: 130px;
     height: 60px;
     padding-top: 20px;
     padding-left: 70px;
 }
-.top_text{
+
+.top_text {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -117,42 +123,41 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.list_container{
+.list_container {
 
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     width: 60%;
     height: 700px;
-    margin-top: 80px;
+    margin-top: auto;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);    
+    position: relative;
 
-    background: linear-gradient(to right,rgba(113, 152, 201, 1),rgba(56, 75, 99, 1));
+    left: 20%;
+
+
+    background: linear-gradient(to right, rgba(113, 152, 201, 1), rgba(56, 75, 99, 1));
     border: 1px;
     border-radius: 16px;
 }
 
-.user_obj
-{
+.user_obj {
     width: 80%;
-    margin-top: 25px;
+    margin-top: 15px;
     height: 5%;
     background-color: white;
     border: 1px solid white;
     border-radius: 16px;
 }
-.user_obj_tittle
-{
+
+.user_obj_tittle {
     width: 80%;
     margin-top: 0px;
     height: 2%;
@@ -160,18 +165,22 @@ body{
     border: 1px solid rgba(238, 194, 74, 0.93);
     border-radius: 16px;
 }
-.text{
+
+.text {
     font-family: "Shantell Sans", cursive;
 }
-.manage_buttons{
+
+.manage_buttons {
     width: 50%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 10px;
+
     left: 70%;
     transform: translate(70%);
 }
-.icon{
+
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,48 +191,431 @@ body{
     border: 1px;
     border-radius: 16px;
 }
-.coluna{
-   
 
-    
-}
-.fix
-{
+.coluna {}
+
+.fix {
     background-color: transparent;
     width: 60px;
     height: 100%;
 }
-.fix2{
+
+.fix2 {
     background-color: transparent;
     width: 10px;
     height: 100%;
 }
-.text2{
+
+.text2 {
     font-family: "Shantell Sans", cursive;
     position: center;
     text-align: left;
     left: 70%;
     transform: translate(100%);
 }
-.manage_icon
-{
+
+.manage_icon {
     width: 60%;
 }
 
-.manage_icon_edit
-{
+.manage_icon_edit {
     width: 50%;
 }
-.icon:hover{
-    
+
+.icon:hover {
+
     transform: scale(1.1);
 
 
 }
-.manage_icon:hover{
-    transform:scale(1.1);
-}
-.manage_icon_edit:hover{
-    
+
+.manage_icon:hover {
     transform: scale(1.1);
+}
+
+.manage_icon_edit:hover {
+
+    transform: scale(1.1);
+}
+
+.page_indicator {
+    width: 20%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+
+
+}
+
+.page_icons {
+    width: 42px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(215, 226, 240, 1);
+    border: 1px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: black;
+    font-family: "Shantell Sans", cursive;
+
+
+}
+
+#icon_1 {
+    background-color: rgba(238, 197, 86, 1);
+
+}
+
+.arrow {
+    width: 10%;
+    height: 30px;
+
+    background-image: url(/public/assets/arrow_esq.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+#arrow2 {
+    background-image: url(/public/assets/arrow_dir.png);
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 1024px) {
+
+    .new_box {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
+    .button_new {
+        width: 150px;
+        height: 45px;
+        display: flex;
+        flex: row;
+        align-items: center;
+        justify-content: center;
+        font-family: "Shantell Sans", cursive;
+        background-color: rgba(238, 194, 74, 0.93);
+        border: 1px;
+        border-radius: 16px;
+        font-size: 16px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .list_container {
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 70%;
+        height: 700px;
+        margin-top: auto auto auto auto;
+
+        position: relative;
+
+        left: 20%;
+
+
+        background: linear-gradient(to right, rgba(113, 152, 201, 1), rgba(56, 75, 99, 1));
+        border: 1px;
+        border-radius: 16px;
+    }
+
+    .top_tittle {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .lupa_icon {
+        width: 10%;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input_search {
+        width: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-family: "Shantell Sans", cursive;
+        font-size: 12px;
+        color: black;
+    }
+
+   
+
+    .text {
+        font-size: 14px;
+    }
+
+    .text2 {
+        font-size: 14px;
+    }
+
+    .top_text {
+        font-size: 16px;
+    }
+
+    .page_indicator {
+        width: 30%;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        top: 20px;
+
+
+    }
+
+    .page_icons {
+        width: 42px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgba(215, 226, 240, 1);
+        border: 1px;
+        border-radius: 60px;
+        text-decoration: none;
+        color: black;
+        font-family: "Shantell Sans", cursive;
+
+
+    }
+
+    .search_button_container {
+
+        width: 20%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        left: 65%;
+        margin-top: 4%;
+
+
+    }
+
+    .user_obj {
+        width: 90%;
+        margin-top: 25px;
+        height: 5%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 16px;
+    }
+
+    .user_obj_tittle {
+       
+        margin-top: 0px;
+        width: 90%;
+        height: 5%;
+     
+    }
+    .manage_icon {
+        width: 80%;
+        height: auto;
+    }
+
+    .manage_icon_edit {
+        width: 60%;
+        height: auto;
+    }
+
+    .manage_buttons {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+
+        left: 70%;
+        transform: translate(70%);
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 45px;
+        height: 30px;
+        background-color: rgba(240, 200, 90, 1);
+        border: 1px;
+        border-radius: 16px;
+
+    }
+
+}
+@media (max-width: 550px) {
+
+    .text {
+        font-size: 10px;
+    }
+
+    .text2 {
+        font-size: 10px;
+    }
+
+
+    .new_box {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
+    .button_new {
+        width: 100px;
+        height: 25px;
+        display: flex;
+        flex: row;
+        align-items: center;
+        justify-content: center;
+        font-family: "Shantell Sans", cursive;
+        background-color: rgba(238, 194, 74, 0.93);
+        border: 1px;
+        border-radius: 16px;
+        font-size: 16px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    .plus_icon{
+        width: 20px;
+
+    }
+
+
+    .page_indicator {
+        width: 60%;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        top: 20px;
+
+
+    }
+
+    .manage_icon {
+        width: 90%;
+        height: auto;
+    }
+
+    .manage_icon_edit {
+        width: 90%;
+        height: auto;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 35px;
+        height: 30px;
+        background-color: rgba(240, 200, 90, 1);
+        border: 1px;
+        border-radius: 16px;
+    }
+    .logo {
+        width: 120px;
+        
+        padding-left: 0px;
+    }
+    .top_text{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    .search_button_container {
+
+        width: 25%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        left: 65%;
+        margin-top: 4%;
+
+
+    }
+    .manage_buttons {
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 4px;
+
+        left: 70%;
+        transform: translate(70%);
+    }
+    .input_search::placeholder {
+        font-size: 10px;
+    }
+    .user_obj {
+        width: 90%;
+        margin-top: 25px;
+        height: 5%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 16px;
+    }
+
+    .user_obj_tittle {
+       
+        margin-top: 0px;
+        width: 90%;
+        height: 5%;
+     
+    }
+
+
+
 }
