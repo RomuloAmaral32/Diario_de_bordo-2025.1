@@ -715,20 +715,6 @@ section.boxPosts.expanded .posts_grid_escondido{
         padding-left: 30px;
         padding-right: 20px;
     }
-    
-    .carrossel{
-        scroll-snap-type: x mandatory;
-        scroll-padding: center;
-    }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        flex: 0 0 auto;
-        scroll-snap-align: center;
-        width: 90vw;
-        height: 60vh;
-        object-fit: cover;
-    }
-
 
 }
 
@@ -739,16 +725,15 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 
 @media screen and (max-width:482px) {
-    .boxCarrossel .bloco .carrossel .imagem img{
-        width: 88vw;
-        height: 55vh;
-        object-fit: cover;
-    }
 }
 
 @media screen and (max-width: 478px) {
     .post_grid, .posts_grid_escondido{
        max-width: 430px;
+    }
+
+    .boxPosts{
+        height: 700vh;
     }
 }
 
@@ -761,7 +746,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 }
 
-@media screen and (max-width: 431px){
+@media screen and (max-width: 432px){
 
     .boxIntroducao h1{
         font-size: 45px;
@@ -784,7 +769,7 @@ section.boxPosts.expanded .posts_grid_escondido{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 450vh;
+        height: 630vh;
     }
 
     .post_grid, .posts_grid_escondido{
@@ -811,11 +796,6 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 6vh;
         font-size: 19px;
     }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        height: 40vh;
-    }
-
 }
 
 @media screen and (max-width: 415px) {
@@ -850,11 +830,6 @@ section.boxPosts.expanded .posts_grid_escondido{
     .boxCarrossel h2{
         font-size: 35px;
         padding: 10px;
-    }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        height: 40vh;
-        object-fit: cover;
     }
 }
 
@@ -895,11 +870,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxCarrossel{
         height: 85vh;
-    }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        width: 87vw;
-        height: 40vh;
     }
 }
 
@@ -995,12 +965,6 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 8vh;
         font-size: 14px;
     }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        width: 85vw;
-        height: 40vh;
-        object-fit: cover;
-    }
 }
 
 @media screen and (max-width: 344px) {
@@ -1020,22 +984,11 @@ section.boxPosts.expanded .posts_grid_escondido{
         max-width: 280px;
     }
 
-    .boxCarrossel .bloco .carrossel .imagem img{
-        width: 84vw;
-        height: 40vh;
-        object-fit: cover;
-    }
 }
 
 @media screen and (max-width: 292px) {
     .post_grid, .posts_grid_escondido{
         max-width: 250px;
-    }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        width: 80vw;
-        height: 35vh;
-        object-fit: cover;
     }
 }
 
@@ -1083,12 +1036,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     #verMais{
         font-size: 10px;
-    }
-
-    .boxCarrossel .bloco .carrossel .imagem img{
-        padding-left: 1px;
-        width: 81vw;
-        height: 30vh;
     }
 }
 
