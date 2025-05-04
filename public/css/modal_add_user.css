@@ -1,5 +1,9 @@
 /* Modal New User*/
 
+body{
+    font-family: "Shantell Sans", cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,35 +11,54 @@
 }
 
 #modal_new_user{
-    width: 20%;
-    height: fit-content;
-    /* border-radius: 10px; */
-    display: flex;
-    flex-direction: column;
+    width: 36%;
+    border-radius: 10px; 
     position: absolute;
-    top: 43%;
-    left: 40%;
-    background: linear-gradient( rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
+    top: 37%;
+    left: 35%;
+    overflow: hidden;
+    border: solid 1px red;
+    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
 }
 
 #modal_new_user .top_new_user{
-    
-    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
-    border-radius: 10px;
-    /* border: solid 1px red; */
+  
 }
 
 #modal_new_user h1{
-    font-family: "Shantell Sans", cursive;
+    margin: 17px;
     font-weight: 430;
-    font-size: 35px;
+    font-size: 18px;
     text-align: center;
 }
 
 #modal_new_user .container_inputs{
+    display: flex;
+    flex-direction: column;
     border: solid 1px red;
     background-color: white;
     text-align: center;
 }
 
-/* Modal New User*/
+#modal_new_user .container_inputs .input_infos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    gap: 20px;
+    border: solid 1px red;
+}
+
+.buttons_modal_user{
+    gap: 30px;
+}
+
+.button{
+    width: 1.87rem;
+    height: 1.87rem;
+    text-decoration: none;
+    color: black;
+    background: white;
+}
