@@ -5,45 +5,48 @@
     box-sizing: border-box;
 }
 
-
+#modal-add-post{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .titulo-nova-postagem{
+    width: 100%;
+    height: 100px;
+    font-size: 8px;
     
-    font-size: 16px;
-    font-weight: 600;
     color: #131212;
-    margin-bottom: 1rem;
     justify-content: center;
     display: flex;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    flex-direction: column;
+    font-family: 'shantel', sans-serif;
+    flex-direction: row;
     align-items: center;    
-    padding: 1rem;
-    
+   
+    border-radius: 24px 24px 0 0;
     background: linear-gradient(to right, #79EDFF, #739ACA); 
-    margin-left: 400px;
-    margin-right: 400px;
+    
+   
     border-radius: 16 0 0 0;
-    
-    
     
 }
 
 .h1{
-    font-size: 2rem;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 1rem;
     width: 100%;
-  
-     
 }
 
 .container_modal_inputs{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 0 0 24px 24px;
     
 }
 
@@ -59,21 +62,20 @@
     padding: 1rem;
     gap: 30px;
    
-    
 }
 
 .btn_cancelar{
     background-color: #F0D003;
     padding: 0.8rem;
     border-radius: 32px;
-    border: none
+    border: none;
 }
 
 .btn_publicar{
     background-color: #F0D003;
     padding: 0.8rem;
     border-radius: 32px;
-    border: none
+    border: none;
 }
 
 
@@ -83,14 +85,14 @@
     padding: 0.3rem;
     border-radius: 8px;
     border: none;
-    background-color: #F0D003;
+    background-color: #FFF2CD;
     font-size: 12px;
     font-weight: 600;
     color: #131212;
     margin-bottom: 1rem;
     justify-content: center;
     display: flex;
-    text-align: center;
+    text-align:center;
     font-family: 'shantel', sans-serif;
 }
 
@@ -101,16 +103,42 @@
     padding: 1rem;
     border-radius: 8px;
     border: none;
-    background-color: #F0D003;
+    background-color: #FFF2CD;
+
     font-size: 16px;
     font-weight: 600;
     color: #131212;
     margin-bottom: 1rem;
     justify-content: center;
     display: flex;
-    text-align: center;
+    
     font-family: 'shantel', sans-serif;
 }
 
+.container_modal_inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #f1f1f1;
+    
+
+    
+}
 
 
+.image_input{
+    width: 100%;
+    height: 100px;
+  
+    border-radius: 8px;
+    border: none;
+    background-color: #FFF2CD;
+    margin-bottom: 1rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+   
+}
