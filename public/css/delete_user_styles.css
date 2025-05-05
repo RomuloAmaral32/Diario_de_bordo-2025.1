@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Shantell Sans";
+}
+.modal_delete_box{
+    border: solid 2px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 41vh;
+    position: fixed ;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /*só pra garantir que ele vai ficar na frente de tudo*/ 
+}
+.box_delete_titulo{
+    border: solid 2px green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));  
+    width: 40%;
+    height: 100px;
+}
+
+.box_botoes
+{
+    border: solid 2px purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%;
+    height: 120px;
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.box_delete_titulo h1{
+    font-size: 24px;
+    font-family: "Shantell Sans";
+
+}
+
+.botoes_acoes {
+    border: solid 2px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  
+
+  #botaoCancelarDoDelete,
+  #botaoExcluir {
+    background-color: #F0D003;
+    color: #000;
+    border: none;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 32px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: "Shantell Sans";
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Hover - quando passa o mouse */
+  #botaoCancelarDoDelete:hover,
+  #botaoExcluir:hover {
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Active - quando clica */
+  #botaoCancelarDoDelete:active,
+  #botaoExcluir:active {
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
