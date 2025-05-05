@@ -2,6 +2,7 @@
 
 body{
     font-family: "Shantell Sans", cursive;
+    background-color: rgb(56, 38, 38);
 }
 
 *{
@@ -14,10 +15,10 @@ body{
     width: 36%;
     border-radius: 10px; 
     position: absolute;
-    top: 37%;
-    left: 35%;
+    top: 25%;
+    left: 33%;
     overflow: hidden;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
 }
 
@@ -28,14 +29,14 @@ body{
 #modal_new_user h1{
     margin: 17px;
     font-weight: 430;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
 #modal_new_user .container_inputs{
     display: flex;
     flex-direction: column;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     background-color: white;
     text-align: center;
 }
@@ -48,17 +49,49 @@ body{
     margin-right: 20px;
     margin-bottom: 30px;
     gap: 20px;
-    border: solid 1px red;
 }
 
-.buttons_modal_user{
-    gap: 30px;
+.input_user{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(154, 180, 222, 1);
+    border-radius: 16px;
+    padding: 13px;
+    background-color: rgb(213, 233, 236);
+    outline: none;
 }
 
-.button{
-    width: 1.87rem;
-    height: 1.87rem;
+::-webkit-input-placeholder{
+    color: rgba(39, 146, 0, 1);
+    font-family: "Shantell Sans", cursive;;
+}
+
+
+#buttons_modal_user{
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    gap: 100px;
+}
+
+#buttons_modal_user .button{
     text-decoration: none;
     color: black;
-    background: white;
+    background-color: rgba(240, 208, 3, 1);
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+} 
+
+.button h3{
+    text-align: center;
+    width: 150px;
+    line-height: 47px;
+    font-weight: 400;
 }
