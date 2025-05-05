@@ -1,0 +1,11 @@
+body{
+    font-family: "Shantell Sans", cursive;
+    background-color: rgb(56, 38, 38);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
