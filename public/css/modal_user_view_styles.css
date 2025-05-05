@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Shantell Sans";
+}
+
+
+.modal_view_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    width: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.box_titulo_modal_view_user {
+    width: 100%;
+    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));  
+    text-align: center;
+    padding: 20px 0;
+}
+
+.box_titulo_modal_view_user h1{
+    font-size: 16px;
+    font-weight: 430;
+}
+
+.modal_view_user .top_modal_view_user img{
+    width: 90px;
+    height: auto;
+}
+
+
+.top_modal_view_user {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+}
+
+.box_informacoes_usuario {
+    padding: 20px;
+    background-color:rgb(250, 250, 250);
+    width: 100%;
+}
+
+.inputs_view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs_view h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputs_view input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    color: #555;
+}
+
+.inputs_view input:read-only {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.botoes_acoes_user_view {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#botaoFechar {
+    margin-top: 40px;
+    background-color: #F0D003;
+    color: #000;
+    border: none;
+    width: 12vw;
+    height: 6vh;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: "Shantell Sans", cursive;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+  
+#botaoFechar:hover {
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+  
+#botaoFechar:active {
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
