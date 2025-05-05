@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Shantell Sans", cursive;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+.top_tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,rgba(115, 154, 202, 1),rgba(121, 237, 255, 1));
+    width: 40%;
+    height: 100px;
+}
+.actions
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%;
+    height: 130px;
+    background-color: rgba(241, 241, 241, 1);
+}
+.msg_tittle{
+    font-size: 24px;
+    font-family: "Shantell Sans", cursive;
+
+}
+.button_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 90px;
+    background-color: transparent;
+    
+}
+.action_button
+{
+    width: 240px;
+    height: 60px;
+    background-color: rgba(240, 208, 3, 1);
+    border: 1px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+.input_button{
+    background-color: transparent;
+    border: none;
+    font-family: "Shantell Sans", cursive;
+    font-size: 16px;
+}
+.modal_completo{
+  
+}
