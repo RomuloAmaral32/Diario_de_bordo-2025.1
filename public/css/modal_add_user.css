@@ -22,10 +22,6 @@ body{
     background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
 }
 
-#modal_new_user .top_new_user{
-  
-}
-
 #modal_new_user h1{
     margin: 17px;
     font-weight: 430;
@@ -80,7 +76,7 @@ body{
     gap: 60px;
 }
 
-#buttons_modal_user .button{
+#buttons_modal_user .button_user{
     text-decoration: none;
     color: black;
     background-color: rgba(240, 208, 3, 1);
@@ -89,9 +85,139 @@ body{
     box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
 } 
 
-.button h3{
+.button_user h3{
     text-align: center;
     width: 170px;
     line-height: 47px;
     font-weight: 400;
+}
+
+@media(min-width: 319px){
+
+    body{
+        margin: 0px;
+    }
+
+    #modal_new_user{
+        width: 80%;
+        top: 7%;
+        left: 10%;
+    }
+
+    #modal_new_user .container_inputs .input_infos{
+        margin-bottom: 30px;
+    }
+
+    .button_user h3{
+        width: 110px;
+        line-height: 40px;
+    }
+
+    #buttons_modal_user{
+        gap: 20px;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media(min-width: 330px){
+
+    body{
+        margin: 0px;
+    }
+
+    #modal_new_user{
+        width: 80%;
+        top: 7%;
+        left: 10%;
+    }
+
+    #buttons_modal_user{
+        gap: 40px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    #modal_new_user .container_inputs .input_infos{
+        margin-bottom: 30px;
+    }
+
+    .button_user h3{
+        width: 110px;
+        line-height: 40px;
+    }
+}
+
+@media(min-width: 701px){
+
+    #modal_new_user{
+        width: 50%;
+        top: 7%;
+        left: 25%;
+    }
+
+    #buttons_modal_user{
+        gap: 60px;
+        margin-bottom: 20px;
+    }
+
+    .button_user h3{
+        width: 120px;
+        line-height: 45px;
+    }
+
+    #modal_new_user .container_inputs .input_infos{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(min-width: 1026px){
+    #modal_new_user{
+        width: 40%;
+        top: 7%;
+        left: 30%;
+    }
+
+    #buttons_modal_user{
+        gap: 80px;
+        }
+
+    .button_user h3{
+        width: 140px;
+        line-height: 55px;
+    }
+}
+
+@media(min-width: 1281px){
+    #modal_new_user{
+        width: 36%;
+        top: 20%;
+        left: 33%;
+    }
+
+    #modal_new_user .container_inputs .input_infos{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 55px;
+        gap: 40px;
+    }
+
+    #buttons_modal_user{
+        height: 50px;
+        width: 170px;
+        margin-bottom: 40px;
+        gap: 60px;
+    }
+
+    .button_user h3{
+        width: 170px;
+        line-height: 53px;
+        font-weight: 400;
+    }
+
+
 }
