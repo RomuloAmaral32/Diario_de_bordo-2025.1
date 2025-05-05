@@ -28,7 +28,7 @@ body{
 }
 
 #user_icon{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ body{
 }
 
 #user_icon img{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     width: 90px;
 }
 
@@ -62,7 +62,7 @@ body{
     font-weight: 400;
     width: 50px;
     margin-left: 5px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .box_edit{
@@ -84,4 +84,33 @@ body{
 
 #container_edit_input img{
     width: 20px;
+}
+
+#buttons_modal_edit{
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    gap: 60px;
+}
+
+#buttons_modal_edit .button{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(240, 208, 3, 1);
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+} 
+
+.button h3{
+    text-align: center;
+    width: 170px;
+    line-height: 47px;
+    font-weight: 400;
 }
