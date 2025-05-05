@@ -16,7 +16,6 @@
     width: 100%;
     height: 100px;
     font-size: 8px;
-    
     color: #131212;
     justify-content: center;
     display: flex;
@@ -24,13 +23,9 @@
     font-family: 'shantel', sans-serif;
     flex-direction: row;
     align-items: center;    
-   
     border-radius: 24px 24px 0 0;
     background: linear-gradient(to right, #79EDFF, #739ACA); 
-    
-   
-    border-radius: 16 0 0 0;
-    
+    border-radius: 16 0 0 0;   
 }
 
 .h1{
@@ -47,7 +42,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 0 24px 24px;
-    
 }
 
 .buttons_postagem{
@@ -104,14 +98,12 @@
     border-radius: 8px;
     border: none;
     background-color: #FFF2CD;
-
     font-size: 16px;
     font-weight: 600;
     color: #131212;
     margin-bottom: 1rem;
     justify-content: center;
     display: flex;
-    
     font-family: 'shantel', sans-serif;
 }
 
@@ -132,7 +124,6 @@
 .image_input{
     width: 100%;
     height: 100px;
-  
     border-radius: 8px;
     border: none;
     background-color: #FFF2CD;
