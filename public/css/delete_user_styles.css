@@ -8,7 +8,7 @@
     font-family: "Shantell Sans";
 }
 .modal_delete_box{
-    border: solid 2px red;
+    /*border: solid 2px red;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     z-index: 999; /*só pra garantir que ele vai ficar na frente de tudo*/ 
 }
 .box_delete_titulo{
-    border: solid 2px green;
+    /*border: solid 2px green;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@
 
 .box_botoes
 {
-    border: solid 2px purple;
+    /*border: solid 2px purple;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@
 }
 
 .botoes_acoes {
-    border: solid 2px blue;
+    /*border: solid 2px blue;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +58,8 @@
   }
   
 
-  #botaoCancelarDoDelete,
-  #botaoExcluir {
+#botaoCancelarDoDelete,
+#botaoExcluir {
     background-color: #F0D003;
     color: #000;
     border: none;
@@ -72,17 +72,17 @@
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   }
-  
-  /* Hover - quando passa o mouse */
-  #botaoCancelarDoDelete:hover,
-  #botaoExcluir:hover {
+
+
+#botaoCancelarDoDelete:hover,
+#botaoExcluir:hover {
     background-color: #e5c100;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
   }
   
-  /* Active - quando clica */
-  #botaoCancelarDoDelete:active,
-  #botaoExcluir:active {
+
+#botaoCancelarDoDelete:active,
+#botaoExcluir:active {
     background-color: #ccae00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
