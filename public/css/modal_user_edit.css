@@ -13,7 +13,7 @@ body{
     width: 36%;
     border-radius: 10px; 
     position: absolute;
-    top: 20%;
+    top: 7%;
     left: 33%;
     overflow: hidden;
     /* border: solid 1px red; */
@@ -33,13 +33,13 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background: white;
 }
 
 #user_icon img{
     border: solid 1px red;
-    width: 70px;
+    width: 90px;
 }
 
 #modal_edit_user #container_edit_input{
@@ -50,7 +50,37 @@ body{
     text-align: center;
 }
 
+.input_edit_inf{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 55px;
+}
 
+.input_edit_inf h2{
+    font-size: 14px;
+    font-weight: 400;
+    width: 50px;
+    margin-left: 5px;
+    border: solid 1px red;
+}
+
+.box_edit{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(154, 180, 222, 1);
+    border-radius: 16px;
+    padding: 13px;
+    background-color: rgb(213, 233, 236);
+    margin-bottom: 15px;
+}
+
+.edit_user{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 100vh;
+}
 
 #container_edit_input img{
     width: 20px;
