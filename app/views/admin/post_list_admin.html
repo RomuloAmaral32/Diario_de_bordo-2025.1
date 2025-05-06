@@ -1,178 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Postagens</title>
-    <link rel="stylesheet" href="../../../public/css/styles_post_list_admin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="../../../public/js/post_list_admin.js"></script>
-    
-    <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Postagens</title>
+  <link rel="stylesheet" href="../../../public/css/styles_post_list_admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="../../../public/js/post_list_admin.js"></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
-     <!-- Link para as fontes do Google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        
+  <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
-      </head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <!-- Link para as fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
 <body>
 
   <header class="cabecalho-post">
-        <div class="logo">
-          <img src="../../../public/assets/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
-        </div>
+    <div class="logo">
+      <img src="../../../public/assets/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
+    </div>
 
-        <div class="titulo-post">
-          <h1>Tabela de Postagens</h1>
-        </div>
-    
-        <div class="div-btn">
-          
-            <a href="URL" class="btn-nova-post" style="text-decoration: none !important;"><div class="btn-nova" style="color: #17191c;">Nova</div></a>
-            <span class="material-symbols-outlined">add_circle</span>
-           
-        </div>
-  </header> 
+    <div class="titulo-post">
+      <h1>Tabela de Postagens</h1>
+    </div>
+
+    <div class="div-btn">
+
+      <a href="URL" class="btn-nova-post" style="text-decoration: none !important;">
+        <div class="btn-nova" style="color: #17191c;">Nova</div>
+      </a>
+      <span class="material-symbols-outlined">add_circle</span>
+
+    </div>
+  </header>
 
   <div class="container-search">
-   
-     <!-- <input type="text" id="search" placeholder="Pesquisar" icon="search" class="search-input">
+
+    <!-- <input type="text" id="search" placeholder="Pesquisar" icon="search" class="search-input">
       <span class="material-symbols-outlined">search</span>
     </div>-->
 
-    <div id="btn-pesquisar" > 
+    <div id="btn-pesquisar">
       <input type="text" id="txtBusca" placeholder="Pesquisar" />
       <span class="material-symbols-outlined">search</span>
       <!--<p>Pesquisar <span class="material-symbols-outlined">search</span></p>=--->
     </div>
   </div>
-  
 
-        <div class="container-postagem">
-        <table style="border-spacing: 0px; border-collapse: separate;">
-          
-          <thead style="border: 2px solid green;">
-           
-            <tr style="width: 100%; height: 50px; 
+  <div class="container-principal">
+    <div class="container-postagem" style="overflow-x:scroll;">
+      <table style="border-collapse: separate; gap:20px; border-spacing: 0 10px;" >
+
+        <thead style="border: 2px solid green;">
+
+          <tr style="width: 100%; height: 50px; 
             background-color: #F0D003; align-items: center; 
             font-family: 'open sans', sans-serif; border-radius: 20px; border: 2px solid green;">
 
-              <th class="id" style="border-radius:20px 0 0 20px; border-top:2px solid #49b410; border-bottom: 2px solid #49b410; border-left: 2px solid #49b410; padding: 10px; "> ID </th>
-              <th class="titulo-postagem" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Título da Postagem</th>
-              <th class="data-post" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Autor da Postagem</th>
-              <th class="data-post" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Data da Criação</th>
-              <th class="acoes-post" style="border-radius:0 20px 20px 0; border-top:2px solid #49b410; border-bottom:2px solid #49b410; border-right:2px solid #49b410;">Ações</th>
-               </tr>
-            </tr>
-        
-         </thead>
-        
-        
+            <th class="id"
+              style="border-radius:20px 0 0 20px; border-top:2px solid #49b410; border-bottom: 2px solid #49b410; border-left: 2px solid #49b410; padding: 10px; ">
+              ID </th>
+            <th class="titulo-postagem" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Título da
+              Postagem</th>
+            <th class="data-post" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Autor da
+              Postagem</th>
+            <th class="data-post" style="border-top:2px solid #49b410; border-bottom:2px solid #49b410;">Data da Criação
+            </th>
+            <th class="acoes-post"
+              style="border-radius:0 20px 20px 0; border-top:2px solid #49b410; border-bottom:2px solid #49b410; border-right:2px solid #49b410;">
+              Ações</th>
+          </tr>
+          </tr>
 
-          <tbody> 
-            <tr id="linha-tabela"> 
-            
-              
-              <td>1</td>
-              <td>Titulo</td>
-              <td>Autor</td>
-              <td>Data</td>
-              <td>
-                <div class="icones-acoes" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;" >
-                  <div class="icones">
-                    <span class="material-symbols-outlined">visibility</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">edit</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">delete</span>
-                  </div>
+        </thead>
+        <tbody>  
+          <tr id="linha-tabela">
+            <td style="border-radius: 16px 0px  0px  16px;">1</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style=" border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
                 </div>
-              </td>
-            </tr> 
-            <tr id="linha-tabela"> 
-              <td>2</td>
-              <td>Titulo</td>
-              <td>Autor</td>
-              <td>Data</td>
-              <td>
-                <div class="icones-acoes" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;" >
-                  <div class="icones">
-                    <span class="material-symbols-outlined">visibility</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">edit</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">delete</span>
-                  </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
                 </div>
-              </td>
-            </tr> 
-            <tr id="linha-tabela"> 
-              <td>3</td>
-              <td>Titulo</td>
-              <td>Autor</td>
-              <td>Data</td>
-              <td>
-                <div class="icones-acoes" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;" >
-                  <div class="icones">
-                    <span class="material-symbols-outlined">visibility</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">edit</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">delete</span>
-                  </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
                 </div>
-              </td>
-            </tr> 
-            <tr id="linha-tabela"> 
-              <td>4</td>
-              <td>Titulo</td>
-              <td>Autor</td>
-              <td>Data</td>
-              <td>
-                <div class="icones-acoes" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;" >
-                  <div class="icones">
-                    <span class="material-symbols-outlined">visibility</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">edit</span>
-                  </div>
-                  <div class="icones"> 
-                    <span class="material-symbols-outlined">delete</span>
-                  </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr id="linha-tabela">
+            <td style="border-radius: 16px 0px  0px  16px;">2</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
                 </div>
-              </td>
-            </tr> 
-            
-          </tbody>
-        </table>
-          <div class="container-paginacao">
-            <span class="material-symbols-outlined seta">arrow_back_ios</span>
-            <div class="paginacao" style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
-              <button class="btn-paginacao">1</button>
-              <button class="btn-paginacao">2</button>
-              <button class="btn-paginacao">3</button>
-            </div>
-            <span class="material-symbols-outlined seta">arrow_forward_ios</span>
-          </div>
- 
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="linha-tabela">
+            <td style="border-radius: 16px 0px  0px  16px;">3</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;" >
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="linha-tabela">
+            <td style="border-radius: 16px 0px  0px  16px;">4</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="container-paginacao">
+        <span class="material-symbols-outlined seta">arrow_back_ios</span>
+        <div class="paginacao"
+          style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
+          <button class="btn-paginacao">1</button>
+          <button class="btn-paginacao">2</button>
+          <button class="btn-paginacao">3</button>
         </div>
-      
+        <span class="material-symbols-outlined seta">arrow_forward_ios</span>
+      </div>
 
-
-        
-
-        
+    </div>
+  </div>
 </body>
+
 </html>
