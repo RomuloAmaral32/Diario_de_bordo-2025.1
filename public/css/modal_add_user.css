@@ -83,7 +83,12 @@ body{
     border-radius: 30px;
     font-size: 16px;
     box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+    transition: 0.2s;
 } 
+
+#buttons_modal_user .button_user:hover{
+    background-color: rgb(211, 183, 0);
+}
 
 .button_user h3{
     text-align: center;
