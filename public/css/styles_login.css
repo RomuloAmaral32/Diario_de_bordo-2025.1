@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    background-image: url(/public/assets/background.png);
+    background-image: url(/public/assets/login_page/background.png);
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ body p{
 }
 .login_page_container input.email_input{
 
-    background-image: url(/public/assets/email_icon.png);
+    background-image: url(/public/assets/login_page/email_icon.png);
     background-position: 10px center;
     background-size: 24px 14px;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ body p{
 }
 .login_page_container input.pass_input{
     
-    background-image: url(/public/assets/lock_icon.png);
+    background-image: url(/public/assets/login_page/lock_icon.png);
     background-position: 10px center;
     background-size: 19px 20px;
     background-repeat: no-repeat;
