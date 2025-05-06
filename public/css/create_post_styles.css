@@ -58,7 +58,14 @@ body{
     background-color: rgba(238, 194, 74, 0.2);
     margin: auto;
     margin-top: 40px;
+    
 }
+.image_input::-webkit-file-upload-button{
+    display: none;
+
+}
+
+
 .post_tittle{
     display: flex;
     align-items: center;
