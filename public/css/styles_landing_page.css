@@ -262,9 +262,13 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .post_grid{
+@media screen and (max-width: 1212px) {
+    .post_grid, .posts_grid_escondido{
         max-width: 1100px;
+    }
+
+    .boxPosts{
+        height: 230vh;
     }
 }
 
@@ -378,6 +382,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 @media screen and (max-width: 959px) {
     .post_grid, .posts_grid_escondido{
         max-width: 900px;
+    }
+
+    .boxPosts{
+        height: 380vh;
     }
 }
 
@@ -501,7 +509,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 350vh;
+        height: 345vh;
     }
     .boxPosts h2{
         padding-left: 30px;
@@ -602,6 +610,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 @media (max-width: 755px){
     .post_grid, .posts_grid_escondido{
         max-width: 710px;
+    }
+
+    .boxPosts{
+        height: 335vh;
     }
 }
 
@@ -722,6 +734,23 @@ section.boxPosts.expanded .posts_grid_escondido{
     .post_grid, .posts_grid_escondido{
         max-width: 470px;
     }
+
+    .boxPosts{
+        height: 705vh;
+    }
+
+    .boxCarrossel .bloco .carrossel{
+        scroll-snap-type: x mandatory;
+        scroll-padding: center;
+        padding-left: 23px;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        flex: 0;
+        scroll-snap-align: center;
+        width: 80vw;
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width:482px) {
@@ -737,12 +766,22 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 }
 
+@media screen and (max-width: 476px) {
+    .boxPosts{
+        height: 670vh;
+    }
+}
+
 @media screen and (max-width: 462px) {
 }
 
 @media screen and (max-width: 440px) {
     .post_grid, .posts_grid_escondido{
        max-width: 390px;
+    }
+
+    .boxPosts{
+        height: 635vh;
     }
 }
 
@@ -816,7 +855,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 460vh;
+        height: 620vh;
     }
 
     .boxPosts h2{
@@ -834,12 +873,12 @@ section.boxPosts.expanded .posts_grid_escondido{
 }
 
 @media screen and (max-width: 412px) {
-    .boxPosts{
-        height: 460vh;
-    }
-
     .post_grid, .posts_grid_escondido{
         max-width: 360px;
+    }
+
+    .boxPosts{
+        height: 620vh;
     }
 }
 
@@ -857,7 +896,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 470vh;
+        height: 47  0vh;
     }
 
     .boxPosts h2{
@@ -917,6 +956,10 @@ section.boxPosts.expanded .posts_grid_escondido{
     .boxCarrossel{
         padding-top: 20px;
         height: 75vh;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 46vh;
     }
 }
 
