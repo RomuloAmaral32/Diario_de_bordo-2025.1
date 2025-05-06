@@ -87,9 +87,6 @@ body{
     margin: auto;
     margin-top: 40px;
     resize: none;
-    
-    
-    
 }
 #text_inside{
     margin-left: 30px;
@@ -160,6 +157,15 @@ body{
 }
 @media (max-width: 1700px){
 
+    .full_container{
+        overflow: hidden;
+        border: 1px;
+        border-radius: 24px;
+        margin: 0;
+        padding: 0;
+        height: 600px;
+        
+    }
     .autor_details{
         gap:50%;
     }
@@ -303,7 +309,7 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 500px;
+        height: 100%;
     }
     .image_input{
         
@@ -355,7 +361,7 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 500px;
+        height: 100%;
     }
     .image_input{
         
