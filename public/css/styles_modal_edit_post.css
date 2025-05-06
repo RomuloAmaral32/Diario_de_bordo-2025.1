@@ -6,15 +6,26 @@
 }
 
 #modal-add-post{
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /*controla posição modal-sobrepõe o modal*/
 }
+
+.body{
+    display:flex;
+
+}
+
 .titulo-nova-postagem{
     width: 100%;
-    height: 100px;
+    height: 50px;
     font-size: 8px;
     color: #131212;
     justify-content: center;
@@ -23,9 +34,9 @@
     font-family: 'shantel', sans-serif;
     flex-direction: row;
     align-items: center;    
-    border-radius: 24px 24px 0 0;
+    border-radius: 10px 10px 0 0px ;  
     background: linear-gradient(to right, #79EDFF, #739ACA); 
-    border-radius: 16 0 0 0;   
+     
 }
 
 .h1{
@@ -44,6 +55,13 @@
     border-radius: 0 0 24px 24px;
 }
 
+.nome_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
 .buttons_postagem{
     display: flex;
     justify-content: center;
@@ -55,7 +73,6 @@
     gap: 1rem;
     padding: 1rem;
     gap: 30px;
-   
 }
 
 .btn_cancelar{
@@ -95,8 +112,7 @@
     width: 100%;
     height: 100px;
     padding: 1rem;
-    border-radius: 8px;
-    border: none;
+    border: solid 1px #9AB4DE ;
     background-color: #FFF2CD;
     font-size: 16px;
     font-weight: 600;
@@ -115,11 +131,7 @@
     align-items: center;
     margin: auto;
     background-color: #f1f1f1;
-    
-
-    
 }
-
 
 .image_input{
     width: 100%;

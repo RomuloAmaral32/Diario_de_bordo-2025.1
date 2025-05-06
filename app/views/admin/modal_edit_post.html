@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>titulo-nova-postagem</title>
 
-    <link rel="stylesheet" href="/public/css/styles_modal_add_post.css">
+    <link rel="stylesheet" href="/public/css/styles_modal_edit_post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -16,21 +16,27 @@
 </head>
 <body> 
 
-    <div id="modal-add-post">
+ <div id="modal-add-post">
         <div class="titulo-nova-postagem">
             <h1>EDITAR POSTAGEM</h1>
         </div>
-
         <div class="container_modal_inputs">
             <form action="">
+                <div class="autor_e_data">
+                    <div class="nome_autor">
+                        <div class="nome_data">
+                        <p>Por: Ana Freitas</p>
+                        <p>23/04/2025</p>
+                    </div>
                 <div class="input_infos">
                  <input type="file" class="image_input"></div>
                  <input type="text" name="Titulo" class="input_titulo" placeholder="Digite o título que deseja publicar">
                  <textarea name="Texto" class="input_text_area" placeholder="Digite a sua postagem textArea"></textarea>
                     
-                 <div class="buttons_postagem">  
+                <div class="buttons_postagem">  
                   <input type="button" class="btn_cancelar" value="CANCELAR">
-                  <input type="button" class="btn_publicar" value="PUBLICAR"></div>
+                  <input type="button" class="btn_publicar" value="PUBLICAR">
+                </div>
             </form>
         </div>
     </div>
