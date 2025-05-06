@@ -55,7 +55,7 @@
 
 .boxPosts{
     /*border: solid 2px red;*/
-    height: 200vh;
+    height: 100%;
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
@@ -855,7 +855,8 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 620vh;
+        /*height: 620vh;*/
+        height: 100%;
     }
 
     .boxPosts h2{
