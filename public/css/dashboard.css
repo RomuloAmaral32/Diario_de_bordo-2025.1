@@ -1,6 +1,9 @@
 body {
     font: 500 1.6rem Inter;
-    background-color: rgb(53, 53, 53);
+    background-image: url(/public/assets/background_dashboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
 }
 
 *{
@@ -116,7 +119,7 @@ body {
     #exit{
         /* border: 1px solid red; */
         height: 25px;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
     
 
@@ -139,7 +142,7 @@ body {
     
     .dashboard .logo img{
         /* border: 1px solid red; */
-        width: 100px;
+        width: 130px;
     }
 
     #button-container{
