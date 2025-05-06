@@ -144,6 +144,12 @@ button {
     }
 }
 
+@media screen and (max-width: 1248px) {
+    .sidebar{
+        width: 14.5vw;
+    }
+}
+
 @media (max-width: 1025px) {
     .sidebar .icone{
         width: 24px;
@@ -174,8 +180,8 @@ button {
 
 @media (max-width: 912px) {
     .sidebar{
-        height: 40vh;
-        width: 15vw;
+        height: 80vh;
+        width: 16vw;
     }
 
     .sidebar .icone{
@@ -189,7 +195,7 @@ button {
 
     .sidebar.fechada{
         width: 6.5vw;
-        height: 4.5vh;
+        height: 9vh;
         overflow: hidden;
     }
 
@@ -207,7 +213,7 @@ button {
 @media (max-width: 854px) {
     .sidebar.fechada{
         width: 7.3vw;
-        height: 4.6vh;
+        height: 9vh;
         overflow: hidden;
     }
     #menu{
@@ -222,7 +228,7 @@ button {
 
     .sidebar{
         width: 20vw;
-        height: 40vh;
+        height: 75vh;
     }
 
     .sidebar .conteudo .itens {
@@ -242,7 +248,7 @@ button {
 
     .sidebar.fechada{
         width: 8vw;
-        height: 6vh;
+        height: 9vh;
     }
 
     .sidebar{
@@ -286,7 +292,7 @@ button {
 @media (max-width: 540px) {
     .sidebar.fechada{
         width: 11vw;
-        height: 8vh;
+        height: 9vh;
         overflow: hidden;
     }
     #menu{
@@ -349,7 +355,7 @@ button {
 @media (max-width: 431px) {
     .sidebar.fechada{
         width: 13vw;
-        height: 6vh;
+        height: 8vh;
         overflow: hidden;
     }
     #menu{
@@ -363,7 +369,7 @@ button {
 
     .sidebar{
         width: 30vw;
-        height: 50vh;
+        height: 70vh;
     }
 
     .sidebar .conteudo .itens {
@@ -378,7 +384,7 @@ button {
 @media (max-width: 412px) {
     .sidebar.fechada{
         width: 13vw;
-        height: 6vh;
+        height: 8vh;
         overflow: hidden;
     }
     #menu{
@@ -392,7 +398,7 @@ button {
 
     .sidebar{
         width: 35vw;
-        height: 50vh;
+        height: 60vh;
     }
 
     .sidebar .conteudo .itens {
@@ -432,7 +438,7 @@ button {
 
 @media (max-width: 360px) {
     .sidebar .icone{
-        width: 15px;
+        width: 16px;
         height: 15px;
     }
 
@@ -442,7 +448,7 @@ button {
 
     .sidebar.fechada{
         width: 15vw;
-        height: 7vh;
+        height: 8vh;
     }
 
     .sidebar{
@@ -450,10 +456,10 @@ button {
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 348px) {
     .sidebar.fechada{
-        width: 12vw;
-        height: 5vh;
+        width: 14vw;
+        height: 7vh;
         overflow: hidden;
     }
     #menu {
@@ -470,7 +476,7 @@ button {
 
     .sidebar{
         width: 35vw;
-        height: 50vh;
+        height: 65vh;
     }
 
     .sidebar .conteudo .itens {
@@ -493,6 +499,12 @@ button {
     }
 }
 
+@media screen and (max-width: 323px) {
+    .sidebar.fechada{
+        width: 15vw;
+    }
+}
+
 @media (max-width: 311px) {
     .sidebar{
         width: 40vw;
@@ -507,6 +519,10 @@ button {
 
     .sidebar .conteudo .descricao{
         font-size: 9px;
+    }
+
+    .sidebar.fechada{
+        width: 16vw;
     }
 }
 /*---------------------------------------------------------*/
