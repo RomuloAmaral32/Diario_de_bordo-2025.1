@@ -15,7 +15,7 @@
 
 * Nancy Freitas - ([github](https://github.com/nancyfreitas))
 * Ana Carolina Junqueira - (coloque o link do github)
-* Antony Kleverton - (coloque o link do github)
+* Antony Kleverton - ([github](https://github.com/AntonyKlx))
 * Vinícius Oliveira - ([github](https://github.com/Vini-lm))
 
 
