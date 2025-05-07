@@ -268,7 +268,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 230vh;
+        height: 100%;
     }
 }
 
@@ -293,7 +293,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxPosts {
         padding-top: 150px;
-        height: 380vh;
+        height: 100%;
     }
 
     .post_grid, .posts_grid_escondido{
@@ -345,7 +345,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao{
-        height: 60vh;
+        height: 100%;
     }
 
     .boxIntroducao .textoIntroducao{
@@ -353,7 +353,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 390vh;
+        height: 100%;
     }
 
     .post_grid, .posts_grid_escondido{
@@ -363,6 +363,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxCarrossel{
         height: 90vh;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
     }
 }
 
@@ -385,14 +389,14 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 380vh;
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 914px){
 
     .boxIntroducao{
-        height: 60vh;
+        height: 100%;
     }
     .boxIntroducao h1{
         font-size: 40px;
@@ -407,7 +411,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 350vh;
+        height: 100%;
     }
 
     #verMais{
@@ -421,6 +425,10 @@ section.boxPosts.expanded .posts_grid_escondido{
     .boxCarrossel{
         height: 85vh;
     }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 20vh;
+    }
 }
 
 @media (max-width: 865px){
@@ -431,9 +439,12 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 @media  screen and (max-width: 854px) {
     .boxIntroducao{
-        height: 60vh;
+        height: 100%;
     }
 
+    .boxPosts{
+        height: 100%;
+    }
     .boxIntroducao h1{
         font-size: 50px;
     }
@@ -475,12 +486,12 @@ section.boxPosts.expanded .posts_grid_escondido{
     
     .boxCarrossel .bloco .carrossel .imagem img{
         width: 43vw;
-        height: 50vh;
+        height: 30vh;
     }
 
     #verMais{
         width: 28vw;
-        height: 6vh;
+        height: 5vh;
         font-size: 23px;
     }
     
@@ -509,7 +520,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 345vh;
+        height: 100%;
     }
     .boxPosts h2{
         padding-left: 30px;
@@ -540,6 +551,9 @@ section.boxPosts.expanded .posts_grid_escondido{
         font-size: 23px;
     }
     
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 30vh;
+    }
 }
 
 @media screen and (max-width: 854px) {
@@ -550,7 +564,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 @media screen and (max-width: 769px) {
     .boxIntroducao{
-        height: 100vh;
+        height: 100%;
     }
 
     .boxIntroducao h1{
@@ -574,7 +588,7 @@ section.boxPosts.expanded .posts_grid_escondido{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 350vh;
+        height: 100%;
     }
     .boxPosts h2{
         font-size: 40px;
@@ -602,7 +616,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxCarrossel .bloco .carrossel .imagem img{
-        height: 40vh;
+        height: 30vh;
     }
     
 }
@@ -613,7 +627,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 335vh;
+        height: 100%;
     }
 }
 
@@ -655,7 +669,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 320vh;
+        height: 100%;
     }
 }
 
@@ -679,7 +693,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 @media screen and (max-width: 544px) {
     .boxPosts{
-        height: 300vh;
+        height: 100%;
     }
 }
 
@@ -696,7 +710,7 @@ section.boxPosts.expanded .posts_grid_escondido{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 730vh;
+        height: 100%;
     }
     
     .boxPosts h2{
@@ -736,7 +750,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 705vh;
+        height: 100%;
     }
 
     .boxCarrossel .bloco .carrossel{
@@ -762,13 +776,13 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 700vh;
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 476px) {
     .boxPosts{
-        height: 670vh;
+        height: 100%;
     }
 }
 
@@ -781,7 +795,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 635vh;
+        height: 100%;
     }
 }
 
@@ -801,14 +815,14 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao{
-        height: 135vh;
+        height: 100%;
     }
 
     .boxPosts{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 630vh;
+        height: 100%;
     }
 
     .post_grid, .posts_grid_escondido{
@@ -835,6 +849,10 @@ section.boxPosts.expanded .posts_grid_escondido{
         height: 6vh;
         font-size: 19px;
     }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 415px) {
@@ -843,7 +861,7 @@ section.boxPosts.expanded .posts_grid_escondido{
         max-width: 370px;
     }
     .boxIntroducao{
-        height: 130vh;
+        height: 100%;
     }
 
     .boxIntroducao h1{
@@ -879,7 +897,15 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 620vh;
+        height: 100%;
+    }
+
+    .boxIntroducao{
+        height: 100%;
+    }
+
+    .boxCarrossel .bloco .carrossel .imagem img{
+        height: 40vh;
     }
 }
 
@@ -897,7 +923,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 47  0vh;
+        height: 100%;
     }
 
     .boxPosts h2{
@@ -940,7 +966,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxPosts{
-        height: 600vh;
+        height: 100%;
     }
 
     #verMais{
@@ -966,7 +992,7 @@ section.boxPosts.expanded .posts_grid_escondido{
 
 @media screen and (max-width: 360px) {
     .boxIntroducao{
-        height: 90vh;
+        height: 100%;
     }
 
     .boxIntroducao h1{
@@ -1006,8 +1032,12 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     #verMais{
         width: 32vw;
-        height: 8vh;
-        font-size: 14px;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .boxPosts{
+        height: 100%;
     }
 }
 
@@ -1019,7 +1049,7 @@ section.boxPosts.expanded .posts_grid_escondido{
     }
 
     .boxIntroducao{
-        height: 105vh;
+        height: 100%;
     }
 }
 
@@ -1080,30 +1110,6 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     #verMais{
         font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 232px) {
-    .boxIntroducao{
-        height: 140vh;
-    }
-}
-
-@media screen and (max-width: 176px) {
-    .boxIntroducao{
-        height: 155vh;
-    }
-}
-
-@media screen and (max-width: 145px) {
-    .boxIntroducao{
-        height: 175vh;
-    }
-}
-
-@media screen and (max-width: 129px) {
-    .boxIntroducao{
-        height: 195vh;
     }
 }
 /*------------------------------------------------------------*/
