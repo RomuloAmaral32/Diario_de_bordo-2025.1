@@ -51,6 +51,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    text-align-last: center;
     width: 75%;
     height: 150px;
     border: 1px;
@@ -62,8 +64,8 @@ body{
 }
 .image_input::-webkit-file-upload-button{
     display: none;
-
 }
+
 
 
 .post_tittle{
@@ -114,6 +116,18 @@ body{
     border: 1px;
     border-radius: 32px;
     background-color: rgba(240, 208, 3, 1);
+}
+.action_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button_input{
+    cursor: pointer;
 }
 .button_box{
     width: 550px;
