@@ -60,6 +60,9 @@ body{
     margin: auto;
     margin-top: 40px;
     gap: 40px;
+    background: url(/public/assets/Roma.jpg);
+    background-size: cover;
+    background-position: right center;
 }
 .post_tittle{
     display: flex;
@@ -108,6 +111,18 @@ body{
     border-radius: 32px;
     background-color: rgba(240, 208, 3, 1);
 }
+.action_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button_input{
+    cursor: pointer;
+}
 .button_box{
     width: 550px;
     height: 80px;
@@ -155,6 +170,7 @@ body{
     justify-content: center;
     gap: 450px;
 }
+
 @media (max-width: 1700px){
 
     .full_container{
@@ -177,6 +193,7 @@ body{
         
         height: 100px;
         margin-top: 16px;
+      
     }
     .post_tittle{
         height: 55px;
