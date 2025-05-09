@@ -15,31 +15,81 @@
     
 </head>
 <body> 
+   <div class="full_container">
 
- <div id="modal-add-post">
-        <div class="titulo-nova-postagem">
-            <h1>EDITAR POSTAGEM</h1>
+        <div class="top_tittle">
+            <h1 class="top_text">POST TITTLE</h1>
         </div>
-        <div class="container_modal_inputs">
-            <form action="">
-                <div class="autor_e_data">
-                    <div class="nome_autor">
-                        <div class="nome_data">
-                        <p>Por: Ana Freitas</p>
-                        <p>23/04/2025</p>
-                    </div>
-                <div class="input_infos">
-                 <input type="file" class="image_input"></div>
-                 <input type="text" name="Titulo" class="input_titulo" placeholder="Digite o título que deseja publicar">
-                 <textarea name="Texto" class="input_text_area" placeholder="Digite a sua postagem textArea"></textarea>
+        
+        <div class="post_action">
+            <div class="autor_name">
+                <div class="autor_details">
+                <p>Por: Ana Freitas</p>
+                <p>23/04/2025</p>
+            </div>
+                
+            </div>
+            <div class="image_input">
+                <img src="/public/assets/img_input.png"><p id="image_text">
+                    ADICIONE UMA IMAGEM</p> 
+            </div>
+            <div class="post_tittle" ><p id="text_tittle">Digite o título que deseja publicar</p> </div>
+            <div class="post_text"><p  id="text_inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div>
+            
+            <div class="button_box">
+                <button class="action_button">
+                    <input type="button" value="CANCELAR" class="button_input">
                     
-                <div class="buttons_postagem">  
-                  <input type="button" class="btn_cancelar" value="CANCELAR">
-                  <input type="button" class="btn_publicar" value="PUBLICAR">
+                </button>
+                 <button class="action_button">
+               
+                    <input type="button" value="POSTAR" class="button_input">
+                </button>
+               
+            </div>
+              
+            
+        </div>
+        
+
+    </div>
+
+
+<!--
+  <div class="modal-add-post">
+
+       <div class="titulo">
+            <h1 class="top_text">TÍTULO DA POSTAGEM</h1>
+        </div>
+
+           <div class="post_action">
+            <div class="autor_name">
+                <div class="autor_details">
+                <p>Por: Ana Freitas</p>
+                <p>23/04/2025</p>
+            </div>
+                
+                 <div class="input_infos">
+                  <input type="file" class="image_input"></div>
+                 <div class="image_input">
+                <img src="/public/assets/img_input.png"><p id="image_text">
+                    ADICIONE UMA IMAGEM</p> 
                 </div>
-            </form>
+
+                <div class="post_tittle" ><p id="text_tittle">Digite o título que deseja publicar</p> </div>
+                <div class="post_text"><p  id="text_inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> </div>
+            
+                    
+                <div class="button">
+                <button class="acoes_btn">
+                    <input type="button" value="FECHAR" class="button_input">
+                    <input type="button" value="POSTAR" class="button_input">
+                </button>
+                </div>
+           
         </div>
     </div>
+   -->
 </body>
 <script src="/public/js/index.js"></script>
 </html>
