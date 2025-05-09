@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     background-color: white;
     width: 35vw;
     top: 50%;
@@ -25,6 +25,9 @@
 }
 
 .box_titulo_modal_view_user {
+    /*border: green 2px solid;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
     background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));  
     text-align: center;
@@ -37,26 +40,29 @@
 }
 
 .modal_view_user .top_modal_view_user img{
-    width: 90px;
+    width: 24%;
     height: auto;
 }
 
 
 .top_modal_view_user {
-    margin-top: 30px;
+    /*border: solid 2px yellow;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     gap: 10px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
     width: 100%;
 }
 
 .box_informacoes_usuario {
+    /*border: solid red 2px;*/
     padding: 20px;
-    background-color:rgb(250, 250, 250);
+    background-color:rgb(255, 255, 255);
     width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .inputs_view {
@@ -95,8 +101,8 @@
     background-color: #F0D003;
     color: #000;
     border: none;
-    width: 12vw;
-    height: 6vh;
+    width: 35%;
+    height: auto;
     padding: 12px 24px;
     font-size: 16px;
     font-family: "Shantell Sans", cursive;
@@ -104,128 +110,137 @@
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-  
+
 #botaoFechar:hover {
     background-color: #e5c100;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
-  
-#botaoFechar:active {
-    background-color: #ccae00;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+/*--------------------------------------------------*/
+
+/*---------------- Responsividade -------------------------*/
+
+@media screen and (max-width: 1470px) {
+    .inputs_view input {
+        width: 100%;
+    }
 }
-
-/*------------------------------------*/
-
-/*---------- Responsividade ----------*/
 
 @media screen and (max-width: 1280px){
     .inputs_view input {
-        width: 32vw;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1024px){
-
-    .box_titulo_modal_view_user {
-        padding: 9px 0;
-    }
-
     .inputs_view input {
-        width: 32vw;
+        width: 100%;
     }
 
-    .modal_view_user .top_modal_view_user img{
-        width: 80px;
-        height: auto;
+    #botaoFechar {
+        margin-top: 20px;
+        width: 40%;
+        font-size: 14px;
     }
+}
+
+@media screen and (max-width: 849px) {
+    #botaoFechar{
+        font-size: 12px;
+        width: 50%;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 801px) {
 
     .modal_view_user .top_modal_view_user h2{
         font-size: 20px;
     }
 
-    .top_modal_view_user {
-        margin-top: 10px;
-        padding: 15px;
-        gap: 6px;
-    }
-
     .inputs_view h3 {
         font-size: 12px;
-        font-weight: 400;
     }
+    
     .inputs_view input {
         font-size: 12px;
     }
 
-    #botaoFechar {
-
-        margin-top: 20px;
-        width: 10vw;
-        height: 5vh;
-        padding: 0;
+    .box_titulo_modal_view_user h1{
         font-size: 14px;
     }
-
 }
 
-@media screen and (max-width: 541px) {
-
-    .modal_view_user {
-        width: 55vw;
-    }
-
-    #botaoFechar {
-        margin-top: 10px;
-        width: 15vw;
-        height: 4vh;
+@media screen and (max-width: 849px) {
+    #botaoFechar{
         font-size: 10px;
     }
-
-    .inputs_view input {
-        width: 45vw;
-    }
 }
 
-@media screen and (max-width: 413px){
-
-    .modal_view_user {
-        width: 55vw;
-    }
-
-
-    .inputs_view input {
-        width: 45vw;
-    }
+ @media screen and (max-width: 701px) {
 
     .modal_view_user .top_modal_view_user img{
-        width: 70px;
+        width: 35%;
         height: auto;
     }
 
     .modal_view_user .top_modal_view_user h2{
         font-size: 18px;
     }
-
-    .top_modal_view_user {
-        margin-top: 10px;
-        padding: 15px;
-        gap: 6px;
-    }
-
+    
     .inputs_view h3 {
         font-size: 10px;
     }
+        
     .inputs_view input {
         font-size: 10px;
     }
-
-    #botaoFechar {
-        margin-top: 10px;
-        width: 15vw;
-        height: 3vh;
+    
+    .box_titulo_modal_view_user h1{
+        font-size: 12px;
+    }
+    #botaoFechar{
         font-size: 8px;
     }
-
 }
-/*------------------------------------*/
+
+@media screen and (max-width: 576px) {
+
+    .modal_view_user{
+        width: 50%;
+    }
+    #botaoFechar{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 401px) {
+
+    .modal_view_user{
+        width: 70%;
+    }
+    .modal_view_user .top_modal_view_user img{
+        width: 35%;
+        height: auto;
+    }
+
+    .modal_view_user .top_modal_view_user h2{
+        font-size: 18px;
+    }
+    
+    .inputs_view h3 {
+        font-size: 10px;
+    }
+        
+    .inputs_view input {
+        font-size: 10px;
+    }
+    
+    .box_titulo_modal_view_user h1{
+        font-size: 10px;
+    }
+    #botaoFechar{
+        font-size: 8px;
+    }
+}
+
