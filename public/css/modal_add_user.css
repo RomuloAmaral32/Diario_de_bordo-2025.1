@@ -80,12 +80,18 @@ body{
     background-color: rgba(240, 208, 3, 1);
     border-radius: 30px;
     font-size: 16px;
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
     transition: 0.2s;
 } 
 
 #buttons_modal_user .button_user:hover{
     background-color: rgb(211, 183, 0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+#buttons_modal_user .button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button_user h3{
