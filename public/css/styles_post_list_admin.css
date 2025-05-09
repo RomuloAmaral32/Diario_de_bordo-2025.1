@@ -117,17 +117,32 @@
 }*/
 
 #btn-pesquisar {
+   display: flex;
+    align-items: center;
+    flex: row;
+    justify-content: center;
+   cursor: pointer;
+    width: 250px;
+    height: 40px;
+    margin-left: auto; 
+    background-color: rgba(196, 231, 235, 0.5);
+    border: 1px solid rgba(113, 152, 201, 1);
+    border-radius: 16px;
+    position: relative;
+    font-family: "Shantell Sans", cursive;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.10);
+  /*
   display: flex;
   align-items: center;
-  margin-left: auto; /* Alinha o container à direita */
+  margin-left: auto; 
   position: relative;
   background-color: rgba(196, 231, 235, 0.5);
   border: 1px solid rgba(113, 152, 201, 1);
   border-radius: 16px;
   cursor: pointer;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.10);
-  font-family: "Shantell Sans", cursive;
-  /*max-width: 200px; Ajuste conforme necessário */
+  font-family: "Shantell Sans", cursive;*/
+
 }
 
 #txtBusca {
@@ -144,11 +159,11 @@
   right: 8px;
   color: #686868;
 }
-
+/*
 #btn-pesquisar:hover {
   background: #787777;
   border-radius: 20px;
-}
+}*/
 
 #txtBusca::placeholder {
   color: #686868;
