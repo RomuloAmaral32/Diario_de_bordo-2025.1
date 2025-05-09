@@ -32,7 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    background: white;
+    background: #f1f1f1;
 }
 
 #user_icon img{
@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     /* border: solid 1px red; */
-    background-color: white;
+    background-color: #f1f1f1;
     text-align: center;
 }
 
@@ -118,7 +118,7 @@ body{
     font-weight: 400;
 }
 
-@media(max-width: 1023px){
+@media(max-width: 767px){
     body{
         margin-left: 0px;
     }
@@ -185,7 +185,7 @@ body{
     }
 }
 
-@media(min-width: 1023px){
+@media(min-width: 768px){
     
     #buttons_modal_edit{
         gap: 30px;
