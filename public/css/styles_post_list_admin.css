@@ -21,7 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: linear-gradient(to right, #C4E7EB 10%, #739ACA 100%);
+   background: linear-gradient(to right, rgba(113, 152, 201, 1), rgba(154, 191, 218, 1), rgba(196, 231, 235, 1));
   align-items: center; 
   width: 100%; 
 }
@@ -204,12 +204,18 @@
 }
 
 .icones{
-  background-color: white; 
+  background-color: rgba(240, 200, 90, 1); 
   border-radius: 40%; 
-  border: 2px solid #49b410; 
+  border: 2px solid #F0C85A; 
   cursor: pointer; 
   display: flex; 
   padding: 2px 5px; 
+   /*display:block
+   width: 70%;
+   height: 30px;
+   background-color: rgba(240, 200, 90, 1);
+   border: 1px;
+   border-radius: 16px;*/
 }
 
 .container-paginacao{
