@@ -21,15 +21,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999; /*só pra garantir que ele vai ficar na frente de tudo*/ 
+    z-index: 10; /*só pra garantir que ele vai ficar na frente de tudo*/ 
 }
 
 .box_delete_titulo{
     /*border: solid 2px green;*/
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));  
+    background: linear-gradient(to right,rgba(115, 154, 202, 1),rgba(121, 237, 255, 1));
     width: 40%;
     height: 100px;
 }
@@ -37,6 +39,8 @@
 .box_botoes
 {
     /*border: solid 2px purple;*/
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,6 +209,7 @@
         width: 16vw;
         height: 4vh;
         font-size: 14px;
+        padding: 0;
     }
 }
 
