@@ -17,7 +17,7 @@
     flex-direction: column;
     width: 100%;
     height: 41vh;
-    position: fixed ;
+    position: absolute ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@
     flex-direction: row;
     width: 40%;
     height: 120px;
-    background-color: rgba(241, 241, 241, 1);
+    background-color: #f1f1f1;
 }
 
 .box_delete_titulo h1{
@@ -75,6 +75,7 @@
     border-radius: 32px;
     padding: 12px 24px;
     font-size: 16px;
+    font-weight: bold;
     font-family: "Shantell Sans";
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
