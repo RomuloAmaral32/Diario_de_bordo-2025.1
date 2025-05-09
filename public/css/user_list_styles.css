@@ -32,6 +32,16 @@ body {
     box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.button_new:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.button_new:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .plus_icon {
     padding-left: 5px;
 }
@@ -225,17 +235,19 @@ body {
 .icon:hover {
 
     transform: scale(1.1);
-
+    cursor: pointer;
 
 }
 
 .manage_icon:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .manage_icon_edit:hover {
 
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .page_indicator {
