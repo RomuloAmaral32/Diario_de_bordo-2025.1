@@ -179,7 +179,7 @@ body{
         border-radius: 24px;
         margin: 0;
         padding: 0;
-        height: 800px;
+        height: 600px;
         
     }
     .autor_details{
@@ -212,6 +212,7 @@ body{
     }
     .action_button{
         width: 80%;
+        
         
     }
     #text_tittle{
