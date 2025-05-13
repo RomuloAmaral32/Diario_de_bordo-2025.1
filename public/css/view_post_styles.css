@@ -14,8 +14,8 @@ body{
 
     border: 1px ;
     border-radius: 24px;
+    
     overflow: hidden;
-
     position: absolute;
 
     top: 50%;
@@ -30,6 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height:80px;
     
 
    
@@ -52,13 +53,16 @@ body{
     align-items: center;
     justify-content: center;
     width: 75%;
-    height: 130px;
+    height: 150px;
     border: 1px;
     border-radius: 24px;
     background-color: rgba(238, 194, 74, 0.2);
     margin: auto;
     margin-top: 40px;
     gap: 40px;
+    background: url(/public/assets/Roma.jpg);
+    background-size: cover;
+    background-position: right center;
 }
 .post_tittle{
     display: flex;
@@ -86,9 +90,6 @@ body{
     margin: auto;
     margin-top: 40px;
     resize: none;
-    
-    
-    
 }
 #text_inside{
     margin-left: 30px;
@@ -109,6 +110,18 @@ body{
     border: 1px;
     border-radius: 32px;
     background-color: rgba(240, 208, 3, 1);
+}
+.action_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.button_input{
+    cursor: pointer;
 }
 .button_box{
     width: 550px;
@@ -156,4 +169,253 @@ body{
     align-items: center;
     justify-content: center;
     gap: 450px;
+}
+
+@media (max-width: 1700px){
+
+    .full_container{
+        overflow: hidden;
+        border: 1px;
+        border-radius: 24px;
+        margin: 0;
+        padding: 0;
+        height: 800px;
+        
+    }
+    .autor_details{
+        gap:50%;
+    }
+    .post_action{
+        width: 100%;
+        height: 700px;
+    }
+    .image_input{
+
+        height: px;
+        margin-top: 16px;
+      
+    }
+    .post_tittle{
+        height: 55px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 14px;
+    }
+    .button_box{
+        width: 90%;
+        height: 55px;
+        margin-top: 15px;
+    }
+    .action_button{
+        width: 80%;
+        
+    }
+    #text_tittle{
+        font-size: 16px;
+    }
+    #image_text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1280px){
+   
+
+    .full_container{
+        height: 500px;
+    }
+    .autor_details{
+        gap:30%;
+    }
+    .post_action{
+        width: 100%;
+        height: 500px;
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 20px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 130px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 35px;
+    }
+    .action_button{
+        width: 80%;
+        height: 35px;
+    }
+    #text_tittle{
+        font-size: 16px;
+    }
+    #image_text{
+        font-size: 16px;
+    }
+}
+@media (max-width: 890px){
+    .full_container{
+        width: 45%;
+    }
+
+    .autor_details{
+        gap:30%;
+    }
+    .post_action{
+        width: 100%;
+        height: 500px;
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 35px;
+    }
+    .action_button{
+        width: 80%;
+        height: 35px;
+    }
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 14px;
+    }
+    #image_text{
+        font-size: 14px;
+    }
+    .autor_details{
+        font-size: 14px;
+    }
+  
+}
+@media (max-width: 765px){
+    .full_container{
+      
+    }
+    .top_tittle{
+        height: 70px;
+    }
+
+    .autor_details{
+        font-size: 14px;
+        gap:20%;
+    }
+    .post_action{
+        width: 100%;
+        height: 100%;
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 10px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 35px;
+        margin-top: 30px;
+    }
+    .action_button{
+        width: 80%;
+        height: 35px;
+    }
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 12px;
+    }
+    #image_text{
+        font-size: 12px;
+    }
+  
+}
+@media (max-width: 600px){
+    .full_container{
+      width: 300px;
+    }
+    .top_tittle{
+        height: 60px;
+    }
+
+    .autor_details{
+        font-size: 14px;
+        gap:20%;
+    }
+    .post_action{
+        width: 100%;
+        height: 100%;
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 10px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 35px;
+        margin-top: 30px;
+    }
+    .action_button{
+        width: 80%;
+        height: 35px;
+    }
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 12px;
+    }
+    #image_text{
+        font-size: 12px;
+    }
+  
 }
