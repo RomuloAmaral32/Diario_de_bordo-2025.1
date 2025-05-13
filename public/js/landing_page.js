@@ -37,23 +37,23 @@ let imagensPorPagina = 3;
 let totalPaginas = 0;
 let paginaAtual = 0;
 
-// Atualiza as configurações do carrossel
 function atualizarConfiguracaoCarrossel() {
   const larguraCarrossel = carrossel.offsetWidth;
   const larguraImagem = imagens[0].getBoundingClientRect().width;
 
   
-  //Calculo quantas imagens cabem na tela
-  imagensPorPagina = Math.floor(larguraCarrossel / larguraImagem);
+  if (!larguraImagem || isNaN(larguraImagem) || larguraImagem <= 0) return;
 
-  //Calculo do número total das páginas
-  totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
+
+  imagensPorPagina = Math.max(1, Math.floor(larguraCarrossel / larguraImagem));
+
   
+  totalPaginas = Math.ceil(imagens.length / imagensPorPagina);
+
   criarIndicadores();
   atualizarIndicadores();
 }
 
-// Cria os indicadores de navegação
 function criarIndicadores() {
   indicadoresContainer.innerHTML = '';
   for (let i = 0; i < totalPaginas; i++) {
@@ -69,7 +69,6 @@ function criarIndicadores() {
   }
 }
 
-// Atualiza aparência dos indicadores
 function atualizarIndicadores() {
   const bolinhas = document.querySelectorAll('.bolinha');
   bolinhas.forEach((b, i) => {
@@ -101,14 +100,11 @@ function moverParaDireita() {
   atualizarIndicadores();
 }
 
-
 setaEsquerda.addEventListener('click', moverParaEsquerda);
 setaDireita.addEventListener('click', moverParaDireita);
 
 window.addEventListener('resize', atualizarConfiguracaoCarrossel);
-
 window.addEventListener('load', atualizarConfiguracaoCarrossel);
-
 
 
 //-----------------------------------------------------------------
