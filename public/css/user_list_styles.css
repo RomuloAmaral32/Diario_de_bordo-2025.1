@@ -366,9 +366,27 @@ body {
         width: 50%;
 
     }
+    .container-postagem{
+        overflow: hidden;
+        
+    }
+    .table_total{
+        
+    }
     
    
   }
+  @media (max-width: 613px) {
+
+    .table_total{
+        padding: 0;
+        margin: 0;
+    }
+    .container-postagem{
+        padding: 20px;
+    }
+  
+}
   @media (max-width: 555px) {
    
     .page_indicator{
