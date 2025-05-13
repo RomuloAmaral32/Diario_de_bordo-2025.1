@@ -49,7 +49,7 @@ body {
     width: 10%;
     height: 30px;
 
-    background-image: url(/public/assets/arrow_esq.png);
+    background-image: url(/public/assets/user_list_admin/arrow_esq.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ body {
 
 }
 #arrow2 {
-    background-image: url(/public/assets/arrow_dir.png);
+    background-image: url(/public/assets/user_list_admin/arrow_dir.png);
 
 }
 
