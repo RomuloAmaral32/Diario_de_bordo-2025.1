@@ -380,4 +380,9 @@ body {
         margin: auto;
     
     }
+    .table_total{
+        width: 50%;
+        padding: auto;
+        margin: auto;
+    }
 }
