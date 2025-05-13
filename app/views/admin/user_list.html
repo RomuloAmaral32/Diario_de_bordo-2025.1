@@ -1,176 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user_list</title>
-    <link rel="stylesheet" href="/public/css/user_list_styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Usuários</title>
+  <link rel="stylesheet" href="../../../public/css/user_list_styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="../../../public/js/post_list_admin.js"></script>
+
+  <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <!-- Link para as fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+ 
+
 </head>
+
 <body>
 
-    <div class="top_tittle">
-        <img src="/public/assets/logo_diario_azul.png"  class="logo"  alt="logo">
-        <h1 class="top_text">Tabela de Usuários</h1>
-        <div class="new_box"> 
-            <button class="button_new">
-                <p>NOVO</p> 
-                <img src="/public/assets/plus_icon.png" class="plus_icon" alt=""> </button>
-        </div>
+  <header class="cabecalho-post">
+    <div class="logo">
+      <img src="../../../public/assets/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
     </div>
-    <div class="search_button_container">
-         <div class="search_button">
-            
-            <input type="text" placeholder="PESQUISAR" class="input_search">
-            <img src="/public/assets/lupa.png" class="lupa_icon" alt="lupa"> 
-        </div>
-</div>
-    <div class="total">
-    <div class="list_container">
-        <table class="user_obj_tittle">
-            <tr class="coluna">
-                <td><p class="text">Id</p></td>
-                <td><p class="text">Nome</p></td>
-                <td><p class="text">Tipo</p></td>
-                <td><p class="text">Data de Criação</p></td>
-                <td><div class="fix2"></div></td>
-                <td><p class="text2">Ações</p></td>
-                <td><div class="fix"></div></td>
-                
-            </tr>
-            <table class="user_obj">
-                <tr class="coluna">
-                    <td><p class="text">Id</p></td>
-                    <td><p class="text">Nome</p></td>
-                    <td ><p class="text">Tipo</p></td>
-                    <td><p class="text">Data de Criação</p></td>
-                    <td><div class="manage_buttons">
-                        <div class="icon">
-                            <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                        </div>
-                        <div class="icon">
-                            <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                        </div>
-                        <div class="icon">
-                            <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                        </div>
-                    </div>
-                </td>
-                </tr>
-                <table class="user_obj">
-                    <tr class="coluna">
-                        <td><p class="text">Id</p></td>
-                        <td><p class="text">Nome</p></td>
-                        <td ><p class="text">Tipo</p></td>
-                        <td><p class="text">Data de Criação</p></td>
-                        <td><div class="manage_buttons">
-                            <div class="icon">
-                                <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                            </div>
-                            <div class="icon">
-                                <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                            </div>
-                            <div class="icon">
-                                <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                            </div>
-                        </div>
-                    </td>
-                    </tr>
-                    <table class="user_obj">
-                        <tr class="coluna">
-                            <td><p class="text">Id</p></td>
-                            <td><p class="text">Nome</p></td>
-                            <td ><p class="text">Tipo</p></td>
-                            <td><p class="text">Data de Criação</p></td>
-                            <td><div class="manage_buttons">
-                                <div class="icon">
-                                    <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                                </div>
-                                <div class="icon">
-                                    <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                                </div>
-                                <div class="icon">
-                                    <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                                </div>
-                            </div>
-                        </td>
-                        </tr>
-                        <table class="user_obj">
-                            <tr class="coluna">
-                                <td><p class="text">Id</p></td>
-                                <td><p class="text">Nome</p></td>
-                                <td ><p class="text">Tipo</p></td>
-                                <td><p class="text">Data de Criação</p></td>
-                                <td><div class="manage_buttons">
-                                    <div class="icon">
-                                        <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                                    </div>
-                                </div>
-                            </td>
-                            </tr>
-                            <table class="user_obj">
-                                <tr class="coluna">
-                                    <td><p class="text">Id</p></td>
-                                    <td><p class="text">Nome</p></td>
-                                    <td ><p class="text">Tipo</p></td>
-                                    <td><p class="text">Data de Criação</p></td>
-                                    <td><div class="manage_buttons">
-                                        <div class="icon">
-                                            <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                                        </div>
-                                        <div class="icon">
-                                            <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                                        </div>
-                                        <div class="icon">
-                                            <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                                        </div>
-                                    </div>
-                                </td>
-                                </tr>
-                                <table class="user_obj">
-                                    <tr class="coluna">
-                                        <td><p class="text">Id</p></td>
-                                        <td><p class="text">Nome</p></td>
-                                        <td ><p class="text">Tipo</p></td>
-                                        <td><p class="text">Data de Criação</p></td>
-                                        <td><div class="manage_buttons">
-                                            <div class="icon">
-                                                <img src="/public/assets/edit_icon.png" class="manage_icon_edit" alt="pencil">
-                                            </div>
-                                            <div class="icon">
-                                                <img src="/public/assets/view_icon.png" class="manage_icon" alt="eye">
-                                            </div>
-                                            <div class="icon">
-                                                <img src="/public/assets/delete_icon.png" class="manage_icon" alt="trash">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    </tr>
-                                 
-                               
-                                
-                                </table>
 
-                                    <div class="page_indicator">
-                                        <a href="" class="arrow"></a> 
-                                        <a href="" class="page_icons" id="icon_1">1</a>
-                                        <a href="" class="page_icons">2</a>
-                                        <a href="" class="page_icons">3</a> 
-                                        <a href="" class="arrow" id="arrow2"> </a>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="titulo-post">
+      <h1>Tabela de Usuários</h1>
+    </div>
+
+    <button class="div-btn">      
+       <p>NOVO</p>
+      
+      <span class="material-symbols-outlined">add_circle</span>
+
+    </button>
+  </header>
+
+  <div class="container-search" >
+
+    <!-- <input type="text" id="search" placeholder="Pesquisar" icon="search" class="search-input">
+      <span class="material-symbols-outlined">search</span>
+    </div>-->
+
+    <div id="btn-pesquisar" >
+      <input type="text" id="txtBusca" placeholder="Pesquisar" />
+      <span class="material-symbols-outlined">search</span>
+      <!--<p>Pesquisar <span class="material-symbols-outlined">search</span></p>=--->
+    </div>
+  </div>
+
+  <div class="container-principal" >
+    <div class="container-postagem" >
+      <table style="border-collapse: separate; gap:0px; border-spacing: 0 30px; align-items: center; justify-content: center;" >
+
+        <thead style="border: 2px solid F0C85A; ">
+ 
+          <tr style="width: 100%; height: 50px; 
+            background-color: rgba(240, 200, 90, 1);  align-items: center; font-family: 'Shantell Sans', cursive; 
+            border-radius: 20px; border: 2px solid green;">
+
+            <th class="id"
+              style="font-weight:normal; border-radius:20px 0 0 20px; border-top:2px solid #F0C85A; border-bottom: 2px solid #F0C85A ; border-left: 2px solid #F0C85A; padding: 10px; ">
+              ID </th>
+            <th class="titulo-postagem" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Título da
+              Postagem</th>
+            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Autor da
+              Postagem</th>
+            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Data da Criação
+            </th>
+            <th class="acoes-post"
+              style="font-weight:normal; border-radius:0 20px 20px 0; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A; border-right:2px solid #F0C85A;">
+              Ações</th>
+          </tr>
+          </tr>
+
+        </thead>
+        <tbody>  
+          <tr id="linha-tabela">
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; ">1</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style=" border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr id="linha-tabela">
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">2</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="linha-tabela">
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">3</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;" >
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="linha-tabela">
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">4</td>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Data</td>
+            <td style="border-radius: 0px 16px  16px  0px;">
+              <div class="icones-acoes"
+                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
+                <div class="icones">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">edit</span>
+                </div>
+                <div class="icones">
+                  <span class="material-symbols-outlined">delete</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="page_indicator">
+        <a href="" class="arrow"></a> 
+        <a href="" class="page_icons" id="icon_1">1</a>
+        <a href="" class="page_icons">2</a>
+        <a href="" class="page_icons">3</a> 
+        <a href="" class="arrow" id="arrow2"> </a>
+    </div>
+
+
+    </div>
+
+  </div>
 </body>
 
 </html>
