@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 40%;
-    height: 80%;
+    height: fit-content;
     border: 1px ;
     border-radius: 24px;
     overflow: hidden;
@@ -76,7 +76,7 @@ body{
 .post_tittle::placeholder{
     font-family: "Shantell Sans", cursive;
     color: rgba(79, 134, 202, 1);
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .post_text{
@@ -146,7 +146,7 @@ body{
 
 .autor_name{
     font-family: "Shantell Sans", cursive;
-    margin-left: 30px;
+    
 }
 
 .autor_details{
@@ -185,7 +185,7 @@ body{
     .post_text{
         height: 140px;
         margin-top: 16px;
-        font-size: 14px;
+        
     }
     .button_box{
         width: 90%;
@@ -205,10 +205,10 @@ body{
 
 @media (max-width: 1405px){
     .post_text::placeholder{
-        font-size: 14px;
+        font-size: 16px;
     }
     .post_tittle::placeholder{
-        font-size: 14px;
+        font-size: 16px;
     }
         
 }
@@ -240,6 +240,7 @@ body{
     .button_box{
         width: 90%;
         height: 35px;
+        margin-top: 30px;
     }
     .action_button{
         width: 80%;
@@ -331,7 +332,7 @@ body{
         height: 35px;
         margin-top: 30px;
         gap: 15px;
-        margin-right: 30px;
+        
     }
     .action_button{
         width: 80%;
@@ -389,7 +390,7 @@ body{
         width: 80%;
         height: 35px;
         margin-top: 30px;
-        margin-left: 15px;
+        
         gap: 30px;
         align-items: center;
         justify-content: center;
