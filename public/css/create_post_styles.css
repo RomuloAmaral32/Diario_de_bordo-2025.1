@@ -248,8 +248,7 @@ body{
         margin-top: 30px;
     }
     .action_button{
-        width: 80%;
-        height: 35px;
+        
     }
     #text_tittle{
         font-size: 16px;
@@ -289,10 +288,7 @@ body{
         width: 90%;
         height: 35px;
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+   
     .top_text{
         font-size: 20px;
     }
@@ -346,10 +342,7 @@ body{
         gap: 15px;
        
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+    
     .top_text{
         font-size: 20px;
     }
@@ -411,10 +404,7 @@ body{
         align-items: center;
         justify-content: center;
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+    
     .top_text{
         font-size: 20px;
     }
