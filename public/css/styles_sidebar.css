@@ -1,0 +1,528 @@
+/*---------------- Sidebar --------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Shantell Sans", sans-serif;
+}
+
+.sidebar {
+    top: 20px;
+    left: 5px;
+    width: 14vw;
+    height: 85vh;
+    background-color: #C4E7EB;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    transition: width 0.3s;
+    position: absolute;
+    z-index: 10;
+}
+
+.sidebar.fechada {
+    width: 5vw;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    transition: background-color 0.3s;
+}
+
+#menu:hover {
+    background-color: #acd5dd;
+    border-radius: 8px;
+}
+
+.sidebar .icone {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.sidebar .conteudo .descricao {
+    padding-left: 15px;
+    font-size: 20px;
+    color: black;
+    transition: opacity 0.3s;
+}
+
+.sidebar.fechada .descricao {
+    opacity: 0;
+}
+
+.sidebar .conteudo .itens {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sidebar .conteudo .itens a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item.active {
+    background-color: #86c2ed;
+    border-radius: 8px;
+}
+
+.item:hover:not(.active) {
+    background-color: #acd5dd;
+    border-radius: 8px;
+}
+
+#logout {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#logout:hover {
+    background-color: #acd5dd;
+    border-radius: 8px;
+}
+
+#logout .descricao {
+    opacity: 1;
+}
+
+.sidebar.fechada #logout .descricao {
+    display: none;
+}
+
+/*---------------------------------------------------------*/
+
+/*---------------- Responsividade -------------------------*/
+
+@media (max-width: 1280px) {
+    .sidebar{
+        width: 13vw;
+    }
+
+    .sidebar .icone{
+        width: 27px;
+        height: 27px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1248px) {
+    .sidebar{
+        width: 14.5vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    .sidebar .icone{
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 15px;
+    }
+
+    .sidebar.fechada{
+        width: 6vw;
+    }
+}
+
+
+@media (max-width: 1204px) {
+    .sidebar{
+        width: 30vh;
+    }
+}
+
+@media (max-width: 1096px) {
+    .sidebar.fechada{
+        width: 6.4vw;
+    }
+}
+
+@media (max-width: 912px) {
+    .sidebar{
+        height: 80vh;
+        width: 16vw;
+    }
+
+    .sidebar .icone{
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 13px;
+    }
+
+    .sidebar.fechada{
+        width: 6.5vw;
+        height: 9vh;
+        overflow: hidden;
+    }
+
+    #menu{
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .sidebar.fechada{
+        width: 7vw;
+    }
+}
+
+@media (max-width: 854px) {
+    .sidebar.fechada{
+        width: 7.3vw;
+        height: 9vh;
+        overflow: hidden;
+    }
+    #menu{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .sidebar .icone{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    .sidebar{
+        width: 20vw;
+        height: 75vh;
+    }
+
+    .sidebar .conteudo .itens {
+        gap: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 15px;
+    }
+
+    #logout .descricao{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sidebar.fechada{
+        width: 8vw;
+        height: 9vh;
+    }
+
+    .sidebar{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 738px) {
+    .sidebar.fechada{
+        width: 7vw;
+    }
+}
+
+@media (max-width: 731px) {
+    .sidebar.fechada{
+        width: 8vw;
+    }
+}
+
+@media (max-width:710px) {
+    .sidebar.fechada{
+        width: 9vw;
+    }
+    .sidebar{
+        width: 28vh;
+    }
+}
+
+@media (max-width: 611px) {
+    .sidebar.fechada{
+        width: 10vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .sidebar.fechada{
+        width: 11vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .sidebar.fechada{
+        width: 11vw;
+        height: 9vh;
+        overflow: hidden;
+    }
+    #menu{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .sidebar .icone{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    .sidebar{
+        width: 28vw;
+        height: 60vh;
+    }
+
+    .sidebar .conteudo .itens {
+        gap: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 15px;
+    }
+
+    #logout .descricao{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 523px) {
+    .sidebar.fechada{
+        width: 12vw;
+        height: 9vh;
+    }
+}
+
+@media (max-width: 518px) {
+    .sidebar .icone{
+        width: 15px;
+        height: 15px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 12px
+    }
+
+    .sidebar.fechada{
+        width: 11vw;
+        height: 8vh;
+    }
+}
+
+@media (max-width: 467px){
+    .sidebar.fechada{
+        width: 12vw;
+    }
+}
+
+@media (max-width: 431px) {
+    .sidebar.fechada{
+        width: 13vw;
+        height: 8vh;
+        overflow: hidden;
+    }
+    #menu{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .sidebar .icone{
+        width: 15px;
+        height: 15px;
+    }
+
+    .sidebar{
+        width: 30vw;
+        height: 70vh;
+    }
+
+    .sidebar .conteudo .itens {
+        gap: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 412px) {
+    .sidebar.fechada{
+        width: 13vw;
+        height: 8vh;
+        overflow: hidden;
+    }
+    #menu{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .sidebar .icone{
+        width: 15px;
+        height: 15px;
+    }
+
+    .sidebar{
+        width: 35vw;
+        height: 60vh;
+    }
+
+    .sidebar .conteudo .itens {
+        gap: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 12px;
+    }
+
+    #logout .descricao{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 391px) {
+    .sidebar{
+        width: 33vw;
+    }
+
+    .sidebar.fechada{
+        width: 14vw;
+    }
+}
+
+@media (max-width: 376px) {
+    .sidebar{
+        width: 33vw;
+        height: 60vh;
+    }
+
+    .sidebar.fechada{
+        height: 8vh;
+        width: 14vw;
+    }
+}
+
+@media (max-width: 360px) {
+    .sidebar .icone{
+        width: 16px;
+        height: 15px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 10px;
+    }
+
+    .sidebar.fechada{
+        width: 15vw;
+        height: 8vh;
+    }
+
+    .sidebar{
+        width: 32vw;
+    }
+}
+
+@media (max-width: 348px) {
+    .sidebar.fechada{
+        width: 14vw;
+        height: 7vh;
+        overflow: hidden;
+    }
+    #menu {
+        margin-top: -10px;
+        width: auto;
+        margin-bottom: 8px;
+        padding: 5px;
+        border-radius: 8px; 
+    }
+    .sidebar .icone{
+        width: 15px;
+        height: 15px;
+    }
+
+    .sidebar{
+        width: 35vw;
+        height: 65vh;
+    }
+
+    .sidebar .conteudo .itens {
+        gap: 20px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 10px;
+    }
+
+    #logout .descricao{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 321px) {
+    .sidebar.fechada{
+        width: 14vw;
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    .sidebar.fechada{
+        width: 15vw;
+    }
+}
+
+@media (max-width: 311px) {
+    .sidebar{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 268px) {
+    .sidebar .icone{
+        width: 13px;
+        height: 13px;
+    }
+
+    .sidebar .conteudo .descricao{
+        font-size: 9px;
+    }
+
+    .sidebar.fechada{
+        width: 16vw;
+    }
+}
+/*---------------------------------------------------------*/
