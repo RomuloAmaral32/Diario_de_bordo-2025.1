@@ -11,35 +11,42 @@ body{
     justify-content: center;
     width: 40%;
     height: fit-content;
+
     border: 1px ;
     border-radius: 24px;
     overflow: hidden;
+
     position: absolute;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
 
+    
+}
 .top_tittle{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));
-}
+    
 
+   
+    background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));
+    
+}
 .post_action{
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
+   
+    
 }
-
 .top_text{
     font-family: "Shantell Sans", cursive;
     font-size: 1.5rem;
 }
-
 .image_input{
     display: flex;
     align-items: center;
@@ -53,11 +60,13 @@ body{
     background-color: rgba(238, 194, 74, 0.2);
     margin: auto;
     margin-top: 40px;
- }
-
+    
+}
 .image_input::-webkit-file-upload-button{
     display: none;
 }
+
+
 
 .post_tittle{
     display: flex;
@@ -72,13 +81,12 @@ body{
     margin-top: 40px;
     
 }
-
 .post_tittle::placeholder{
     font-family: "Shantell Sans", cursive;
     color: rgba(79, 134, 202, 1);
-    font-size: 20px;
+    font-size: 24px;
+    
 }
-
 .post_text{
     display: flex;
     align-items: flex-start;
@@ -91,15 +99,16 @@ body{
     margin: auto;
     margin-top: 40px;
     resize: none;
+    
+    
 }
-
 .post_text::placeholder{
     
     font-family: "Shantell Sans", cursive;
     color: rgba(79, 134, 202, 1);
     font-size: 20px;
+    
 }
-
 .action_button{
     width: 500px;
     height: 55px;
@@ -108,22 +117,18 @@ body{
     border-radius: 32px;
     background-color: rgba(240, 208, 3, 1);
 }
-
 .action_button:hover{
     background-color: #e5c100;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
-
 .action_button:active{
     background-color: #ccae00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 .button_input{
     cursor: pointer;
 }
-
 .button_box{
     width: 550px;
     height: 80px;
@@ -134,7 +139,6 @@ body{
     justify-content: center;
     gap: 80px;
 }
-
 .button_input{
     font-family: "Shantell Sans", cursive;
     color: black;
@@ -143,12 +147,10 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
-
 .autor_name{
     font-family: "Shantell Sans", cursive;
     
 }
-
 .autor_details{
     display: flex;
     flex-direction: row;
@@ -156,8 +158,16 @@ body{
     justify-content: center;
     gap: 450px;
 }
-
-@media (max-width: 1700px){
+.action_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1830px){
 
     .full_container{
         overflow: hidden;
@@ -166,6 +176,7 @@ body{
         margin: 0;
         padding: 0;
         height: 550px;
+        
     }
     .autor_details{
         gap:50%;
@@ -175,26 +186,26 @@ body{
         height: 500px;
     }
     .image_input{
+        
         height: 100px;
         margin-top: 16px;
     }
     .post_tittle{
         height: 55px;
         margin-top: 16px;
- }
+
+    }
     .post_text{
         height: 140px;
         margin-top: 16px;
-        
+        font-size: 14px;
     }
     .button_box{
         width: 90%;
         height: 55px;
         margin-top: 15px;
     }
-    .action_button{
-        width: 80%;
-    }
+    
     #text_tittle{
         font-size: 16px;
     }
@@ -202,19 +213,18 @@ body{
         font-size: 16px;
     }
 }
-
 @media (max-width: 1405px){
     .post_text::placeholder{
-        font-size: 16px;
+        font-size: 14px;
     }
     .post_tittle::placeholder{
-        font-size: 16px;
+        font-size: 14px;
     }
         
 }
-
 @media (max-width: 1280px){
    
+
     .autor_details{
         gap:30%;
     }
@@ -231,6 +241,7 @@ body{
     .post_tittle{
         height: 45px;
         margin-top: 16px;
+
     }
     .post_text{
         height: 130px;
@@ -242,10 +253,7 @@ body{
         height: 35px;
         margin-top: 30px;
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+    
     #text_tittle{
         font-size: 16px;
     }
@@ -257,6 +265,7 @@ body{
     .full_container{
         width: 45%;
     }
+
     .autor_details{
         gap:30%;
     }
@@ -265,12 +274,14 @@ body{
         height: 500px;
     }
     .image_input{
+        
         height: 90px;
         margin-top: 16px;
     }
     .post_tittle{
         height: 45px;
         margin-top: 16px;
+
     }
     .post_text{
         height: 140px;
@@ -281,10 +292,7 @@ body{
         width: 90%;
         height: 35px;
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+   
     .top_text{
         font-size: 20px;
     }
@@ -300,7 +308,9 @@ body{
   
 }
 @media (max-width: 765px){
-   
+    .full_container{
+      
+    }
     .top_tittle{
         height: 70px;
     }
@@ -314,6 +324,7 @@ body{
         height: 100%;
     }
     .image_input{
+        
         height: 90px;
         margin-top: 16px;
         gap: 10px;
@@ -321,6 +332,7 @@ body{
     .post_tittle{
         height: 45px;
         margin-top: 16px;
+
     }
     .post_text{
         height: 140px;
@@ -332,12 +344,9 @@ body{
         height: 35px;
         margin-top: 30px;
         gap: 15px;
-        
+       
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+    
     .top_text{
         font-size: 20px;
     }
@@ -356,6 +365,7 @@ body{
     .top_tittle{
         height: 60px;
     }
+
     .autor_details{
         font-size: 14px;
         gap:20%;
@@ -365,6 +375,7 @@ body{
         height: 100%;
     }
     .image_input{
+        
         height: 90px;
         margin-top: 16px;
         gap: 10px;
@@ -372,6 +383,7 @@ body{
     .post_tittle{
         height: 45px;
         margin-top: 16px;
+
     }
     .post_tittle::placeholder{
         height: 45px;
@@ -385,6 +397,7 @@ body{
     }
     .post_text::placeholder{
         font-size: 12px;
+        
     }
     .button_box{
         width: 80%;
@@ -395,10 +408,7 @@ body{
         align-items: center;
         justify-content: center;
     }
-    .action_button{
-        width: 80%;
-        height: 35px;
-    }
+    
     .top_text{
         font-size: 20px;
     }
