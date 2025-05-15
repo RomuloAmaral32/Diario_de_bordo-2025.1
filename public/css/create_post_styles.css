@@ -158,6 +158,15 @@ body{
     justify-content: center;
     gap: 450px;
 }
+.action_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 @media (max-width: 1700px){
 
     .full_container{
