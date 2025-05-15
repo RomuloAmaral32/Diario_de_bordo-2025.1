@@ -1,3 +1,4 @@
+
 /*Resetar*/ 
 * {
   margin: 0;
@@ -35,7 +36,6 @@
   margin-left: 0.5rem;
   font-family: 'Open Sans', sans-serif;
 }
-
 
 .logo{
   display: flex;
@@ -84,7 +84,6 @@
   gap: 1rem;
   font-size: 16px;*/
   
-
 
 
 .div-btn:hover{
@@ -293,7 +292,6 @@
     gap: 10px;
 
 
-
 }
 
 .page_icons {
@@ -310,18 +308,15 @@
     color: black;
     font-family: "Shantell Sans", cursive;
 
-
 }
 
 .arrow {
     width: 10%;
     height: 30px;
-
     background-image: url(/public/assets/arrow_esq.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 
 }
 #arrow2 {
@@ -342,7 +337,6 @@
 .btn-paginacao:hover{
   background-color: #F0A503
 }*/
-
 
 @media (max-width: 768px) {
   .cabecalho-post{
@@ -388,3 +382,4 @@
     }
 
 }
+
