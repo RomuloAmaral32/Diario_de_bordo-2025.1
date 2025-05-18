@@ -10,12 +10,12 @@
 }
 
 
-.modal_view_user {
-    display: flex;
+#view_user{
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 35vw;
     top: 50%;
     left: 50%;

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela de Usuários</title>
+  <link rel="stylesheet" href="/public/css/modal_user_view_styles.css">
   <link rel="stylesheet" href="../../../public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +29,8 @@
 
 <body>
 
+  <div class="filtro" id="filtro"></div>
+  
   <header class="cabecalho-post">
     <div class="logo">
       <img src="../../../public/assets/user_list_admin/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
@@ -92,7 +95,7 @@
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
                 <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('view_user')">visibility</span>
                 </div>
                 <div class="icones">
                   <span class="material-symbols-outlined">edit</span>
@@ -179,6 +182,50 @@
     </div>
 
   </div>
+
+  <!--Modais-->
+
+   <!--View_User-->
+
+       <div class="modal_view_user" id="view_user">
+
+        <div class="box_titulo_modal_view_user">
+            <h1>INFORMAÇÕES</h1>
+        </div>
+
+        <div class="top_modal_view_user">
+            <img src="/public/assets/modal_user_view/usuarioIcon.png" alt="icone de usuario" class="usuario_icon">
+            <h2>ID</h2>
+        </div>
+
+        <div class="box_informacoes_usuario">
+            <form action="">
+                <div class="inputs_view">
+                    <h3>Nome:</h3>
+                    <div class="caixa_texto">
+                        <input type="text" placeholder="Nome" class="edit_user" readonly>
+                    </div>
+
+                    <h3>Email:</h3>
+                    <div class="caixa_texto">
+                        <input type="text" placeholder="Email" class="edit_user" readonly>
+                    </div>
+
+                    <h3>Senha:</h3>
+                    <div class="caixa_texto">
+                        <input type="text" placeholder="Senha" class="edit_user" readonly>
+                    </div>
+                </div>
+            </form>
+
+            <div class="botoes_acoes_user_view">
+                <button id="botaoFechar" onclick="fecharModalViewUser('view_user')">FECHAR</button>
+            </div>
+        </div>
+
+    </div>
+
+<script src="/public/js/user_list.js"></script>
 </body>
 
 </html>
