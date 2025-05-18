@@ -11,19 +11,26 @@ body{
 }
 
 #modal_new_user{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 36%;
-    border-radius: 10px; 
-    position: absolute;
-    top: 20%;
-    left: 33%;
-    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     /* border: solid 1px red; */
     background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));
+    z-index: 3;
 }
 
 #modal_new_user h1{
     margin: 17px;
-    font-weight: 430;
+    font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
@@ -31,8 +38,11 @@ body{
 #modal_new_user .container_inputs{
     display: flex;
     flex-direction: column;
+    width: 100%;
     /* border: solid 1px red; */
     background-color: #f1f1f1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: center;
 }
 

@@ -11,7 +11,7 @@
 
 #modal_delete_box{
     /*border: solid 2px red;*/
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
