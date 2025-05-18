@@ -29,6 +29,16 @@ function fecharModalCreateUser(idmodal_new_user){
 
 //------------------ Modal Edit User ------------------------
 
+function abrirModalEditUser(idmodal_edit_user){
+    document.getElementById(idmodal_edit_user).style.display = "flex";
+    filtro.style.display = "block";
+}
+
+function fecharModalEditUser(idmodal_edit_user){
+    document.getElementById(idmodal_edit_user).style.display = "none";
+    filtro.style.display = "none";
+}
+
 //------------------------------------------------------------
 
 //------------------ Modal Delete User ------------------------

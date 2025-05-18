@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela de Usuários</title>
+  <link rel="stylesheet" href="/public/css/modal_user_edit.css">
   <link rel="stylesheet" href="/public/css/modal_add_user.css">
   <link rel="stylesheet" href="/public/css/modal_user_view_styles.css">
   <link rel="stylesheet" href="/public/css/delete_user_styles.css">
@@ -100,7 +101,7 @@
                   <span class="material-symbols-outlined" onclick="abrirModalViewUser('view_user')">visibility</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalEditUser('modal_edit_user')">edit</span>
                 </div>
                 <div class="icones">
                   <span class="material-symbols-outlined" onclick="abrirModalDeleteUser('modal_delete_box')">delete</span>
@@ -260,6 +261,43 @@
         </div>
 
         <!---->
+
+        <!-- Modal Edit User -->
+        <div id="modal_edit_user">
+        <div class="top_edit_user">
+            <h1>EDITAR USUÁRIO</h1>
+        </div>
+        <div id="user_icon">
+            <img src="/public/assets/modal_edit_user/account.png" alt="user">
+        </div>
+        <div id="container_edit_input">
+            <form action="">
+                <div class="input_edit_inf">
+                <h2>Nome:</h2>
+                    <div class="box_edit">
+                        <input type="text" placeholder="Nome" class="edit_user">
+                        <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
+                    </div>
+                <h2>Email:</h2>
+                    <div class="box_edit">
+                        <input type="text" placeholder="Email" class="edit_user">
+                        <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
+                    </div>
+                <h2>Senha:</h2>
+                    <div class="box_edit">
+                        <input type="text" placeholder="Senha" class="edit_user">
+                        <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
+                    </div>
+                </div>
+            </form>
+            <div id="buttons_modal_edit">
+                <a class="button" onclick="fecharModalEditUser('modal_edit_user')"><h3>Cancelar</h3></a>
+                <a class="button"><h3>Salvar</h3></a>
+            </div>
+        </div>
+
+    </div>
+        <!----->
 
 
 <script src="/public/js/user_list.js"></script>
