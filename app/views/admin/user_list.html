@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela de Usuários</title>
   <link rel="stylesheet" href="/public/css/modal_user_view_styles.css">
+  <link rel="stylesheet" href="/public/css/delete_user_styles.css">
   <link rel="stylesheet" href="../../../public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +102,7 @@
                   <span class="material-symbols-outlined">edit</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalDeleteUser('modal_delete_box')">delete</span>
                 </div>
               </div>
             </td>
@@ -222,8 +223,19 @@
                 <button id="botaoFechar" onclick="fecharModalViewUser('view_user')">FECHAR</button>
             </div>
         </div>
+      </div>
+    <!--Delete User-->
+        <div class="modal_delete_box"  id="modal_delete_box">
+        <div class="box_delete_titulo">
+            <h1 class="delete_titulo">Você realmente quer excluir este usuário?</h1>
+        </div>
+        <div class="box_botoes">
+            <div class="botoes_acoes">
+                <button id="botaoCancelarDoDelete" onclick="fecharModalDeleteUser('modal_delete_box')">CANCELAR</button>
+                <button id="botaoExcluir">EXCLUIR</button>
+            </div>
+        </div>
 
-    </div>
 
 <script src="/public/js/user_list.js"></script>
 </body>

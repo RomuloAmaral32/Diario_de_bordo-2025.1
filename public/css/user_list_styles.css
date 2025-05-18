@@ -5,16 +5,16 @@
     
     }
 
-  /*.filtro{
+  .filtro{
     display: none;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.2;
     position: fixed;
-  }*/
+  }
 
-  .filtro{
+ /* .filtro{
     display: none;
     width: 100%;
     height: 100%;
@@ -22,7 +22,7 @@
     position: fixed;
     backdrop-filter: blur(1px);
     z-index: 2;
-  }
+  }*/
 
   body {
       padding: 0;
