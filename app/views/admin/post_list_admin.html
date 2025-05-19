@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela de Postagens</title>
+  <link rel="stylesheet" href="/public/css/view_post_styles.css">
   <link rel="stylesheet" href="../../../public/css/styles_post_list_admin.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="../../../public/js/post_list_admin.js"></script>
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
@@ -94,10 +94,10 @@
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
                 <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewPost('view_post')">visibility</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalEditPost('edit_post')">edit</span>
                 </div>
                 <div class="icones">
                   <span class="material-symbols-outlined">delete</span>
@@ -181,6 +181,40 @@
     </div>
 
   </div>
+
+  <!-- Modal View Post -->
+
+  <div class="full_container" id="view_post">
+
+        <div class="top_tittle">
+            <h1 class="top_text">ID</h1>
+        </div>
+        
+        <div class="post_action">
+            <div class="autor_name">
+                <div class="autor_details">
+                <p>Por: Ana Freitas</p>
+                <p>23/04/2025</p>
+            </div>
+                
+            </div>
+            <div class="image_input">
+                
+            </div>
+            <div class="post_tittle" ><p id="text_tittle">Digite o título que deseja publicar</p> </div>
+            <div class="post_text"><p  id="text_inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p> </div>
+            <div class="button_box">
+                <button class="action_button" onclick="fecharModalViewPost('view_post')">
+                    <input type="button" value="FECHAR" class="button_input">
+                </button>
+               
+            </div>
+            
+        </div>
+    </div>
+
+  <script src="/public/js/post_list_admin.js"></script>
+  
 </body>
 
 </html>
