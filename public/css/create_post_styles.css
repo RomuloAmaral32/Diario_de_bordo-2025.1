@@ -4,14 +4,14 @@ body{
 }
 
 .full_container
-{
+{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 40%;
     height: fit-content;
-
+ 
     border: 1px ;
     border-radius: 24px;
     overflow: hidden;
@@ -30,10 +30,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-
-   
-    background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));
+    /*background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));*/
+    background-color: rgba(115, 135, 162, 1);
     
 }
 .post_action{
@@ -57,16 +55,15 @@ body{
     height: 150px;
     border: 1px;
     border-radius: 24px;
-    background-color: rgba(238, 194, 74, 0.2);
+    /*background-color: rgba(238, 194, 74, 0.2);*/
     margin: auto;
     margin-top: 40px;
+    border: 1px solid #ccc;
     
 }
 .image_input::-webkit-file-upload-button{
     display: none;
 }
-
-
 
 .post_tittle{
     display: flex;
@@ -76,15 +73,18 @@ body{
     height: 70px;
     border: 1px;
     border-radius: 24px;
-    background-color: rgba(238, 194, 74, 0.2);
+    background-color: #f1f1f1;
     margin: auto;
     margin-top: 40px;
+    border: 1px solid #ccc;
     
 }
 .post_tittle::placeholder{
     font-family: "Shantell Sans", cursive;
-    color: rgba(79, 134, 202, 1);
-    font-size: 24px;
+    border-color: #4CAF50;
+    color: #555;
+    font-size: 14px;
+    
     
 }
 .post_text{
@@ -95,37 +95,80 @@ body{
     height: 200px;
     border: 1px;
     border-radius: 24px;
-    background-color: rgba(238, 194, 74, 0.2);
+    background-color: #f1f1f1;
     margin: auto;
     margin-top: 40px;
     resize: none;
-    
+    border: 1px solid #ccc;
     
 }
 .post_text::placeholder{
     
     font-family: "Shantell Sans", cursive;
-    color: rgba(79, 134, 202, 1);
-    font-size: 20px;
+    color: #555;
+    font-size: 14px;
+    
     
 }
+/*TESTE CORES DOS BOTOES*/
+.button_box {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.action_button {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.button_input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Botão Cancelar */
+.action_button:last-child .button_input {
+   /* background-color: rgba(214, 5, 5, 0.73); */
+    color: white;
+}
+
+/* Botão Postar */
+.action_button:first-child .button_input {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+
 .action_button{
     width: 500px;
     height: 55px;
     margin-top: 10px;
     border: 1px;
     border-radius: 32px;
-    background-color: rgba(240, 208, 3, 1);
+    background-color:  #4CAF50;
 }
+#cancel_button{
+    background-color: rgba(214, 5, 5, 0.73);
+    color: white;
+}
+
+
 .action_button:hover{
-    background-color: #e5c100;
+    background-color: #4CAF50;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
 .action_button:active{
-    background-color: #ccae00;
+    background-color: #4CAF50;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .button_input{
     cursor: pointer;
 }
@@ -159,7 +202,7 @@ body{
     gap: 450px;
 }
 .action_button:hover{
-    background-color: #e5c100;
+    /*background-color: #e5c100;*/
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
@@ -167,6 +210,10 @@ body{
     background-color: #ccae00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
 @media (max-width: 1700px){
 
     .full_container{
@@ -261,6 +308,8 @@ body{
         font-size: 16px;
     }
 }
+
+
 @media (max-width: 890px){
     .full_container{
         width: 45%;

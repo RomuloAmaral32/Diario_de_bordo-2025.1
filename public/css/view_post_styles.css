@@ -34,7 +34,7 @@ body{
     
 
    
-    background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));
+   background-color: rgba(115, 135, 162, 1);
     
 }
 .post_action{
@@ -49,7 +49,6 @@ body{
 .image_input{
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 75%;
     height: 200px;
     border: 1px;
@@ -70,35 +69,42 @@ body{
     height: 70px;
     border: 1px;
     border-radius: 24px;
-    background-color: rgba(238, 194, 74, 0.2);
+    /*background-color: rgba(238, 194, 74, 0.2);*/
     margin: auto;
     margin-top: 40px;
+    border: 1px solid #ccc;
+    
     
 }
 
 .post_text{
     display: flex;
     align-items: flex-start;
+   
     justify-content: flex-start;
     width: 75%;
     height: 200px;
     border: 1px;
     border-radius: 24px;
-    background-color: rgba(238, 194, 74, 0.2);
+    /*background-color: rgba(238, 194, 74, 0.2);*/
     margin: auto;
     margin-top: 40px;
     resize: none;
+    border: 1px solid #ccc;
 }
 #text_inside{
     margin-left: 15px;
     font-family: "Shantell Sans", cursive;
-    color: rgba(79, 134, 202, 1);
+    color: #555;
+    
+
 }
 .post_text::placeholder{
     
     font-family: "Shantell Sans", cursive;
     color: rgba(79, 134, 202, 1);
     font-size: 20px;
+    border: 1px solid #ccc;
     
 }
 .action_button{
@@ -107,15 +113,15 @@ body{
    
     border: 1px;
     border-radius: 32px;
-    background-color: rgba(240, 208, 3, 1);
+    background-color:  #EEC556;
 }
 .action_button:hover{
-    background-color: #e5c100;
+    background-color:  #EEC556;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
     cursor: pointer;
-}
+} 
 .action_button:active{
-    background-color: #ccae00;
+    background-color:  #EEC556;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .button_input{
@@ -143,8 +149,8 @@ body{
     text-align: start;
     margin: 0px;
     font-family: "Shantell Sans", cursive;
-    color: rgba(79, 134, 202, 1);
-    font-size: 20px;
+    color: #555;
+    font-size: 14px;
     
 
 }
@@ -214,7 +220,7 @@ body{
         
     }
     #text_tittle{
-        font-size: 16px;
+        font-size: 14px;
     }
     #image_text{
         font-size: 16px;
@@ -254,7 +260,7 @@ body{
         height: 35px;
     }
     #text_tittle{
-        font-size: 16px;
+        font-size: 14px;
     }
     #image_text{
         font-size: 16px;
