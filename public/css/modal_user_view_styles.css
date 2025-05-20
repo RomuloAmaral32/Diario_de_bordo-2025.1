@@ -68,13 +68,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
+} 
 
 .inputs_view h3 {
     font-size: 14px;
     font-weight: 400;
 }
-
+ 
 .inputs_view input {
     padding: 10px;
     border: 1px solid #ccc;
