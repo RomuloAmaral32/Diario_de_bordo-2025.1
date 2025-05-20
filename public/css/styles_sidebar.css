@@ -12,10 +12,8 @@
 }
 
 .sidebar {
-    top: 20px;
-    left: 5px;
     width: 14vw;
-    height: 98vh; /*carol 85vh*/
+    height: 100%; /*carol 85vh*/
     background-color: #C4E7EB;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -180,6 +178,8 @@ button {
 
 @media (max-width: 912px) {
     .sidebar{
+        top: 20px;
+        left: 5px;
         height: 80vh;
         width: 16vw;
     }
