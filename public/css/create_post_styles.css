@@ -110,10 +110,12 @@ body{
     
     
 }
+
 /*TESTE CORES DOS BOTOES*/
 .button_box {
     display: flex;
     gap: 10px; /* Espaço entre os botões */
+    height: 500px;
 }
 
 .action_button {
@@ -140,8 +142,8 @@ body{
 
 /* Botão Postar */
 .action_button:first-child .button_input {
-    background-color: #4CAF50; 
-    color: white;
+    
+    color: black;
 }
 
 
@@ -174,7 +176,7 @@ body{
 }
 .button_box{
     width: 550px;
-    height: 80px;
+    height: 140px;
     margin: auto;
     margin-top: 10px;
     display: flex;
@@ -222,7 +224,7 @@ body{
         border-radius: 24px;
         margin: 0;
         padding: 0;
-        height: 550px;
+        height: fit-content;
         
     }
     .autor_details{
@@ -230,7 +232,7 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 500px;
+        
     }
     .image_input{
         
@@ -249,7 +251,7 @@ body{
     }
     .button_box{
         width: 90%;
-        height: 55px;
+        height: 200px;
         margin-top: 15px;
     }
     
@@ -277,7 +279,8 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 500px;
+        height: fit-content;
+        
     }
     .image_input{
         
@@ -297,7 +300,7 @@ body{
     }
     .button_box{
         width: 90%;
-        height: 35px;
+        height: 120px;
         margin-top: 30px;
     }
     
@@ -320,7 +323,7 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 500px;
+        
     }
     .image_input{
         
@@ -339,7 +342,7 @@ body{
     }
     .button_box{
         width: 90%;
-        height: 35px;
+        
     }
    
     .top_text{
@@ -370,7 +373,8 @@ body{
     }
     .post_action{
         width: 100%;
-        height: 100%;
+        height: fit-content;
+       
     }
     .image_input{
         
@@ -390,7 +394,7 @@ body{
     }
     .button_box{
         width: 90%;
-        height: 35px;
+        height: 120px;
         margin-top: 30px;
         gap: 15px;
        
@@ -450,7 +454,6 @@ body{
     }
     .button_box{
         width: 80%;
-        height: 35px;
         margin-top: 30px;
         
         gap: 30px;
