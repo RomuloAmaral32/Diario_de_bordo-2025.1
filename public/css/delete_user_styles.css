@@ -31,7 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right,rgba(115, 154, 202, 1),rgba(121, 237, 255, 1));
+    /*background: linear-gradient(to right,rgba(115, 154, 202, 1),rgba(121, 237, 255, 1));*/
+    background-color: rgba(115, 135, 162, 1);
     width: 40%;
     height: 100px;
 }
