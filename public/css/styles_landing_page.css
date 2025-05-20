@@ -21,7 +21,7 @@
 
 .boxIntroducao h1{
         padding-top: 30px;
-        font-size: 36px;
+        font-size: 51px;
         font-family: "Open Sans";
         font-weight: bolder;
         color: #0062dc;
@@ -259,6 +259,10 @@ section.boxPosts.expanded .posts_grid_escondido{
 
     .boxPosts{
         height: 240vh;
+    }
+
+    .boxIntroducao h1{
+        font-size: 43px;
     }
 }
 
