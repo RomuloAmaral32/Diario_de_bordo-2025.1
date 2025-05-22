@@ -39,9 +39,9 @@
                 </div>
             
             <div id="buttons_modal_edit">
-                <button class="button" type="submit" style='background-color: #4CAF50;'></button>
-                <h3>Salvar</h3>
-                <button class="button" onclick="fecharModalViewUser('modal_edit_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;' ><h3>Cancelar</h3></button>
+                <button class="button" type="submit" style='background-color: #4CAF50;'><h3>Salvar</h3></button>
+                
+                <button class="button" type="button" onclick="fecharModalViewUser('modal_edit_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;' ><h3>Cancelar</h3></button>
             </div>
             </form>
         </div>
