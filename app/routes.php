@@ -7,4 +7,4 @@ use App\Core\Router;
 $router->get('users', 'UserAdminController@index');
 $router->post('users/create', 'UserAdminController@create');
 
-$router->post('users/edit', 'UserAdminController@create'); 
+$router->post('users/edit', 'UserAdminController@edit'); 

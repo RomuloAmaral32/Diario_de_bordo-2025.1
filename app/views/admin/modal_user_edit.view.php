@@ -23,24 +23,25 @@
                 <div class="input_edit_inf">
                 <h2>Nome:</h2>
                     <div class="box_edit">
-                        <input type="text" placeholder="Nome" class="edit_user">
+                        <input type="text" value="<?= $user->name?>" class="edit_user">
                         <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
                     </div>
                 <h2>Email:</h2>
                     <div class="box_edit">
-                        <input type="text" placeholder="Email" class="edit_user">
+                        <input type="text" value="<?= $user->email?>" class="edit_user">
                         <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
                     </div>
                 <h2>Senha:</h2>
                     <div class="box_edit">
-                        <input type="text" placeholder="Senha" class="edit_user">
+                        <input type="text" value="<?= $user->password?>" class="edit_user">
                         <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
                     </div>
                 </div>
             
             <div id="buttons_modal_edit">
-                <a class="button" href="linkpost1" style='background-color: #4CAF50;'><h3>Salvar</h3></a>
-                <a class="button" href="linkpost1" style='background-color: rgba(214, 5, 5, 0.73); color: white;' ><h3>Cancelar</h3></a>
+                <button class="button" type="submit" style='background-color: #4CAF50;'></button>
+                <h3>Salvar</h3>
+                <button class="button" onclick="fecharModalViewUser('modal_edit_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;' ><h3>Cancelar</h3></button>
             </div>
             </form>
         </div>
