@@ -22,5 +22,19 @@ function fecharModalViewUser(idmodal_view_user){
     fecharFiltro();
 }
 
+//------------------------------------------------------------
+
+//------------------ Modal Create User ------------------------
+function abrirModalNewUser(idmodal_new_user){
+    document.getElementById(idmodal_new_user).style.display = "flex";
+    mostrarFiltro();
+}
+
+
+function fecharModalNewUser(idmodal_new_user){
+    document.getElementById(idmodal_new_user).style.display = "none";
+    fecharFiltro();
+}
+
 
 //------------------------------------------------------------

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/public/css/modal_add_user.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="/public/js/modais.js"></script>
 
 </head> 
 <body>
@@ -17,17 +18,17 @@
                 <h1>NOVO USUÁRIO</h1>
             </div>
         <div class="container_inputs">
-            <form action="">
+            <form method="POST" action="users/create">
                 <div class="input_infos">
-                <input type="text" placeholder="Nome" class="input_user">
-                <input type="text" placeholder="Email" class="input_user">
-                <input type="text" placeholder="Senha" class="input_user">
+                <input type="text" placeholder="Nome" class="input_user" name="name">
+                <input type="text" placeholder="Email" class="input_user" name="email">
+                <input type="text" placeholder="Senha" class="input_user" name="password">
                 </div>
-            </form>
-            <div id="buttons_modal_user">
-                <a class="button_user" href="linkpost1" style='background-color: #4CAF50;'><h3>Criar</h3></a>
-                <a class="button_user" href="linkpost1" style='background-color: rgba(214, 5, 5, 0.73); color: white;'><h3>Cancelar</h3></a>
-            </div>
+                <div id="buttons_modal_user">
+                    <button class="button_user" type="submit" style='background-color: #4CAF50;'><h3>Criar</h3></button>
+                    <button class="button_user" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'><h3>Cancelar</h3></button>
+                </div>
+
         </div>
     </div>
 </body>

@@ -9,6 +9,7 @@ body{
 }
 
 #modal_edit_user{
+    display: none;
     width: 36%;
     border-radius: 10px; 
     position: absolute;

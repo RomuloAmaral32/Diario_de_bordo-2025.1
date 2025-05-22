@@ -40,7 +40,7 @@
       <h1>Tabela de Usuários</h1>
     </div>
 
-    <button class="div-btn">      
+    <button class="div-btn" onclick=" abrirModalNewUser('modal_new_user')">      
        <p>NOVO</p>
       
       <span class="material-symbols-outlined">add_circle</span>
@@ -114,7 +114,26 @@
          
           <!------------------------------------------>
 
+          <!------ Modal de Editar Usuário ------->
+
+          <?php require('app\views\admin\modal_user_edit.php'); ?>
+         
+          <!------------------------------------------>
+
+          <!------ Modal de Deletar Usuário ------->
+
+          <?php require('app\views\admin\delete_user.php'); ?>
+         
+          <!------------------------------------------>
+
           <?php endforeach; ?>
+
+          <!------ Modal de Criar Usuário ------->
+
+          <?php require('app\views\admin\modal_add_user.php'); ?>
+         
+          <!------------------------------------------>
+
         </tbody>
       </table>
       <div class="page_indicator">
