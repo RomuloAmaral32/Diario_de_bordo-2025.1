@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class AdminController
+class UserAdminController
 {
 
     public function index()
@@ -25,5 +25,8 @@ class AdminController
          App::get('database')->insert('users', $parameters);
 
         header('Location: /users');
+    }
+    public function edit(){
+        
     }
 }

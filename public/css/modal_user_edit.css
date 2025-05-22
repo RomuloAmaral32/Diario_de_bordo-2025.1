@@ -7,6 +7,9 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.modal_edit_user{
+    display: none;
+}
 
 #modal_edit_user{
     display: none;

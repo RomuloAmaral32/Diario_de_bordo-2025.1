@@ -99,7 +99,7 @@
                   <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_view_user_<?= $user->id ?>')">visibility</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_edit_user_<?= $user->id ?>')">edit</span>
                 </div>
                 <div class="icones">
                   <span class="material-symbols-outlined">delete</span>
@@ -108,6 +108,10 @@
             </td>
           </tr>
 
+          <?php endforeach; ?>
+
+
+          <?php foreach($users as $user):?>  
           <!------ Modal de Visualizar Usuário ------->
 
           <?php require('app\views\admin\modal_user_view.php'); ?>
@@ -116,7 +120,7 @@
 
           <!------ Modal de Editar Usuário ------->
 
-          <?php require('app\views\admin\modal_user_edit.php'); ?>
+          <?php require('app\views\admin\modal_user_edit.view.php'); ?>
          
           <!------------------------------------------>
 
