@@ -5,6 +5,18 @@
 
 }
 
+#filtro{
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+  position: fixed;
+  z-index: 2;
+}
+
+
 
 body {
   padding: 0;

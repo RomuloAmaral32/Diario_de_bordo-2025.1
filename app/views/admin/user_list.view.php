@@ -7,8 +7,10 @@
   <title>Tabela de Usuários</title>
   <link rel="stylesheet" href="../../../public/css/user_list_styles_admin.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="../../../public/js/user_list_admin.js"></script>
+  <script src="/public/js/modais.js"></script>
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
@@ -27,6 +29,7 @@
 </head>
 
 <body>
+  <div id="filtro"></div>
 
   <header class="cabecalho-post">
     <div class="logo">
@@ -93,7 +96,7 @@
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
                 <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_view_user_<?= $user->id ?>')">visibility</span>
                 </div>
                 <div class="icones">
                   <span class="material-symbols-outlined">edit</span>
@@ -104,6 +107,13 @@
               </div>
             </td>
           </tr>
+
+          <!------ Modal de Visualizar Usuário ------->
+
+          <?php require('app\views\admin\modal_user_view.php'); ?>
+         
+          <!------------------------------------------>
+
           <?php endforeach; ?>
         </tbody>
       </table>
