@@ -75,10 +75,10 @@
     font-size: 14px;
     font-weight: 400;
 }
- 
+  
 .inputs_view input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 16px;
     background-color: #f1f1f1;
     font-size: 14px;
@@ -86,7 +86,7 @@
 }
 
 .inputs_view input:read-only {
-    background-color: #f1f1f1;
+    background-color: #ffffff; /*cor de fundo dos campos*/
     cursor: default;
 }
 
