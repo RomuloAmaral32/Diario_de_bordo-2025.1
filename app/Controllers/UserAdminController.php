@@ -36,9 +36,19 @@ class UserAdminController
 
         $id = $_POST['id'];
 
-        App::get('database')->update('users',$parameters,$id);
+        App::get('database')->update('users',$id,$parameters);
 
         header('Location: /users');
         
+    }
+
+    public function delete()
+    {
+        $id = $_POST['id'];
+
+
+        App::get('database')->delete('users',$id);
+
+        header('Location: /users');
     }
 }
