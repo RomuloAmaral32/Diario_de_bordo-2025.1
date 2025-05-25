@@ -74,9 +74,9 @@
             <th class="id"
               style="font-weight:normal; border-radius:20px 0 0 20px; border-top:2px solid #F0C85A; border-bottom: 2px solid #F0C85A ; border-left: 2px solid #F0C85A; padding: 10px; ">
               ID </th>
-            <th class="titulo-postagem" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Nome do Usuário</th>
-            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Email do Usuário</th>
-            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Data da Criação
+            <th class="titulo-postagem" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Nome</th>
+            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Email</th>
+            
             </th>
             <th class="acoes-user"
               style="font-weight:normal; border-radius:0 20px 20px 0; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A; border-right:2px solid #F0C85A;">
@@ -91,7 +91,7 @@
             <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $user->id ?></td>
             <td><?= $user->name ?></td>
             <td> <?= $user->email ?></td>
-            <td> <?=$user->password ?> </td>
+          
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
