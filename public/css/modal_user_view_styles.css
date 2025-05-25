@@ -11,7 +11,7 @@
 
 
 .modal_view_user {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -20,7 +20,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
+    z-index: 3;
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 
 .box_titulo_modal_view_user {
@@ -74,19 +76,21 @@
 .inputs_view h3 {
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
 }
-  
+ 
 .inputs_view input {
+    width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 16px;
-    background-color: #f1f1f1;
+    background-color: white;
     font-size: 14px;
     color: #555;
 }
 
 .inputs_view input:read-only {
-    background-color: #ffffff; /*cor de fundo dos campos*/
+    background-color: white;
     cursor: default;
 }
 
@@ -244,4 +248,3 @@
         font-size: 8px;
     }
 }
-

@@ -7,8 +7,10 @@
   <title>Tabela de Usuários</title>
   <link rel="stylesheet" href="../../../public/css/user_list_styles_admin.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="../../../public/js/user_list_admin.js"></script>
+  <script src="/public/js/modais.js"></script>
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
@@ -27,6 +29,7 @@
 </head>
 
 <body>
+  <div id="filtro"></div>
 
   <header class="cabecalho-post">
     <div class="logo">
@@ -37,7 +40,7 @@
       <h1>Tabela de Usuários</h1>
     </div>
 
-    <button class="div-btn">      
+    <button class="div-btn" onclick=" abrirModalNewUser('modal_new_user')">      
        <p>NOVO</p>
       
       <span class="material-symbols-outlined">add_circle</span>
@@ -71,9 +74,9 @@
             <th class="id"
               style="font-weight:normal; border-radius:20px 0 0 20px; border-top:2px solid #F0C85A; border-bottom: 2px solid #F0C85A ; border-left: 2px solid #F0C85A; padding: 10px; ">
               ID </th>
-            <th class="titulo-postagem" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Nome do Usuário</th>
-            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Email do Usuário</th>
-            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Data da Criação
+            <th class="titulo-postagem" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Nome</th>
+            <th class="data-post" style="font-weight:normal; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A;">Email</th>
+            
             </th>
             <th class="acoes-user"
               style="font-weight:normal; border-radius:0 20px 20px 0; border-top:2px solid #F0C85A; border-bottom:2px solid #F0C85A; border-right:2px solid #F0C85A;">
@@ -88,23 +91,53 @@
             <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $user->id ?></td>
             <td><?= $user->name ?></td>
             <td> <?= $user->email ?></td>
-            <td> <?=$user->password ?> </td>
+          
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
                 <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_view_user_<?= $user->id ?>')">visibility</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_edit_user_<?= $user->id ?>')">edit</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_delete_user_<?= $user->id ?>')">delete</span>
                 </div>
               </div>
             </td>
           </tr>
+
           <?php endforeach; ?>
+
+
+          <?php foreach($users as $user):?>  
+          <!------ Modal de Visualizar Usuário ------->
+
+          <?php require('app\views\admin\modal_user_view.php'); ?>
+         
+          <!------------------------------------------>
+
+          <!------ Modal de Editar Usuário ------->
+
+          <?php require('app\views\admin\modal_user_edit.view.php'); ?>
+         
+          <!------------------------------------------>
+
+          <!------ Modal de Deletar Usuário ------->
+
+          <?php require('app\views\admin\delete_user.php'); ?>
+         
+          <!------------------------------------------>
+
+          <?php endforeach; ?>
+
+          <!------ Modal de Criar Usuário ------->
+
+          <?php require('app\views\admin\modal_add_user.php'); ?>
+         
+          <!------------------------------------------>
+
         </tbody>
       </table>
       <div class="page_indicator">
@@ -120,5 +153,6 @@
 
   </div>
 </body>
+
 
 </html>

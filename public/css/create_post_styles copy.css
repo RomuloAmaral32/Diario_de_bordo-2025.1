@@ -1,0 +1,475 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.full_container
+{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: fit-content;
+ 
+    border: 1px ;
+    border-radius: 24px;
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+}
+.top_tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));*/
+    background-color: rgba(115, 135, 162, 1);
+    
+}
+.post_action{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(241, 241, 241, 1);;
+   
+    
+}
+.top_text{
+    font-family: "Shantell Sans", cursive;
+    font-size: 1.5rem;
+}
+.image_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align-last: center;
+    width: 75%;
+    height: 150px;
+    border: 1px;
+    border-radius: 24px;
+    /*background-color: rgba(238, 194, 74, 0.2);*/
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    background-color: white;
+     
+}
+.image_input::-webkit-file-upload-button{
+    display: none;
+}
+
+.post_tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70px;
+    border: 1px;
+    border-radius: 24px;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    
+}
+.post_tittle::placeholder{
+    font-family: "Shantell Sans", cursive;
+    border-color: #4CAF50;
+    color: #555;
+    font-size: 14px;
+    
+    
+}
+.post_text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 75%;
+    height: 200px;
+    border: 1px;
+    border-radius: 24px;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    resize: none;
+    border: 1px solid #ccc;
+    
+}  
+.post_text::placeholder{
+    
+    font-family: "Shantell Sans", cursive;
+    color: #555;
+    font-size: 14px;
+    
+    
+}
+
+/*TESTE CORES DOS BOTOES*/
+.button_box {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    height: 500px;
+}
+
+.action_button {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.button_input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Botão Cancelar */
+.action_button:last-child .button_input {
+   /* background-color: rgba(214, 5, 5, 0.73); */
+    color: white;
+}
+
+/* Botão Postar */
+.action_button:first-child .button_input {
+    
+    color: black;
+}
+
+
+.action_button{
+    width: 500px;
+    height: 55px;
+    margin-top: 10px;
+    border: 1px;
+    border-radius: 32px;
+    background-color:  #4CAF50;
+}
+#cancel_button{
+    background-color: rgba(214, 5, 5, 0.73);
+    color: white;
+}
+
+
+.action_button:hover{
+    background-color: #4CAF50;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button_input{
+    cursor: pointer;
+}
+.button_box{
+    width: 550px;
+    height: 140px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.button_input{
+    font-family: "Shantell Sans", cursive;
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.autor_name{
+    font-family: "Shantell Sans", cursive;
+    
+}
+.autor_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 450px;
+}
+.action_button:hover{
+    /*background-color: #e5c100;*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+.action_button:active{
+    background-color: #ccae00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media (max-width: 1700px){
+
+    .full_container{
+        overflow: hidden;
+        border: 1px;
+        border-radius: 24px;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        
+    }
+    .autor_details{
+        gap:50%;
+    }
+    .post_action{
+        width: 100%;
+        
+    }
+    .image_input{
+        
+        height: 100px;
+        margin-top: 16px;
+    }
+    .post_tittle{
+        height: 55px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 14px;
+    }
+    .button_box{
+        width: 90%;
+        height: 200px;
+        margin-top: 15px;
+    }
+    
+    #text_tittle{
+        font-size: 16px;
+    }
+    #image_text{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1405px){
+    .post_text::placeholder{
+        font-size: 14px;
+    }
+    .post_tittle::placeholder{
+        font-size: 14px;
+    }
+        
+}
+@media (max-width: 1280px){
+   
+
+    .autor_details{
+        gap:30%;
+    }
+    .post_action{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 20px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 130px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 120px;
+        margin-top: 30px;
+    }
+    
+    #text_tittle{
+        font-size: 16px;
+    }
+    #image_text{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 890px){
+    .full_container{
+        width: 45%;
+    }
+
+    .autor_details{
+        gap:30%;
+    }
+    .post_action{
+        width: 100%;
+        
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        
+    }
+   
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 14px;
+    }
+    #image_text{
+        font-size: 14px;
+    }
+    .autor_details{
+        font-size: 14px;
+    }
+  
+}
+@media (max-width: 765px){
+    .full_container{
+      
+    }
+    .top_tittle{
+        height: 70px;
+    }
+
+    .autor_details{
+        font-size: 14px;
+        gap:20%;
+    }
+    .post_action{
+        width: 100%;
+        height: fit-content;
+       
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 10px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .button_box{
+        width: 90%;
+        height: 120px;
+        margin-top: 30px;
+        gap: 15px;
+       
+    }
+    
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 12px;
+    }
+    #image_text{
+        font-size: 12px;
+    }
+  
+}
+@media (max-width: 600px){
+    .full_container{
+      width: 300px;
+    }
+    .top_tittle{
+        height: 60px;
+    }
+
+    .autor_details{
+        font-size: 14px;
+        gap:20%;
+    }
+    .post_action{
+        width: 100%;
+        height: 100%;
+    }
+    .image_input{
+        
+        height: 90px;
+        margin-top: 16px;
+        gap: 10px;
+    }
+    .post_tittle{
+        height: 45px;
+        margin-top: 16px;
+
+    }
+    .post_tittle::placeholder{
+        height: 45px;
+        margin-top: 16px;
+        font-size: 12px;
+    }
+    .post_text{
+        height: 140px;
+        margin-top: 16px;
+        font-size: 10px;
+    }
+    .post_text::placeholder{
+        font-size: 12px;
+        
+    }
+    .button_box{
+        width: 80%;
+        margin-top: 30px;
+        
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .top_text{
+        font-size: 20px;
+    }
+    #text_tittle{
+        font-size: 12px;
+    }
+    #image_text{
+        font-size: 12px;
+    }
+  
+}
