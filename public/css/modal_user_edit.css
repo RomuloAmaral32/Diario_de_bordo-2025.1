@@ -1,5 +1,6 @@
 body{
     font-family: "Shantell Sans", cursive;
+    z-index: 1;
 }
 
 *{
@@ -59,6 +60,7 @@ body{
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 45px;
+    
 }
 
 .input_edit_inf h2{
@@ -77,10 +79,11 @@ body{
     border-radius: 16px;
     padding: 13px;
     /*background-color: rgb(241, 241, 241);*/
-    background-color: #e6e6e6; /*fundo dos campos cinza mais escuro: background-color: #e6e6e6 */
+    background-color: white; /*fundo dos campos cinza mais escuro: background-color: #e6e6e6 */
     margin-bottom: 15px;
     
-}
+    
+} 
  
 .edit_user{
     outline: none;
@@ -88,8 +91,7 @@ body{
     border: none;
     width: 100vh;
     
-    
-}
+} 
 
 #container_edit_input img{
     width: 20px;
@@ -107,7 +109,7 @@ body{
     margin-bottom: 40px;
     gap: 60px;
 }
-
+ 
 #buttons_modal_edit .button{
     text-decoration: none;
     color: black;
@@ -228,6 +230,7 @@ body{
         line-height: 47px;
         font-weight: 400;
         font-size: 16px;
+        
     }
 } 
 

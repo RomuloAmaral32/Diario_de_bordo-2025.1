@@ -85,11 +85,12 @@
 
         </thead>
         <tbody>  
+          <?php foreach ($posts as $post): ?>
           <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; ">1</td>
-            <td>Titulo</td>
-            <td>Autor</td>
-            <td>Data</td>
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $post->id ?></td>
+            <td><?= $post->title?></td>
+            <td><?= $post->id_user?></td>
+            <td><?= $post->created_at?></td>
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
@@ -105,68 +106,8 @@
               </div>
             </td>
           </tr>
-
-          <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">2</td>
-            <td>Titulo</td>
-            <td>Autor</td>
-            <td>Data</td>
-            <td style="border-radius: 0px 16px  16px  0px;">
-              <div class="icones-acoes"
-                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
-                <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">3</td>
-            <td>Titulo</td>
-            <td>Autor</td>
-            <td>Data</td>
-            <td style="border-radius: 0px 16px  16px  0px;" >
-              <div class="icones-acoes"
-                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
-                <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px;">4</td>
-            <td>Titulo</td>
-            <td>Autor</td>
-            <td>Data</td>
-            <td style="border-radius: 0px 16px  16px  0px;">
-              <div class="icones-acoes"
-                style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row;">
-                <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
-                </div>
-                <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-
+        
+            <?php endforeach; ?>
         </tbody>
       </table>
       <div class="page_indicator">
