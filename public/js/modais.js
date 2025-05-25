@@ -13,13 +13,13 @@ function fecharFiltro() {
 //------------------ Modal View User ------------------------
 function abrirModalViewUser(idmodal_view_user){
     document.getElementById(idmodal_view_user).style.display = "flex";
-    //mostrarFiltro();
+    mostrarFiltro();
 }
 
 
 function fecharModalViewUser(idmodal_view_user){
     document.getElementById(idmodal_view_user).style.display = "none";
-    //fecharFiltro();
+    fecharFiltro();
 }
 
 //------------------------------------------------------------
@@ -27,13 +27,13 @@ function fecharModalViewUser(idmodal_view_user){
 //------------------ Modal Create User ------------------------
 function abrirModalNewUser(idmodal_new_user){
     document.getElementById(idmodal_new_user).style.display = "flex";
-    //mostrarFiltro();
+    mostrarFiltro();
 }
 
 
 function fecharModalNewUser(idmodal_new_user){
     document.getElementById(idmodal_new_user).style.display = "none";
-    //fecharFiltro();
+    fecharFiltro();
 }
 
 

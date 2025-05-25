@@ -18,7 +18,7 @@
         <div id="user_icon">
             <img src="/public/assets/modal_edit_user/account.png" alt="user">
         </div>
-        <div id="container_edit_input">
+        <div id="container_edit_input"  class="container_edit_input">
             <form action="/users/edit" method="post">
                  <input type="hidden" name="id" value="<?= $user->id ?>">
                 <div class="input_edit_inf">
@@ -39,10 +39,10 @@
                     </div>
                 </div>
             
-            <div id="buttons_modal_edit">
-                <button class="button" type="submit" style='background-color: #4CAF50;'></button>
+            <div id="buttons_modal_edit" class="buttons_modal_edit">
+                <button class="button_input" type="submit" style='background-color: #4CAF50;'>Salvar</button>
                 
-                <button class="button" type="button" onclick="fecharModalViewUser('modal_edit_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;' ><h3>Cancelar</h3></button>
+                <button class="button_input" type="button" onclick="fecharModalViewUser('modal_edit_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;' >Cancelar</button>
             </div>
             </form>
         </div>

@@ -76,6 +76,7 @@
 .inputs_view h3 {
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
 }
  
 .inputs_view input {

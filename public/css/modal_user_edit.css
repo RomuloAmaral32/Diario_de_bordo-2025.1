@@ -1,5 +1,6 @@
 body{
     font-family: "Shantell Sans", cursive;
+    
 }
 
 *{
@@ -8,25 +9,36 @@ body{
     box-sizing: border-box;
 }
 .modal_edit_user{
+
+    background-color: #f1f1f1f1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     display: none;
+    width: 35%; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    border-radius: 10px;
+   
+    /* border: solid 1px red; */
+    
 }
 
-#modal_edit_user{
-    display: none;
-    width: 36%;
-    border-radius: 10px; 
-    position: absolute;
-    top: 7%;
-    left: 33%;
-    overflow: hidden;
-    /* border: solid 1px red; */
-    /*background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));*/
-    background-color: rgba(115, 135, 162, 1);
+.top_edit_user{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(121, 237, 255, 1), rgba(115, 154, 202, 1));  
+    text-align: center;
+    padding: 20px 0;
 }
 
 #modal_edit_user h1{
-    margin: 17px;
-    font-weight: 430;
+    font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
@@ -36,24 +48,33 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding: 15px;
+    gap: 10px;
     background: #f1f1f1;
+    width: 100%;
 }
 
 #user_icon img{
     /* border: solid 1px red; */
-    width: 90px;
+    width: 24%;
+    height: auto;
 }
 
-#modal_edit_user #container_edit_input{
+ .container_edit_input{
     display: flex;
+    background: color(srgb rgb(85, 17, 17));
     flex-direction: column;
     /* border: solid 1px red; */
     background-color: #f1f1f1;
     text-align: center;
+    width: 100%;
+    height: fit-content;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .input_edit_inf{
+
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
@@ -74,57 +95,66 @@ body{
     border: 1px solid rgba(154, 180, 222, 1);
     border-radius: 16px;
     padding: 13px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 15px;
+}
+.button_input{
+    width: 250px;
+    height: 55px;
+    border: 1px ;
+    border-radius:32px;
+    font-size: 16px;
+
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+
 }
 
 .edit_user{
     outline: none;
     background-color: transparent;
     border: none;
-    width: 100vh;
+    width: 100%;
 }
 
 #container_edit_input img{
+    margin: -30px;
     width: 20px;
 }
 
-#buttons_modal_edit{
+.buttons_modal_edit{
     /* border: solid 1px red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 150px;
+    width: 450px;
+    margin: auto;
     margin-bottom: 40px;
     gap: 60px;
 }
-
-#buttons_modal_edit .button{
-    text-decoration: none;
-    color: black;
-    background-color: rgba(240, 208, 3, 1);
-    border-radius: 30px;
-    font-size: 16px;
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
-    transition: 0.2s;
-} 
 
 #buttons_modal_edit .button:hover{
     background-color: rgb(211, 183, 0);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
-.button{
-    width: 100px;
-    height: 50px;
-    border: 1px;
-    border-radius: 16px;
+.button h3{
+    text-align: center;
+    width: 170px;
+    line-height: 47px;
+    font-weight: 400;
 }
 
+@media(max-width: 1440px){
 
+
+    .buttons_modal_edit{
+        width: 90%;
+
+    }
+
+}
 @media(max-width: 767px){
     body{
         margin-left: 0px;
@@ -161,10 +191,12 @@ body{
         font-size: 10px;
         width: 30px;
         margin-left: 5px;
+        
         /* border: solid 1px red; */
     }
 
     .box_edit{
+        
         border-radius: 10px;
         padding: 3px;
         background-color: rgb(255, 255, 255);
@@ -172,7 +204,7 @@ body{
     }
 
     .edit_user{
-        width: 100vh;
+        width: 100%;
         
     }
 
@@ -181,6 +213,7 @@ body{
     }
 
     #buttons_modal_edit{
+        width: 80%;
         gap: 30px;
     }
 
@@ -224,4 +257,3 @@ body{
         font-size: 16px;
     }
 } 
-

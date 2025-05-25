@@ -13,7 +13,7 @@
 </head> 
 <body>
 <!-- Modal -->
-    <div id="modal_new_user">
+    <div id="modal_new_user" class="modal_new_user">
             <div class="top_new_user">
                 <h1>NOVO USUÁRIO</h1>
             </div>
@@ -24,9 +24,9 @@
                 <input type="text" placeholder="Email" class="input_user" name="email">
                 <input type="text" placeholder="Senha" class="input_user" name="password">
                 </div>
-                <div id="buttons_modal_user">
-                    <button class="button_user" type="submit" style='background-color: #4CAF50;'></button>
-                    <button class="button_user" type="button" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'></button>
+                <div class="buttons_modal_user">
+                    <button class="button_user" type="submit" style='background-color: #4CAF50;'>Criar</button>
+                    <button class="button_user" type="button" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'>Cancelar</button>
                 </div>
 </form>
 
