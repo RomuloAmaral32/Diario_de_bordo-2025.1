@@ -25,9 +25,10 @@
                 <input type="text" placeholder="Senha" class="input_user" name="password">
                 </div>
                 <div id="buttons_modal_user">
-                    <button class="button_user" type="submit" style='background-color: #4CAF50;'><h3>Criar</h3></button>
-                    <button class="button_user" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'><h3>Cancelar</h3></button>
+                    <button class="button_user" type="submit" style='background-color: #4CAF50;'></button>
+                    <button class="button_user" type="button" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'></button>
                 </div>
+</form>
 
         </div>
     </div>

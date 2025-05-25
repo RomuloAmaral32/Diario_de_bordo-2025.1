@@ -102,7 +102,7 @@
                   <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_edit_user_<?= $user->id ?>')">edit</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('modal_delete_user_<?= $user->id ?>')">delete</span>
                 </div>
               </div>
             </td>

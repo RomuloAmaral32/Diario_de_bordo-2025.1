@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="/public/css/delete_user_styles.css">
 </head>
 <body>
-    <div class="modal_delete_box">
+    <div class="modal_delete_box" id="modal_delete_user_<?= $user->id ?>">
         <div class="box_delete_titulo">
             <h1 class="delete_titulo">Você realmente quer excluir este usuário?</h1>
         </div>
         <div class="box_botoes">
             <div class="botoes_acoes">
-                <button id="botaoCancelarDoDelete" style='background-color: #4CAF50;' >EXCLUIR</button>
-                <button id="botaoExcluir" style='background-color: rgba(214, 5, 5, 0.73); color: white;'>CANCELAR</button>
+            <form action="/users/delete" method="POST" >
+
+            <input type="hidden" name="id" value="<?= $user->id ?>">
+            
+                <button id="botaoCancelarDoDelete" type="submit" style='background-color: #4CAF50;' >EXCLUIR</button>
+
+                <button id="botaoExcluir" type="button" onclick="fecharModalViewUser('modal_delete_user_<?= $user->id ?>')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'>CANCELAR</button>
+                </form>
             </div>
+            
         </div>
     </div>
 </body>

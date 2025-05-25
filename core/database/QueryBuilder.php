@@ -69,7 +69,7 @@ class QueryBuilder
 
     public function delete($table, $id)
     {
-        $sql = sprintf('DELETE FROM %s WHERE id = :id',
+        $sql = sprintf('DELETE FROM %s WHERE %s',
         $table,
         'id = :id'); 
 

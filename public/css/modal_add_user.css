@@ -71,12 +71,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 170px;
+    height: 100px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     gap: 60px;
+}
+.button_user{
+    width: 100px;
+    height: 50px;
 }
 
 
