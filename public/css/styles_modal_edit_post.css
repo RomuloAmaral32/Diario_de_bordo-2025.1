@@ -55,14 +55,14 @@ body{
     text-align-last: center;
     width: 75%;
     height: 150px;
-    border: 1px;
+   
     border-radius: 24px;
-     background-color: transparent;
-    border: 1px solid rgba(167, 166, 165, 0.2);
+    background-color: white;
+    border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
-    
-}
+     
+} 
 .image_input::-webkit-file-upload-button{
     display: none;
 }
@@ -77,8 +77,8 @@ body{
     height: 70px;
     border: 1px;
     border-radius: 24px;
-    background-color: transparent;
-    border: 1px solid rgba(167, 166, 165, 0.2);
+    background-color: white;
+    border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
     
@@ -97,8 +97,8 @@ body{
     height: 200px;
     border: 1px;
     border-radius: 24px;
-    background-color: transparent;
-    border: 1px solid rgba(167, 166, 165, 0.2);
+    background-color: white;
+   border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
     resize: none;

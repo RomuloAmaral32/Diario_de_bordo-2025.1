@@ -11,7 +11,7 @@
 
 </head>  
 <body>
-    <div class="full_container">
+    <div class="full_container" id="visualizar">
 
         <div class="top_tittle">
             <h1 class="top_text">VISUALIZAR POSTAGEM</h1>
@@ -23,12 +23,12 @@
                 <p>Por: Ana Freitas</p>
                 <p>23/04/2025</p>
             </div>
-                 
+                
             </div>
             <div class="image_input">
                 
             </div>
-            <div class="post_tittle"><p id="text_tittle" style="justify-content: left; align-items:initial; ">Digite o título que deseja publicar</p> </div>
+            <div class="post_tittle"><p id="text_tittle" style="justify-content: left; align-items:initial;">Digite o título que deseja publicar</p> </div>
             <div class="post_text"><p  id="text_inside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p> </div>
             <div class="button_box">
                 <button class="action_button">
