@@ -38,10 +38,12 @@ class PostAdminController
          $parameters = [
             'tittle' => $_POST['tittle'],
             'content' => $_POST['content'],
+            
         ];
 
         $id = $_POST['id'];
-
+        // var_dump($id);
+        // die();
         App::get('database')->update('posts',$id,$parameters);
 
         header('Location: /posts');
