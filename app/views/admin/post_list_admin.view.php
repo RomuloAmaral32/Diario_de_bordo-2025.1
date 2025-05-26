@@ -38,7 +38,7 @@
       <h1>Tabela de Postagens</h1>
     </div>
 
-    <button class="div-btn" onclick='abrirModalNewUser("create_post_")'>      
+    <button class="div-btn" onclick="abrirModalNewUser('create_post')">      
        <p>NOVO</p>
       
       <span class="material-symbols-outlined">add_circle</span>
@@ -88,8 +88,8 @@
         <tbody>  
           <?php foreach ($posts as $post): ?>
           <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $post->id ?></td>
-            <td><?= $post->title?></td>
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $post->id?></td>
+            <td><?= $post->tittle?></td>
             <td><?= $post->id_user?></td>
             <td><?= $post->created_at?></td>
             <td style=" border-radius: 0px 16px  16px  0px;">

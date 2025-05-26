@@ -13,7 +13,7 @@ $router->post('users/delete', 'UserAdminController@delete');
 
 
 $router->get('posts', 'PostAdminController@index');
-$router->post('post/create', 'PostAdminController@create'); 
-$router->post('post/edit', 'PostAdminController@edit'); 
-$router->post('post/delete', 'PostAdminController@delete'); 
+$router->post('posts/create', 'PostAdminController@create'); 
+$router->post('posts/edit', 'PostAdminController@edit'); 
+$router->post('posts/delete', 'PostAdminController@delete'); 
 

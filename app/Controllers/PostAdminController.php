@@ -23,9 +23,10 @@ class PostAdminController
     public function create()
     {
         $parameters = [
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'password' => $_POST['password']
+            'tittle' => $_POST['tittle'],
+            'content' => $_POST['content'],
+            'id_user' => 39
+            
         ];
  
          App::get('database')->insert('posts', $parameters);

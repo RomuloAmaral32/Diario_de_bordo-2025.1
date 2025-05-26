@@ -11,7 +11,7 @@
     <title>Nova Postagem</title>
 </head>
 <body>
-    <div class="full_container" id="create_post_">
+    <div class="full_container" id="create_post">
         
         <div class="top_tittle">
             <h1 class="top_text">NOVA PUBLICAÇÃO</h1>
@@ -24,17 +24,19 @@
                 <p>Por: Ana Freitas</p>
                 <p>23/04/2025</p>
             </div>
+            <form action="posts/create" method="POST" id="post_form">
+            
             <input type="file" class="image_input">
-            <input type="text" class="post_tittle" placeholder="Digite o título que deseja publicar">
-            <textarea   class="post_text" placeholder="Digite a sua postagem"></textarea>
+            <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
+            <input  class="post_text" name="content" placeholder="Digite a sua postagem">
             
             <div class="button_box">
-            <form action="/admin/create_post" method="POST" id="post_form">
-            <button class="action_button" id="post_button">
-                    <input type="submit"  value="POSTAR" class="button_input">
+            
+            <button type="submit" class="action_button" id="post_button">POSTAR
                 </button>
-                <button class="action_button" id="cancel_button" >
-                    <input type="button"   onclick="fecharModalViewUser('create_post_')" value="CANCELAR"  class="button_input">
+
+                <button class="action_button" id="cancel_button" type="button" onclick="fecharModalViewUser('create_post')" >CANCELAR
+            
                 </button> 
                 </form>
             </div>
