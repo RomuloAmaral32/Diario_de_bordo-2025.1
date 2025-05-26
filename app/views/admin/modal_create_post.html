@@ -10,7 +10,7 @@
     <title>Nova Postagem</title>
 </head>
 <body>
-    <form class="full_container">
+    <div class="full_container">
         
         <div class="top_tittle">
             <h1 class="top_text">NOVA PUBLICAÇÃO</h1>
@@ -28,20 +28,22 @@
             <textarea   class="post_text" placeholder="Digite a sua postagem"></textarea>
             
             <div class="button_box">
-
+                <form action="/admin/create_post" method="POST" id="post_form">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
             <button class="action_button" id="post_button">
                     <input type="button" value="POSTAR" class="button_input">
                 </button>
                 <button class="action_button" id="cancel_button" >
                     <input type="submit" value="CANCELAR"  class="button_input">
                 </button> 
+            </form>
             </div>
                 
               
         </div>
         
 
-    </form>
+    </div>
     
     
 </body>

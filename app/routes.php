@@ -12,6 +12,8 @@ $router->post('users/delete', 'UserAdminController@delete');
 
 
 
-$router->get('posts', 'AdminController@index');
-
+$router->get('posts', 'PostAdminController@index');
+$router->post('post/create', 'PostAdminController@create'); 
+$router->post('post/edit', 'PostAdminController@edit'); 
+$router->post('post/delete', 'PostAdminController@delete'); 
 

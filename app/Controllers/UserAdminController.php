@@ -7,7 +7,7 @@ use Exception;
 
 class UserAdminController
 {
-
+ 
     public function index()
     {
         $users = App::get('database')->selectAll('users');
