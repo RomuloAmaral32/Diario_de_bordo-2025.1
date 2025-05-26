@@ -5,9 +5,9 @@ body{
 }
 .modal_completo{
 
-    width:40%;
 
     display: flex;
+    width:40%;
     align-self: center;
     justify-content: center;
     border: 1px;

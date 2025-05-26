@@ -96,20 +96,41 @@
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
                 <div class="icones">
-                  <span class="material-symbols-outlined">visibility</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('view_post<?= $post->id ?>')">visibility</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">edit</span>
+                  <span class="material-symbols-outlined"  onclick="abrirModalViewUser('edit_post<?= $post->id ?>')">edit</span>
                 </div>
                 <div class="icones">
-                  <span class="material-symbols-outlined">delete</span>
+                  <span class="material-symbols-outlined" onclick="abrirModalViewUser('delete_post<?= $post->id ?>')">delete</span>
                 </div>
               </div>
             </td>
           </tr>
         
             <?php endforeach; ?>
+            <?php foreach($posts as $post):?>  
 
+
+          <!------ Modal de Visualizar Post ------->
+
+          <?php require('app\views\admin\modal_view_post_admin.view.php'); ?>
+         
+          <!------------------------------------------>
+
+          <!------ Modal de Editar Post ------->
+
+          <?php require('app\views\admin\modal_edit_post.view.php'); ?>
+         
+          <!------------------------------------------>
+
+          <!------ Modal de Deletar Post ------->
+
+          <?php require('app\views\admin\modal_delete_post.view.php'); ?>
+         
+          <!------------------------------------------>
+
+          <?php endforeach; ?>
 
           
             <?php require('app\views\admin\modal_create_post.view.php'); ?>

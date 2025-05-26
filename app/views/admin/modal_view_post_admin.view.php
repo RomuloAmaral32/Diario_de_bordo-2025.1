@@ -11,7 +11,7 @@
 
 </head>  
 <body>
-    <div class="full_container" id="visualizar">
+    <div class="full_container" id="view_post<?= $post->id ?>">
 
         <div class="top_tittle">
             <h1 class="top_text">VISUALIZAR POSTAGEM</h1>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/public/css/styles_modal_edit_post.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Editar Postagem</title>
+</head>
+<body> 
+    <div class="full_container"  id="edit_post<?= $post->id ?>">  
+         
+        <div class="top_tittle">
+            <h1 class="top_text">EDITAR PUBLICAÇÃO</h1>
+        </div>
+       
+          
+        <div class="post_action">
+            <div class="autor_name">
+                <div class="autor_details">
+                <p>Por: Ana Freitas</p>
+                <p>23/04/2025</p>
+            </div>
+            <input type="file" class="image_input">
+            <input type="text" class="post_tittle" placeholder="Digite o título que deseja publicar">
+            <textarea  name="main_text" class="post_text" placeholder="Digite a sua postagem"></textarea>
+            <div class="button_box">
+                <button class="action_button" style='background-color: #4CAF50;'>
+                    <input type="button" value="POSTAR" class="button_input">
+                </button>
+                <button class="action_button" style='background-color: rgba(214, 5, 5, 0.73); color:white'>
+                    <input type="submit" value="CANCELAR"  class="button_input" id="btn_cancelar">
+                </button>
+            </div> 
+               
+            
+        </div>
+        
+
+</div>
+    
+    
+</body>
+</html>
