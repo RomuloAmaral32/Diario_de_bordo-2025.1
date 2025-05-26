@@ -23,18 +23,15 @@
                 <p>Por: Ana Freitas</p>
                 <p>23/04/2025</p>
             </div>
-            <input type="file" class="image_input">
-            <input type="text" class="post_tittle" placeholder="Digite o título que deseja publicar">
-            <textarea  name="main_text" class="post_text" placeholder="Digite a sua postagem"></textarea>
+            <form action="posts/edit" method="POST">
+            <input type="file" class="image_input" name="file">
+            <input type="text" class="post_tittle" name="tittle"  placeholder="Digite o título que deseja publicar">
+            <input  name="content" class="post_text" placeholder="Digite a sua postagem"></input>
             <div class="button_box">
-                <button class="action_button" style='background-color: #4CAF50;'>
-                    <input type="button" value="POSTAR" class="button_input">
-                </button>
-                <button class="action_button" style='background-color: rgba(214, 5, 5, 0.73); color:white'>
-                    <input type="submit" value="CANCELAR"  class="button_input" id="btn_cancelar">
-                </button>
+                <button class="action_button" style='background-color: #4CAF50;' type="submit">POSTAR</button>
+                <button class="action_button" style='background-color: rgba(214, 5, 5, 0.73); color:white' type="button" onclick="fecharModalViewUser('edit_post<?= $post->id ?>')">CANCELAR</button>
             </div> 
-               
+            </form>
             
         </div>
         

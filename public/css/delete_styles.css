@@ -6,7 +6,7 @@ body{
 .modal_completo{
 
 
-    display: flex;
+    display: none;
     width:40%;
     align-self: center;
     justify-content: center;
