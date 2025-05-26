@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="../../../public/js/post_list_admin.js"></script>
+  <script src="/public/js/modais.js"></script>
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-
+<div id="filtro"></div>
   <header class="cabecalho-post">
     <div class="logo">
       <img src="../../../public/assets/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
@@ -37,7 +38,7 @@
       <h1>Tabela de Postagens</h1>
     </div>
 
-    <button class="div-btn">      
+    <button class="div-btn" onclick='abrirModalNewUser("create_post_")'>      
        <p>NOVO</p>
       
       <span class="material-symbols-outlined">add_circle</span>
@@ -108,6 +109,11 @@
           </tr>
         
             <?php endforeach; ?>
+
+
+          
+            <?php require('app\views\admin\modal_create_post.view.php'); ?>
+
         </tbody>
       </table>
       <div class="page_indicator">

@@ -12,7 +12,9 @@ function fecharFiltro() {
 
 //------------------ Modal View User ------------------------
 function abrirModalViewUser(idmodal_view_user){
+    
     document.getElementById(idmodal_view_user).style.display = "flex";
+    console.log("Chegou aqui");
     mostrarFiltro();
 }
 

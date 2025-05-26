@@ -26,7 +26,7 @@
                 </div>
                 <div class="buttons_modal_user">
                     <button class="button_user" type="submit" style='background-color: #4CAF50;'>Criar</button>
-                    <button class="button_user" type="button" href="linkpost1" onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'>Cancelar</button>
+                    <button class="button_user" type="button"  onclick="fecharModalViewUser('modal_new_user')" style='background-color: rgba(214, 5, 5, 0.73); color: white;'>Cancelar</button>
                 </div>
 </form>
 
