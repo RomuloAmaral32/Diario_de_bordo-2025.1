@@ -25,8 +25,8 @@
             </div>
             <form action="posts/edit" method="POST">
             <input type="file" class="image_input" name="file">
-            <input type="text" class="post_tittle" name="tittle"  placeholder="Digite o título que deseja publicar">
-            <input  name="content" class="post_text" placeholder="Digite a sua postagem"></input>
+            <input type="text" class="post_tittle" name="tittle"  value = <?= $post->tittle?> >
+            <input  name="content" class="post_text" value = <?= $post->content?>>
             <div class="button_box">
                 <button class="action_button" style='background-color: #4CAF50;' type="submit">POSTAR</button>
                 <button class="action_button" style='background-color: rgba(214, 5, 5, 0.73); color:white' type="button" onclick="fecharModalViewUser('edit_post<?= $post->id ?>')">CANCELAR</button>

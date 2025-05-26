@@ -130,10 +130,13 @@
          
           <!------------------------------------------>
 
-          <?php endforeach; ?>
-
           
-            <?php require('app\views\admin\modal_create_post.view.php'); ?>
+
+          <?php endforeach; ?>
+          
+          <?php require('app\views\admin\modal_create_post.view.php'); ?>
+          
+           
 
         </tbody>
       </table>

@@ -25,7 +25,7 @@ class PostAdminController
         $parameters = [
             'tittle' => $_POST['tittle'],
             'content' => $_POST['content'],
-            'id_user' => 39
+            'id_user' => 5
             
         ];
  
@@ -36,9 +36,8 @@ class PostAdminController
     public function edit(){
 
          $parameters = [
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'password' => $_POST['password']
+            'tittle' => $_POST['tittle'],
+            'content' => $_POST['content'],
         ];
 
         $id = $_POST['id'];
