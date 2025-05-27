@@ -62,13 +62,15 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    
     width: 100%;
-    gap: 100px;
+    gap: 0px;
     background-color: transparent;
     
 }
 .action_button
 {
+    
     width: 200px;
     height: 60px;
     background-color: rgba(240, 208, 3, 1);
@@ -78,6 +80,7 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .input_button{
+    
     background-color: transparent;
     border: none;
     font-family: "Shantell Sans", cursive;

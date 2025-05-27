@@ -21,24 +21,67 @@
         <div class="post_action">
             <div class="autor_name">
                 <div class="autor_details">
-                <p>Por: Ana Freitas</p>
-                <p>23/04/2025</p>
+                <!-- <p>Id: <?= $post->id_user?></p> -->
+                <p> <?= date('d/m/Y') ?></p>
             </div>
-            <form action="posts/create" method="POST" id="post_form">
-            
-            <input type="file" class="image_input">
+            <form action="posts/create" method="POST" id="post_form" enctype="multipart/form-data">
+            <div>
+            <input type="file" class="image_input" name="image_input">
+                <img src="<?= $post->image?>">
+            </div>
             <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
             <input  class="post_text" name="content" placeholder="Digite a sua postagem">
             
             <div class="button_box">
             
-            <button type="submit" class="action_button" id="post_button">POSTAR
+            <button type="submit" class="action_button" id="post_button" name="post_button">POSTAR
                 </button>
 
                 <button class="action_button" id="cancel_button" type="button" onclick="fecharModalViewUser('create_post')" >CANCELAR
             
                 </button> 
                 </form>
+                
+                <?php
+                    // if(isset($POST['post_button']))
+                    //     if (!empty($_FILES['image_input']['name'])) {
+                    //         $nomeArquivo = $_FILES['image_input']['name'];
+                    //         $tipo = $_FILES['image_input']['type'];
+                    //         $nomeTemporario = $_FILES['image_input']['tmp_name'];
+                    //         $tamanho = $_FILES['image_input']['size'];
+                    //         $erros = array();
+
+                    //         $tamanhoMaximo = 1024 * 1024 * 5;
+                    //         if($tamanho > $tamanhoMaximo){
+                    //             $erros[] = "Seu arquivo excede o tamanho máximo.<br>";
+                    //         }
+
+                    //         $arquivosPermitidos = ["png", "jpg", "jpeg"];
+                    //         $extensao = pathinfo($nomeArquivo, PATHINFO_EXTENSION);
+                    //         if (!in_array ($extensao, $arquivosPermitidos)){
+                    //             $erros[] = "Arquivo não permitido.<br>";
+                    //         }
+                    //         $typesPermitidos = ["image/png", "image/jpg", "image/jpeg"];
+                    //         if (!in_array ($type, $typesPermitidos)){
+                    //             $erros[] = "Tipo de arquivo não permitido.<br>";
+                    //         }
+                    //         if (!empty ($erros)){
+                    //             foreach ($erros as $erro){
+                    //                 echo $erro;
+                    //             }
+                    //         } else {
+                    //             $caminho = "public/assets";
+                    //             $hoje = $date("d-m-Y_h-i");
+                    //             $novoNome = $hoje."-".$nomeArquivo;
+                    //             if(move_uploaded_file($nomeTemporario, $caminho.$novoNome)){
+                    //                 echo "Upload feito com sucesso!";
+                    //             } else {
+                    //                 echo "Erro ao enviar o arquivo!";
+                    //             }
+                    //         }
+                    //     }
+                ?>
+
             </div>
                 
               
