@@ -23,12 +23,15 @@
             <div class="autor_name">
                 <div class="autor_details">
                     <p>Id do autor: <?= $post->id_user ?></p>
-                    <p>23/04/2025</p>
+                    <p><?= $post-> created_at ?></p>
                 </div>
             </div>
             <form action="posts/edit" method="POST">
                 <input type="hidden" value=<?= $post->id ?> name="id">
+                <div>
                 <input type="file" class="image_input" name="file">
+                <img src="<?= $post->image?>">
+                </div>
                 <input type="text" class="post_tittle" name="tittle" value=<?= $post->tittle ?>>
                 <input name="content" class="post_text" value=<?= $post->content ?>>
                 <div class="button_box">
