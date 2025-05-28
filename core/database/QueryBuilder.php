@@ -88,9 +88,8 @@ class QueryBuilder
  
         
     }
-}
 
-  public function countALL($table)
+    public function countALL($table)
     {
         $sql = "select COUNT (*) from {$table}";
 
@@ -104,3 +103,5 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+
+}
