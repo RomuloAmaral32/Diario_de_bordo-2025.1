@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-
+ 
 .full_container
 {
     display: none;
@@ -12,29 +12,22 @@ body{
     justify-content: center;
     width: 40%;
     height: fit-content;
- 
     border: 1px ;
     border-radius: 24px;
     overflow: hidden;
-
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     z-index: 3;
-
-    
 }
+
 .top_tittle{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-
     background-color: rgba(115, 135, 162, 1);
     /*background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));*/
     
@@ -43,13 +36,13 @@ body{
     width: 100%;
     height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
-   
-    
 }
+
 .top_text{
     font-family: "Shantell Sans", cursive;
     font-size: 1.5rem;
 }
+
 .image_input{
     display: flex;
     align-items: center;
@@ -58,19 +51,16 @@ body{
     text-align-last: center;
     width: 75%;
     height: 150px;
-   
     border-radius: 24px;
     background-color: white;
     border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
-     
 } 
+
 .image_input::-webkit-file-upload-button{
     display: none;
 }
-
-
 
 .post_tittle{
     display: flex;
@@ -84,8 +74,8 @@ body{
     border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
-    
 }
+
 .post_tittle::placeholder{
     font-family: "Shantell Sans", cursive;
     color: rgb(128, 129, 129);

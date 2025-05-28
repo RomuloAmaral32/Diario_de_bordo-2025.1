@@ -11,20 +11,16 @@ body{
     justify-content: center;
     width: 40%;
     height: fit-content;
- 
     border: 1px ;
     border-radius: 24px;
     overflow: hidden;
-
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     z-index: 3;
-    
 }
+
 .top_tittle{
     display: flex;
     flex-direction: column;
@@ -33,19 +29,19 @@ body{
     width: 100%;
     /*background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));*/
     background-color: rgba(115, 135, 162, 1);
-    
 }
+
 .post_action{
     width: 100%;
     height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
-   
-    
 }
+
 .top_text{
     font-family: "Shantell Sans", cursive;
     font-size: 1.5rem;
 }
+
 .image_input{
     display: flex;
     align-items: center;
@@ -63,6 +59,7 @@ body{
     background-color: white;
      
 }
+
 .image_input::-webkit-file-upload-button{
     display: none;
 }
@@ -86,9 +83,8 @@ body{
     border-color: #4CAF50;
     color: #555;
     font-size: 14px;
-    
-    
 }
+
 .post_text{
     display: flex;
     align-items: flex-start;
@@ -211,11 +207,9 @@ body{
     cursor: pointer;
 }
 .action_button:active{
-    background-color: #ccae00;
+    /*background-color: #cc7000;*/
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
 
 
 @media (max-width: 1700px){

@@ -15,8 +15,30 @@ class PostAdminController
     }*/
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts');
-        return view('admin/post_list_admin', compact('posts'));
+        $page=  1;
+
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $page = intval($_GET['paginacaoNumero'];
+
+            if($page <= 0){
+               return redirect('admin/post_list_admin');   
+
+            }
+
+
+        }
+
+        $itensPage = 5;
+        $inicio  = $itensPage * $page - $itensPage;
+        $rows_count = App::get('database')->countALL('posts');
+
+            if(inicio > $row_count{
+                return redirect('admin/post_list_admin');
+            }
+
+        $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
+        $total_pages = ceil($rows_count / $itensPage);
+        return view('admin/post_list_admin', compact('posts', 'page', 'total_page'));
     }
 
 

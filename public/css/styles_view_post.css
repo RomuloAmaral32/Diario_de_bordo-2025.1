@@ -8,9 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; */
-
-
-
 }
 
 .view_post_container h1 {
@@ -32,7 +29,7 @@ body {
     text-indent: 0;
     padding-left: 80px;
     font-family: 'Shantell Sans', sans-serif;
-}
+} 
 
 .view_post_container label.label_1 {
     padding-left: 20px;
