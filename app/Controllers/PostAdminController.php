@@ -7,7 +7,7 @@ use Exception;
 
 class PostAdminController 
 {
-
+ 
    /* public function index()
     {
         $users = App::get('database')->selectAll('users');
@@ -18,7 +18,7 @@ class PostAdminController
         $page=  1;
 
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
-            $page = intval($_GET['paginacaoNumero'];
+            $page = intval($_GET['paginacaoNumero']);
 
             if($page <= 0){
                return redirect('admin/post_list_admin');   
@@ -32,7 +32,7 @@ class PostAdminController
         $inicio  = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countALL('posts');
 
-            if(inicio > $row_count{
+            if($inicio > $rows_count){
                 return redirect('admin/post_list_admin');
             }
 
