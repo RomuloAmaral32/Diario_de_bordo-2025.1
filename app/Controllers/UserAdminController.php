@@ -25,7 +25,7 @@ class UserAdminController
 
         $itensPage = 5;
         $inicio  = $itensPage * $page - $itensPage;
-        $rows_count = App::get('database')->countALL('posts');
+        $rows_count = App::get('database')->countALL('users');
 
             if($inicio > $rows_count){
                 return redirect('admin/admin/user_list');

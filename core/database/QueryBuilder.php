@@ -34,6 +34,22 @@ class QueryBuilder
         }
     }
 
+   public function countALL($table)
+    {
+        $sql = "select COUNT (*) from {$table}";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+
     public function insert($table, $parameters)
     {
         $sql = sprintf('INSERT INTO %s (%s) VALUES (%s)',
@@ -89,19 +105,6 @@ class QueryBuilder
         
     }
 
-    public function countALL($table)
-    {
-        $sql = "select COUNT (*) from {$table}";
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-
-            return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
-
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
+ 
 
 }
