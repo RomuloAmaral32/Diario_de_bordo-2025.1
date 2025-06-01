@@ -36,7 +36,7 @@ class QueryBuilder
 
    public function countALL($table)
     {
-        $sql = "select COUNT (*) from {$table}";
+        $sql = "SELECT COUNT(*) FROM {$table}";
 
         try {
             $stmt = $this->pdo->prepare($sql);

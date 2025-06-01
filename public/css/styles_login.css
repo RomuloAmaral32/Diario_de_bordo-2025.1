@@ -32,6 +32,9 @@ body p{
     transform: translate(-50%,-50%);
 }
 
+input:focus{
+    outline: none;
+}
 .login_page_container p{
     text-align: center;
     font-size: 27px;

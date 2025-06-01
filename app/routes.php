@@ -15,10 +15,10 @@ $router->post('posts/create', 'PostAdminController@create');
 $router->post('posts/edit', 'PostAdminController@edit'); 
 $router->post('posts/delete', 'PostAdminController@delete'); 
 
-$router->get('login', 'Controller@exibirLogin');
-$router->get('dashboard', 'Controller@exibirDashboard');
-$router->post('login', 'Controller@efetuaLogin');
-$router->post('logout', 'Controller@efetuarLogout');
+$router->get('login', 'ExibirLoginController@exibirLogin');
+$router->get('dashboard', 'ExibirDashboardController@exibirDashboard');
+$router->post('login', 'ExibirLoginController@efetuaLogin');
+$router->post('logout', 'ExibirLoginController@efetuarLogout');
 
 
 ?>

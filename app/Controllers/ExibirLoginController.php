@@ -7,6 +7,9 @@ use Exception;
 
 class ExibirLoginController
 {
+
+
+   
  
     public function exibirLogin(): mixed
     {
@@ -15,12 +18,13 @@ class ExibirLoginController
             header('Location: /dashboard');
             exit();
         }
-        return view(name: 'site/login');
+        return view(name: 'site/login_page');
 
     }
 
     public function efetuaLogin(): void
     {
+       
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 

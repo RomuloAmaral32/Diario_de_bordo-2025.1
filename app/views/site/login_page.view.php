@@ -23,21 +23,25 @@
     <div class='mensagem-erro'>
         <p>
         <?php
+        if(session_status() == PHP_SESSION_NONE){
             session_start();
+        }
             if (isset($_SESSION['mensagem-erro'])) {
                 echo $_SESSION['mensagem-erro'];
                 unset($_SESSION['mensagem-erro']);
             }
         ?>
+        </p>
+        </div>
 
 <label for="email">Email</label>
 
-<input type="email" placeholder="example@email.com" class="email_input">
+<input type="email" name="email" placeholder="example@email.com" class="email_input">
 
 <label for="senha">Senha</label>
 
 <div class="pass_manager">
-    <input type="password" placeholder="*********" class="pass_input"> 
+    <input type="password" name="senha" placeholder="*********" class="pass_input"> 
     <img src="/public/assets/login_page/eye_icon.png" alt="eye_icon" class="eye_icon">
 </div>
 
