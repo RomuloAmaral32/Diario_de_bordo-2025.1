@@ -86,9 +86,10 @@
 
         </thead>
         <tbody>
+          <?php $id_falso = $inicio + 1; ?>
           <?php foreach($users as $user):?>  
           <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $user->id ?></td>
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $id_falso++ ?></td>
             <td><?= $user->name ?></td>
             <td> <?= $user->email ?></td>
           

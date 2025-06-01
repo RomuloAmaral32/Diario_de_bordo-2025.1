@@ -34,7 +34,7 @@ class UserAdminController
 
         $users = App::get('database')->selectAll('users',  $inicio, $itensPage);
         $total_pages = ceil($rows_count / $itensPage);
-        return view('admin/user_list', compact('users', 'page', 'total_pages'));
+        return view('admin/user_list', compact('users', 'page', 'total_pages', 'inicio'));
     }
 
     public function create()
