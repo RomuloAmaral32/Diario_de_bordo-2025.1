@@ -23,6 +23,7 @@ body {
 .logout{
     background-color:transparent;
     outline: transparent;
+    border: none;
     cursor: pointer;
 }
 
