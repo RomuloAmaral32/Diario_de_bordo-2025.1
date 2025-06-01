@@ -141,11 +141,25 @@
         </tbody>
       </table>
       <div class="page_indicator">
-        <a href="" class="arrow"></a> 
-        <a href="" class="page_icons" id="icon_1">1</a>
-        <a href="" class="page_icons">2</a>
-        <a href="" class="page_icons">3</a> 
-        <a href="" class="arrow" id="arrow2"> </a>
+
+      <li class="page_icons" <?= $page <= 1 ? "disabled" : ""?> >
+        <a class="page_link" href="?paginacaoNumero=<?= $page - 1?>">
+        <span  class="arrow"></span>
+        </a>
+      </li>
+         
+        <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+        <li  class="page_icons" ><a class ="page_link <?= $page_number == $page ? "active" : "" ?>
+        " href="?paginacaoNumero=<?= $page_number?>">
+        <?=$page_number?> </a></li>
+        <?php endfor ?>
+     
+        <li class="page_icons" <?= $page >= $total_pages ? "disabled" : ""?> >
+        <a class="page_link" href="?paginacaoNumero=<?= $page + 1?>">
+        <span  class="arrow" id="arrow2"> </span>
+        </a>
+      </li>
+        
     </div>
 
 

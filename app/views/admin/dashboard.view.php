@@ -52,12 +52,12 @@
                         <h1>DASHBOARD</h1>
                     </div>
                     <div id="button-container">
-                            <a class="button" href="tabelaposts">
+                            <a class="button" href="posts">
                                 <h3>Tabela de posts</h3>
                                 <img src="/public/assets/dashboard_admin/posts.png" alt="post">
                             </a>
 
-                            <a class="button" href="tabelaposts">
+                            <a class="button" href="users">
                                 <h3>Tabela de usuários</h3>
                                 <img src="/public/assets/dashboard_admin/user.png" alt="post">
                             </a>

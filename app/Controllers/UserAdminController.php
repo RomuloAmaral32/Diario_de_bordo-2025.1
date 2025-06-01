@@ -10,7 +10,7 @@ class UserAdminController
  
     public function index()
     {
-        $page=  1;
+        $page =  1;
 
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
             $page = intval($_GET['paginacaoNumero']);
@@ -34,7 +34,7 @@ class UserAdminController
 
         $users = App::get('database')->selectAll('users',  $inicio, $itensPage);
         $total_pages = ceil($rows_count / $itensPage);
-        return view('admin/user_list', compact('users', 'page', 'total_page'));
+        return view('admin/user_list', compact('users', 'page', 'total_pages'));
     }
 
     public function create()
