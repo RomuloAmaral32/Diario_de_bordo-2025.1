@@ -20,6 +20,12 @@ body {
     padding: 1rem;
     
 }
+.logout{
+    background-color:transparent;
+    outline: transparent;
+    cursor: pointer;
+}
+
 
 #box-background .real-box{
     border-radius: 2rem;

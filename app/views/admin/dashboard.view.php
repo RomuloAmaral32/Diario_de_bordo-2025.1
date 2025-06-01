@@ -35,8 +35,8 @@
             
                 -->
                         
-                <form action="/admin/logout" method="POST">
-                 <a href="exit1"><img src="/public/assets/dashboard_admin/exit.png" alt="exit"></a>
+                <form action="logout" method="POST">
+                 <button class = "logout" type="submit"><img src="/public/assets/dashboard_admin/exit.png" alt="exit"></button>
                 </form>  
 
 

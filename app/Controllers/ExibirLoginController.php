@@ -41,6 +41,14 @@ class ExibirLoginController
             header('Location: /login');
         }
     }
+    public function efetuarLogout(): never{
+        session_start();
+        session_unset();
+        session_destroy();
+
+        header('Location: /login');
+        exit;
+    }
 
 
 
