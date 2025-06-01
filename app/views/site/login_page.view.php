@@ -21,7 +21,7 @@
 
 <form action="/login" method="POST">
     <div class='mensagem-erro'>
-        <p>
+        <p class="error_text">
         <?php
         if(session_status() == PHP_SESSION_NONE){
             session_start();

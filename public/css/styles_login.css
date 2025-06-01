@@ -13,9 +13,10 @@ body{
 }
 
 
-body p{
+.login_tittle{
     color: white;
-    font-size: 48;
+    font-size: 27px;
+    text-align: center;
 }
 
 .login_page_container{
@@ -35,10 +36,15 @@ body p{
 input:focus{
     outline: none;
 }
-.login_page_container p{
+.error_text{
+    font-family: 'Shantell Sans',sans-serif;
     text-align: center;
-    font-size: 27px;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    
 }
+
 .login_page_container img.logo{
 
     width: 40%;
