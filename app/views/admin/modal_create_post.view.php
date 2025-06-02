@@ -20,9 +20,8 @@
           
         <div class="post_action">
             <div class="autor_name">
-            <input type="hidden" name= "id_autor" value="<?php echo($_SESSION['id']) ?>">
                 <div class="autor_details">
-                <p>Por: Ana Freitas</p>
+                <input type="hidden" name= "id_autor" value="<?php echo($_SESSION['id']) ?>">
                 <p>23/04/2025</p>
             </div>
 
@@ -33,7 +32,7 @@
             
             <div class="button_box">
             
-            <button type="submit" class="action_button" id="post_button">POSTAR
+            <button type="submit" class="action_button" id="post_butt on">POSTAR
                 </button>
 
                 <button class="action_button" id="cancel_button" type="button" onclick="fecharModalViewUser('create_post')" >CANCELAR

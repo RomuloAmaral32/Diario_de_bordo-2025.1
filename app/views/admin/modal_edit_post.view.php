@@ -32,7 +32,7 @@
                 <div class="image_input">
                 <img src="/<?= $post -> image ?>" alt="Imagem post">
                 </div>
-                <input type="file" name="imagem" accept="image/*" class="image_input" id="imagem">
+                <input type="file" name="imagem" accept="image/*"  id="imagem">
                 <input type="text" class="post_tittle" name="tittle" value=<?= $post->tittle ?>>
                 <input name="content" class="post_text" value=<?= $post->content ?>>
                 <div class="button_box">

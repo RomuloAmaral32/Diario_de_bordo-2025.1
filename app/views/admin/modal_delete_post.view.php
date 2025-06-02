@@ -23,7 +23,7 @@
                     <button class="action_button" style=" background-color: #4CAF50;">
                         <input type="button" class="input_button" value="EXCLUIR" id="btn_excluir">
 
-                        <button class="action_button" style="background-color: rgba(214, 5, 5, 0.73);" type="button" onclick="fecharModalViewUser('modal_view_user_<?= $post->id ?>')">CANCELAR</button>
+                         <button class="action_button" style="background-color: rgba(214, 5, 5, 0.73);" type="button" onclick="fecharModalViewUser('delete_post<?= $post->id ?>')">CANCELAR</button>
                     </button>
                 </form>
 

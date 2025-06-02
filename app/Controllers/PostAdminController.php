@@ -8,11 +8,6 @@ use Exception;
 class PostAdminController 
 {
  
-   /* public function index()
-    {
-        $users = App::get('database')->selectAll('users');
-        return view('admin/user_list', compact('users'));
-    }*/
     public function index()
     {
         $page=  1;
@@ -38,12 +33,14 @@ class PostAdminController
 
         $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
         $total_pages = ceil($rows_count / $itensPage);
-        return view('admin/post_list_admin', compact('posts', 'page', 'total_page'));
+        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages'));
     }
 
 
     public function create()
     {
+        session_start();
+        
         $temporario = $_FILES['imagem']['tmp_name'];
 
         $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
@@ -56,7 +53,7 @@ class PostAdminController
         $parameters = [
             'tittle' => $_POST['tittle'],
             'content' => $_POST['content'],
-            'id_user' => $_POST['id_user'],
+            'id_user' => $_SESSION['id'],
             'image' => $caminhodaimagem,
         
         ];

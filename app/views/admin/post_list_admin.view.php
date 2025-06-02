@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  
+  if(!isset($_SESSION['id'])){
+    header('Location: /login');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -137,16 +145,54 @@
           <?php require('app\views\admin\modal_create_post.view.php'); ?>
           
            
+              <?php
+                if (!empty($posts)&& is_array($posts)):
+                  foreach($posts as $post){
+                    $usuario = App\Core\App::get('database')->selectOne('users', $post->id_user);
+                  }
+                else:
+                ?>
+                  <tr>
+                      <td colspan="4" class="text-center">Nenhum Post Econtrado</td>
+                  </tr>
+              <?php
+                endif;
+                ?>
 
         </tbody>
       </table>
-      <div class="page_indicator">
+
+      <nav class="page_box">
+      
+    <ul class="pagination">
+    
+    <li class="page-item">
+      <a class="page-link <?= $page <=1 ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page - 1?>" aria-label="Previous">
+        <span class="arrow" aria-hidden="true" id="arrow1"></span>
+        <span id="sr-only"></span>
+      </a>
+    </li>
+              
+        <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+        <li  class="page_icons" ><a class ="page_link <?= $page_number == $page ? "active" : "" ?>" href="?paginacaoNumero=<?= $page_number?>"> <?=$page_number?> </a></li>
+        <?php endfor ?>
+     
+        <li class="page-item" >
+      <a class="page-link <?= $page >=$total_pages ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page + 1?>" aria-label="Previous">
+        <span class="arrow" aria-hidden="true" id="arrow2"></span>
+        <span class="sr-only"></span>
+      </a>
+    </li>
+
+      </ul>
+        </nav>
+      <!-- <div class="page_indicator">
         <a href="" class="arrow"></a> 
         <a href="" class="page_icons" id="icon_1">1</a>
         <a href="" class="page_icons">2</a>
         <a href="" class="page_icons">3</a> 
         <a href="" class="arrow" id="arrow2"> </a>
-    </div>
+    </div> -->
 
 
     </div>
