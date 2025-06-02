@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="/public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="../../../public/js/user_list_admin.js"></script>
   <script src="/public/js/modais.js"></script>
+  
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 
@@ -86,12 +86,14 @@
 
         </thead>
         <tbody>
-          <?php $id_falso = $inicio + 1; ?>
-          <?php foreach($users as $user):?>  
+        
+        <?php $id_falso = $inicio + 1; ?>
+          <?php foreach($users as $user):?>
           <tr id="linha-tabela">
             <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $id_falso++ ?></td>
             <td><?= $user->name ?></td>
             <td> <?= $user->email ?></td>
+            
           
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"
@@ -141,13 +143,17 @@
 
         </tbody>
       </table>
-      <div class="page_indicator">
 
-      <li class="page_icons" <?= $page <= 1 ? "disabled" : ""?> >
-        <a class="page_link" href="?paginacaoNumero=<?= $page - 1?>">
-        <span  class="arrow"></span>
-        </a>
-      </li>
+      <nav class="page_box">
+      
+    <ul class="pagination">
+    
+    <li class="page-item">
+      <a class="page-link <?= $page <=1 ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page - 1?>" aria-label="Previous">
+        <span class="arrow" aria-hidden="true" id="arrow1"></span>
+        <span id="sr-only"></span>
+      </a>
+    </li>
          
         <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
         <li  class="page_icons" ><a class ="page_link <?= $page_number == $page ? "active" : "" ?>
@@ -155,13 +161,15 @@
         <?=$page_number?> </a></li>
         <?php endfor ?>
      
-        <li class="page_icons" <?= $page >= $total_pages ? "disabled" : ""?> >
-        <a class="page_link" href="?paginacaoNumero=<?= $page + 1?>">
-        <span  class="arrow" id="arrow2"> </span>
-        </a>
-      </li>
-        
-    </div>
+        <li class="page-item" >
+      <a class="page-link <?= $page >=$total_pages ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page + 1?>" aria-label="Previous">
+        <span class="arrow" aria-hidden="true" id="arrow2"></span>
+        <span class="sr-only"></span>
+      </a>
+    </li>
+
+      </ul>
+        </nav>
 
 
     </div>
