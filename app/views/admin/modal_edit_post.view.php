@@ -26,9 +26,13 @@
                     <p>23/04/2025</p>
                 </div>
             </div>
-            <form action="posts/edit" method="POST">
+            <form action="posts/edit" method="POST" enctype="multipart/form-data">
                 <input type="hidden" value=<?= $post->id ?> name="id">
-                <input type="file" class="image_input" name="file">
+                <p>Imagem atual:</p>
+                <div class="image_input">
+                <img src="/<?= $post -> image ?>" alt="Imagem post">
+                </div>
+                <input type="file" name="imagem" accept="image/*" class="image_input" id="imagem">
                 <input type="text" class="post_tittle" name="tittle" value=<?= $post->tittle ?>>
                 <input name="content" class="post_text" value=<?= $post->content ?>>
                 <div class="button_box">

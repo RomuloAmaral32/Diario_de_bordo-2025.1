@@ -44,28 +44,53 @@ class PostAdminController
 
     public function create()
     {
-        $file = $_FILES['image_input'];
-        $extensao = strtolower(pathinfo($file['name'],PATHINFO_EXTENSION));
+        $temporario = $_FILES['imagem']['tmp_name'];
 
-        // App::get('database') ->verificaErroUpload($file);
-        // $img = App::get('database')->uploadImage($file,0);
+        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+
+        $caminhodaimagem = "public/assets/img_posts/" . $nomeimagem;
+
+        move_uploaded_file($temporario, $caminhodaimagem);
+
 
         $parameters = [
             'tittle' => $_POST['tittle'],
             'content' => $_POST['content'],
-            'id_user' => 5,
-            'image' => "img",
+            'id_user' => $_POST['id_user'],
+            'image' => $caminhodaimagem,
+        
         ];
  
-        // $imagem = !empty($_FILES['image']['name']) ? $_FILES
         App::get('database')->insert('posts', $parameters);
         header('Location: /posts');
     }
+    
     public function edit(){
+
+        $id = $_POST['id'];
+        $post = App::get('database')->selectOne('posts', $id);
+
+        $caminhodaimagem = $post -> image;
+
+        if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
+
+        $temporario = $_FILES['imagem']['tmp_name'];
+
+        $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+        $destinoimagem = "public/assets/img_posts/";
+        $caminhodaimagem = $destinoimagem . $nomeimagem;
+
+        move_uploaded_file($temporario, $caminhodaimagem);
+
+            if($post && !empty($post->image) && file_exists($post->image)){
+                unlink($post->image);
+            }
+        }
 
          $parameters = [
             'tittle' => $_POST['tittle'],
             'content' => $_POST['content'],
+            'image' => $caminhodaimagem
             
         ];
 
@@ -81,52 +106,16 @@ class PostAdminController
     public function delete()
     {
         $id = $_POST['id'];
-
+        $post = App::get('database')->selectOne('posts',$id);
+        $caminhoImagem =$post->image;
+        
+        if(file_exists($caminhoImagem)){
+            unlink($caminhoImagem);
+        }
 
         App::get('database')->delete('posts',$id);
 
         header('Location: /posts');
     }
+
 }
-
-//     public function uploadImage($caminho){
-// if (!empty($_FILES['image']['name'])) {
-//                             $nomeImagem = $_FILES['imagem']['name'];
-//                             $type = $_FILES['imagem']['type'];
-//                             $nomeTemporario = $_FILES['imagem']['tmp_name'];
-//                             $tamanho = $_FILES['imagem']['size'];
-//                             $erros = array();
-
-//                             $tamanhoMaximo = 1024 * 1024 * 5;
-//                             if($tamanho > $tamanhoMaximo){
-//                                 $erros[] = "Seu arquivo excede o tamanho máximo.<br>";
-//                             }
-
-//                             $arquivosPermitidos = ["png", "jpg", "jpeg"];
-//                             $extensao = pathinfo($nomeImagem, PATHINFO_EXTENSION);
-//                             if (!in_array ($extensao, $arquivosPermitidos)){
-//                                 $erros[] = "Arquivo não permitido.<br>";
-//                             }
-//                             $typesPermitidos = ["image/png", "image/jpg", "image/jpeg"];
-//                             if (!in_array ($type, $typesPermitidos)){
-//                                 $erros[] = "Tipo de arquivo não permitido.<br>";
-//                             }
-//                             if (!empty ($erros)){
-//                                 foreach ($erros as $erro){
-//                                     echo $erro;
-//                                 }
-//                             } else {
-//                                 // $caminho = "public/assets";
-//                                 $hoje = date("d-m-Y_h-i");
-//                                 $novoNome = $hoje."-".$nomeImagem;
-//                                 if(move_uploaded_file($nomeTemporario, $caminho.$novoNome)){
-//                                     return $novoNome;
-//                                 } else {
-//                                     return FALSE;
-//                                 }
-//                             }
-//         }
-//     }
-// }
-
-

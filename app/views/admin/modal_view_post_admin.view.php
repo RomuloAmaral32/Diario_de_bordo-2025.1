@@ -26,7 +26,7 @@
                 
             </div>
             <div class="image_input">
-                
+                <img src="/<?= $post -> image ?>" alt="Imagem post">
             </div>
             <div class="post_tittle"><p id="text_tittle" style="justify-content: left; align-items:initial;"><?= $post->tittle?></p> </div>
             <div class="post_text"><p  id="text_inside"><?= $post->content?></p> </div>

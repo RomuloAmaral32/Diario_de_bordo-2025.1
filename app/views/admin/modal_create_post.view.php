@@ -20,13 +20,14 @@
           
         <div class="post_action">
             <div class="autor_name">
+            <input type="hidden" name= "id_autor" value="<?php echo($_SESSION['id']) ?>">
                 <div class="autor_details">
                 <p>Por: Ana Freitas</p>
                 <p>23/04/2025</p>
             </div>
-            <form action="posts/create" method="POST" id="post_form">
-            
-            <input type="file" class="image_input">
+
+            <form action="posts/create" method="POST" enctype="multipart/form-data">
+            <input type="file" name="imagem" accept="image/*" class="image_input" id="imagem">
             <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
             <input  class="post_text" name="content" placeholder="Digite a sua postagem">
             
