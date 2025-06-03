@@ -93,10 +93,11 @@
           </tr>
 
         </thead>
-        <tbody>  
+        <tbody>
+          <?php $id_falso = $inicio + 1; ?> 
           <?php foreach ($posts as $post): ?>
           <tr id="linha-tabela">
-            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $post->id?></td>
+            <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $id_falso++ ?></td>
             <td><?= $post->tittle?></td>
             <td><?= $post->id_user?></td>
             <td><?= (new DateTime($post->created_at))->format('d-m-Y') ?></td>

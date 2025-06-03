@@ -33,7 +33,7 @@ class PostAdminController
 
         $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
         $total_pages = ceil($rows_count / $itensPage);
-        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages'));
+        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages', 'inicio'));
     }
 
 
