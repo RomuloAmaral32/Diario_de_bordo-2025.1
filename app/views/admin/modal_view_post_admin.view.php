@@ -20,8 +20,8 @@
         <div class="post_action">
             <div class="autor_name">
                 <div class="autor_details">
-                <p>Por: Ana Freitas</p>
-                <p>23/04/2025</p>
+                <p>Id do autor: <?= $post->id_user ?></p>
+                <p><?= (new DateTime($post->created_at))->format('d-m-Y') ?></p>
             </div>
                 
             </div>
