@@ -19,12 +19,15 @@
             </div>
             <div class="actions">
                 <form class="button_box" action="/posts/delete" method="POST">
+                    <div class="butao_teste">
                     <input type="hidden" value=<?= $post->id ?> name="id">
                     <button class="action_button" style=" background-color: #4CAF50;">
                         <input type="button" class="input_button" value="EXCLUIR" id="btn_excluir">
 
-                         <button class="action_button" style="background-color: rgba(214, 5, 5, 0.73);" type="button" onclick="fecharModalViewUser('delete_post<?= $post->id ?>')">CANCELAR</button>
+                         <button class="cancel_button" style="background-color: rgba(214, 5, 5, 0.73);" type="button" onclick="fecharModalViewUser('delete_post<?= $post->id ?>')">CANCELAR</button>
+                        
                     </button>
+                </div>
                 </form>
 
             </div>

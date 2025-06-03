@@ -55,6 +55,7 @@ class PostAdminController
             'content' => $_POST['content'],
             'id_user' => $_SESSION['id'],
             'image' => $caminhodaimagem,
+            'created_at' => date('Y-m-d H:i:s'),
         
         ];
  

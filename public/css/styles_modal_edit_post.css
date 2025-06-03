@@ -112,6 +112,9 @@ body{
     border: 1px;
     border-radius: 32px;
     background-color: rgba(240, 208, 3, 1);
+    font-family: "Shantell Sans", cursive;
+    font-weight: bold;
+    font-size: 16px;
 }
 .action_button:hover{
     background-color: #e5c100;
@@ -133,7 +136,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
 }
 .button_input{
     font-family: "Shantell Sans", cursive;
@@ -142,6 +145,7 @@ body{
     border: none;
     font-size: 16px;
     font-weight: bold;
+    
 }
 .autor_name{
     font-family: "Shantell Sans", cursive;

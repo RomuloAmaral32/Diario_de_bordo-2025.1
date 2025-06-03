@@ -23,7 +23,7 @@
             <div class="autor_name">
                 <div class="autor_details">
                     <p>Id do autor: <?= $post->id_user ?></p>
-                    <p>23/04/2025</p>
+                    <p><?= (new DateTime($post->created_at))->format('d-m-Y') ?></p>
                 </div>
             </div>
             <form action="posts/edit" method="POST" enctype="multipart/form-data">

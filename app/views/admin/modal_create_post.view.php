@@ -22,7 +22,7 @@
             <div class="autor_name">
                 <div class="autor_details">
                 <input type="hidden" name= "id_autor" value="<?php echo($_SESSION['id']) ?>">
-                <p>23/04/2025</p>
+                <p><?=date('d-m-Y')?></p>
             </div>
 
             <form action="posts/create" method="POST" enctype="multipart/form-data">

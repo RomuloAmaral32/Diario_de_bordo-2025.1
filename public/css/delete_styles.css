@@ -49,6 +49,7 @@ body{
     border: 1px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
+    gap: 50px;
 }
 .msg_tittle{
     width: 90%;
@@ -57,25 +58,33 @@ body{
     
 
 }
+
+
 .button_box{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    gap: 100px;
+    
     background-color: transparent;
     
 }
-.action_button
+
+.cancel_button
 {
-    width: 200px;
-    height: 60px;
+    width: 500px;
+    height: 54px;
     background-color: rgba(240, 208, 3, 1);
     border: 1px;
     border-radius: 32px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Shantell Sans", cursive;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    
 }
 .input_button{
     background-color: transparent;
@@ -83,15 +92,32 @@ body{
     font-family: "Shantell Sans", cursive;
     font-weight: bold;
     font-size: 16px;
+    
 }
 .action_button:hover{
     background-color: #e5c100;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
+
+.cancel_button:hover{
+    background-color: #e5c100;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.butao_teste{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-right: 55px;
+    gap: 30px;
+}
 .input_button:hover
 {
     cursor: pointer;
 }
+
 #btn_cancelar{
     color: white;
 }

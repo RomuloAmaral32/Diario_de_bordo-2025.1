@@ -99,7 +99,7 @@
             <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $post->id?></td>
             <td><?= $post->tittle?></td>
             <td><?= $post->id_user?></td>
-            <td><?= $post->created_at?></td>
+            <td><?= (new DateTime($post->created_at))->format('d-m-Y') ?></td>
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"
                 style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-direction: row; ">
