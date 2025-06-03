@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="/public/css/styles_landing_page.css">
         <title>Diário de Bordo - Landing Page</title>
     </head>
+
+    <?php require('app\views\site\index_navbar_padrao.view.php'); ?>
     <body>
-        <header>
-            <!-- Navbar-->
-        </header>
+
 
         <main>
             <section class="boxIntroducao">
@@ -179,9 +179,7 @@
             </section>
         </main>
 
-        <footer>
-            <!--Footer-->
-        </footer>
+        <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 
         <script src="/public/js/landing_page.js"></script>
     </body>

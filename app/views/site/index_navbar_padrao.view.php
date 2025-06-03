@@ -23,7 +23,7 @@
         </div>
         <div class="div-botoes">
             <div>
-                <a href="URL" class="botoes-navbar-a"><div class="botoes-navbar">Home</div></a>
+                <a href="" class="botoes-navbar-a"><div class="botoes-navbar">Home</div></a>
             </div>
             
             <div class="botoes-navbar">
@@ -31,10 +31,9 @@
             </div>
 
             <div>
-                <a href="URL" class="botoes-navbar-a"><div class="botoes-navbar">Login</div></a>
+                <a href="/login" class="botoes-navbar-a"><div class="botoes-navbar">Login</div></a>
             </div>
         </div>
     </header>
-
 </body>
 </html>
