@@ -54,6 +54,8 @@
     </button>
   </header>
 
+  <?php require('app\views\admin\sidebar.view.php'); ?>
+
   <div class="container-search" >
 
     <!-- <input type="text" id="search" placeholder="Pesquisar" icon="search" class="search-input">

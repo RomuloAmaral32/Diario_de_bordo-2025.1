@@ -22,29 +22,31 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="">
+                        <a href="/dashboard">
                             <img src="/public/assets/sidebar/DashboardIcon.png" alt="Dashboard" class="icone">
                             <span class="descricao">Dashboard</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="">
+                        <a href="/posts">
                             <img src="/public/assets/sidebar/PublicacoesIcon.png" alt="Publicações" class="icone">
                             <span class="descricao">Publicações</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="">
+                        <a href="/users">
                             <img src="/public/assets/sidebar/UsuariosIcon.png" alt="Usuários" class="icone">
                             <span class="descricao">Usuários</span>
                         </a>
                     </li>
                 </ul>
 
-                <button id="logout">
+                <form action="logout" method="POST">
+                <button id="logout" type="submit">
                     <img src="/public/assets/sidebar/LogoutIcon.png" alt="Logout" class="icone">
                     <span class="descricao">Logout</span>
                 </button>
+                </form>
             </div>
         </aside>
     </main>

@@ -31,6 +31,7 @@
 <body>
   <div id="filtro"></div>
 
+
   <header class="cabecalho-post">
     <div class="logo">
       <img src="../../../public/assets/user_list_admin/logo_navbar.png" alt="Logo do Diario de Bordo" class="logo">
@@ -48,6 +49,8 @@
     </button>
   </header>
 
+  <?php require('app\views\admin\sidebar.view.php'); ?>
+  
   <div class="container-search" >
 
     <!-- <input type="text" id="search" placeholder="Pesquisar" icon="search" class="search-input">
@@ -112,7 +115,6 @@
           </tr>
 
           <?php endforeach; ?>
-
 
           <?php foreach($users as $user):?>  
           <!------ Modal de Visualizar Usuário ------->

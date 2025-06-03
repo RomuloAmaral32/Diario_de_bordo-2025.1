@@ -232,6 +232,7 @@ body {
   #txtBusca {
     
     border: none;
+    width: 100%;
     background: transparent;
     padding: 8px;
     outline: none;
