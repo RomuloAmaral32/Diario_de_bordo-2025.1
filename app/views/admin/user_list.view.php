@@ -57,11 +57,13 @@
       <span class="material-symbols-outlined">search</span>
     </div>-->
 
-    <div id="btn-pesquisar" >
-      <input type="text" id="txtBusca" placeholder="Pesquisar" />
-      <span class="material-symbols-outlined">search</span>
-      <!--<p>Pesquisar <span class="material-symbols-outlined">search</span></p>=--->
-    </div>
+    <form action="/users/search" method="GET">
+      <div id="btn-pesquisar" >
+        <input type="text" name="busca" id="txtBusca" placeholder="Pesquisar" />
+        <span class="material-symbols-outlined">search</span>
+        <!--<p>Pesquisar <span class="material-symbols-outlined">search</span></p>=--->
+      </div>
+    </form>
   </div>
 
   <div class="container-principal" >

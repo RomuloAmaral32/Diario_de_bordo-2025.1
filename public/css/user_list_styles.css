@@ -197,8 +197,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
   font-size: 0.9rem;
   width: 90%;
   padding: 1rem 1rem;    

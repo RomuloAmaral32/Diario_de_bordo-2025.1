@@ -9,7 +9,8 @@ $router->get('', 'LandingController@index');
 $router->get('users', 'UserAdminController@index');
 $router->post('users/create', 'UserAdminController@create');
 $router->post('users/edit', 'UserAdminController@edit');
-$router->post('users/delete', 'UserAdminController@delete'); 
+$router->post('users/delete', 'UserAdminController@delete');
+$router->get('users/search', 'UserAdminController@search'); 
 
 
 $router->get('posts', 'PostAdminController@index');

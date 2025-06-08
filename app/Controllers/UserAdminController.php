@@ -74,4 +74,28 @@ class UserAdminController
 
         header('Location: /users');
     }
+
+
+    public function search()
+    {
+        $busca = isset($_GET['busca']) ? trim($_GET['busca']): ''; // Pega a string que tem no input
+
+
+
+        if($busca === '') // se a string estiver vazia, mostra todos os usuarios
+            $users = App::get('database')->selectALL('users');
+        else    
+            $users = App::get('database')->searchFromDB($busca); //senao, mostra os usuarios que batem com a string de busca
+
+
+        //paginacao ainda nao implementada
+        $page = 1;
+        $inicio = 0;
+        $total_pages = 1;
+
+
+        
+        
+        return view('admin/user_list', compact('users','page','total_pages','inicio','busca'));
+    }
 }

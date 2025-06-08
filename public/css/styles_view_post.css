@@ -137,8 +137,9 @@ body {
 
     border-radius: 16px;
     box-sizing: border-box;
-    padding-right: 40px;
+    padding-right: 0;
     background-color: transparent;
+    outline-style: none;
 
 
 }
