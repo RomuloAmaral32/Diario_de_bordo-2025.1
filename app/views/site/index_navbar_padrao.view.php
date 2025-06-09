@@ -23,11 +23,11 @@
         </div>
         <div class="div-botoes">
             <div>
-                <a href="" class="botoes-navbar-a"><div class="botoes-navbar">Home</div></a>
+                <a href="/" class="botoes-navbar-a"><div class="botoes-navbar">Home</div></a>
             </div>
             
             <div class="botoes-navbar">
-                <a href="URL" class="botoes-navbar-a"><div>Publicações</div></a>
+                <a href="/postslist" class="botoes-navbar-a"><div>Publicações</div></a>
             </div>
 
             <div>
