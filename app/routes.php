@@ -6,6 +6,8 @@ use App\Core\Router;
 
 $router->get('', 'LandingController@index');
 
+$router->get('postslist', 'PostsListController@index');
+
 $router->get('users', 'UserAdminController@index');
 $router->post('users/create', 'UserAdminController@create');
 $router->post('users/edit', 'UserAdminController@edit');

@@ -117,6 +117,9 @@ body {
     font-weight: 500;
   }
   
+  .data-card li{
+        margin-left: 5px;
+    }
 
 #cards-container .cards .card-image{
     max-width: 100%;
@@ -414,6 +417,10 @@ body {
     #cards-container .cards{
         width: 310px;
         height: 360px;
+    }
+
+    .data-card li{
+        margin-left: 5px;
     }
 
     #cards-container .cards .parte-baixo{
@@ -945,4 +952,7 @@ body {
         height: 450px;
     }
 
+    .data-card li{
+        margin-left: 10px;
+    }
 }
