@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 </head>
+<?php require('app\views\site\index_navbar_padrao.view.php'); ?>
 <body>
 
     <div id="title-text">
@@ -39,7 +40,7 @@
                     </div>
                     <img class="card-image" src="/public/assets/posts_list/Madagascar.jpg" alt="lugar1">
                         <div class="parte-baixo">
-                            <a href="linkpost1">5 dicas para viajar a Madagascar.</a>
+                            <a href="linkpost1">5 dicas para viajar para Madagascar.</a>
                             <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
                         </div>
                         
@@ -131,5 +132,6 @@
             </div>
         </div>
     </div>
+    <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 </body>
 </html> 

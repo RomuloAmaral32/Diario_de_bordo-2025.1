@@ -12,3 +12,4 @@ class PostsListController{
         return view('site/posts_list');
     }
 }
+
