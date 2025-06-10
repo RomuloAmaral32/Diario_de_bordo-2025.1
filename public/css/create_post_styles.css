@@ -66,6 +66,7 @@ body{
 }
 
 .post_tittle{
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +88,8 @@ body{
 }
 
 .post_text{
+    padding-left: 10px;
+    padding-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
