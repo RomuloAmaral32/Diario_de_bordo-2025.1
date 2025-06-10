@@ -76,7 +76,7 @@
 
   <div class="container-principal" >
     <div class="container-user" >
-      <table style="border-collapse: separate; gap:0px; border-spacing: 0 30px; align-items: center; justify-content: center;"  class="table_total">
+      <table style="border-collapse: separate; gap:0px; border-spacing: 0 30px; align-items: center; justify-content: center; overflow: hidden;"  class="table_total">
 
         <thead style="border: 2px solid F0C85A; ">
  
