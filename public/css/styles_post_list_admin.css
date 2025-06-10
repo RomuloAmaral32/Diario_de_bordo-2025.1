@@ -152,8 +152,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
     font-size: 0.9rem;
     width: 90%; 
     padding: 2rem 2rem;    
@@ -200,9 +200,7 @@ body {
   
   #btn-pesquisar {
     display: flex;
-    align-items: center;
     flex: row;
-    justify-content: center;
     cursor: pointer;
     width: 250px;
     height: 40px;
@@ -213,6 +211,8 @@ body {
     position: relative;
     font-family: "Shantell Sans", cursive;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.10);
+    align-items: center;
+    justify-content: center;
     /*
     display: flex;
     align-items: center;

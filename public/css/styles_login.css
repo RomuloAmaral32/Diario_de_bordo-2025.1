@@ -79,6 +79,7 @@ input:focus{
     
     display: block;
     margin: 20px auto;
+    cursor: pointer;
 }
 .login_page_container input.email_input{
 

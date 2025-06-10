@@ -192,8 +192,8 @@ body{
         height: fit-content;
     }
     .image_input{
-        
-        height: 100px;
+    
+        height: 150px;
         margin-top: 16px;
     }
     .post_tittle{
@@ -240,7 +240,7 @@ body{
     }
     .image_input{
         
-        height: 90px;
+        height: 150px;
         margin-top: 16px;
         gap: 20px;
     }
@@ -282,7 +282,7 @@ body{
     }
     .image_input{
         
-        height: 90px;
+        
         margin-top: 16px;
     }
     .post_tittle{
@@ -332,7 +332,7 @@ body{
     }
     .image_input{
         
-        height: 90px;
+        
         margin-top: 16px;
         gap: 10px;
     }
@@ -383,7 +383,7 @@ body{
     }
     .image_input{
         
-        height: 90px;
+        
         margin-top: 16px;
         gap: 10px;
     }

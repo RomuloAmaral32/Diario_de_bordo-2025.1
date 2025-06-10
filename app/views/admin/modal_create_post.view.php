@@ -26,7 +26,7 @@
             </div>
 
             <form action="/posts/create" method="POST" enctype="multipart/form-data">
-            <input type="file" name="imagem" accept="image/*" class="image_input" id="imagem">
+            <input type="file" name="imagem" accept="image/*" class="image_input_create" id="imagem">
             <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
             <textarea  class="post_text" name="content" placeholder="Digite a sua postagem"></textarea>
             
