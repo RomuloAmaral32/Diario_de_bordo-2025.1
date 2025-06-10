@@ -158,7 +158,7 @@
                 else:
                 ?>
                   <tr>
-                      <td colspan="4" class="text-center">Nenhum Post Econtrado</td>
+                      <td colspan="4" class="text-center">Nenhum Post Encontrado</td>
                   </tr>
               <?php
                 endif;
