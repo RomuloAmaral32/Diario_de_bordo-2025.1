@@ -46,7 +46,9 @@
 </div>
 
 <button type="submit" class="login_button">Login</button>
-<img src="/public/assets/login_page/close_icon.png" alt="close_icon" class="close_button">
+<a href="/">
+    <img src="/public/assets/login_page/close_icon.png" alt="close_icon" class="close_button">
+</a>
 </form>
 
 </div>
