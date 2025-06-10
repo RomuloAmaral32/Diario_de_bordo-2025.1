@@ -16,7 +16,7 @@
         
                 <ul class="itens">
                     <li class="item">
-                        <a href="">
+                        <a href="/">
                             <img src="/public/assets/sidebar/CasaIcon.png" alt="Casa" class="icone">
                             <span class="descricao">Home</span>
                         </a>

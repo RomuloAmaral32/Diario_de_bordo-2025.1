@@ -153,6 +153,19 @@
          
           <!------------------------------------------>
 
+          <?php
+                if (!empty($users)&& is_array($users)):
+                  foreach($users as $user){
+                    $usuario = App\Core\App::get('database')->selectOne('users', $user->id);
+                  }
+                else:
+                ?>
+                  <tr>
+                      <td colspan="4" class="text-center">Nenhum Usuário Encontrado</td>
+                  </tr>
+              <?php
+                endif;
+                ?>
         </tbody>
       </table>
 
