@@ -116,4 +116,25 @@ class PostAdminController
         header('Location: /posts');
     }
 
+    public function search()
+    {
+        $busca = isset($_GET['busca']) ? trim($_GET['busca']): ''; // Pega a string que tem no input
+
+
+
+        if($busca === '') // se a string estiver vazia, mostra todos os usuarios
+            $posts = App::get('database')->selectALL('posts');
+        else    
+            $posts = App::get('database')->searchFromDB($busca,2); //senao, mostra os usuarios que batem com a string de busca
+
+
+        //paginacao ainda nao implementada
+        $page = 1;
+        $inicio = 0;
+        $total_pages = 1;
+
+        
+        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages', 'inicio','busca'));
+    }
+
 }

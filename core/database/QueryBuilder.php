@@ -142,12 +142,18 @@ class QueryBuilder
         }
     }
 
-    public function searchFromDB($search)
+    public function searchFromDB($search,$option)
     {
     
         $string_busca = "%$search%"; 
-        $sql = "SELECT * FROM users WHERE name LIKE :string_busca OR email LIKE :string_busca"; //procura no BD os nomes e os emails que batem com a string de busca.
-        
+
+
+        if($option == 1)
+            $sql = "SELECT * FROM users WHERE name LIKE :string_busca OR email LIKE :string_busca"; //procura no BD os nomes e os emails que batem com a string de busca.
+        else
+            $sql = "SELECT * FROM posts WHERE tittle LIKE :string_busca OR content LIKE :string_busca";
+
+
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindValue(':string_busca',$string_busca,PDO::PARAM_STR);
         $stmt->execute();

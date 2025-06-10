@@ -10,16 +10,19 @@ $router->get('postslist', 'PostsListController@index');
 $router->get('viewpost', 'ViewPostController@index');
 
 $router->get('users', 'UserAdminController@index');
+$router->get('users/search', 'UserAdminController@search'); 
 $router->post('users/create', 'UserAdminController@create');
 $router->post('users/edit', 'UserAdminController@edit');
 $router->post('users/delete', 'UserAdminController@delete');
-$router->get('users/search', 'UserAdminController@search'); 
+
 
 
 $router->get('posts', 'PostAdminController@index');
+$router->get('posts/search', 'PostAdminController@search');  
 $router->post('posts/create', 'PostAdminController@create'); 
 $router->post('posts/edit', 'PostAdminController@edit'); 
 $router->post('posts/delete', 'PostAdminController@delete'); 
+
 
 $router->get('login', 'ExibirLoginController@exibirLogin');
 $router->get('dashboard', 'ExibirDashboardController@exibirDashboard');

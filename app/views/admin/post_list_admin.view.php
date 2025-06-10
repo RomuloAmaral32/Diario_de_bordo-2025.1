@@ -62,11 +62,13 @@
       <span class="material-symbols-outlined">search</span>
     </div>-->
 
+    <form action="/posts/search" method="GET">
     <div id="btn-pesquisar" >
-      <input type="text" id="txtBusca" placeholder="Pesquisar" />
+      <input type="text" id="txtBusca" name="busca" placeholder="Pesquisar" />
       <span class="material-symbols-outlined">search</span>
       <!--<p>Pesquisar <span class="material-symbols-outlined">search</span></p>=--->
     </div>
+    </form>
   </div>
 
   <div class="container-principal" >

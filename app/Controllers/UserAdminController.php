@@ -85,7 +85,7 @@ class UserAdminController
         if($busca === '') // se a string estiver vazia, mostra todos os usuarios
             $users = App::get('database')->selectALL('users');
         else    
-            $users = App::get('database')->searchFromDB($busca); //senao, mostra os usuarios que batem com a string de busca
+            $users = App::get('database')->searchFromDB($busca,1); //senao, mostra os usuarios que batem com a string de busca
 
 
         //paginacao ainda nao implementada
@@ -93,8 +93,6 @@ class UserAdminController
         $inicio = 0;
         $total_pages = 1;
 
-
-        
         
         return view('admin/user_list', compact('users','page','total_pages','inicio','busca'));
     }
