@@ -21,78 +21,20 @@
     <div id="app">
         <main>
             <div id="cards-container">
+                <?php foreach ($posts as $post): ?>
                 <div class="cards">
                     <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
+                        <li><?= (new DateTime($post->created_at))->format('d-m-Y') ?></li>
+                       
                     </div>
                     <img class="card-image" src="/public/assets/posts_list/Acalpulco.jpg" alt="lugar1">
                         <div class="parte-baixo">
-                            <a href="linkpost1">5 dicas para viajar  a Acapulco.</a>
+                            <a href="linkpost1"><?= $post->tittle?></a>
                             <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a>
                         </div>
-                        
+                       
                 </div>
-                <div class="cards">
-                    <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
-                    </div>
-                    <img class="card-image" src="/public/assets/posts_list/Madagascar.jpg" alt="lugar1">
-                        <div class="parte-baixo">
-                            <a href="linkpost1">5 dicas para viajar para Madagascar.</a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
-                        </div>
-                        
-                </div>
-                <div class="cards">
-                    <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
-                    </div>
-                    <img class="card-image" src="/public/assets/posts_list/NewYork.jpg" alt="lugar1">
-                        <div class="parte-baixo">
-                            <a href="linkpost1">Curiosidades inacreditáveis sobre Nova York.</a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
-                        </div>
-                        
-                </div>
-                <div class="cards">
-                    <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
-                    </div>
-                    <img class="card-image" src="/public/assets/posts_list/Paris.jpg" alt="lugar1">
-                        <div class="parte-baixo">
-                            <a href="linkpost1">Fatos surpreendentes de Paris.</a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
-                        </div>
-                        
-                </div>
-                <div class="cards">
-                    <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
-                    </div>
-                    <img class="card-image" src="/public/assets/posts_list/londres.jpg" alt="lugar1">
-                        <div class="parte-baixo">
-                            <a href="linkpost1">Segredos escondidos de Londres.</a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
-                        </div>
-                        
-                </div>
-                <div class="cards">
-                    <div class="data-card">
-                        <li>02 ABR 2025</li>
-                        
-                    </div>
-                    <img class="card-image" src="/public/assets/posts_list/Roma.jpg" alt="lugar1">
-                        <div class="parte-baixo">
-                            <a href="linkpost1">Fatos surpreendentes sobre o museu de Roma.</a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a >
-                        </div>
-                        
-                </div>
+                <?php endforeach; ?>      
             </div>
         </main>
 
@@ -134,4 +76,4 @@
     </div>
     <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 </body>
-</html> 
+</html>

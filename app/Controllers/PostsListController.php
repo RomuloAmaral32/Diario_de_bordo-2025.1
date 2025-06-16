@@ -9,7 +9,8 @@ class PostsListController{
 
     public function index()
     {
-        return view('site/posts_list');
+        $posts = App::get('database')->selectAll('posts');
+        return view('site/posts_list', compact('posts'));
     }
 }
 
