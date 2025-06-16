@@ -27,10 +27,10 @@
                         <li><?= (new DateTime($post->created_at))->format('d-m-Y') ?></li>
                        
                     </div>
-                    <img class="card-image" src="/public/assets/posts_list/Acalpulco.jpg" alt="lugar1">
+                    <img class="card-image" src="/<?= $post -> image ?>" alt="lugar1">
                         <div class="parte-baixo">
-                            <a href="linkpost1"><?= $post->tittle?></a>
-                            <a class="button" href="linkpost1"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a>
+                            <a href="/viewpost?id=<?= $post->id ?>"><?= $post->tittle?></a>
+                            <a class="button" href="/viewpost?id=<?= $post->id ?>"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a>
                         </div>
                        
                 </div>
