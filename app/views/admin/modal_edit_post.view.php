@@ -33,8 +33,8 @@
                 <img src="/<?= $post -> image ?>" alt="Imagem post">
                 </div>
                 <input type="file" name="imagem" accept="image/*"  id="imagem">
-                <input type="text" class="post_tittle" name="tittle" value=<?= $post->tittle ?>>
-                <textarea name="content" class="post_text" value=<?= $post->content ?>></textarea>
+                <input type="text" class="post_tittle" name="tittle" value="<?= $post->tittle ?>"></input>
+                <textarea name="content" class="post_text"><?= $post->content ?></textarea>
                 <div class="button_box">
                     <button class="action_button" style='background-color: #4CAF50;' type="submit">POSTAR</button>
                     <button class="action_button" style='background-color: rgba(214, 5, 5, 0.73); color:white' type="button" onclick="fecharModalViewUser('edit_post<?= $post->id ?>')">CANCELAR</button>

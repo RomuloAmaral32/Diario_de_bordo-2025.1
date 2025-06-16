@@ -29,7 +29,7 @@
                 <img src="/<?= $post -> image ?>" alt="Imagem post">
             </div>
             <div class="post_tittle"><p id="text_tittle" style="justify-content: left; align-items:initial;"><?= $post->tittle?></p> </div>
-            <div class="post_text"><p  id="text_inside"><?= $post->content?></p> </div>
+            <textarea class="post_text" readonly><?= $post->content?></textarea>
             <div class="button_box">
                 <button class="action_button" type="button" onclick="fecharModalViewUser('view_post<?= $post->id ?>')">FECHAR</button>
                

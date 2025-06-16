@@ -289,9 +289,9 @@ body {
     overflow: hidden;
     height: 100%;
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.4;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
   }
   .icones-acoes{
     display: flex;
