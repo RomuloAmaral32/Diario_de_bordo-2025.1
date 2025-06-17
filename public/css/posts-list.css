@@ -254,7 +254,7 @@ body {
         font-size: 13px;
         margin-left: 0;
         margin-right: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     #title-text h1{
@@ -378,7 +378,7 @@ body {
         font-size: 17.5px;
         margin-left: 0;
         margin-right: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     #title-text h1{
@@ -732,7 +732,7 @@ body {
         font-size: 17.5px;
         margin-left: 0;
         margin-right: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     #title-text h1{
@@ -857,7 +857,7 @@ body {
         font-size: 15px;
         margin-left: 0;
         margin-right: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     #title-text h1{
