@@ -12,68 +12,69 @@
 </head>
 <?php require('app\views\site\index_navbar_padrao.view.php'); ?>
 <body>
+    
+    <main>
+        <div id="title-text">
+            <h1>Principais posts</h1>
+        </div>
 
-    <div id="title-text">
-        <h1>
-            Principais posts
-        </h1>
-    </div>
-    <div id="app">
-        <main>
+        <div id="app">
             <div id="cards-container">
                 <?php foreach ($posts as $post): ?>
-                <div class="cards">
-                    <div class="data-card">
-                        <li><?= (new DateTime($post->created_at))->format('d-m-Y') ?></li>
-                       
-                    </div>
-                    <img class="card-image" src="/<?= $post -> image ?>" alt="lugar1">
+                    <div class="cards">
+                        <div class="data-card">
+                            <li><?= (new DateTime($post->created_at))->format('d-m-Y') ?></li>
+                        </div>
+                        <img class="card-image" src="/<?= $post->image ?>" alt="lugar1">
                         <div class="parte-baixo">
                             <a href="/viewpost?id=<?= $post->id ?>"><?= $post->tittle?></a>
                             <a class="button" href="/viewpost?id=<?= $post->id ?>"><img src="/public/assets/posts_list/up-right-arrow.png" alt="Seta"></a>
                         </div>
-                       
-                </div>
-                <?php endforeach; ?>      
-            </div>
-        </main>
-
-        <div id="barra-lateral">
-            <h3>Pesquisar</h3>
-
-            <div class="search-box">
-                <input type="text" class="search-text" placeholder="Pesquisar">
-                <a href="pesquisar">
-                <img src="/public/assets/posts_list/lupa.png" alt="Lupa" height="25" width="25">
-                </a>
+                    </div>
+                <?php endforeach; ?>
             </div>
 
-            <div class="recent-posts">
-                <h4> Posts mais recentes</h4>
-                <div class="post">
-                    <img src="/public/assets/posts_list/MuralhaDaChina.jpg" alt="lugar1">
-                    <div class="text-left">
-                        <div class="data-left"> 03 ABR 2025 </div>
-                        <a href="linkpost1">Histórias fascinantes da muralha da China.</a>
-                    </div>
+            <div id="barra-lateral">
+                <h3>Pesquisar</h3>
+
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquisar">
+                    <a href="pesquisar">
+                        <img src="/public/assets/posts_list/lupa.png" alt="Lupa" height="25" width="25">
+                    </a>
                 </div>
-                <div class="post">
-                    <img src="/public/assets/posts_list/GrandCanyon.jpg" alt="lugar2">
-                    <div class="text-left">
-                        <div class="data-left"> 03 ABR 2025 </div>
-                        <a href="linkpost2">Curiosidades incríveis sobre o Grand Canyon.</a>
+
+                <div class="recent-posts">
+                    <h4>Posts mais recentes</h4>
+
+                    <div class="post">
+                        <img src="/public/assets/posts_list/MuralhaDaChina.jpg" alt="lugar1">
+                        <div class="text-left">
+                            <div class="data-left">03 ABR 2025</div>
+                            <a href="linkpost1">Histórias fascinantes da muralha da China.</a>
+                        </div>
                     </div>
-                </div>
-                <div class="post">
-                    <img src="/public/assets/posts_list/MachuPichu.webp" alt="lugar3">
-                    <div class="text-left">
-                        <div class="data-left"> 03 ABR 2025 </div>
-                        <a href="linkpost3">Fatos surpreendentes sobre Machu Picchu.</a>
+
+                    <div class="post">
+                        <img src="/public/assets/posts_list/GrandCanyon.jpg" alt="lugar2">
+                        <div class="text-left">
+                            <div class="data-left">03 ABR 2025</div>
+                            <a href="linkpost2">Curiosidades incríveis sobre o Grand Canyon.</a>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img src="/public/assets/posts_list/MachuPichu.webp" alt="lugar3">
+                        <div class="text-left">
+                            <div class="data-left">03 ABR 2025</div>
+                            <a href="linkpost3">Fatos surpreendentes sobre Machu Picchu.</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
     <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 </body>
 </html>

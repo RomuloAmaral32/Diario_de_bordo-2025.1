@@ -2,12 +2,19 @@ body {
 
     font-family: 'Shantell Sans', sans-serif;
     background-color: rgba(241, 241, 241, 1);
-    width: 100vw;
+    width: 100%;
+    height: auto;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
     /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; */
+}
+
+.view_post_container {
+    width: 100%;
 }
 
 .view_post_container h1 {

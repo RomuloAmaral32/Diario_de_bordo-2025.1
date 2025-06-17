@@ -19,26 +19,16 @@
 </head>
 <?php require('app\views\site\index_navbar_padrao.view.php'); ?>
 <body>
-        <h1 class="main_tittle">Lorem ipsum</h1>
+    <main>
+        <h1 class="main_tittle"><?= $post -> tittle ?></h1>
     <div class="view_post_container">
         
     <div class="page_container">   
-        <label for="date_label" class="date_label">dd/mm/yyyy</label>
+        <label for="date_label" class="date_label"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
         <hr class="top_line">
         </hr>
-        <img src="/public/assets/view_post/image.png" alt="torre_eifel" class="main_image">
-        <p class="p_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="p_text2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam
-            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arquiteto beatae vitae dicta sunt
-            explicabo. Nemo enim ipsam
-        </p>
+        <img src="/<?= $post -> image ?>" alt="torre_eifel" class="main_image">
+        <p class="p_text"><?= nl2br(htmlspecialchars($post->content)) ?></p>
         <hr class="line">
         </hr>
         <label for="tittle_user" class="tittle_user">Publicado por</label>
@@ -89,7 +79,8 @@
 
     </div>
 
-    </div>  
+    </div>
+</main>  
 </body>
 <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 </html>
