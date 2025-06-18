@@ -18,73 +18,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <?php require('app\views\site\index_navbar_padrao.view.php'); ?>
+
 <body>
     <main>
         <div class="box_titulo_post">
-        <h1 class="main_tittle"><?= $post -> tittle ?></h1>
+            <h1 class="main_tittle"><?= $post->tittle ?></h1>
         </div>
         <div class="view_post_container">
-        
-        <div class="page_container">   
-        <label for="date_label" class="date_label"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
-        <hr class="top_line">
-        </hr>
-        <div class="box_imagem_post">
-            <img src="/<?= $post -> image ?>" alt="torre_eifel" class="main_image">
-        </div>
-        <p class="p_text"><?= nl2br(htmlspecialchars($post->content)) ?></p>
-        <hr class="line">
-        </hr>
-        <div class="box_autor">
-            <label for="tittle_user" class="tittle_user">Publicado por</label>
-            <div class="user_info"><img src="/public/assets/view_post/icon_test.png" class="icon_user" alt="foto_user">
-                <label for="user_name" class="label_1"><?= $post -> author_name ?></label>
-            </div>
-        </div>
 
-        <div class="search_container">
-            <div class="top_search">
-                <label class="pesquisar">Pesquisar</label>
-                <div class="search_box">
-                    <input type="text" placeholder="Pesquisar" class="text_input">
-                    <img src="/public/assets/view_post/search.png" class="lupa_img" alt="lupa">
+            <div class="page_container">
+                <div id="app">
+                <label for="date_label" class="date_label"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
+                <hr class="top_line">
+                </hr>
+                <div class="box_imagem_post">
+                    <img src="/<?= $post->image ?>" alt="torre_eifel" class="main_image">
                 </div>
-            </div>
-            <div class="post_down">
-                <label for="tittle" class="down_tittle">Posts mais recentes</label>
-                <div class="post_details">
-                    <div class='post_obj'>
-                        <img src="/public/assets/view_post/mchina.png" alt="china" class='icon'>
-                        <div class="text">
-                            <label class="tittle">03 ABR 2025</label>
-                            <a href="#" class="links">Histórias fascinantes
-                                da Muralha da China.</a>
+                <p class="p_text"><?= nl2br(htmlspecialchars($post->content)) ?></p>
+                <hr class="line">
+                </hr>
+                <div class="box_autor">
+                    <label for="tittle_user" class="tittle_user">Publicado por</label>
+                    <div class="user_info"><img src="/public/assets/view_post/icon_test.png" class="icon_user" alt="foto_user">
+                        <label for="user_name" class="label_1"><?= $post->author_name ?></label>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="search_container">
+                    <div class="top_search">
+                        <label class="pesquisar">Pesquisar</label>
+                        <div class="search_box">
+                            <input type="text" placeholder="Pesquisar" class="text_input">
+                            <img src="/public/assets/view_post/search.png" class="lupa_img" alt="lupa">
                         </div>
                     </div>
-                    <div class='post_obj'>
-                        <img src="/public/assets/view_post/gcanyon.png" alt="gcanyon" class='icon'>
-                        <div class="text">
-                            <label class="tittle">03 ABR 2025</label>
-                            <a href="#" class="links">Curiosidades incríveis
-                                sobre o Grand Canyon.</a>
-                        </div>
-                    </div>
-                    <div class='post_obj'>
-                        <img src="/public/assets/view_post/mpicchu.png" alt="mpicchu" class='icon'>
-                        <div class="text">
-                            <label class="tittle">03 ABR 2025</label>
-                            <a href="#" class="links">Fatos surpreendentes
-                                sobre Machu Picchu.</a>
-                        </div>
-                    </div>
-                    
-               
-            </div>
-        </div>
+                    <div class="post_down">
+                        <label for="tittle" class="down_tittle">Posts mais recentes</label>
+                        <div class="post_details">
+                            <div class='post_obj'>
+                                <img src="/public/assets/view_post/mchina.png" alt="china" class='icon'>
+                                <div class="text">
+                                    <label class="tittle">03 ABR 2025</label>
+                                    <a href="#" class="links">Histórias fascinantes
+                                        da Muralha da China.</a>
+                                </div>
+                            </div>
+                            <div class='post_obj'>
+                                <img src="/public/assets/view_post/gcanyon.png" alt="gcanyon" class='icon'>
+                                <div class="text">
+                                    <label class="tittle">03 ABR 2025</label>
+                                    <a href="#" class="links">Curiosidades incríveis
+                                        sobre o Grand Canyon.</a>
+                                </div>
+                            </div>
+                            <div class='post_obj'>
+                                <img src="/public/assets/view_post/mpicchu.png" alt="mpicchu" class='icon'>
+                                <div class="text">
+                                    <label class="tittle">03 ABR 2025</label>
+                                    <a href="#" class="links">Fatos surpreendentes
+                                        sobre Machu Picchu.</a>
+                                </div>
+                            </div>
 
 
-        </div>
-    </main>  
+                        </div>
+                    </div>
+
+
+                </div>
+    </main>
 </body>
 <?php require('app\views\site\index_footer_padrao.view.php'); ?>
+
 </html>

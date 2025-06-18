@@ -25,7 +25,7 @@ body {
 
 .box_titulo_post{
     margin-top: 30px;
-    width: 60%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -104,14 +104,11 @@ body {
 }
 
 .view_post_container div.search_container {
-    width: 300px;
+    margin-top: 20px;
+    width: 350px;
     height: 500px;
-    background-color: white;
-
-    position: absolute;
-    top: 130px;
-    right: 300px;
-
+    position: relative;
+    margin-left: 100px;
     border: 2px solid rgba(113, 152, 201, 1);
     border-radius: 16px;
 
@@ -120,7 +117,6 @@ body {
 .view_post_container div.top_search {
     width: 100%;
     height: 20%;
-    background-color: white;
     margin-top: 20px;
 
 }
@@ -128,6 +124,7 @@ body {
 .view_post_container label.pesquisar {
 
     display: block;
+    margin-bottom: 5px;
     padding-left: 20px;
     padding-top: 20px;
 
@@ -140,8 +137,8 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    border: 2px solid rgba(113, 152, 201, 1);
-    border-radius: 16px;
+    border: 2px solid rgba(196, 231, 235, 1);
+    border-radius: 13px;
     margin-left: 15px;
     margin-right: 35px;
     height: 40px;
@@ -156,7 +153,7 @@ body {
     width: 100%;
     height: 100%;
     border: none;
-
+    margin-left: 10px;
     border-radius: 16px;
     box-sizing: border-box;
     padding-right: 0;
@@ -170,6 +167,7 @@ body {
 
     width: 20px;
     height: 20px;
+    margin-right: 8px;
     background-color: transparent;
 
 
@@ -180,7 +178,6 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 15px;
-    background-color: white;
 }
 
 .view_post_container label.down_tittle {
@@ -212,7 +209,8 @@ body {
 }
 
 .view_post_container div.page_container {
-    flex: 1 1 60%;
+    display: flex;
+
     min-width: 300px;
     width: 100vw;
     height: 100%;
@@ -247,6 +245,7 @@ h1.main_tittle {
     padding-left: 80px;
     font-weight: bold;
     font-size: 40px;
+    width: 53%;
 }
 
 .view_post_container a {
@@ -267,16 +266,18 @@ h1.main_tittle {
 
     }
     .view_post_container div.search_container {
-        position: static;
-        width: 50%;
-        height: auto;
-        margin-left: 7%;
-        margin-top: 20px;
-        display: flex;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1334px) {
+    .view_post_container {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
+    
+
+    
 }
 
 @media (max-width: 768px) {
@@ -285,7 +286,7 @@ h1.main_tittle {
         align-items: center;
 
     }
-
+    
     .view_post_container h1 {
         padding-left: 0;
         margin-left: 0;
@@ -301,10 +302,10 @@ h1.main_tittle {
     }
 
     .view_post_container p {
-        padding-left: 0;
+        padding-left: 30px;
         margin-left: 0;
-        width: 100%;
         text-align: center;
+        width: 95%;
     }
 
     .view_post_container label.date_label {
@@ -348,14 +349,12 @@ h1.main_tittle {
         height: auto;
     }
 
-    .view_post_container p {
-        width: 90%;
-    }
 
     .view_post_container div.search_container {
         position: static;
         margin-top: 0px;
         margin-left: 0px;
+        margin-bottom: 50px;
         width: 90%;
         max-width: 90%;
         height: auto;
@@ -386,11 +385,34 @@ h1.main_tittle {
         background-color: rgba(83, 186, 88, 0.09);
     }
 
+    .box_titulo_post{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10px;
+        width: 100%;
+    }
+
     h1.main_tittle {
         padding-left: 0;
         font-size: 28px;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        width: 90%;
     }
+
+    #app{
+        padding: 20px;
+    }
+    
+    .box_imagem_post{
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    justify-content: center;
+    }   
 
     .view_post_container img.icon_user {
         width: 40px;
