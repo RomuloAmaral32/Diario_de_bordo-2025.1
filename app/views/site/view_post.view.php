@@ -20,20 +20,26 @@
 <?php require('app\views\site\index_navbar_padrao.view.php'); ?>
 <body>
     <main>
+        <div class="box_titulo_post">
         <h1 class="main_tittle"><?= $post -> tittle ?></h1>
-    <div class="view_post_container">
+        </div>
+        <div class="view_post_container">
         
-    <div class="page_container">   
+        <div class="page_container">   
         <label for="date_label" class="date_label"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
         <hr class="top_line">
         </hr>
-        <img src="/<?= $post -> image ?>" alt="torre_eifel" class="main_image">
+        <div class="box_imagem_post">
+            <img src="/<?= $post -> image ?>" alt="torre_eifel" class="main_image">
+        </div>
         <p class="p_text"><?= nl2br(htmlspecialchars($post->content)) ?></p>
         <hr class="line">
         </hr>
-        <label for="tittle_user" class="tittle_user">Publicado por</label>
-        <div class="user_info"><img src="/public/assets/view_post/icon_test.png" class="icon_user" alt="foto_user">
-            <label for="user_name" class="label_1">Nome do autor</label>
+        <div class="box_autor">
+            <label for="tittle_user" class="tittle_user">Publicado por</label>
+            <div class="user_info"><img src="/public/assets/view_post/icon_test.png" class="icon_user" alt="foto_user">
+                <label for="user_name" class="label_1"><?= $post -> author_name ?></label>
+            </div>
         </div>
 
         <div class="search_container">
@@ -77,10 +83,8 @@
         </div>
 
 
-    </div>
-
-    </div>
-</main>  
+        </div>
+    </main>  
 </body>
 <?php require('app\views\site\index_footer_padrao.view.php'); ?>
 </html>

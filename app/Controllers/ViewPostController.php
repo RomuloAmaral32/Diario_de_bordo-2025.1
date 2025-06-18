@@ -13,12 +13,22 @@ class ViewPostController {
             $id = (int) $_GET['id'];
 
             $posts = App::get('database')->selectAll('posts');
+            $users = App::get('database')->selectAll('users');
 
             $postEncontrado = null;
             foreach ($posts as $post) {
                 if ($post->id == $id) {
                     $postEncontrado = $post;
                     break;
+                }
+            }
+
+            foreach ($posts as $post){
+                foreach ($users as $user){
+                    if($post->id_user == $user->id){
+                        $post->author_name = $user->name;
+                        break;
+                    }
                 }
             }
 
