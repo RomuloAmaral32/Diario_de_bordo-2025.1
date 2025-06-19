@@ -1,21 +1,22 @@
-body{
+body {
     font-family: "Shantell Sans", cursive;
-    
+
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.modal_edit_user{
+
+.modal_edit_user {
 
     background-color: #f1f1f1f1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     display: none;
-    width: 35%; 
+    width: 35%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -23,44 +24,43 @@ body{
     z-index: 3;
 
     border-radius: 10px;
-   
+
     /* border: solid 1px red; */
-    
+
 }
 
-.top_edit_user{
+.top_edit_user {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    background: rgba(115, 135, 162, 1);  
+    background: rgba(115, 135, 162, 1);
     text-align: center;
     padding: 20px 0;
 }
 
-.modal_edit_user h1{
+.modal_edit_user h1 {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
 
-#user_icon{
-    /* border: solid 1px red; */
+.user_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    gap: 10px;
     background: #f1f1f1;
-    width: 100%;
-}
-
-#user_icon img{
+    height: 100px;
     /* border: solid 1px red; */
-    width: 24%;
-    height: auto;
 }
 
- .container_edit_input{
+.user_icon img {
+    /* border: solid 1px red; */
+    width: 20%;
+    height: 100%;
+}
+
+
+.container_edit_input {
     display: flex;
     background: color(srgb rgb(85, 17, 17));
     flex-direction: column;
@@ -73,15 +73,20 @@ body{
     border-bottom-left-radius: 10px;
 }
 
-.input_edit_inf{
+.edit_img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_edit_inf {
 
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
-.input_edit_inf h2{
+.input_edit_inf h2 {
     font-size: 14px;
     font-weight: 400;
     width: 50px;
@@ -89,7 +94,7 @@ body{
     /* border: solid 1px red; */
 }
 
-.box_edit{
+.box_edit {
     display: flex;
     align-items: center;
     border: 1px solid rgba(154, 180, 222, 1);
@@ -99,31 +104,31 @@ body{
     margin-bottom: 15px;
     border: 2px solid #ccc;
 }
-.button_input{
+
+.button_input {
     width: 250px;
     height: 55px;
-    border: 1px ;
-    border-radius:32px;
+    border: 1px;
+    border-radius: 32px;
     font-size: 16px;
 
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 
 }
 
-.edit_user{
+.edit_user {
     outline: none;
     background-color: transparent;
     border: none;
     width: 100%;
 }
 
-#container_edit_input img{
-    margin: -30px;
+.box_edit img {
     width: 20px;
 }
 
-.buttons_modal_edit{
+.buttons_modal_edit {
     /* border: solid 1px red; */
     display: flex;
     justify-content: center;
@@ -131,108 +136,208 @@ body{
     height: 150px;
     width: 450px;
     margin: auto;
-    
+
     gap: 60px;
 }
 
-#buttons_modal_edit .button:hover{
+#buttons_modal_edit .button:hover {
     background-color: rgb(211, 183, 0);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
 
 
-@media(max-width: 1440px){
+@media(max-width: 3000px) {
 
 
-    .buttons_modal_edit{
+    .buttons_modal_edit {
         width: 90%;
 
     }
 
-    #container_edit_input img{
+    .box_edit img {
         width: 15px;
     }
 
+    .user_icon img {
+        /* border: solid 1px red; */
+        width: 20%;
+        height: 90%;
+    }
+
 }
-@media(max-width: 767px){
-    body{
+
+@media(max-width: 850px) {
+    body {
         margin-left: 0px;
     }
 
-    #modal_edit_user{
-        width: 80%;
-        top: 7%;
-        left: 10%;
+    .modal_edit_user {
+        width: 70%;
+        height: 40%;
+        top: 50%;
+        left: 50%;
     }
-    #modal_edit_user h1{
+
+    #modal_edit_user h1 {
         font-weight: 430;
         font-size: 10px;
         text-align: center;
     }
 
-    #user_icon{
-        /* border: solid 1px red; */
-        padding-top: 10px;
-    }
-
-    #user_icon img{
-        width: 50px;
-    }
-
-    .input_edit_inf{
+    .input_edit_inf {
         margin-top: 10px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
-    .input_edit_inf h2{
+    .input_edit_inf h2 {
         font-size: 10px;
         width: 30px;
         margin-left: 5px;
-        
+
         /* border: solid 1px red; */
     }
 
-    .box_edit{
-        
+    .box_edit {
+
         border-radius: 10px;
         padding: 3px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 15px;
     }
 
-    .edit_user{
+    .edit_user {
         width: 100%;
-        
+        height: 30px;
+
     }
 
-    #container_edit_input img{
+    .box_edit img {
         width: 13px;
     }
 
-    #buttons_modal_edit{
+    #buttons_modal_edit {
         width: 80%;
+        height: 100px;
         gap: 30px;
     }
 
-   
+    .button_input {
+        height: 50%;
+    }
+
+    .user_icon {
+        height: 120px;
+    }
+
+    .user_icon img {
+        /* border: solid 1px red; */
+        width: 19%;
+        height: 80%;
+    }
+
+    .edit_img {
+        font-size: 10px;
+    }
+
 }
 
-@media(min-width: 768px){
+@media(max-width: 642px) {
+    .modal_edit_user {
+        width: 70%;
+        height: 30%;
+        top: 50%;
+        left: 50%;
+    }
+
+    .input_edit_inf {
+        margin-bottom: 0px;
+    }
+
+    .edit_img {
+        font-size: 7px;
+    }
     
-    #buttons_modal_edit{
+    #buttons_modal_edit {
+        width: 80%;
+        height: 100px;
+        gap: 20px;
+    }
+
+    .button_input {
+        height: 40%;
+    }
+
+    .box_edit{
+        width: 100%;
+    }
+
+    .edit_user {
+        font-size: 10px;
+    }
+
+    .user_icon{
+        height: 60px;
+    }
+
+    .user_icon img {
+        /* border: solid 1px red; */
+        width: 17%;
+        height: 90%;
+    }
+}
+
+@media(min-width: 851px) {
+    
+    .modal_edit_user {
+        width: 50%;
+        height: 30%;
+        top: 50%;
+        left: 50%;
+    }
+
+    #buttons_modal_edit {
+        width: 80%;
+        height: 100px;
         gap: 30px;
     }
 
-   
-
-} 
-
-@media(min-width: 1026px){
-    #buttons_modal_edit{
-    gap: 70px;
+    .button_input {
+        height: 50%;
     }
 
-} 
+    .user_icon img {
+        /* border: solid 1px red; */
+        width: 20%;
+        height: 90%;
+    }
+
+    .input_edit_inf{
+        margin-bottom: 10px;
+    }
+}
+
+@media(min-width: 1026px) {
+    .modal_edit_user {
+        width: 35%;
+        height: 15%;
+        top: 50%;
+        left: 50%;
+    }
+
+    #buttons_modal_edit {
+        gap: 70px;
+    }
+
+    .user_icon{
+        height: 150px;
+    }
+
+    .user_icon img {
+        /* border: solid 1px red; */
+        width: 24%;
+        height: 90%;
+    }
+}

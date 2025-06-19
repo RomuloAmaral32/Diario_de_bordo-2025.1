@@ -18,7 +18,11 @@
                 <h1>NOVO USUÁRIO</h1>
             </div>
         <div class="container_inputs">
+            <h2>Adicionar foto de perfil:</h2>
             <form method="POST" action="users/create">
+                <div class="img_user">
+                    <input type="file" name="imagem_user" accept="image/*" id="imagem_user" class="image_user">
+                </div>
                 <div class="input_infos">
                 <input type="text" placeholder="Nome" class="input_user" name="name">
                 <input type="text" placeholder="Email" class="input_user" name="email">
