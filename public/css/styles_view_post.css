@@ -96,7 +96,7 @@ body {
 
     height: 2px;
     width: 790px;
-    margin-left: 85px;
+    margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 0px;
@@ -257,7 +257,66 @@ h1.main_tittle {
 }
 
 
+@media (min-width: 1584px) {
+    #app{
+        width: 60%;
+    }
 
+    .view_post_container img.main_image {
+        width: 100%;
+        height: 20%;
+    }
+
+    .view_post_container div.search_container {
+        margin-left: 70px;
+    }
+
+    h1.main_tittle {
+        width: 100%;
+        padding-right: 80px;
+        font-size: 30px;
+    }
+
+    .view_post_container p {
+    width: 100%;
+    } 
+
+    .view_post_container div.search_container {
+    width: 30%;
+    height: 100%;
+    }
+
+    .view_post_container hr.line {
+        width: 95%;
+    }
+    .view_post_container hr.top_line {
+        width: 95%;
+    }
+
+    .view_post_container div.post_down{
+        width: 100%;
+    }
+    
+    h1.main_tittle {
+    font-size: 50px;
+    }
+    .view_post_container p {
+    font-size: 25px;
+    } 
+    .pesquisar{
+        font-size: 30px;
+    }
+    .down_tittle{
+        font-size: 20px;
+    }
+    .text .links{
+        font-size: 20px;
+    }
+    .post_details .post_obj img{
+        width: 110px;
+        height: 110px;
+    }
+}
 
 @media (max-width: 1483px) {
     .view_post_container {
@@ -280,7 +339,43 @@ h1.main_tittle {
     
 }
 
-@media (max-width: 768px) {
+@media(max-width: 1301px) and (min-width: 1023px){
+    #app{
+        width: 60%;
+    }
+
+    .view_post_container img.main_image {
+        width: 100%;
+        height: 20%;
+    }
+
+    .view_post_container div.search_container {
+        margin-left: 70px;
+    }
+
+    h1.main_tittle {
+        width: 100%;
+        padding-right: 80px;
+        font-size: 30px;
+    }
+
+    .view_post_container p {
+    width: 100%;
+    } 
+
+    .view_post_container div.search_container {
+    width: 30%;
+    }
+
+    .view_post_container hr.line {
+        width: 91%;
+    }
+    .view_post_container hr.top_line {
+        width: 91%;
+    }
+}
+
+@media (max-width: 1022px) {
     .view_post_container {
         flex-direction: column;
         align-items: center;
@@ -288,10 +383,7 @@ h1.main_tittle {
     }
     
     .view_post_container h1 {
-        padding-left: 0;
-        margin-left: 0;
         width: 100%;
-        text-align: center;
     }
 
     .view_post_container img.main_image {
@@ -394,12 +486,13 @@ h1.main_tittle {
     }
 
     h1.main_tittle {
-        padding-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 28px;
         display: flex;
         justify-content: center;
         text-align: center;
-        width: 90%;
+        width:100%;
     }
 
     #app{
@@ -442,3 +535,4 @@ h1.main_tittle {
     }
 
 }
+
