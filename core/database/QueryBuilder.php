@@ -142,23 +142,45 @@ class QueryBuilder
         }
     }
 
-    public function searchFromDB($search,$option)
+    public function searchFromDB($search,$inicio,$itensPage,$option)
     {
     
         $string_busca = "%$search%"; 
 
 
         if($option == 1)
-            $sql = "SELECT * FROM users WHERE name LIKE :string_busca OR email LIKE :string_busca"; //procura no BD os nomes e os emails que batem com a string de busca.
+            $sql = "SELECT * FROM users WHERE name LIKE :string_busca OR email LIKE :string_busca LIMIT :inicio, :fim"; //procura no BD os nomes e os emails que batem com a string de busca.
         else
-            $sql = "SELECT * FROM posts WHERE tittle LIKE :string_busca OR content LIKE :string_busca";
+            $sql = "SELECT * FROM posts WHERE tittle LIKE :string_busca OR content LIKE :string_busca LIMIT :inicio, :fim";
 
 
         $stmt = $this->pdo->prepare($sql);
+
         $stmt->bindValue(':string_busca',$string_busca,PDO::PARAM_STR);
+        $stmt->bindValue(':inicio', (int)$inicio,PDO::PARAM_INT);
+        $stmt->bindValue(':fim', (int)$itensPage, PDO::PARAM_INT);
         $stmt->execute();
 
-
         return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function countFromSearch($table,$busca,$option)
+    {
+
+
+        if($option == 1)
+            $sql = "SELECT COUNT(*) as total_ocorr FROM $table WHERE name like :busca OR email LIKE :busca";
+        else
+            $sql = "SELECT COUNT(*) as total_ocorr FROM $table WHERE tittle like :busca OR content LIKE :busca";
+
+            
+        
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindValue(':busca',"%$busca%");
+        $stmt->execute();
+        
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        return $result['total_ocorr'];
     }
 }

@@ -10,7 +10,7 @@ class PostAdminController
  
     public function index()
     {
-        $page=  1;
+        $page = 1;
 
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
             $page = intval($_GET['paginacaoNumero']);
@@ -120,18 +120,37 @@ class PostAdminController
     {
         $busca = isset($_GET['busca']) ? trim($_GET['busca']): ''; // Pega a string que tem no input
 
-
-
-        if($busca === '') // se a string estiver vazia, mostra todos os usuarios
-            $posts = App::get('database')->selectALL('posts');
-        else    
-            $posts = App::get('database')->searchFromDB($busca,2); //senao, mostra os usuarios que batem com a string de busca
-
-
-        //paginacao ainda nao implementada
         $page = 1;
-        $inicio = 0;
-        $total_pages = 1;
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $page = intval($_GET['paginacaoNumero']);
+
+            if($page <= 0){
+               return redirect('admin/post_list_admin');   
+            }
+        }
+
+
+        $itensPage = 5;
+        $inicio = $itensPage * $page - $itensPage;
+
+        
+        if($busca === ''){ // se a string estiver vazia, mostra todos os posts
+            $rows_count = App::get('database')->countALL('posts');
+            if($inicio > $rows_count){
+                return redirect('admin/post_list_admin');
+            }
+            $posts = App::get('database')->selectALL('posts',$inicio,$itensPage);
+        }
+        else{
+            $rows_count = App::get('database')->countFromSearch('posts',$busca,0);
+            if($inicio > $rows_count){
+                return redirect('admin/post_list_admin');
+            }
+
+            $posts = App::get('database')->searchFromDB($busca,$inicio,$itensPage,0); //senao, mostra os posts que batem com a string de busca
+        }
+
+        $total_pages = ceil($rows_count / $itensPage);
 
         
         return view('admin/post_list_admin', compact('posts', 'page', 'total_pages', 'inicio','busca'));

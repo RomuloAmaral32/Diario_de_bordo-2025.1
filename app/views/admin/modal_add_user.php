@@ -18,7 +18,7 @@
                 <h1>NOVO USUÁRIO</h1>
             </div>
         <div class="container_inputs">
-            <form method="POST" action="users/create">
+            <form method="POST" action="/users/create">
                 <div class="input_infos">
                 <input type="text" placeholder="Nome" class="input_user" name="name">
                 <input type="text" placeholder="Email" class="input_user" name="email">
