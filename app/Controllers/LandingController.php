@@ -9,6 +9,9 @@ class LandingController{
 
     public function index()
     {
-        return view('site/landing_page');
+        $posts = App::get('database')->selectAll('posts');
+        $users = App::get('database')->selectAll('users');
+        return view('site/landing_page', compact('posts'), compact('users'));
     }
+
 }
