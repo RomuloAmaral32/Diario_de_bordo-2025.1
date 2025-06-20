@@ -115,12 +115,27 @@ body{
     margin-top: 10px;
     border: 1px solid #ccc;
     background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.img_user:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.img_user input{
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 155px;
+    height: 152px;
 }
 
 .image_user{
     width: 28%;
     height: 150px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .image_user::-webkit-file-upload-button{

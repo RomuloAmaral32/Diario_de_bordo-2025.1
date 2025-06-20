@@ -43,6 +43,7 @@
 
 .modal_view_user .top_modal_view_user img{
     width: 24%;
+    border-radius: 50%;
     height: auto;
 }
 
@@ -246,5 +247,9 @@
     }
     #botaoFechar{
         font-size: 8px;
+    }
+
+    .box_informacoes_usuario{
+        padding-top: 0px;
     }
 }

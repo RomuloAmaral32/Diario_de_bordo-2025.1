@@ -19,7 +19,7 @@
             </div>
         <div class="container_inputs">
             <h2>Adicionar foto de perfil:</h2>
-            <form method="POST" action="users/create">
+            <form method="POST" action="users/create" enctype="multipart/form-data">
                 <div class="img_user">
                     <input type="file" name="imagem_user" accept="image/*" id="imagem_user" class="image_user">
                 </div>

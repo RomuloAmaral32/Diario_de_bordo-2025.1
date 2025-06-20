@@ -50,6 +50,8 @@ body {
     align-items: center;
     background: #f1f1f1;
     height: 100px;
+    border-radius: 50%;
+    object-fit: cover   ;
     /* border: solid 1px red; */
 }
 
@@ -57,6 +59,7 @@ body {
     /* border: solid 1px red; */
     width: 20%;
     height: 100%;
+    border-radius: 50%;
 }
 
 
@@ -229,13 +232,14 @@ body {
     }
 
     .user_icon {
-        height: 120px;
+        height: auto;
+        padding-top: 10px;
     }
 
     .user_icon img {
         /* border: solid 1px red; */
         width: 19%;
-        height: 80%;
+        height: auto;
     }
 
     .edit_img {
@@ -279,13 +283,14 @@ body {
     }
 
     .user_icon{
-        height: 60px;
+        height: auto;
+        padding-top: 5px;
     }
 
     .user_icon img {
         /* border: solid 1px red; */
         width: 17%;
-        height: 90%;
+        height: auto;
     }
 }
 
@@ -311,7 +316,12 @@ body {
     .user_icon img {
         /* border: solid 1px red; */
         width: 20%;
-        height: 90%;
+        height: auto;
+    }
+
+    .user_icon{
+        height: auto;
+        padding-top: 10px;
     }
 
     .input_edit_inf{
@@ -319,7 +329,7 @@ body {
     }
 }
 
-@media(min-width: 1026px) {
+@media(min-width: 1150px) {
     .modal_edit_user {
         width: 35%;
         height: 15%;
@@ -332,12 +342,13 @@ body {
     }
 
     .user_icon{
-        height: 150px;
+        height: auto;
+        padding-top: 10px;
     }
 
     .user_icon img {
         /* border: solid 1px red; */
-        width: 24%;
-        height: 90%;
+        width: 27%;
+        height: auto;
     }
 }
