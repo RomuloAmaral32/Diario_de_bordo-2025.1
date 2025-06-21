@@ -46,20 +46,26 @@ body {
 
 .user_icon {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: #f1f1f1;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover   ;
-    /* border: solid 1px red; */
+    justify-content: center;
+    text-align: center;
+    text-align-last: center;
+    width: auto;
+    height: 150px;
+    border: 1px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
 }
 
 .user_icon img {
     /* border: solid 1px red; */
-    width: 20%;
-    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
+    width: 155px;
+    height: 152px;
 }
 
 
@@ -164,8 +170,7 @@ body {
 
     .user_icon img {
         /* border: solid 1px red; */
-        width: 20%;
-        height: 90%;
+        height: 140px;
     }
 
 }
@@ -233,13 +238,10 @@ body {
 
     .user_icon {
         height: auto;
-        padding-top: 10px;
     }
-
-    .user_icon img {
-        /* border: solid 1px red; */
-        width: 19%;
-        height: auto;
+    .user_icon img{
+        width: 130px;
+        height: 120px;
     }
 
     .edit_img {
@@ -282,16 +284,11 @@ body {
         font-size: 10px;
     }
 
-    .user_icon{
-        height: auto;
-        padding-top: 5px;
+    .user_icon img{
+        width: 90px;
+        height: 80px;
     }
 
-    .user_icon img {
-        /* border: solid 1px red; */
-        width: 17%;
-        height: auto;
-    }
 }
 
 @media(min-width: 851px) {
@@ -313,15 +310,8 @@ body {
         height: 50%;
     }
 
-    .user_icon img {
-        /* border: solid 1px red; */
-        width: 20%;
-        height: auto;
-    }
-
     .user_icon{
         height: auto;
-        padding-top: 10px;
     }
 
     .input_edit_inf{
@@ -343,12 +333,6 @@ body {
 
     .user_icon{
         height: auto;
-        padding-top: 10px;
     }
 
-    .user_icon img {
-        /* border: solid 1px red; */
-        width: 27%;
-        height: auto;
-    }
 }
