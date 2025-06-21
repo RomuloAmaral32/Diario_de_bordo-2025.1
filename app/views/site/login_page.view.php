@@ -41,8 +41,8 @@
 <label for="senha">Senha</label>
 
 <div class="pass_manager">
-    <input type="password" name="senha" placeholder="*********" class="pass_input"> 
-    <img src="/public/assets/login_page/eye_icon.png" alt="eye_icon" class="eye_icon">
+    <input type="password" name="senha" placeholder="*********" class="pass_input" id="senha"> 
+    <i class="eye_icon" id="btn_senha" onclick="mostrarSenha()"></i>
 </div>
 
 <button type="submit" class="login_button">Login</button>
@@ -53,6 +53,6 @@
 
 </div>
 
-
+    <script src="/public/js/login_page_js.js"></script>
 </body>
 </html>

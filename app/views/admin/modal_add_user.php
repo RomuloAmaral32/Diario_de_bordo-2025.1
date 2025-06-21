@@ -20,9 +20,10 @@
         <div class="container_inputs">
             <h2>Adicionar foto de perfil:</h2>
             <form method="POST" action="users/create" enctype="multipart/form-data">
-                <div class="img_user">
-                    <input type="file" name="imagem_user" accept="image/*" id="imagem_user" class="image_user">
+                <div class="img_user" onclick="document.querySelector('#imagem_user').click()">
+                    
                 </div>
+                <input type="file" name="imagem_user" accept="image/*" id="imagem_user" class="input_file">
                 <div class="input_infos">
                 <input type="text" placeholder="Nome" class="input_user" name="name">
                 <input type="text" placeholder="Email" class="input_user" name="email">
@@ -38,4 +39,5 @@
     </div>
 </body>
 <script src="/public/js/index.js"></script>
+<script src="/public/js/modal_add_user.js"></script>
 </html>
