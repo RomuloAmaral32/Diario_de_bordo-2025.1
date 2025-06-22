@@ -440,6 +440,7 @@ body {
   .container-user{
       padding: 0;
       margin: auto;
+      overflow-x: scroll;
   
   }
   .table_total{
