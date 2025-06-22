@@ -27,19 +27,53 @@
                 <h2>POSTAGENS</h2>
 
                 <div class="post_grid">
-                    <?php foreach ($posts as $post): ?>
-                    <div class="card">
+                    <?php foreach (array_slice($posts, 0, 6) as $post): ?>
+                    <a href="/viewpost?id=<?= $post->id ?>" class="card">
                         <img src="/<?= $post->image ?>" alt="Foto de Ibitipoca"/>
                         <h3><?= $post->tittle ?></h3>
                         <p class="descricao"><?= nl2br(htmlspecialchars($post->content)) ?></p>
-                        <p class="autor">Postado por: <span class="nome">Maria</span></p>
-                    </div>
+                        <p class="autor">
+                            Postado por: 
+                            <span class="nome">
+                                <?php foreach($users as $user): ?>
+                                    <?php if($user->id === $post->id_user): ?>
+                                        <?= $user->name ?>
+                                        <?php break; endif; ?>
+                                <?php endforeach; ?>
+                            </span>
+                        </p>
+                    </a>
+
+                <?php endforeach; ?>
+                </div>
+
+
+                <div class="posts_grid_escondido">
+                    <?php foreach (array_slice($posts, 6, 6) as $post): ?>
+                    <a href="/viewpost?id=<?= $post->id ?>" class="card">
+                        <img src="/<?= $post->image ?>" alt="Foto de Ibitipoca"/>
+                        <h3><?= $post->tittle ?></h3>
+                        <p class="descricao"><?= nl2br(htmlspecialchars($post->content)) ?></p>
+                        <p class="autor">
+                            Postado por: 
+                            <span class="nome">
+                                <?php foreach($users as $user): ?>
+                                    <?php if($user->id === $post->id_user): ?>
+                                        <?= $user->name ?>
+                                        <?php break; endif; ?>
+                                <?php endforeach; ?>
+                            </span>
+                        </p>
+                    </a>
 
                    <?php endforeach; ?>
                 
                 </div>
 
+                <?php if(count($posts) > 6): ?>
                 <button id="verMais">Ver mais</button>
+                <?php endif; ?>
+
 
             </section>
 
@@ -49,9 +83,11 @@
                 <div class="bloco">
                     <div id="esquerda" class="setaEsquerda"> &lt</div>
                     <ul class="carrossel">
-                        <?php foreach ($posts as $post): ?>
+                        <?php foreach (array_slice($posts, 0, 9) as $post): ?>
                         <li class="imagem">
-                            <div class="img" draggable="false"><img src="/<?= $post->image ?>" alt="Foto de Paris"></div>
+                            <a href="/viewpost?id=<?= $post->id ?>">
+                                <div class="img" draggable="false"><img src="/<?= $post->image ?>" alt="Foto de Paris"></div>
+                            </a>
                         </li>
                         <?php endforeach; ?>
                        
@@ -66,7 +102,7 @@
                         <span class="bolinha"></span>
                         <span class="bolinha"></span>
                         <span class="bolinha"></span>
-                    </div>                
+                    </div>               
                     <div id="direita" class="setaDireita">></div>
                 </div>
 
