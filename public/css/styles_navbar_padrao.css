@@ -76,3 +76,48 @@
 }
 
 
+@media (max-width: 470px){
+    .logo-navbar{
+        width: 37px;
+        height: 37px;
+    }
+
+    .div-botoes{
+        gap: 10px;
+    }
+
+    .botoes-navbar-a{
+        font-size: 13px;
+    }
+
+    .botoes-navbar-a:hover{
+        font-size: 15px;
+    }
+
+    .diariodebordo-header{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 380px){
+    .logo-navbar{
+        width: 37px;
+        height: 37px;
+    }
+
+    .div-botoes{
+        gap: 5px;
+    }
+
+    .botoes-navbar-a{
+        font-size: 10px;
+    }
+
+    .botoes-navbar-a:hover{
+        font-size: 11px;
+    }
+
+    .diariodebordo-header{
+        padding-right: 10px;
+    }
+}
