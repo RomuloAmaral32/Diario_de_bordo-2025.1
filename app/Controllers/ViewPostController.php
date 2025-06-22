@@ -32,6 +32,15 @@ class ViewPostController {
                 }
             }
 
+            foreach ($posts as $post){
+                foreach ($users as $user){
+                    if($post->id_user == $user->id){
+                        $post->author_img = $user->image;
+                        break;
+                    }
+                }
+            }
+
             return view('site/view_post', ['post' => $postEncontrado,'posts' => $posts]);
 
         } catch (Exception $e) {

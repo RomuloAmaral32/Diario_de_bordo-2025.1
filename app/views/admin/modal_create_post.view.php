@@ -30,7 +30,7 @@
             <div class="img_post" onclick="document.querySelector('#imagem_post').click()"></div>
 
             <input type="file" name="imagem" accept="image/*" class="image_input_create" id="imagem_post">
-            <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
+            <input type="text" maxlength="60" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
             <textarea  class="post_text" name="content" placeholder="Digite a sua postagem"></textarea>
             
             <div class="button_box">
