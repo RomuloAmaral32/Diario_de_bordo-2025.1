@@ -51,10 +51,10 @@
 
                     <?php foreach (array_slice($posts, -3) as $post): ?>
                     <div class="post">
-                        <img src="/<?= $post->image ?>" alt="lugar1">
+                        <img src="/<?= $post->image ?>" alt="post_img">
                         <div class="text-left">
                             <div class="data-left"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></div>
-                            <a href="/viewpost?id=<?= $post->id ?>" class="links"><?= $post->tittle ?><?= $post->tittle ?></a>
+                            <a href="/viewpost?id=<?= $post->id ?>" class="links"><?= $post->tittle ?></a>
                         </div>
                     </div>
                     <?php endforeach; ?>
