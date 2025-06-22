@@ -19,7 +19,7 @@
         </div>
 
 
-        <div class="post_action">
+        <div class="post_action_edit">
             <div class="autor_name">
                 <div class="autor_details">
                     <p>Autor:

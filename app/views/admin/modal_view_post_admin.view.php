@@ -17,7 +17,7 @@
             <h1 class="top_text">VISUALIZAR POSTAGEM</h1>
         </div>
          
-        <div class="post_action">
+        <div class="post_action_view_post">
             <div class="autor_name">
                 <div class="autor_details">
                 <p>Autor:

@@ -41,7 +41,7 @@ body{
    background-color: rgba(115, 135, 162, 1);
     
 }
-.post_action{
+.post_action_view_post{
     width: 100%;
     height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
@@ -162,16 +162,20 @@ body{
     font-weight: bold;
 }
 #text_tittle_view{
-    text-align: start;
-    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     font-family: "Shantell Sans", cursive;
     color: #555;
-    background-color: white;
+    background-color: transparent;
     font-size: 14px;
 
     width: 90%;
     border: none;
 
+    resize: none;
+    outline: none;
     
 
 }
@@ -356,7 +360,7 @@ body{
     .autor_details{
         gap:50%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%; 
         height: fit-content;
         
@@ -401,7 +405,7 @@ body{
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         height: fit-content;
     }
@@ -443,7 +447,7 @@ body{
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
@@ -494,7 +498,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
@@ -547,7 +551,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
