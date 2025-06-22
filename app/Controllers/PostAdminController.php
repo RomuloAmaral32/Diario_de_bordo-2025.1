@@ -10,6 +10,7 @@ class PostAdminController
  
     public function index()
     {
+        $users = App::get('database')->selectAll('users');
         $page = 1;
 
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
@@ -33,7 +34,7 @@ class PostAdminController
 
         $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
         $total_pages = ceil($rows_count / $itensPage);
-        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages', 'inicio'));
+        return view('admin/post_list_admin', compact('posts', 'page', 'total_pages', 'inicio', 'users'));
     }
 
 

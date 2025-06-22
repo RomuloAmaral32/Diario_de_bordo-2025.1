@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-.full_container
+.full_container_view_post
 {
     display: none;
     flex-direction: column;
@@ -18,7 +18,7 @@ body{
     overflow: hidden;
     position: absolute;
 
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
 

@@ -4,7 +4,7 @@ body{
 }
 
  
-.full_container
+.full_container_edit
 {
     display: none;
     flex-direction: column;
@@ -16,7 +16,7 @@ body{
     border-radius: 24px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 3;
@@ -175,7 +175,7 @@ body{
 
 @media (max-width: 1830px){
 
-    .full_container{
+    .full_container_edit{
         overflow: hidden;
         border: 1px;
         border-radius: 24px;
@@ -268,7 +268,7 @@ body{
     }
 }
 @media (max-width: 890px){
-    .full_container{
+    .full_container_edit{
         width: 45%;
         height: fit-content;
     }
@@ -315,7 +315,7 @@ body{
   
 }
 @media (max-width: 765px){
-    .full_container{
+    .full_container_edit{
       
     }
     .top_tittle{
@@ -366,7 +366,7 @@ body{
   
 }
 @media (max-width: 600px){
-    .full_container{
+    .full_container_edit{
       width: 300px;
     }
     .top_tittle{

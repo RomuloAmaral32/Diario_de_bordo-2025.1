@@ -7,11 +7,16 @@ ainda.
 
 const btn = document.getElementById('verMais');
 const escondidos = document.querySelector('.posts_grid_escondido');
+let jaExpandiu = false;
 
 if(btn && escondidos){
   btn.addEventListener('click', () => {
-    escondidos.classList.toggle('mostrar');
-    btn.textContent = escondidos.classList.contains('mostrar') ? 'Ver menos' : 'Ver mais';
+    if(!jaExpandiu){
+      escondidos.classList.add('mostrar');
+      jaExpandiu = true;
+    } else {
+      window.location.href = "/postslist"
+    }
   });
 }
 //-----------------------------------------------------------------------
