@@ -70,6 +70,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin-right: 0px;
+    object-fit: cover;
 }
 
 .view_post_container div.user_info {
@@ -221,6 +222,7 @@ body {
     height: 80px;
     border: 1px;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .view_post_container div.text {
@@ -239,6 +241,7 @@ body {
     align-items: flex-start;
     gap: 15px;
     padding-top: 20px;
+    object-fit: cover;
 }
 
 h1.main_tittle {
