@@ -66,7 +66,7 @@
                         <div class="post_details">    
                         <?php foreach (array_slice($posts, -3) as $post): ?>
                             <div class='post_obj'>
-                                <img src="/<?= $post->image ?>" alt="post_image" class='icon'>
+                                <img src="/<?= $post->image ?>" alt="post_img" class='icon'>
                                 <div class="text">
                                     <label class="tittle"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
                                     <a href="/viewpost?id=<?= $post->id ?>" class="links"><?= $post->tittle ?></a>
