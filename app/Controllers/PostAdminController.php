@@ -89,7 +89,7 @@ class PostAdminController
 
         move_uploaded_file($temporario, $caminhodaimagem);
 
-            if($caminhodaimagem !== $imagemPadrao && $post && !empty($post->image) && file_exists($post->image)){
+            if(!empty($post->image) && $post->image !== $imagemPadrao && file_exists($post->image)){
                 unlink($post->image);
             }
         }
