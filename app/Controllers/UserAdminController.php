@@ -41,12 +41,19 @@ class UserAdminController
     {
         session_start();
 
+
+        if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
         $temporario = $_FILES['imagem_user']['tmp_name'];
 
         $nomeimagem = sha1(uniqid($_FILES['imagem_user']['name'], true)) . "." . pathinfo($_FILES['imagem_user']['name'], PATHINFO_EXTENSION);
 
         $caminhodaimagem = "public/assets/img_users/" . $nomeimagem;
         move_uploaded_file($temporario, $caminhodaimagem);
+        }
+        else
+        {
+            $caminhodaimagem ="public/assets/default_image/user_semimagem.png";
+        }
 
         
         $parameters = [
@@ -76,9 +83,11 @@ class UserAdminController
         $destinoimagem = "public/assets/img_users/";
         $caminhodaimagem = $destinoimagem . $nomeimagem;
 
+        $imagemPadrao = "public/assets/default_image/user_semimagem.png";
+
         move_uploaded_file($temporario, $caminhodaimagem);
 
-            if($user && !empty($user->image) && file_exists($user->image)){
+            if($user && !empty($user->image) && $user->image !== $imagemPadrao && file_exists($user->image)){
                 unlink($user->image);
             }
         }
@@ -104,6 +113,7 @@ class UserAdminController
     {
         $id = $_POST['id'];
 
+        
 
         App::get('database')->delete('users',$id);
 
