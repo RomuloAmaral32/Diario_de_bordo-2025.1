@@ -26,7 +26,7 @@
                 <div class="input_edit_inf">
                 <h2>Nome:</h2>
                     <div class="box_edit">
-                        <input type="text" value="<?= $user->name?>" class="edit_user" name="name">
+                        <input type="text" value="<?= $user->name?>" class="edit_user" name="name" maxlength="30">
                         <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
                     </div>
                 <h2>Email:</h2>

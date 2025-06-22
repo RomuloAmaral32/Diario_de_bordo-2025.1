@@ -25,7 +25,7 @@
                 </div>
                 <input type="file" name="imagem_user" accept="image/*" id="imagem_user" class="input_file">
                 <div class="input_infos">
-                <input type="text" placeholder="Nome" class="input_user" name="name">
+                <input type="text" placeholder="Nome" class="input_user" name="name" maxlength="30">
                 <input type="text" placeholder="Email" class="input_user" name="email">
                 <input type="text" placeholder="Senha" class="input_user" name="password">
                 </div>
