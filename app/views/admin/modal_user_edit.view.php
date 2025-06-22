@@ -36,7 +36,7 @@
                     </div>
                 <h2>Senha:</h2>
                     <div class="box_edit">
-                        <input type="text" value="<?= $user->password?>" class="edit_user" name="password">
+                        <input type="password" value="<?= $user->password?>" class="edit_user" name="password">
                         <img src="/public/assets/modal_edit_user/pen.png" alt="icon edit">
                     </div>
                 </div>

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
  
@@ -42,7 +43,7 @@
 
 <div class="pass_manager">
     <input type="password" name="senha" placeholder="*********" class="pass_input" id="senha"> 
-    <i class="eye_icon" id="btn_senha" onclick="mostrarSenha()"></i>
+    <i class="bi bi-eye-slash" id="btn_senha" onclick="mostrarSenha()"></i>
 </div>
 
 <button type="submit" class="login_button">Login</button>
