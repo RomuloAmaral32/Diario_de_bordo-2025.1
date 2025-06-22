@@ -189,7 +189,7 @@
         <?php endfor ?>
      
         <li class="page-item" >
-      <a class="page-link <?= $page >=$total_pages ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page + 1?><?= $tempSearch ?>" aria-label="Previous">
+      <a class="page-link <?= $page >=$total_pages ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page + 1?><?= $tempSearch ?>" aria-label="Next">
         <span class="arrow" aria-hidden="true" id="arrow2"></span>
         <span class="sr-only"></span>
       </a>

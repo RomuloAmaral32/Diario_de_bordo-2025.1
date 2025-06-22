@@ -46,14 +46,19 @@
 
                 </div>
 
+
+                
                 <div class="search_container">
+                   
                     <div class="top_search">
                         <label class="pesquisar">Pesquisar</label>
                         <div class="search_box">
-                            <input type="text" placeholder="Pesquisar" class="text_input">
+                            <input type="text" placeholder="Pesquisar" name="busca" class="text_input">
                             <img src="/public/assets/view_post/search.png" class="lupa_img" alt="lupa">
                         </div>
                     </div>
+                    
+
                     <div class="post_down">
                         <label for="tittle" class="down_tittle">Posts mais recentes</label>
                         <div class="post_details">

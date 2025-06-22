@@ -36,13 +36,15 @@
 
             <div id="barra-lateral">
                 <h3>Pesquisar</h3>
-
+                <form action="/viewpost/search" method="GET">
                 <div class="search-box">
-                    <input type="text" class="search-text" placeholder="Pesquisar">
+               
+                    <input type="text" class="search-text" placeholder="Pesquisar" name="busca">
                     <a href="pesquisar">
                         <img src="/public/assets/posts_list/lupa.png" alt="Lupa" height="25" width="25">
                     </a>
                 </div>
+                </form>
 
                 <div class="recent-posts">
                     <h4>Posts mais recentes</h4>

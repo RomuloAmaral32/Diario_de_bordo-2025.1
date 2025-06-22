@@ -164,9 +164,21 @@ class QueryBuilder
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function selectFromDB($search)// pesquisa por posts da lista de post
+    {
+        $string_busca = "%$search%"; 
+
+        $sql = "SELECT * FROM posts WHERE tittle LIKE :string_busca OR content LIKE :string_busca";
+
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindValue(':string_busca',$string_busca,PDO::PARAM_STR);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
     public function countFromSearch($table,$busca,$option)
     {
-
 
         if($option == 1)
             $sql = "SELECT COUNT(*) as total_ocorr FROM $table WHERE name like :busca OR email LIKE :busca";
@@ -174,7 +186,6 @@ class QueryBuilder
             $sql = "SELECT COUNT(*) as total_ocorr FROM $table WHERE tittle like :busca OR content LIKE :busca";
 
             
-        
         $stmt = $this->pdo->prepare($sql);
         $stmt->bindValue(':busca',"%$busca%");
         $stmt->execute();

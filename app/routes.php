@@ -8,6 +8,9 @@ $router->get('', 'LandingController@index');
 
 $router->get('postslist', 'PostsListController@index');
 $router->get('viewpost', 'ViewPostController@index');
+$router->get('viewpost/search','PostsListController@searchPost');
+
+
 
 $router->get('users', 'UserAdminController@index');
 $router->get('users/search', 'UserAdminController@search'); 
@@ -28,6 +31,9 @@ $router->get('login', 'ExibirLoginController@exibirLogin');
 $router->get('dashboard', 'ExibirDashboardController@exibirDashboard');
 $router->post('login', 'ExibirLoginController@efetuaLogin');
 $router->post('logout', 'ExibirLoginController@efetuarLogout');
+
+
+
 
 
 ?>
