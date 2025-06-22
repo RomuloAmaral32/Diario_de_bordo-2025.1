@@ -5,20 +5,15 @@ Pensei em fazer dessa forma por enquanto já que ainda não estamos mexendo com 
 ainda.
 */
 
-document.getElementById('verMais').addEventListener('click', function () {
-  const sectionPost = document.querySelector('.boxPosts');
-  const postEscondido = document.querySelector('.posts_grid_escondido');
+const btn = document.getElementById('verMais');
+const escondidos = document.querySelector('.posts_grid_escondido');
 
-  if (postEscondido.style.display === 'none' || postEscondido.style.display === '') {
-      postEscondido.style.display = 'grid';
-      sectionPost.style.height = 'auto';
-      this.textContent = "Ver menos";
-  } else {
-      postEscondido.style.display = 'none';
-      this.textContent = "Ver mais";
-  }
-});
-
+if(btn && escondidos){
+  btn.addEventListener('click', () => {
+    escondidos.classList.toggle('mostrar');
+    btn.textContent = escondidos.classList.contains('mostrar') ? 'Ver menos' : 'Ver mais';
+  });
+}
 //-----------------------------------------------------------------------
 
 //-----------------------------Carrossel---------------------------------
