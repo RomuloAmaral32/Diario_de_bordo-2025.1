@@ -161,13 +161,17 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
-#text_tittle{
+#text_tittle_view{
     text-align: start;
     margin: 0px;
     font-family: "Shantell Sans", cursive;
     color: #555;
     background-color: white;
     font-size: 14px;
+
+    width: 90%;
+    border: none;
+
     
 
 }
@@ -339,7 +343,7 @@ body{
 
 @media (max-width: 1700px){
 
-    .full_container{
+    .full_container_view_post {
         overflow: hidden;
         border: 1px;
         border-radius: 24px;
@@ -383,7 +387,7 @@ body{
         
         
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -424,7 +428,7 @@ body{
         width: 80%;
         height: 35px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -432,7 +436,7 @@ body{
     }
 }
 @media (max-width: 890px){
-    .full_container{
+    .full_container_view_post{
         width: 45%;
     }
 
@@ -469,7 +473,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -522,7 +526,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 12px;
     }
     #image_text{
@@ -531,9 +535,10 @@ body{
   
 }
 @media (max-width: 600px){
-    .full_container{
+    .full_container_view_post {
       width: 300px;
     }
+   
     .top_tittle{
         height: 60px;
     }
@@ -574,7 +579,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 12px;
     }
     #image_text{

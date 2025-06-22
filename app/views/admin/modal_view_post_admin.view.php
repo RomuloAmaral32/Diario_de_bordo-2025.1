@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Postagem</title>
-    <link rel="stylesheet" href="/public/css/view_post_styles.css">
+    <link rel="stylesheet" href="/public/css/view_post_modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
             <div class="image_input">
                 <img src="/<?= $post -> image ?>" alt="Imagem post">
             </div>
-            <div class="post_tittle"><p id="text_tittle" style="justify-content: left; align-items:initial;"><?= $post->tittle?></p> </div>
+            <div class="post_tittle"><textarea id="text_tittle_view" style="justify-content: left; align-items:initial;"><?= $post->tittle?></textarea> </div>
             <textarea class="post_text" readonly><?= $post->content?></textarea>
             <div class="button_box">
                 <button class="action_button" type="button" onclick="fecharModalViewUser('view_post<?= $post->id ?>')">FECHAR</button>
