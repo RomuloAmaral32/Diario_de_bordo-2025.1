@@ -40,11 +40,13 @@
     display: flex;
     text-decoration: none !important;
     border-radius: 32px;
-    border: none;
+    border: 1px solid rgba(196, 231, 235, 1);
     bottom: 8px;
     padding: 0.5rem 0.7rem; 
     white-space: nowrap;
-    min-width: max-content;
+    min-width: 100px;
+    justify-content: center;
+    
 }
 
 
@@ -76,7 +78,7 @@
 }
 
 
-@media (max-width: 470px){
+@media (max-width: 500px){
     .logo-navbar{
         width: 37px;
         height: 37px;
@@ -84,10 +86,14 @@
 
     .div-botoes{
         gap: 10px;
+        
     }
 
     .botoes-navbar-a{
         font-size: 13px;
+    }
+    .botoes-navbar{
+        min-width: max-content;
     }
 
     .botoes-navbar-a:hover{

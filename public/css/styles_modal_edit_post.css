@@ -32,7 +32,7 @@ body{
     /*background: linear-gradient(to right,rgba(121, 237, 255, 1),rgba(115, 154, 202, 1));*/
     
 }
-.post_action{
+.post_action_edit{
     width: 100%;
     height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
@@ -74,6 +74,7 @@ body{
     border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
+    outline: none;
 }
 
 .post_tittle::placeholder{
@@ -91,10 +92,11 @@ body{
     border: 1px;
     border-radius: 24px;
     background-color: white;
-   border: 1px solid #ccc;
+    border: 1px solid #ccc;
     margin: auto;
     margin-top: 40px;
     resize: none;
+    outline: none;
     
     
 }
@@ -187,7 +189,7 @@ body{
     .autor_details{
         gap:50%;
     }
-    .post_action{
+    .post_action_edit{
         width: 100%;
         height: fit-content;
     }
@@ -234,7 +236,7 @@ body{
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_edit{
         width: 100%;
         height: fit-content;
     }
@@ -276,7 +278,7 @@ body{
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_edit{
         width: 100%;
         height: fit-content;
     }
@@ -326,7 +328,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_edit{
         width: 100%;
         
     }
@@ -377,7 +379,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_edit{
         width: 100%;
         height: 100%;
     }

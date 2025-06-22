@@ -41,7 +41,7 @@ body{
    background-color: rgba(115, 135, 162, 1);
     
 }
-.post_action{
+.post_action_view_post{
     width: 100%;
     height: fit-content;
     background-color: rgba(241, 241, 241, 1);;
@@ -161,13 +161,21 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
-#text_tittle{
-    text-align: start;
-    margin: 0px;
+#text_tittle_view{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     font-family: "Shantell Sans", cursive;
     color: #555;
-    background-color: white;
+    background-color: transparent;
     font-size: 14px;
+
+    width: 90%;
+    border: none;
+
+    resize: none;
+    outline: none;
     
 
 }
@@ -339,7 +347,7 @@ body{
 
 @media (max-width: 1700px){
 
-    .full_container{
+    .full_container_view_post {
         overflow: hidden;
         border: 1px;
         border-radius: 24px;
@@ -352,7 +360,7 @@ body{
     .autor_details{
         gap:50%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%; 
         height: fit-content;
         
@@ -383,7 +391,7 @@ body{
         
         
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -397,7 +405,7 @@ body{
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         height: fit-content;
     }
@@ -424,7 +432,7 @@ body{
         width: 80%;
         height: 35px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -432,14 +440,14 @@ body{
     }
 }
 @media (max-width: 890px){
-    .full_container{
+    .full_container_view_post{
         width: 45%;
     }
 
     .autor_details{
         gap:30%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
@@ -469,7 +477,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 14px;
     }
     #image_text{
@@ -490,7 +498,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
@@ -522,7 +530,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 12px;
     }
     #image_text{
@@ -531,9 +539,10 @@ body{
   
 }
 @media (max-width: 600px){
-    .full_container{
+    .full_container_view_post {
       width: 300px;
     }
+   
     .top_tittle{
         height: 60px;
     }
@@ -542,7 +551,7 @@ body{
         font-size: 14px;
         gap:20%;
     }
-    .post_action{
+    .post_action_view_post{
         width: 100%;
         
     }
@@ -574,7 +583,7 @@ body{
     .top_text{
         font-size: 20px;
     }
-    #text_tittle{
+    #text_tittle_view{
         font-size: 12px;
     }
     #image_text{
