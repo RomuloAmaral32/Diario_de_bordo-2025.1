@@ -32,7 +32,7 @@ class ViewPostController {
                 }
             }
 
-            return view('site/view_post', ['post' => $postEncontrado]);
+            return view('site/view_post', ['post' => $postEncontrado,'posts' => $posts]);
 
         } catch (Exception $e) {
             return view('site/erro', ['mensagem' => $e->getMessage()]);

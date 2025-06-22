@@ -49,7 +49,7 @@
 
                 
                 <div class="search_container">
-                   
+                <form action="/viewpost/search" method="GET">
                     <div class="top_search">
                         <label class="pesquisar">Pesquisar</label>
                         <div class="search_box">
@@ -57,41 +57,24 @@
                             <img src="/public/assets/view_post/search.png" class="lupa_img" alt="lupa">
                         </div>
                     </div>
+                    </form>
                     
 
                     <div class="post_down">
+
                         <label for="tittle" class="down_tittle">Posts mais recentes</label>
-                        <div class="post_details">
+                        <div class="post_details">    
+                        <?php foreach (array_slice($posts, -3) as $post): ?>
                             <div class='post_obj'>
-                                <img src="/public/assets/view_post/mchina.png" alt="china" class='icon'>
+                                <img src="/<?= $post->image ?>" alt="post_image" class='icon'>
                                 <div class="text">
-                                    <label class="tittle">03 ABR 2025</label>
-                                    <a href="#" class="links">Histórias fascinantes
-                                        da Muralha da China.</a>
+                                    <label class="tittle"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></label>
+                                    <a href="/viewpost?id=<?= $post->id ?>" class="links"><?= $post->tittle ?></a>
                                 </div>
                             </div>
-                            <div class='post_obj'>
-                                <img src="/public/assets/view_post/gcanyon.png" alt="gcanyon" class='icon'>
-                                <div class="text">
-                                    <label class="tittle">03 ABR 2025</label>
-                                    <a href="#" class="links">Curiosidades incríveis
-                                        sobre o Grand Canyon.</a>
-                                </div>
-                            </div>
-                            <div class='post_obj'>
-                                <img src="/public/assets/view_post/mpicchu.png" alt="mpicchu" class='icon'>
-                                <div class="text">
-                                    <label class="tittle">03 ABR 2025</label>
-                                    <a href="#" class="links">Fatos surpreendentes
-                                        sobre Machu Picchu.</a>
-                                </div>
-                            </div>
-
-
+                          <?php endforeach; ?>
                         </div>
                     </div>
-
-
                 </div>
     </main>
 </body>

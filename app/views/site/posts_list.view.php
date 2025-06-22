@@ -49,29 +49,17 @@
                 <div class="recent-posts">
                     <h4>Posts mais recentes</h4>
 
+                    <?php foreach (array_slice($posts, -3) as $post): ?>
                     <div class="post">
-                        <img src="/public/assets/posts_list/MuralhaDaChina.jpg" alt="lugar1">
+                        <img src="/<?= $post->image ?>" alt="lugar1">
                         <div class="text-left">
-                            <div class="data-left">03 ABR 2025</div>
-                            <a href="linkpost1">Histórias fascinantes da muralha da China.</a>
+                            <div class="data-left"><?= (new DateTime($post->created_at))->format('d/m/Y') ?></div>
+                            <a href="/viewpost?id=<?= $post->id ?>" class="links"><?= $post->tittle ?><?= $post->tittle ?></a>
                         </div>
                     </div>
+                    <?php endforeach; ?>
 
-                    <div class="post">
-                        <img src="/public/assets/posts_list/GrandCanyon.jpg" alt="lugar2">
-                        <div class="text-left">
-                            <div class="data-left">03 ABR 2025</div>
-                            <a href="linkpost2">Curiosidades incríveis sobre o Grand Canyon.</a>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <img src="/public/assets/posts_list/MachuPichu.webp" alt="lugar3">
-                        <div class="text-left">
-                            <div class="data-left">03 ABR 2025</div>
-                            <a href="linkpost3">Fatos surpreendentes sobre Machu Picchu.</a>
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </div>
