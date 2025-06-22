@@ -43,7 +43,11 @@ body{
     font-size: 1.5rem;
 }
 
-.image_input_create{
+.image_input_create {
+    display: none;
+}
+
+.img_post{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,12 +58,30 @@ body{
     border: 1px;
     border-radius: 24px;
     /*background-color: rgba(238, 194, 74, 0.2);*/
+    
     margin: auto;
     margin-top: 40px;
     border: 1px solid #ccc;
     background-color: white;
     cursor: pointer;
-     
+    transition: 0.2s;
+    color: #555;
+}
+
+.img_post:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.img_post img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.image_input_create{
+    display: none;
+    object-fit: cover;
 }
 
 .image_input_create::-webkit-file-upload-button{
@@ -242,7 +264,7 @@ body{
         width: 100%;
         
     }
-    .image_input_create{
+    .img_post{
         
         height: 100px;
         margin-top: 16px;
@@ -290,7 +312,7 @@ body{
         height: fit-content;
         
     }
-    .image_input_create{
+    .img_post{
         
         height: 90px;
         margin-top: 16px;
@@ -333,7 +355,7 @@ body{
         width: 100%;
         
     }
-    .image_input_create{
+    .img_post{
         
         height: 90px;
         margin-top: 16px;
@@ -341,8 +363,8 @@ body{
     .post_tittle{
         height: 45px;
         margin-top: 16px;
-
     }
+    
     .post_text{
         height: 140px;
         margin-top: 16px;
@@ -365,6 +387,14 @@ body{
     .autor_details{
         font-size: 14px;
     }
+
+    .post_tittle::placeholder{
+        font-size: 10px;
+    }
+
+    .post_text::placeholder{
+        font-size: 10px;
+    }
   
 }
 @media (max-width: 765px){
@@ -384,11 +414,12 @@ body{
         height: fit-content;
        
     }
-    .image_input_create{
+    .img_post{
         
         height: 90px;
         margin-top: 16px;
         gap: 10px;
+        font-size: 12px;
     }
     .post_tittle{
         height: 45px;
@@ -435,7 +466,7 @@ body{
         width: 100%;
         height: 100%;
     }
-    .image_input_create{
+    .img_post{
         
         height: 90px;
         margin-top: 16px;
@@ -478,5 +509,12 @@ body{
     #image_text{
         font-size: 12px;
     }
-  
+
+    .post_tittle::placeholder{
+        font-size: 11px;
+    }
+
+    .post_text::placeholder{
+        font-size: 11px;
+    }
 }
