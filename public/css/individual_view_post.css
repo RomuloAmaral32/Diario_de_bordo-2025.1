@@ -25,8 +25,10 @@ body {
 
 .box_titulo_post{
     margin-top: 30px;
-    width: 100%;
+    width: 65%;
     margin-bottom: 10px;
+     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .view_post_container img.main_image {
