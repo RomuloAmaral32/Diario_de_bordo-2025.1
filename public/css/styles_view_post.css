@@ -255,6 +255,19 @@ h1.main_tittle {
     font-family: 'Shantell Sans', sans-serif;
     font-size: 15px;
     width: 96%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -312,6 +325,7 @@ h1.main_tittle {
     }
     .text .links{
         font-size: 20px;
+        
     }
     .post_details .post_obj img{
         width: 110px;

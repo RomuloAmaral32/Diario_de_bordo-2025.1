@@ -53,7 +53,7 @@ body {
     overflow: hidden;
     border-radius: 9%;
     margin-bottom: 1.25rem;
-    background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 
@@ -239,7 +239,13 @@ body {
     margin-top: 0.18rem;
 }
 
-
+#barra-lateral .post .text-left a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -290,7 +296,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 13px;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
     #cards-container .cards .parte-baixo{
@@ -411,7 +417,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 13px;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
     #cards-container .cards{
@@ -544,7 +550,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 13px;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
     #cards-container .cards .parte-baixo{
@@ -655,7 +661,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 1.25rem;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
     #cards-container .cards .parte-baixo {
@@ -765,7 +771,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 13px;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
 
     #cards-container .cards{
@@ -843,6 +849,9 @@ body {
 
     #barra-lateral .post .text-left a{
         font-size: 22px;
+        /* border: solid 1px red; */
+        margin: 0px;
+        display: flex;
     }
 }
 
@@ -891,7 +900,7 @@ body {
         overflow: hidden;
         border-radius: 9%;
         margin-bottom: 1.25rem;
-        background: linear-gradient(rgba(0,0,0,1), rbga(0,0,0,0));
+        background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     }
     #cards-container .cards .parte-baixo {
         width: 350px;
