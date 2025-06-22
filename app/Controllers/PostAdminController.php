@@ -113,7 +113,10 @@ class PostAdminController
         $post = App::get('database')->selectOne('posts',$id);
         $caminhoImagem =$post->image;
         
-        if(file_exists($caminhoImagem)){
+
+        $imagemPadrao = "public/assets/default_image/semimagem.png";
+
+        if($caminhoImagem !== $imagemPadrao && file_exists($caminhoImagem)){
             unlink($caminhoImagem);
         }
 
