@@ -88,7 +88,8 @@ body{
     display: none;
 }
 
-.post_tittle{
+.post_tittle_create{
+    padding-top: 18px;
     padding-left: 10px;
     display: flex;
     align-items: center;
@@ -103,7 +104,7 @@ body{
     border: 1px solid #ccc;
     
 }
-.post_tittle::placeholder{
+.post_tittle_create::placeholder{
     font-family: "Shantell Sans", cursive;
     border-color: #4CAF50;
     color: #555;
@@ -269,7 +270,7 @@ body{
         height: 100px;
         margin-top: 16px;
     }
-    .post_tittle{
+    .post_tittle_create{
         height: 55px;
         margin-top: 16px;
 
@@ -296,7 +297,7 @@ body{
     .post_text::placeholder{
         font-size: 14px;
     }
-    .post_tittle::placeholder{
+    .post_tittle_create::placeholder{
         font-size: 14px;
     }
         
@@ -318,7 +319,7 @@ body{
         margin-top: 16px;
         gap: 20px;
     }
-    .post_tittle{
+    .post_tittle_create{
         height: 45px;
         margin-top: 16px;
 
@@ -360,7 +361,7 @@ body{
         height: 90px;
         margin-top: 16px;
     }
-    .post_tittle{
+    .post_tittle_create{
         height: 45px;
         margin-top: 16px;
     }
@@ -388,7 +389,7 @@ body{
         font-size: 14px;
     }
 
-    .post_tittle::placeholder{
+    .post_tittle_create::placeholder{
         font-size: 10px;
     }
 
@@ -421,7 +422,7 @@ body{
         gap: 10px;
         font-size: 12px;
     }
-    .post_tittle{
+    .post_tittle_create{
         height: 45px;
         margin-top: 16px;
 
@@ -472,12 +473,12 @@ body{
         margin-top: 16px;
         gap: 10px;
     }
-    .post_tittle{
+    .post_tittle_create{
         height: 45px;
         margin-top: 16px;
 
     }
-    .post_tittle::placeholder{
+    .post_tittle_create::placeholder{
         height: 45px;
         margin-top: 16px;
         font-size: 12px;
@@ -510,7 +511,7 @@ body{
         font-size: 12px;
     }
 
-    .post_tittle::placeholder{
+    .post_tittle_create::placeholder{
         font-size: 11px;
     }
 

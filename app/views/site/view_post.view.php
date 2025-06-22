@@ -51,7 +51,7 @@
                 <div class="search_container">
                 <form action="/postslist/search" method="GET">
                     <div class="top_search">
-                        <label class="pesquisar">Pesquisar</label>
+                        <h3 class="pesquisar">Pesquisar</h3>
                         <div class="search_box">
                             <input type="text" placeholder="Pesquisar" name="busca" class="text_input">
                             <img src="/public/assets/view_post/search.png" class="lupa_img" alt="lupa">
@@ -62,7 +62,7 @@
 
                     <div class="post_down">
 
-                        <label for="tittle" class="down_tittle">Posts mais recentes</label>
+                        <h4 class="down_tittle">Posts mais recentes</h4>
                         <div class="post_details">    
                         <?php foreach (array_slice($posts, -3) as $post): ?>
                             <div class='post_obj'>

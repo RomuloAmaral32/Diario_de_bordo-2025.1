@@ -441,6 +441,7 @@ body {
       padding: 0;
       margin: auto;
       overflow-x: scroll;
+      margin-bottom: 20px;
   
   }
   .table_total{

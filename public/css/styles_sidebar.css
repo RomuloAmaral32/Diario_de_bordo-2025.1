@@ -14,7 +14,7 @@
 
 .sidebar {
     width: 14vw;
-    height: 130vh;
+    height: 135vh;
     background-color: #C4E7EB;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -147,7 +147,7 @@ button {
 @media screen and (max-width: 1248px) {
     .sidebar{
         width: 14.5vw;
-        height: 145vh;
+        height: 150vh;
     }
 }
 

@@ -21,7 +21,7 @@ class PostsListController{
             }
         }
 
-        $itensPage = 5;
+        $itensPage = 6;
         $inicio  = $itensPage * $page - $itensPage;
 
 
@@ -54,7 +54,7 @@ class PostsListController{
         }
 
 
-        $itensPage = 5;
+        $itensPage = 6;
         $inicio = $itensPage * $page - $itensPage;
 
 
