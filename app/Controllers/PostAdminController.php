@@ -77,6 +77,8 @@ class PostAdminController
 
         $caminhodaimagem = $post -> image;
 
+        $imagemPadrao = "public/assets/default_image/semimagem.png";
+
         if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
 
         $temporario = $_FILES['imagem']['tmp_name'];
@@ -87,7 +89,7 @@ class PostAdminController
 
         move_uploaded_file($temporario, $caminhodaimagem);
 
-            if($post && !empty($post->image) && file_exists($post->image)){
+            if($caminhodaimagem !== $imagemPadrao && $post && !empty($post->image) && file_exists($post->image)){
                 unlink($post->image);
             }
         }
