@@ -103,6 +103,7 @@ body{
     margin-top: 40px;
     border: 1px solid #ccc;
     outline: none;
+    resize: none;
     
 }
 .post_tittle_create::placeholder{

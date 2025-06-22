@@ -27,7 +27,7 @@
                 <h2>POSTAGENS</h2>
 
                 <div class="post_grid">
-                    <?php foreach (array_reverse(array_slice($posts, 0, 6)) as $post): ?>
+                    <?php foreach (array_reverse(array_slice($posts, 0, count($posts))) as $post): ?>
                     <a href="/viewpost?id=<?= $post->id ?>" class="card">
                         <img src="/<?= $post->image ?>" alt="Foto de Ibitipoca"/>
                         <h3><?= $post->tittle ?></h3>
