@@ -9,8 +9,33 @@ class PostsListController{
 
     public function index()
     {
-        $posts = App::get('database')->selectAll('posts');
-        return view('site/posts_list', compact('posts'));
+
+        $page =  1;
+
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $page = intval($_GET['paginacaoNumero']);
+
+            if($page <= 0){
+               return redirect('site/posts_list');   
+
+            }
+        }
+
+        $itensPage = 5;
+        $inicio  = $itensPage * $page - $itensPage;
+
+
+        $rows_count = App::get('database')->countALL('posts');
+
+        if($inicio > $rows_count){
+            return redirect('site/post_list');
+        }
+
+        $posts = App::get('database')->selectAll('posts',$inicio, $itensPage);
+        $total_pages = ceil($rows_count / $itensPage);
+
+
+        return view('site/posts_list', compact('posts', 'page', 'total_pages', 'inicio'));
     }
 
 
@@ -19,12 +44,39 @@ class PostsListController{
         $busca = isset($_GET['busca']) ? trim($_GET['busca']): '';
 
 
-        if($busca === '')
-            $posts = App::get('database')->selectALL('posts');
-        else
-            $posts = App::get('database')->selectFromDB($busca);
+        $page = 1;
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $page = intval($_GET['paginacaoNumero']);
+
+            if($page <= 0){
+               return redirect('admin/post_list_admin');   
+            }
+        }
+
+
+        $itensPage = 5;
+        $inicio = $itensPage * $page - $itensPage;
+
+
+        if($busca === ''){
+            $rows_count = App::get('database')->countALL('posts');
+            if($inicio > $rows_count){
+                return redirect('site/post_list');
+            }
+            $posts = App::get('database')->selectALL('posts',$inicio,$itensPage);
+        }
+        else{
+            $rows_count = App::get('database')->countFromSearch('posts',$busca,0);
+            if($inicio > $rows_count){
+                return redirect('site/post_list');
+            }
+            $posts = App::get('database')->searchFromDB($busca,$inicio,$itensPage,0);
+            
+        }
+
+        $total_pages = ceil($rows_count / $itensPage);
         
-        return view('site/posts_list',compact('posts'));
+        return view('site/posts_list',compact('posts','page', 'total_pages', 'inicio','busca'));
     }
 
 

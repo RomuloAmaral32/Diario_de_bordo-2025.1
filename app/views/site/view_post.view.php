@@ -49,7 +49,7 @@
 
                 
                 <div class="search_container">
-                <form action="/viewpost/search" method="GET">
+                <form action="/postslist/search" method="GET">
                     <div class="top_search">
                         <label class="pesquisar">Pesquisar</label>
                         <div class="search_box">

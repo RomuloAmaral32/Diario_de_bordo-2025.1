@@ -36,7 +36,7 @@
 
             <div id="barra-lateral">
                 <h3>Pesquisar</h3>
-                <form action="/viewpost/search" method="GET">
+                <form action="/postslist/search" method="GET">
                 <div class="search-box">
                
                     <input type="text" class="search-text" placeholder="Pesquisar" name="busca">
@@ -63,6 +63,34 @@
                 </div>
             </div>
         </div>
+        <nav class="page_box">
+      
+      <ul class="pagination">
+  
+      <?php $tempSearch = isset($busca) && $busca !== '' ? "&busca=" . urlencode($busca) : ""; ?> <!-- Guarda a busca atual para usar na uri da paginacao -->
+      
+      <li class="page-item">
+        <a class="page-link <?= $page <=1 ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page - 1?><?= $tempSearch ?>" aria-label="Previous">
+          <span class="arrow" aria-hidden="true" id="arrow1"></span>
+          <span id="sr-only"></span>
+        </a>
+      </li>
+           
+          <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+          <li  class="page_icons" ><a class ="page_link <?= $page_number == $page ? "active" : "" ?>
+          " href="?paginacaoNumero=<?= $page_number?><?= $tempSearch ?>">
+          <?=$page_number?> </a></li>
+          <?php endfor ?>
+       
+          <li class="page-item" >
+        <a class="page-link <?= $page >=$total_pages ? "disabled" : "" ?>" href="?paginacaoNumero=<?= $page + 1?><?= $tempSearch ?>" aria-label="Next">
+          <span class="arrow" aria-hidden="true" id="arrow2"></span>
+          <span class="sr-only"></span>
+        </a>
+      </li>
+  
+        </ul>
+          </nav>
     </main>
 
     <?php require('app\views\site\index_footer_padrao.view.php'); ?>

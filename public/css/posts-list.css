@@ -239,6 +239,106 @@ body {
     margin-top: 0.18rem;
 }
 
+.page_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin: auto;
+    gap: 10px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    list-style-type: none;
+  
+}
+.page_link{
+    color: black;
+  }
+
+  .arrow{
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+   
+  }
+
+  .page-item .disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
+  .page-link .disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  
+  }
+  #arrow1 {
+
+    background-image: url(/public/assets/user_list_admin/arrow_esq.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  #arrow2 {
+    background-image: url(/public/assets/user_list_admin/arrow_dir.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  .page_icons {
+    width: 42px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: rgba(215, 226, 240, 1);
+  
+    border: 1px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: black;
+    font-family: "Shantell Sans", cursive;
+  
+  
+  }  
+
+  .page_link{
+    color: black;
+  }
+  .page_icons:hover{
+    background-color: rgba(238, 197, 86, 1);
+  }
+
+  .page_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin: auto;
+    gap: 10px;
+}
+.page_selector
+{
+  width: 40px;
+  height: 40px;
+
+}
+
 
 
 

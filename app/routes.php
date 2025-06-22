@@ -8,7 +8,7 @@ $router->get('', 'LandingController@index');
 
 $router->get('postslist', 'PostsListController@index');
 $router->get('viewpost', 'ViewPostController@index');
-$router->get('viewpost/search','PostsListController@searchPost');
+$router->get('postslist/search','PostsListController@searchPost');
 
 
 

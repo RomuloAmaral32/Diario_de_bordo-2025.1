@@ -19,7 +19,7 @@
             </div>
         <div class="container_inputs">
             <h2>Adicionar foto de perfil:</h2>
-            <form method="POST" action="users/create" enctype="multipart/form-data">
+            <form method="POST" action="/users/create" enctype="multipart/form-data">
                 <div class="img_user" onclick="document.querySelector('#imagem_user').click()">
                     
                 </div>
