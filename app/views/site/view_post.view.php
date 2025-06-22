@@ -39,7 +39,7 @@
                 </hr>
                 <div class="box_autor">
                     <label for="tittle_user" class="tittle_user">Publicado por</label>
-                    <div class="user_info"><img src="/public/assets/view_post/icon_test.png" class="icon_user" alt="foto_user">
+                    <div class="user_info"><img src="/<?= $post->author_img?>" class="icon_user" alt="foto_user">
                         <label for="user_name" class="label_1"><?= $post->author_name ?></label>
                     </div>
                 </div>

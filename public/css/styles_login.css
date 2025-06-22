@@ -116,9 +116,9 @@ input:focus{
     width:  100%;
 }
 
-.login_page_container img.eye_icon{
+.login_page_container i{
     position: absolute;
-    top: 55%;
+    top: 49%;
     left: 96%;
     transform: translate(-55%,-96%);
     width: 20px;
@@ -158,9 +158,10 @@ input:focus{
         background-size: 15px 14px;
    }
 
-   .login_page_container img.eye_icon{
+   .login_page_container i{
     width: 17px;
     height: 13px;
+    top: 47%
    }
 
    .login_page_container img.close_button{
@@ -217,9 +218,10 @@ input:focus{
         background-size: 15px 14px;
    }
 
-   .login_page_container img.eye_icon{
+   .login_page_container i{
     width: 17px;
     height: 13px;
+    top: 44%;
    }
 
    .login_page_container img.close_button{

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="full_container" id="edit_post<?= $post->id ?>">
+    <div class="full_container_edit" id="edit_post<?= $post->id ?>">
 
         <div class="top_tittle">
             <h1 class="top_text">EDITAR PUBLICAÇÃO</h1>
@@ -22,7 +22,13 @@
         <div class="post_action">
             <div class="autor_name">
                 <div class="autor_details">
-                    <p>Id do autor: <?= $post->id_user ?></p>
+                    <p>Autor:
+                                <?php foreach($users as $user): ?>
+                                    <?php if($user->id === $post->id_user): ?>
+                                        <?= $user->name ?>
+                                        <?php break; endif; ?>
+                                <?php endforeach; ?>
+                    </p>
                     <p><?= (new DateTime($post->created_at))->format('d-m-Y') ?></p>
                 </div>
             </div>
@@ -33,7 +39,7 @@
                 <img src="/<?= $post -> image ?>" alt="Imagem post">
                 </div>
                 <input type="file" name="imagem" accept="image/*"  id="imagem">
-                <input type="text" class="post_tittle" name="tittle" value="<?= $post->tittle ?>"></input>
+                <input type="text" maxlength="60" class="post_tittle" name="tittle" value="<?= $post->tittle ?>"></input>
                 <textarea name="content" class="post_text"><?= $post->content ?></textarea>
                 <div class="button_box">
                     <button class="action_button" style='background-color: #4CAF50;' type="submit">POSTAR</button>

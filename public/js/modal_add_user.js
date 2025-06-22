@@ -21,7 +21,8 @@ inputFile.addEventListener('change', function(e){
         });
         reader.readAsDataURL(file);
     } else {
-        pictureImage.innerHTML = pictureImageTxt;
+        // pictureImage.innerHTML = pictureImageTxt;
+        pictureImage.innerHTML = '';
     }
 
     console.log(file)

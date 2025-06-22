@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/public/css/create_post_styles.css">
     <script src="/public/js/modais.js"></script>
+    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Nova Postagem</title>
@@ -26,8 +27,10 @@
             </div>
 
             <form action="/posts/create" method="POST" enctype="multipart/form-data">
-            <input type="file" name="imagem" accept="image/*" class="image_input_create" id="imagem">
-            <input type="text" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar">
+            <div class="img_post" onclick="document.querySelector('#imagem_post').click()"></div>
+
+            <input type="file" name="imagem" accept="image/*" class="image_input_create" id="imagem_post">
+            <textarea maxlength="60" name="tittle" class="post_tittle" placeholder="Digite o título que deseja publicar"></textarea>
             <textarea  class="post_text" name="content" placeholder="Digite a sua postagem"></textarea>
             
             <div class="button_box">
@@ -47,6 +50,6 @@
 
 </div>
     
-    
+    <script src="/public//js/modal_create_post.js"></script>
 </body>
 </html>

@@ -103,7 +103,13 @@
           <tr id="linha-tabela">
             <td style="padding: 16px 12px; border-radius: 16px 0px  0px  16px; "><?= $id_falso++ ?></td>
             <td><?= $post->tittle?></td>
-            <td><?= $post->id_user?></td>
+            <td>
+                <?php foreach($users as $user): ?>
+                  <?php if($user->id === $post->id_user): ?>
+                      <?= $user->name ?>
+                      <?php break; endif; ?>
+                <?php endforeach; ?>
+            </td>
             <td><?= (new DateTime($post->created_at))->format('d-m-Y') ?></td>
             <td style=" border-radius: 0px 16px  16px  0px;">
               <div class="icones-acoes"

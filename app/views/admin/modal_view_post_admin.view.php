@@ -11,7 +11,7 @@
 
 </head>  
 <body>
-    <div class="full_container" id="view_post<?= $post->id ?>">
+    <div class="full_container_view_post" id="view_post<?= $post->id ?>">
 
         <div class="top_tittle">
             <h1 class="top_text">VISUALIZAR POSTAGEM</h1>
@@ -20,7 +20,13 @@
         <div class="post_action">
             <div class="autor_name">
                 <div class="autor_details">
-                <p>Id do autor: <?= $post->id_user ?></p>
+                <p>Autor:
+                <?php foreach($users as $user): ?>
+                  <?php if($user->id === $post->id_user): ?>
+                      <?= $user->name ?>
+                      <?php break; endif; ?>
+                <?php endforeach; ?>
+                </p>
                 <p><?= (new DateTime($post->created_at))->format('d-m-Y') ?></p>
             </div>
                 
