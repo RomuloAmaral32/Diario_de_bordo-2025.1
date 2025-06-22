@@ -41,6 +41,7 @@ class PostAdminController
     {
         session_start();
         
+        if(isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK){
         $temporario = $_FILES['imagem']['tmp_name'];
 
         $nomeimagem = sha1(uniqid($_FILES['imagem']['name'], true)) . "." . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
@@ -48,6 +49,11 @@ class PostAdminController
         $caminhodaimagem = "public/assets/img_posts/" . $nomeimagem;
 
         move_uploaded_file($temporario, $caminhodaimagem);
+    }
+        else
+        {
+            $caminhodaimagem ="public/assets/default_image/semimagem.png";
+        }
 
 
         $parameters = [
