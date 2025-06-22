@@ -39,23 +39,58 @@ class UserAdminController
 
     public function create()
     {
+        session_start();
+
+        $temporario = $_FILES['imagem_user']['tmp_name'];
+
+        $nomeimagem = sha1(uniqid($_FILES['imagem_user']['name'], true)) . "." . pathinfo($_FILES['imagem_user']['name'], PATHINFO_EXTENSION);
+
+        $caminhodaimagem = "public/assets/img_users/" . $nomeimagem;
+        move_uploaded_file($temporario, $caminhodaimagem);
+
+        
         $parameters = [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
-            'password' => $_POST['password']
+            'password' => $_POST['password'],
+            'image' => $caminhodaimagem
         ];
 
          App::get('database')->insert('users', $parameters);
 
         header('Location: /users');
     }
+
     public function edit(){
+        
+        $id = $_POST['id'];
+        $user = App::get('database')->selectOne('users', $id);
+
+        $caminhodaimagem = $user -> image;
+
+        if(isset($_FILES['imagem_user']) && $_FILES['imagem_user']['error'] === UPLOAD_ERR_OK){
+
+        $temporario = $_FILES['imagem_user']['tmp_name'];
+
+        $nomeimagem = sha1(uniqid($_FILES['imagem_user']['name'], true)) . "." . pathinfo($_FILES['imagem_user']['name'], PATHINFO_EXTENSION);
+        $destinoimagem = "public/assets/img_users/";
+        $caminhodaimagem = $destinoimagem . $nomeimagem;
+
+        move_uploaded_file($temporario, $caminhodaimagem);
+
+            if($user && !empty($user->image) && file_exists($user->image)){
+                unlink($user->image);
+            }
+        }
 
          $parameters = [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
-            'password' => $_POST['password']
+            'password' => $_POST['password'],
+            'image' => $caminhodaimagem
         ];
+        
+        
 
         $id = $_POST['id'];
 

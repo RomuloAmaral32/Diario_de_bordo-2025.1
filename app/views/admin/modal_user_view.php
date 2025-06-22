@@ -15,7 +15,7 @@
         </div>
 
         <div class="top_modal_view_user">
-            <img src="/public/assets/modal_user_view/usuarioIcon.png" alt="icone de usuario" class="usuario_icon">
+            <img src="/<?= $user -> image ?>" alt="icone de usuario" class="usuario_icon">
             <h2><?=$user->id?></h2>
         </div>
  

@@ -15,11 +15,13 @@
         <div class="top_edit_user">
             <h1>EDITAR USUÁRIO</h1>
         </div>
-        <div id="user_icon">
-            <img src="/public/assets/modal_edit_user/account.png" alt="user">
-        </div>
+       
         <div id="container_edit_input"  class="container_edit_input">
-            <form action="/users/edit" method="post">
+            <form action="/users/edit" method="post" enctype="multipart/form-data">
+             <div class="user_icon">
+                <img src="/<?= $user -> image ?>" alt="user">
+            </div>
+            <input type="file" name="imagem_user" accept="image/*"  id="imagem" class="edit_img">
                  <input type="hidden" name="id" value="<?= $user->id ?>">
                 <div class="input_edit_inf">
                 <h2>Nome:</h2>
