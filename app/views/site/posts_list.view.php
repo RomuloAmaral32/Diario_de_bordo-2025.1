@@ -67,7 +67,7 @@
                     endif;
                     ?>
 
-                    <?php foreach (array_slice($posts, -3) as $post): ?>
+                    <?php foreach (array_reverse(array_slice($posts, -3)) as $post): ?>
                         <div class="post">
                             <img src="/<?= $post->image ?>" alt="post_img">
                             <div class="text-left">
