@@ -25,9 +25,10 @@
             <section class="boxPosts">
 
                 <h2>POSTAGENS</h2>
+            
 
                 <div class="post_grid">
-                    <?php foreach (array_reverse(array_slice($posts, 0, count($posts))) as $post): ?>
+                    <?php foreach (array_reverse($postsVisiveis) as $post): ?>
                     <a href="/viewpost?id=<?= $post->id ?>" class="card">
                         <img src="/<?= $post->image ?>" alt="Foto de Ibitipoca"/>
                         <h3><?= $post->tittle ?></h3>
@@ -47,9 +48,9 @@
                 <?php endforeach; ?>
                 </div>
 
-
+                <?php if(count($postsEscondidos) > 0): ?>
                 <div class="posts_grid_escondido">
-                    <?php foreach (array_reverse(array_slice($posts, 6, 6)) as $post): ?>
+                    <?php foreach (array_reverse($postsEscondidos) as $post): ?>
                     <a href="/viewpost?id=<?= $post->id ?>" class="card">
                         <img src="/<?= $post->image ?>" alt="Foto de Ibitipoca"/>
                         <h3><?= $post->tittle ?></h3>
@@ -70,7 +71,6 @@
                 
                 </div>
 
-                <?php if(count($posts) > 6): ?>
                 <button id="verMais">Ver mais</button>
                 <?php endif; ?>
 
@@ -83,7 +83,7 @@
                 <div class="bloco">
                     <div id="esquerda" class="setaEsquerda"> &lt</div>
                     <ul class="carrossel">
-                        <?php foreach (array_reverse(array_slice($posts, 0, 9)) as $post): ?>
+                        <?php foreach (array_reverse($postsCarrossel) as $post): ?>
                         <li class="imagem">
                             <a href="/viewpost?id=<?= $post->id ?>">
                                 <div class="img" draggable="false"><img src="/<?= $post->image ?>" alt="Foto de Paris"></div>
