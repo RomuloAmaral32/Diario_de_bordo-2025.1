@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiarioDeBordo</title>
     <link rel="stylesheet" href="../../../public/css/styles_navbar_padrao.css">
-    <script defer src="../../../public/js/script.js"></script>
+    <script defer src="../../../public/js/navbar.js"></script>
 
         <!-- Link para as fontes do Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">

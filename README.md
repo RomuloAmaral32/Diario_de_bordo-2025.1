@@ -14,7 +14,7 @@
 #### Desenvolvedores:
 
 * Nancy Freitas - ([github](https://github.com/nancyfreitas))
-* Ana Carolina Junqueira - (coloque o link do github)
+* Ana Carolina Junqueira - ([github](https://github.com/AnaCarolinaJunqueira))
 * Antony Kleverton - ([github](https://github.com/AntonyKlx))
 * Vinícius Oliveira - ([github](https://github.com/Vini-lm))
 
