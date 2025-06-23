@@ -75,6 +75,7 @@ body{
     margin: auto;
     margin-top: 40px;
     outline: none;
+    padding: 10px;
 }
 
 .post_tittle::placeholder{
