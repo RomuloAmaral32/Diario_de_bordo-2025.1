@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="/public/css/user_list_styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
   <script src="/public/js/modais.js"></script>
   
 

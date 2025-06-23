@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="../../../public/js/post_list_admin.js"></script>
   <script src="/public/js/modais.js"></script>
+  <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
 
   <!-- Link para os ícones (Google Fonts) foi necessário somente esse link. Para adcionar outros icones, basta colocar o span referente dele -->
 

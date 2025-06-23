@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal de Deletar o Usuário</title>
     <link rel="stylesheet" href="/public/css/delete_user_styles.css">
+    <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
 </head>
 <body>
     <div class="modal_delete_box" id="modal_delete_user_<?= $user->id ?>">

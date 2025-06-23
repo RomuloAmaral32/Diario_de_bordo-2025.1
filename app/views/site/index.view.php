@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Simple Page</title>
+    <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
 </head>
 <body>
     <header>
