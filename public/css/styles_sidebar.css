@@ -76,7 +76,7 @@ button {
 .sidebar .conteudo .itens {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
 }
 
 .sidebar .conteudo .itens a {
