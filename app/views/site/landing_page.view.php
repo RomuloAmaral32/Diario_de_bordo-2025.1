@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/public/css/styles_landing_page.css">
         <title>Diário de Bordo - Landing Page</title>
+        <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
     </head>
 
     <?php require('app\views\site\index_navbar_padrao.view.php'); ?>

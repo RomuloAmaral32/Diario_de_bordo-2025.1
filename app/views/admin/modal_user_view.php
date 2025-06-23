@@ -6,6 +6,7 @@
     <title>Visualizar Usuário</title>
     <link rel="stylesheet" href="/public/css/modal_user_view_styles.css">
     <script src="/public/js/modais.js"></script>
+    <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
 </head>
 <body>
     <div class="modal_view_user" id="modal_view_user_<?= $user->id ?>">

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/public/css/styles_modal_edit_post.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/public/assets/Logo-Globo.png" type="image/png">
     <title>Editar Postagem</title>
 </head>
 
